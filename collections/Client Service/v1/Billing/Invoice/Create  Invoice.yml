@@ -1,0 +1,81 @@
+info:
+  name: Create  Invoice
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/invoice"
+  headers:
+    - name: type
+      value: invoice
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          {
+              "invoiceNo": "I1014",
+              "currency": "",
+              "bankDetails": true,
+              "customer": {
+                  "leadId": "69ba7b3ff47c34557749e2fa",
+                  "paymentTerm": ""
+              },
+              "deliveryTime": "",
+              "memoToSelf": "",
+              "shippingCharges": {
+                  "value": 0,
+                  "type": ""
+              },
+              "otherCharges": {
+                  "value": 0,
+                  "type": ""
+              },
+              "discount": {
+                  "value": 0,
+                  "type": ""
+              },
+              "items": [
+                  {
+                      "name": "huuuuuu",
+                      "description": "",
+                      "quantity": 1,
+                      "hsn": "",
+                      "quantityType": "",
+                      "unitPrice": 0,
+                      "taxes": ""
+                  },
+                  {
+                      "name": "82",
+                      "description": "",
+                      "quantity": 1,
+                      "quantityType": "",
+                      "unitPrice": 0,
+                      "taxes": ""
+                  },
+                  {
+                      "name": "3B",
+                      "description": "",
+                      "quantity": 1,
+                      "quantityType": "",
+                      "unitPrice": 0,
+                      "taxes": ""
+                  }
+              ],
+               "isEmailConfirmation": true
+          }
+      - name: attachment
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/invoice.pdf
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

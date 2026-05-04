@@ -1,0 +1,19 @@
+info:
+  name: Get Connected Emails
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/services/google-workspace/auth/emails?label=campaign"
+  params:
+    - name: label
+      value: campaign
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

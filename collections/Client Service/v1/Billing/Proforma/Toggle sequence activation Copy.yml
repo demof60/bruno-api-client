@@ -1,0 +1,27 @@
+info:
+  name: Toggle sequence activation Copy
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/proforma/send-pdf/692edad498ff31129c5de49f"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: attachments
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/proforma_1764674272038.pdf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

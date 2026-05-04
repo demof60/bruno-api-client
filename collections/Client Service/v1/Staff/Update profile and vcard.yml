@@ -1,0 +1,67 @@
+info:
+  name: Update profile and vcard
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/staff/690d8a299a42d531e07cdd7a"
+  body:
+    type: multipart-form
+    data:
+      - name: profile
+        type: text
+        value: |-
+          {
+
+                  "firstName": "Jessica",
+                  "lastName": "Shaikh"
+              }
+        description: |-
+          {
+                  "username": "Product Test",
+                  "firstName": "fsff",
+                  "lastName": "Worsld",
+                  "department": "cer",
+                  "designation": "eee",
+                  "countryCode": "22",
+                  "number": "324343",
+                  "profileImg": null
+              }
+        disabled: true
+      - name: userProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/download (4).jpg
+        disabled: true
+      - name: vcardSettings
+        type: text
+        value: |-
+          {"countryCode":"994","designation":"SDE-∞ ","email":"pykoxedo@denipl.com","firstName":"zhdfgh","isActive":true,"number":545446546554,"whatsappNo":5456464446554,"whatsappNoCountryCode":"994","vcardProfileImage":{
+                          "uuid": "c0af2ff1-596b-4de2-a69a-7220639fe6a9",
+                          "title": "download_(4).jpg-profileImg",
+                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineUserDevelopment/download_%284%29_1758865544181.jpg",
+                          "contentType": "image/jpeg"
+                      }}
+      - name: vcardProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/download (9).jpg
+        disabled: true
+      - name: userProfileImage
+        type: text
+        value: |2-
+           {
+                          "uuid": "2319c044-1147-496b-8c6c-3566f4c183e1",
+                          "title": "F60_Logo.jpg-vcardProfileImg",
+                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/f60_logo_1758798487590.jpg",
+                          "contentType": "image/jpeg"
+                      }
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

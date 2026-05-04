@@ -1,0 +1,22 @@
+info:
+  name: Get Seller Package Plans
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/payment/plans/seller-packages?sellerPlan=true"
+  params:
+    - name: sellerPlan
+      value: "true"
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

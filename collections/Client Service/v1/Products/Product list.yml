@@ -1,0 +1,187 @@
+info:
+  name: Product list
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/product/get?limit=25&offset=0"
+  params:
+    - name: limit
+      value: "25"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: search
+      value: round
+      type: query
+      disabled: true
+    - name: status
+      value: pending
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Product list
+    request:
+      url: "{{clientUrl}}/api/v1/product/get?limit=25&offset=0"
+      method: GET
+      params:
+        - name: limit
+          value: "25"
+          type: query
+        - name: offset
+          value: "0"
+          type: query
+        - name: search
+          value: panini
+          type: query
+          disabled: true
+        - name: status
+          value: pending
+          type: query
+          disabled: true
+      body:
+        type: multipart-form
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Date
+          value: Fri, 26 Dec 2025 12:08:39 GMT
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Connection
+          value: keep-alive
+        - name: Server
+          value: cloudflare
+        - name: Nel
+          value: '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+        - name: Vary
+          value: Origin
+        - name: Access-Control-Allow-Credentials
+          value: "true"
+        - name: Content-Security-Policy
+          value: "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+        - name: Cross-Origin-Opener-Policy
+          value: same-origin
+        - name: Cross-Origin-Resource-Policy
+          value: same-origin
+        - name: Origin-Agent-Cluster
+          value: ?1
+        - name: Referrer-Policy
+          value: no-referrer
+        - name: Strict-Transport-Security
+          value: max-age=15552000; includeSubDomains
+        - name: X-Content-Type-Options
+          value: nosniff
+        - name: X-DNS-Prefetch-Control
+          value: off
+        - name: X-Download-Options
+          value: noopen
+        - name: X-Frame-Options
+          value: SAMEORIGIN
+        - name: X-Permitted-Cross-Domain-Policies
+          value: none
+        - name: X-XSS-Protection
+          value: "0"
+        - name: ETag
+          value: W/"566-ol6JFye8d87kE5dve0IfAflaUjg"
+        - name: cf-cache-status
+          value: DYNAMIC
+        - name: Report-To
+          value: '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Ksayn7%2BDrMHCLGvvIEOBDIQt9Hd4Yz%2FKiobWL%2Fy0NFvIo6kXIpUZeM48EPbG330ZzVdee%2BNtm7RqX5Etz1ycvqGOaGkhdSqEXFDNO9qHKQ%3D%3D"}]}'
+        - name: Content-Encoding
+          value: br
+        - name: CF-RAY
+          value: 9b4076e2b997dbd5-BOM
+        - name: alt-svc
+          value: h3=":443"; ma=86400
+      body:
+        type: json
+        data: |-
+          {
+              "success": true,
+              "data": {
+                  "products": [
+                      {
+                          "_id": "694cebdbe0f63593a51cbc6c",
+                          "productTitle": "round-steel-bar",
+                          "isActive": false,
+                          "isBan": null,
+                          "completion": 80,
+                          "clientName": "a company",
+                          "productCategory": "round-bar",
+                          "viewCount": 0,
+                          "createdByUser": "kuldeep",
+                          "formattedCreatedAt": "25 Dec 2025",
+                          "formattedUpdatedAt": "25 Dec 2025",
+                          "status": "all"
+                      },
+                      {
+                          "_id": "694bafc68ac2965d5b6d0b61",
+                          "productTitle": "steel-pipes",
+                          "isActive": false,
+                          "isBan": null,
+                          "completion": 100,
+                          "clientName": "a company",
+                          "productCategory": "pvc-pipes-7",
+                          "viewCount": 0,
+                          "createdByUser": "pallavi",
+                          "updatedByUser": "pallavi",
+                          "formattedCreatedAt": "24 Dec 2025",
+                          "formattedUpdatedAt": "24 Dec 2025",
+                          "status": "all"
+                      },
+                      {
+                          "_id": "6942781072c85fd4c6a35ae2",
+                          "productTitle": "blindsight",
+                          "isActive": true,
+                          "isBan": null,
+                          "completion": 93.33,
+                          "clientName": "a company",
+                          "productCategory": "others",
+                          "endPoint": "blindsight-1241.html",
+                          "viewCount": 0,
+                          "createdByUser": "Parag47",
+                          "formattedCreatedAt": "17 Dec 2025",
+                          "formattedUpdatedAt": "17 Dec 2025",
+                          "status": "all"
+                      },
+                      {
+                          "_id": "693fa89996026a04140795a2",
+                          "productTitle": "test",
+                          "isActive": true,
+                          "isBan": null,
+                          "completion": 86.67,
+                          "clientName": "a company",
+                          "productCategory": "sdfvcvas",
+                          "endPoint": "test-1241.html",
+                          "viewCount": 0,
+                          "createdByUser": "Parag47",
+                          "updatedByUser": "Parag47",
+                          "formattedCreatedAt": "15 Dec 2025",
+                          "formattedUpdatedAt": "16 Dec 2025",
+                          "status": "all"
+                      }
+                  ],
+                  "active": 2,
+                  "pending": 2,
+                  "ban": 0,
+                  "deleted": 1,
+                  "total": 4,
+                  "clientProduct": 4
+              }
+          }

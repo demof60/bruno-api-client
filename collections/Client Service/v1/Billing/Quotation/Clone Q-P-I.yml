@@ -1,0 +1,15 @@
+info:
+  name: Clone Q/P/I
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/quotation/billing/"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

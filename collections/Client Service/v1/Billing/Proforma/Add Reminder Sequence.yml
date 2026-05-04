@@ -1,0 +1,126 @@
+info:
+  name: Add Reminder Sequence
+  type: http
+  seq: 20
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/proforma/sequence/addSequence/:proformaId"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+    - name: proformaId
+      value: 6927df38d07f8e563680f96b
+      type: path
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sequence\": [\r
+
+      \        {\r
+
+      \            \"stepOrder\": 1,\r
+
+      \            \"stepName\": \"first proforma1\",\r
+
+      \            \"nextMsgInDays\": 1,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to the Family!\",\r
+
+      \                \"body\": \"We’re thrilled {{personName}} to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                \"isActive\": true,\r
+
+      \                \"placeholders\": [\r
+
+      \                    {\r
+
+      \                        \"key\": \"personName\",\r
+
+      \                        \"description\": \"hehe\",\r
+
+      \                        \"sampleValue\": \"vindefault\"\r
+
+      \                    }\r
+
+      \                ]\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 2,\r
+
+      \            \"stepName\": \"second\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 4,\r
+
+      \            \"stepName\": \"forth\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 3,\r
+
+      \            \"nextMsgInDays\": 3,\r
+
+      \            \"stepName\": \"third\",\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

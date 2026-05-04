@@ -1,0 +1,20 @@
+info:
+  name: Add Draft To Main
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/product/draft/main"
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

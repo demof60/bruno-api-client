@@ -1,0 +1,237 @@
+info:
+  name: Add Sequence
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/campaign/addSequence/6904c4861a3fff9e8c586bbf"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sequence\": [\r
+
+      \        {\r
+
+      \            \"stepId\": \"68b1410138e2ccebb4e50824\",\r
+
+      \            \"stepOrder\": 1,\r
+
+      \            \"stepName\": \"Step 1\",\r
+
+      \            \"nextMsgInDays\": 0,\r
+
+      \            \"emails\": [\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to the Family!\",\r
+
+      \                    \"body\": \"We’re thrilled to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b1410138e2ccebb4e50825\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to dashboard\",\r
+
+      \                    \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b1410138e2ccebb4e50826\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Hello\",\r
+
+      \                    \"body\": \"World\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b1410138e2ccebb4e50827\"\r
+
+      \                }\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepId\": \"68b142c36ce023c4f984a0f7\",\r
+
+      \            \"stepOrder\": 2,\r
+
+      \            \"stepName\": \"Step 2\",\r
+
+      \            \"nextMsgInDays\": 0,\r
+
+      \            \"emails\": [\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to the Family!\",\r
+
+      \                    \"body\": \"We’re thrilled to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b142c36ce023c4f984a0f8\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to dashboard\",\r
+
+      \                    \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b142c36ce023c4f984a0f9\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Hii Hello There\",\r
+
+      \                    \"body\": \"sdfasdfasf afasdf aasfasdfasdf\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b142c36ce023c4f984a0fa\"\r
+
+      \                }\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepId\": \"6904c565194091860c8c4a90\",\r
+
+      \            \"stepOrder\": 3,\r
+
+      \            \"stepName\": \"Step 3\",\r
+
+      \            \"nextMsgInDays\": 0,\r
+
+      \            \"emails\": [\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to the Family!\",\r
+
+      \                    \"body\": \"We’re thrilled to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"6904c565194091860c8c4a91\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to dashboard\",\r
+
+      \                    \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"6904c565194091860c8c4a92\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Hello World\",\r
+
+      \                    \"body\": \"Hsd fskdf najk fnkasjdfads fkfnajkdf ad a<div>d fgd gdfgd&nbsp;</div>\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"6904c565194091860c8c4a93\"\r
+
+      \                }\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepId\": \"68b142c36ce023c4f984a0fb\",\r
+
+      \            \"stepOrder\": 4,\r
+
+      \            \"stepName\": \"Step 4\",\r
+
+      \            \"nextMsgInDays\": 0,\r
+
+      \            \"emails\": [\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to the Family!\",\r
+
+      \                    \"body\": \"We’re thrilled to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b142c36ce023c4f984a0fc\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Welcome to dashboard\",\r
+
+      \                    \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b142c36ce023c4f984a0fd\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"subject\": \"Hahaha\",\r
+
+      \                    \"body\": \"s fsd fsd fdfsdfsdf\",\r
+
+      \                    \"isActive\": true,\r
+
+      \                    \"_id\": \"68b142c36ce023c4f984a0fe\"\r
+
+      \                }\r
+
+      \            ]\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

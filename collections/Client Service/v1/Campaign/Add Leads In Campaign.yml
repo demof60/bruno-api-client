@@ -1,0 +1,30 @@
+info:
+  name: Add Leads In Campaign
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/campaign/addLeads/68db8b88aa17a749bfffaef7"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"leadIds\": [\"68b2af328b7242b93108393b\"],\r
+
+      \    \"listIds\": [\"68db65f157a29fea376ef5f8\"],\r
+
+      \    // \"removeFromOtherCampaign\":true\r
+
+      \     // \"dontAdd\":true\r
+
+      \    \"allowAll\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

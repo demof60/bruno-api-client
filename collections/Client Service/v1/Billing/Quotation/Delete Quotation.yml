@@ -1,0 +1,58 @@
+info:
+  name: Delete Quotation
+  type: http
+  seq: 15
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/quotation?filterBy=rest&fromDays=&searchTerm="
+  params:
+    - name: filterBy
+      value: rest
+      type: query
+    - name: fromDays
+      value: ""
+      type: query
+    - name: searchTerm
+      value: ""
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\": [\r
+
+      \        \"all\"\r
+
+      \        // \"69b1464669c3a27b25a1f02e\"\r
+
+      \    //     \"6983223c841ee3f6f555f4e3\"\r
+
+      \    ]\r
+
+      \    // \"excludedIds\": [\r
+
+      \    //     \"69b26543f306eaebcd95de56\",\r
+
+      \    //     \"69b263ccf306eaebcd95db0c\",\r
+
+      \    //     \"69b11cb619c16c62353278d1\",\r
+
+      \    //     \"69afca4f038824b7a7e79bce\",\r
+
+      \    //     \"69ae76221f4ff72dc0a0db01\",\r
+
+      \    //     \"69ae75d41f4ff72dc0a0da94\"\r
+
+      \    // ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,19 @@
+info:
+  name: Delete Draft Image
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/product/draft/image/684a71552ecde80469b80bd3/d5a3eac5-bc0f-47f0-a48a-8eeb14d0a8d7?status=draft"
+  params:
+    - name: status
+      value: draft
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

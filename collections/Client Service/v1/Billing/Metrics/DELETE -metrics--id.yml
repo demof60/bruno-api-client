@@ -1,0 +1,19 @@
+info:
+  name: DELETE /metrics/:id
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/metrics/:id"
+  params:
+    - name: id
+      value: 69a56b921ac7d934629f5509
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

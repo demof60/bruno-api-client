@@ -1,0 +1,34 @@
+info:
+  name: Create Task
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/tasks"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"leadId\": \"6894a0b56fe42e7501b485df\",\r
+
+      \  \"type\": \"call\",\r
+
+      \  \"title\": \"Follow up with client\",\r
+
+      \  \"description\": \"Discuss project requirements and confirm meeting date\",\r
+
+      \  \"dueDate\": \"2025-08-25T10:30:00.000Z\",\r
+
+      \  \"assignedTo\": \"66cc17e5f7c2517d1ccb4005\",\r
+
+      \  \"status\": \"pending\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

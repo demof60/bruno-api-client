@@ -1,0 +1,33 @@
+info:
+  name: Update a template
+  type: http
+  seq: 12
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/billing-template/6909ef4ba176b8532e073da4"
+  params:
+    - name: type
+      value: proforma
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"Quotation Approval Template updated\",\r
+
+      \  \"subject\": \"Quotation Approved - {{quotationNo}}\",\r
+
+      \  \"body\": \"<p>Hello {{customer.personName}},</p><p>Your quotation <strong>{{quotationNo}}</strong> has been approved.</p><p>Thank you,<br/>{{company}}</p>\",\r
+
+      \  \"isActive\": true\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

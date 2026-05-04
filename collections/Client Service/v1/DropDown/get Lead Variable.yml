@@ -1,0 +1,21 @@
+info:
+  name: get Lead Variable
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/dropdown/lead/variable?type=billing"
+  params:
+    - name: type
+      value: billing
+      type: query
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

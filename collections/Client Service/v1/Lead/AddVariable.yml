@@ -1,0 +1,18 @@
+info:
+  name: AddVariable
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/lead/68a2b28bebc04eeb1bec28be/addVariable"
+  body:
+    type: json
+    data: "{ \"postalCode\": \"\" }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

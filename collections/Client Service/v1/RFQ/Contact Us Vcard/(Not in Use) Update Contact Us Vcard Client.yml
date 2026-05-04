@@ -1,0 +1,33 @@
+info:
+  name: (Not in Use) Update Contact Us Vcard Client
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/rfq/contactus/update/685a4df5589bf267aefc6616"
+  params:
+    - name: type
+      value: lastWeek
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"starred\": true \r
+
+      \    //  \"important\": true \r
+
+      \    //  \"viewed\":false\r
+
+      \    //  \"label\": \"followUp\"  //lebel should be: important,irrelevant,dealDone,followUp,unImportant,unIrrelevant,unDealDone,unFollowUp\"\r
+
+      } "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

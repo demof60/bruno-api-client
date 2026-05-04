@@ -1,0 +1,28 @@
+info:
+  name: Remove lead in the list
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/list/remove/assign-leads"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"listIds\":[\"68e34d44f6763b6fe95f6e28\"],\r
+
+      \    // \"leadsFromList\":[\"68b04a7e023487f6a5cb07c9\"] // either this or\r
+
+      \    // \"leadIds\": [\"68d24a19a4026f9f1adf64ed\", \"68cd4639ee35ca5259fb87b8\", \"68b83ab9ebb14593c0955037\"] // either this\r
+
+      \    \"leadIds\":[\"all\"]\r
+
+      }   "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

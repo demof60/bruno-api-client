@@ -1,0 +1,40 @@
+info:
+  name: Delete Proforma
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/proforma?type=proforma"
+  params:
+    - name: type
+      value: proforma
+      type: query
+    - name: searchTerm
+      value: vinvin
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"ids\":[\"6969dc721082fcf2ae868e5b\", \"6969dbd233fd87fde540ace1\"]\r
+
+      \    \"excludedIds\": [\r
+
+      \        \"69b26543f306eaebcd95de56\",\r
+
+      \        \"69b263ccf306eaebcd95db0c\"\r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

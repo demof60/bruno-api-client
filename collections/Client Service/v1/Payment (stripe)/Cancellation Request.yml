@@ -1,0 +1,20 @@
+info:
+  name: Cancellation Request
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/payment/plans/cancellation-request"
+  body:
+    type: text
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: GET metrics
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/metrics"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

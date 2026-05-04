@@ -1,0 +1,7 @@
+info:
+  name: Email Settings
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

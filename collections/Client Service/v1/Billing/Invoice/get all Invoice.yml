@@ -1,0 +1,77 @@
+info:
+  name: get all Invoice
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/invoice/getAll/?limit=10&excelExport=true&offset=0"
+  params:
+    - name: status
+      value: ""
+      type: query
+      description: draft,sent,accepted,rejected,expired,deleted,invoice_created,proforma_created,converted_to_invoice,converted_to_proforma
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+    - name: isActive
+      value: "false"
+      type: query
+      disabled: true
+    - name: searchTerm
+      value: no
+      type: query
+      disabled: true
+    - name: last30Days
+      value: "true"
+      type: query
+      disabled: true
+    - name: last15Days
+      value: "false"
+      type: query
+      disabled: true
+    - name: last7Days
+      value: "false"
+      type: query
+      disabled: true
+    - name: excelExport
+      value: "true"
+      type: query
+    - name: isDeleted
+      value: "false"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"selectedIds\":[\"6912c86459142c32076d04cd\",\"6912d90e82f30e7951844bb7\",\"69131b77b146885a5c5a65a9\"]\r
+
+      \    \"excludedIds\": [\r
+
+      \        \"69ae71f11f4ff72dc0a0d4a6\",\r
+
+      \        \"69ae71f41f4ff72dc0a0d4c1\",\r
+
+      \        \"69ae720a1f4ff72dc0a0d531\",\r
+
+      \        \"69ae720f1f4ff72dc0a0d562\",\r
+
+      \        \"69ae72181f4ff72dc0a0d596\",\r
+
+      \        \"69ae72131f4ff72dc0a0d57c\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

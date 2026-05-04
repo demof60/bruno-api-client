@@ -1,0 +1,92 @@
+info:
+  name: Create Lead
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/lead?type=quotation"
+  params:
+    - name: type
+      value: quotation
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      //   \"listIds\": [\"6904c3421a3fff9e8c586a32\"],\r
+
+      \  \"personName\": \"priti\",\r
+
+      \  \"email\": \"priti.malwhotra77@gmail.com\"\r
+
+      //   \"phone\": \"9988776655\",\r
+
+      //   \"company\": \"Silverline Technologies\",\r
+
+      //   \"label\": \"important\",\r
+
+      //   \"location\": \"MumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbaiMumbai\",\r
+
+      //   \"source\": \"Excel\",\r
+
+      //   \"linkedinURL\": \"https://linkedin.com/in/karanmalhotra77\",\r
+
+      //   \"businessType\": \"trader\",\r
+
+      //   \"designation\": \"Operations Manager\",\r
+
+      //   \"notes\": \"Imported bulk lead\",\r
+
+      //   \"customFields\": [\r
+
+      //     { \"label\": \"Priority\", \"value\": \"High\" },\r
+
+      //     { \"label\": \"LeadScore\", \"value\": 84 }\r
+
+      //   ],\r
+
+      //   \"address\": {\r
+
+      //     \"address_line1\": \"14 Sunrise Avenue\",\r
+
+      //     \"address_line2\": \"Sector 5\",\r
+
+      //     \"address_type\": \"Warehouse\",\r
+
+      //     \"city\": \"Pune\",\r
+
+      //     \"state\": \"Maharashtra\",\r
+
+      //     \"postal_code\": \"411045\",\r
+
+      //     \"country\": \"India\"\r
+
+      //   },\r
+
+      //   \"shippingAddress\": {\r
+
+      //     \"address_line1\": \"22 Ridge Park\",\r
+
+      //     \"address_line2\": \"North Block\",\r
+
+      //     \"address_type\": \"Office\",\r
+
+      //     \"city\": \"Pune\",\r
+
+      //     \"state\": \"Maharashtra\",\r
+
+      //     \"postal_code\": \"411046\",\r
+
+      //     \"country\": \"India\"\r
+
+      //   }\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

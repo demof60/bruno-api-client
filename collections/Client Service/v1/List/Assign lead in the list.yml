@@ -1,0 +1,32 @@
+info:
+  name: Assign lead in the list
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/list/assign-leads"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"locations\":\"malcolmview\",\r
+
+      \    \"labels\":[\"Lead100\"],\r
+
+      \    // \"sources\":[\"Form\"],\r
+
+      \    //  \"leadsFromList\":[\"68aff71bb10f19d32cef55c5\"], //* kaha se aarha h tu \r
+
+      \     \"listIds\":[\"68aff71bb10f19d32cef55c5\"], // kaha ko jaayega \r
+
+      \     \"leadIds\":[\"all\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

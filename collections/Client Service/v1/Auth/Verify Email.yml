@@ -1,0 +1,32 @@
+info:
+  name: Verify Email
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/auth/verify-email?id=6982e289bae5b200dff12feb&type=2&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTgyZTI4OWJhZTViMjAwZGZmMTJmZWIiLCJpYXQiOjE3NzAxODUzNTMsImV4cCI6MTc3MDE4NTk1M30.Z1Tu1CynU8SErqJFM7Ysk63E34LamSLH_bcPWX84dCA"
+  params:
+    - name: id
+      value: 6982e289bae5b200dff12feb
+      type: query
+    - name: type
+      value: "2"
+      type: query
+    - name: token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTgyZTI4OWJhZTViMjAwZGZmMTJmZWIiLCJpYXQiOjE3NzAxODUzNTMsImV4cCI6MTc3MDE4NTk1M30.Z1Tu1CynU8SErqJFM7Ysk63E34LamSLH_bcPWX84dCA
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"password\":\"Pipex@F60\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

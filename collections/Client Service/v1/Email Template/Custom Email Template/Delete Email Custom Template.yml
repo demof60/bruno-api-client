@@ -1,0 +1,18 @@
+info:
+  name: Delete Email Custom Template
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/email/custom/template/68a5621bf85e047e1232319e"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,90 @@
+info:
+  name: Update Campaign
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/campaign/68de2a48c188fa789c313877"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"option\": {\r
+
+      \        \"accountSetting\": {\r
+
+      \            \"accountsToUse\": [\"sanskar@pentagoat.com\" ],\r
+
+      \            \"stopSendingOnReply\": true,\r
+
+      \            \"openTracking\": true,\r
+
+      \            \"linkTracking\": false,\r
+
+      \            \"sendEmailAsTextOnly\": false,\r
+
+      \            \"sendFirstEmailAsTextOnly\": false,\r
+
+      \            \"dailyLimit\": null\r
+
+      \        },\r
+
+      \        \"ccBcc\": {\r
+
+      \            \"ccRecipients\": \"\",\r
+
+      \            \"bccRecipients\": \"\"\r
+
+      \        },\r
+
+      \        \"sendingPattern\": {\r
+
+      \            \"owner\": [],\r
+
+      \            \"customTags\": [],\r
+
+      \            \"timeGapBetweenEmails\": {\r
+
+      \                \"minimumTime\": 1,\r
+
+      \                \"randomAdditionalTime\": 2\r
+
+      \            },\r
+
+      \            \"maxNewLeads\": 1000,\r
+
+      \            \"prioritizeNewLeads\": false,\r
+
+      \            \"autoOptimizeABTesting\": {\r
+
+      \                \"enabled\": false,\r
+
+      \                \"winningMetric\": \"Open Rate\"\r
+
+      \            },\r
+
+      \            \"stopCampaignForCompanyOnReply\": false,\r
+
+      \            \"insertUnsubscribeLinkHeader\": false,\r
+
+      \            \"enableRiskyEmails\": false,\r
+
+      \            \"disableBounceProtect\": false,\r
+
+      \            \"stopSendingEmailsOnAutoReply\": false,\r
+
+      \            \"providerMatching\": false\r
+
+      \        }\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

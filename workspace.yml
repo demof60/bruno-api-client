@@ -1,0 +1,12 @@
+opencollection: 1.0.0
+info:
+  name: "Pipex"
+  type: workspace
+
+collections:
+  - name: "Client Service"
+    path: "collections/Client Service"
+
+specs:
+
+docs: ''

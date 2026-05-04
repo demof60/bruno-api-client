@@ -1,0 +1,35 @@
+info:
+  name: Fetch All Contact Us Vcard Client (important)
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/rfq/contactus/all?userId=685b8960e3c3178b50f37350"
+  params:
+    - name: limit
+      value: "100"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: searchTerm
+      value: curry
+      type: query
+      disabled: true
+    - name: labels
+      value: unimportant
+      type: query
+      disabled: true
+    - name: userId
+      value: 685b8960e3c3178b50f37350
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,29 @@
+info:
+  name: Fetch Queue
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/unibox/email-queue?limit=10&offset=10&type=completed"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "10"
+      type: query
+    - name: type
+      value: completed
+      type: query
+    - name: accountEmail
+      value: demo@pentagoat.com
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,114 @@
+info:
+  name: Update Invoice
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/invoice/69a286bf020bbc67fbf5c765?type=invoice"
+  params:
+    - name: type
+      value: invoice
+      type: query
+  body:
+    type: json
+    data: "    {\r
+
+      \    // \"currency\": \"INR\",\r
+
+      \    \"customer\": {\r
+
+      \        \"leadName\": \"mm\", \r
+
+      \        \"paymentTerm\": \"50 days\"\r
+
+      \    },\r
+
+      \    // \"footerNote\": {\r
+
+      \    //     \"terms\": \"dfdd\",\r
+
+      \    //     \"notes\": \"dfsddsfdsf\"\r
+
+      \    // },\r
+
+      \    // \"memoToSelf\": \"history pe historyhistory pe historyhistory pe history history pe history history pe historyhistory pe history history pe history v history pe history history pe history history pe history history pe history history pe history\",\r
+
+      \    // \"shippingCharges\": {\r
+
+      \    //     \"value\": 10,\r
+
+      \    //     \"type\": \"percentage\"\r
+
+      \    // },\r
+
+      \    // \"otherCharges\": {\r
+
+      \    //     \"value\": 10,\r
+
+      \    //     \"type\": \"percentage\"\r
+
+      \    // },\r
+
+      \    // \"discount\": {\r
+
+      \    //     \"value\": 10,\r
+
+      \    //     \"type\": \"currency\"\r
+
+      \    // },\r
+
+      \    \"items\": [\r
+
+      \        {\r
+
+      \        \"name\": \"Pipex ai 22\",\r
+
+      \        \"description\": \"High-quality steels\",\r
+
+      \        \"hsn\": \"4444\",\r
+
+      \        \"quantity\": 0,\r
+
+      \        \"quantityType\": \"Kg\",\r
+
+      \        \"unitPrice\": 200,\r
+
+      \        \"taxes\": \"\",\r
+
+      \        \"total\": 2000\r
+
+      \        },\r
+
+      \        {\r
+
+      \        \"name\": \"Widget B\",\r
+
+      \        \"description\": \"High-quality widget\",\r
+
+      \        \"quantity\": 0,\r
+
+      \        \"quantityType\": \"Kg\",\r
+
+      \        \"unitPrice\": 200,\r
+
+      \        \"taxes\": \"68ccdeb3ab50780581598454\",\r
+
+      \        \"total\": 2000\r
+
+      \        }\r
+
+      \    ],\r
+
+      \    \"bankDetails\": false\r
+
+      \    }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

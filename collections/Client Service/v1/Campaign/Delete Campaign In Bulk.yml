@@ -1,0 +1,22 @@
+info:
+  name: Delete Campaign In Bulk
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/campaign/bulk"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"campaignIds\": [\"all\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

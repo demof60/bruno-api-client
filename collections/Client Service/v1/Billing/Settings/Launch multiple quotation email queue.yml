@@ -1,0 +1,58 @@
+info:
+  name: Launch multiple quotation email queue
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/billing-reminder/settings/launch"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"type\": \"quotation\",\r
+
+      \    //     \"searchTerm\": \"\",\r
+
+      \    //     \"isDeleted\": false,\r
+
+      \    //     \"filter\": \"\",\r
+
+      \    //     \"ids\": [\r
+
+      \    //         \"all\"\r
+
+      \    //         // \"6983223c841ee3f6f555f4e3\",\r
+
+      \    //         // \"6983223c841ee3f6f555f4e3\"\r
+
+      \    //     ],\r
+
+      \    //     \"excludedIds\": [\r
+
+      \    //         // \"6981c02573d2444cd546c86b\",\r
+
+      \    //         // \"6983223c841ee3f6f555f4e3\"\r
+
+      \    //     ]\r
+
+      \    //     // \"customerLeadId\": \"\",\r
+
+      \    //     // \"currency\": \"\",\r
+
+      \    //     // \"last30Days\": true,\r
+
+      \    //     // \"last70Days\": false,\r
+
+      \    //     // \"last15Days\": false,\r
+
+      \    \"launch\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

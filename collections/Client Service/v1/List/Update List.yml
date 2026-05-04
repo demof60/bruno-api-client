@@ -1,0 +1,24 @@
+info:
+  name: Update List
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/list/693696fe5853dc18e3ea63df"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\":\"pipex.ai ka bhai\"\r
+
+      \    // \"noOfCustomers\":1000\r
+
+      } "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

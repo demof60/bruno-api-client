@@ -1,0 +1,32 @@
+info:
+  name: Update task
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/tasks/68a966493d61fc36460912db"
+  headers:
+    - name: Authorization
+      value: ""
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"title\": \"billabillabillabillabillabillabillabillabillabilla\",\r
+
+      \  \"description\": \"billabillabillabillabillabilla\",\r
+
+      \  \"dueDate\": \"2025-08-25T10:30:00.000Z\",\r
+
+      \   \"status\": \"pending\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

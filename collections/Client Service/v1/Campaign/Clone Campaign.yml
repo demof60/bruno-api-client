@@ -1,0 +1,22 @@
+info:
+  name: Clone Campaign
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/campaign/clone/68906562ce0e6003afd3f693"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Hello World 14\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

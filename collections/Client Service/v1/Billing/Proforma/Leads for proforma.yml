@@ -1,0 +1,25 @@
+info:
+  name: Leads for proforma
+  type: http
+  seq: 24
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/proforma/leads?searchTerm=hello&offset=0&limit=10"
+  params:
+    - name: searchTerm
+      value: hello
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

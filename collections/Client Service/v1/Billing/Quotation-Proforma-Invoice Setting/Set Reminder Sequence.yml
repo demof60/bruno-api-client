@@ -1,0 +1,109 @@
+info:
+  name: Set Reminder Sequence
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/billing-reminder/addSequence"
+  params:
+    - name: replace
+      value: "true"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sequence\": [\r
+
+      \        {\r
+
+      \            \"stepOrder\": 1,\r
+
+      \            \"stepName\": \"firstt\",\r
+
+      \            \"nextMsgInDays\": 1,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to the Family!\",\r
+
+      \                \"body\": \"We’re thrilled to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 2,\r
+
+      \            \"stepName\": \"second\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 4,\r
+
+      \            \"stepName\": \"forth\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 3,\r
+
+      \            \"nextMsgInDays\": 3,\r
+
+      \            \"stepName\": \"third\",\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

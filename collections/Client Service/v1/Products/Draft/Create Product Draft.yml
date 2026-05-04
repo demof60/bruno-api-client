@@ -1,0 +1,142 @@
+info:
+  name: Create Product Draft
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/product/draft/create"
+  body:
+    type: multipart-form
+    data:
+      - name: productTitle
+        type: text
+        value: "{{randomProductTitle}}"
+      - name: url
+        type: text
+        value: "{{randomProductTitle}}"
+      - name: productDescriptionHeading
+        type: text
+        value: "{{randomProductTitle}}"
+      - name: folderId
+        type: text
+        value: 699ea5bf0fef61ba95631872
+        disabled: true
+      - name: priceRangeFrom
+        type: text
+        value: "100"
+        disabled: true
+      - name: minPrice
+        type: text
+        value: "121"
+        disabled: true
+      - name: priceRangeTo
+        type: text
+        value: "300"
+        disabled: true
+      - name: maxPrice
+        type: text
+        value: "300"
+        disabled: true
+      - name: minOrder
+        type: text
+        value: "1"
+        disabled: true
+      - name: minOrderUnit
+        type: text
+        value: unit
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+runtime:
+  scripts:
+    - type: before-request
+      code: "// Sequential title: Product_a, Product_aa, Product_aaa, ...\r
+
+        let count = parseInt(bru.getCollectionVar(\"productTitleCounter\") || \"0\");\r
+
+        count = count + 1;\r
+
+        pm.collectionVariables.set(\"productTitleCounter\", count.toString());\r
+
+        \r
+
+        const suffix = \"a\".repeat(count);\r
+
+        const productTitle = \"Product_\" + suffix;\r
+
+        pm.collectionVariables.set(\"randomProductTitle\", productTitle);\r
+
+        \r
+
+        // const randomTitle = \"Product_\" + Math.random().toString(36).substring(2, 10) +\r
+
+        // Math.random().toString(36).substring(2, 10) + \"_\" + Date.now();\r
+
+        // pm.collectionVariables.set(\"randomProductTitle\", randomTitle);"
+    - type: after-response
+      code: "const res = res.getBody();\r
+
+        \r
+
+        test('Status code is 200', () => {\r
+
+        \    expect(res.getStatus()).to.equal(200);\r
+
+        });\r
+
+        \r
+
+        // pm.test('success is true', () => {\r
+
+        //     pm.expect(res.success).to.be.true;\r
+
+        // });\r
+
+        \r
+
+        // pm.test('message is \"Product draft added\"', () => {\r
+
+        //     pm.expect(res.message).to.eql('Product draft added');\r
+
+        // });\r
+
+        \r
+
+        // pm.test('data object exists', () => {\r
+
+        //     pm.expect(res.data).to.be.an('object');\r
+
+        // });\r
+
+        \r
+
+        // pm.test('data._id is a non-empty string', () => {\r
+
+        //     pm.expect(res.data._id).to.be.a('string').and.not.empty;\r
+
+        // });\r
+
+        \r
+
+        // pm.test('data.createdAt is a string', () => {\r
+
+        //     pm.expect(res.data.createdAt).to.be.a('string');\r
+
+        // });\r
+
+        \r
+
+        // pm.test('data.completion is parseable as a number', () => {\r
+
+        //     pm.expect(parseFloat(res.data.completion)).to.be.a('number').and.not.be.NaN;\r
+
+        // });"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

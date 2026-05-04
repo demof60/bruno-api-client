@@ -1,0 +1,32 @@
+info:
+  name: Delete Invoice
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/invoice?type=invoice"
+  params:
+    - name: type
+      value: invoice
+      type: query
+    - name: searchTerm
+      value: vinvin
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\":[\"696db9322a531ce21840188c\", \"696db9382a531ce2184018a3\"]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

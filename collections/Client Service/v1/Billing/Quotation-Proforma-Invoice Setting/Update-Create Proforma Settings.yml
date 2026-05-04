@@ -1,0 +1,134 @@
+info:
+  name: Update/Create Proforma Settings
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/proforma/settings"
+  body:
+    type: multipart-form
+    data:
+      - name: footerNote
+        type: text
+        value: '{"terms":"This is terms and condition","notes":"lolhehe"}'
+        disabled: true
+      - name: signature
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/001.png
+      - name: logo
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/002.png
+        disabled: true
+      - name: signature
+        type: text
+        value: |-
+          {
+                              "uuid": "9c6c5b79-ecf7-4178-af9b-c99dc7d5f0c3",
+                              "title": "002.png-quotationLogo",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineBillingDevelopment/002_1760073339298.png",
+                              "_id": "68e8967b2045b057cb7d0b5e"
+                          }
+        disabled: true
+      - name: logo
+        type: text
+        value: |-
+          {
+                      "uuid": "45f68cb6-cbcd-4ea4-8d9e-76259f8d6a8f",
+                      "title": "Download_(6).jpg Logo",
+                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/download_%286%29_1758955172296.jpg",
+                      "contentType": "image/jpeg"
+                  }
+        disabled: true
+      - name: deleteFiles
+        type: text
+        value: |-
+          [{  "signature":  {
+                              "uuid": "9c6c5b79-ecf7-4178-af9b-c99dc7d5f0c3",
+                              "title": "002.png-quotationLogo",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineBillingDevelopment/002_1760073339298.png",
+                              "_id": "68e8967b2045b057cb7d0b5e"
+                          }},{  "logo": {
+                      "uuid": "45f68cb6-cbcd-4ea4-8d9e-76259f8d6a8f",
+                      "title": "Download_(6).jpg Logo",
+                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/download_%286%29_1758955172296.jpg",
+                      "contentType": "image/jpeg"
+                  }}]
+        disabled: true
+      - name: taxSlabs
+        type: text
+        value: |-
+          [
+                          {
+                              "_id": "695235200e95583dbe7d196d",
+                              "name": "sdsf",
+                              "value": 66,
+                              "default": false                },{"name":"hello","value":12,"default":false,"_id":"69522e06ea077fda057d37bf"},{"name":"hi","value":6,"default":false,"_id":"69522e06ea077fda057d37c0"},{"name":"bye","value":30,"default":false,"_id":"69522e06ea077fda057d37c1"}]
+      - name: companyName
+        type: text
+        value: Vin_Company
+        disabled: true
+      - name: ownerName
+        type: text
+        value: vin22
+        disabled: true
+      - name: email
+        type: text
+        value: vin@gmail.conm
+        disabled: true
+      - name: countryCode
+        type: text
+        value: "91"
+        disabled: true
+      - name: number
+        type: text
+        value: "9136285805"
+        disabled: true
+      - name: city
+        type: text
+        value: mumbai
+        disabled: true
+      - name: state
+        type: text
+        value: maharashtra
+        disabled: true
+      - name: postal_code
+        type: text
+        value: "400080"
+        disabled: true
+      - name: country
+        type: text
+        value: India
+        disabled: true
+      - name: address_type
+        type: text
+        value: Office
+        disabled: true
+      - name: address
+        type: text
+        value: my_address
+        disabled: true
+      - name: bankDetails
+        type: text
+        value: |2-
+               {
+                  "bankName": "HDFC Bank",
+                  "branchName": "Koramangala Branch",
+                  "accountNumber": "123456789012",
+                  "iban": " ",
+                  "swiftCode": "HDFCINBBXXX",
+                  "ifscCode": "HDFC0001234",
+                  "upiId": "vin@hdfc"
+              }
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

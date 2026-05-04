@@ -1,0 +1,22 @@
+info:
+  name: Unlock Lead
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/buyleads/unlock-buy-leads/692000d2b6f0e341fd88b944"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\":\"shortlisted\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

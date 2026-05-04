@@ -1,0 +1,29 @@
+info:
+  name: Update Active Reminder
+  type: http
+  seq: 12
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/quotation/reminder/:quotationId/:reminderId"
+  params:
+    - name: quotationId
+      value: 68ece3c5b605e1430bd11a7d
+      type: path
+    - name: reminderId
+      value: 68ececf6b605e1430bd11d6d
+      type: path
+  body:
+    type: json
+    data: "{\r
+
+      \    \"schedule\":\"2025-10-06T11:07:35.000Z\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

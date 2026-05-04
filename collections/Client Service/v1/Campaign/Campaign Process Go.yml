@@ -1,0 +1,22 @@
+info:
+  name: Campaign Process Go
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/campaign/proccess/camp/go"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"leadIds\": [\"689329f59aa0acf0b6ba87eb\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

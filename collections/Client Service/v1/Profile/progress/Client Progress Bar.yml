@@ -1,0 +1,98 @@
+info:
+  name: Client Progress Bar
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/profile/progressbarstrength"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: Demo & Co.
+      - name: emails
+        type: text
+        value: |
+          [{"_id":"6982d8a3537fdb9fb382eea7","clientId":"697ae9c2c82a9d1500fb0b37","email":"vyjife@mailinator.com","primary":true,"createdAt":"2026-02-04T05:26:59.935Z","updatedAt":"2026-02-23T10:25:20.155Z","__v":0}]
+      - name: contacts
+        type: text
+        value: |
+          [{"_id":"699806172868ff64bcbde5c9","number":432423423423424,"primary":false,"whatsApp":true,"createdAt":"2026-02-20T06:58:31.019Z","updatedAt":"2026-02-23T10:25:12.151Z","__v":0,"region":{"isoCode":"AZ","name":"Azerbaijan","dialCode":"+994"}},{"_id":"6982db9cc8f53522affad7ef","number":23423423423423,"primary":true,"whatsApp":false,"createdAt":"2026-02-04T05:39:40.662Z","updatedAt":"2026-02-23T10:25:15.154Z","__v":0,"region":{"isoCode":"BI","name":"Burundi","dialCode":"+257"}}]
+      - name: ownerName
+        type: text
+        value: Kuldeep Yadav
+      - name: description
+        type: text
+        value: "214214214"
+      - name: businessType
+        type: text
+        value: |
+          Supplier
+      - name: website
+        type: text
+        value: https://github.com/fourty60/pipex-front-client/pull/1526
+      - name: annualRevenue
+        type: text
+        value: ₹241421
+      - name: projectsCompleted
+        type: text
+        value: "511"
+      - name: responseTime
+        type: text
+        value: "611"
+      - name: experience
+        type: text
+        value: |
+          1810
+      - name: features
+        type: text
+        value: |
+          ["Four Paarrtyy Inspection231","Iso Certified Company23","Ip Rating Certified","Military Certified"]
+      - name: additionalInfos
+        type: text
+        value: '{"companyGst":"27ABCDE1234F1Z5","companyCode":5225425,"countriesCode":424,"companyYearEst":4252,"panCard":"ABCDE1234F","thirdPartyInspection":false,"customSizes":false,"mtcReport":false}'
+      - name: catlog
+        type: text
+        value: '[{"title":"Kiilolololop","_id":"69819374232e010e2dc83a66","coverImage":{"uuid":"5814ff22-ec43-4281-b24a-fb047d036d09","title":"Kiilolololop","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/copper-bonded-pipe-electrode-supplier-india_%281%29_1770099571685.webp","contentType":"image/webp"}}]'
+      - name: addresses
+        type: text
+        value: |
+          [{"address_type":"","address_line1":"909 Green Cowley Street","address_line2":"Consequatur vitae ad magna natus et","city":"Soluta exercitatione","country":"","postal_code":"Facilis sunt quis do","primary":false},{"address_type":"Manufacturing Unit","address_line1":"63 North Cowley Boulevard","address_line2":"F22","city":"Albuquerque","country":"Aniketg","postal_code":"576444","primary":true},{"address_type":"","address_line1":"My_address ku ds sdbfs sdbfd fd fs","address_line2":"","city":"mumbai","country":"","postal_code":"400080"}]
+      - name: socialMediaLink
+        type: text
+        value: '[{"name":"Facebook","link":"https://grumpy-viability.name","_id":"698430f54d467009a9c13d29"}]'
+      - name: companyTeam
+        type: text
+        value: |
+          [{"name":"Simple12","email":"team244@gmail.com","designation":"Owner","number":6789034353,"countryCode":"+91","_id":"697af850c82a9d1500fb1b54"}]
+      - name: companyTeamImage
+        type: file
+        value: []
+        disabled: true
+      - name: companyCertificate
+        type: text
+        value: '[{"title":"Ddddddddddddddddddddddddddd","_id":"69819374232e010e2dc83a68","companyCertificateCoverImage":{"uuid":"64a799ec-4b8e-4581-926e-d78df8b27146","title":"Ddddddddddddddddddddddddddd","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/copper-bonded-pipe-electrode-supplier-india_%281%29_1770099571349.webp","contentType":"image/webp"},"companyCertificateCoverPdf":{"uuid":"4698fb6f-4c6f-42b6-b5f5-ad7e8b5b0478","title":"Ddddddddddddddddddddddddddd","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/print_1770099571467.pdf","contentType":"application/pdf"}}]'
+      - name: coverImage
+        type: text
+        value: '[{"uuid":"3295a42d-8671-4620-81ae-6f2ae28a36b4","title":"Cropped Image1770099452335.png","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/cropped-image1770099452335_1770099570511.png","contentType":"image/jpeg"}]'
+      - name: logo
+        type: text
+        value: '[{"imageName":"Wallpaperflare.com_wallpaper_(1).jpg Logo"}]'
+      - name: companyGallery
+        type: text
+        value: '[{"uuid":"02f45edf-6715-47dc-8ace-2e35849a995d","title":"Cropped Image1770099480466.webp","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/cropped-image1770099480466_1770099571833.webp","contentType":"image/jpeg"}]'
+      - name: clientGallery
+        type: text
+        value: '[{"uuid":"9a4123b5-c8d4-4554-84bb-fe59843dcb52","title":"Cropped Image1770099490371.webp","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/cropped-image1770099490371_1770099571976.webp","contentType":"image/jpeg"}]'
+      - name: ""
+        type: text
+        value: '[{"name":"Simple12","email":"team244@gmail.com","designation":"Owner","number":6789034353,"countryCode":"+91","companyTeamImage":{"uuid":"ad5aab28-310f-4390-9fe5-66cfa5bef884","title":"Simple12","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/leon_1769666640324.jpg","contentType":"image/jpeg"},"_id":"697af850c82a9d1500fb1b54"}]'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

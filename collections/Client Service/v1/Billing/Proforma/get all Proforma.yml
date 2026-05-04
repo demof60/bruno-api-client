@@ -1,0 +1,63 @@
+info:
+  name: get all Proforma
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/proforma/getAll/"
+  params:
+    - name: status
+      value: sent
+      type: query
+      description: draft,sent,accepted,rejected,expired,deleted,invoice_created,proforma_created,converted_to_invoice,converted_to_proforma
+      disabled: true
+    - name: limit
+      value: "100"
+      type: query
+      disabled: true
+    - name: offset
+      value: ""
+      type: query
+      disabled: true
+    - name: isActive
+      value: "true"
+      type: query
+      disabled: true
+    - name: searchTerm
+      value: priti
+      type: query
+      disabled: true
+    - name: last30Days
+      value: "true"
+      type: query
+      disabled: true
+    - name: last15Days
+      value: "false"
+      type: query
+      disabled: true
+    - name: last7Days
+      value: "false"
+      type: query
+      disabled: true
+    - name: excelExport
+      value: "true"
+      type: query
+      disabled: true
+    - name: isDeleted
+      value: "false"
+      type: query
+      description: |-
+        // {
+        //     "selectedIds":["692a8dfbb2da8ff33e9fa90f","692a7a9ebc05c133f74c7a73","69299afc399e26c91ed4b26a"]
+        // }
+      disabled: true
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

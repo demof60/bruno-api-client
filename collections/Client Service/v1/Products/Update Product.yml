@@ -1,0 +1,219 @@
+info:
+  name: Update Product
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/product/update/68da2de03a7a3e47ef07ef93"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          {
+              "productTitle": "SSSssssssssssss",
+              "productDescription": "   sss  ",
+              "productDescriptionHeading": " xzxzxz",
+              "bannerImageContent": "",
+              "FAQ": [
+                  {
+                      "question": "west",
+                      "answer": " east"
+                  },
+                  {
+                      "question": "Why ",
+                      "answer": "niiii"
+                  },
+                  {
+                      "question": "ddddd",
+                      "answer": "ddddd"
+                  }
+              ],
+              "searchKeywords": [
+                  "flange",
+                  "bronzeflange"
+              ]
+          }
+        disabled: true
+      - name: productTitle
+        type: text
+        value: ek baar aaja aaja aaja212aa
+        disabled: true
+      - name: productDescription
+        type: text
+        value: character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computer's memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters. Use our character counter tool below for an accurate count of your characters.A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computer's memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters. Use our character counter tool below for an accurate count of your characters.A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computer's memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two bytes of space and therefore count as two characters. Use our character counter tool below for an accurate count of your characters.A character can be any letter, number, punctuation, special character, or space. Each of these characters takes up one byte of space in a computer's memory. Some Unicode characters, like emojis and some letters in non-Latin alphabets, take up two erfsergweraweee
+        disabled: true
+      - name: productDescriptionHeading
+        type: text
+        value: product descriptioon helper
+        disabled: true
+      - name: deleteImages
+        type: text
+        value: '["cc0e2e3f-ff95-4830-8d3f-130c91853b81","c4cff9d3-385b-41fd-9ddb-6c266d3f7a1b"]'
+        disabled: true
+      - name: bannerImageContent
+        type: text
+        value: new banner image content helpetr
+        disabled: true
+      - name: FAQ
+        type: text
+        value: |-
+          [
+              {
+                "question": "best",
+                "answer": " bast"
+              },
+              {
+                "question": "bhy ",
+                "answer": "hgiiii"
+              },
+              {
+                "question": "fdddd",
+                "answer": "bdddd"
+              }
+            ]
+        disabled: true
+      - name: searchKeywords
+        type: text
+        value: |2-
+           [
+                  "flddange",
+                  "bronzeflangdde"
+              ]
+        disabled: true
+      - name: folderId
+        type: text
+        value: 6800d16d7c201ee6b7850f3e
+        disabled: true
+      - name: head
+        type: text
+        value: |-
+          {
+              "metaTitle": "some-metass-title-ddd 4",
+              "metaDescription": "some-meta-description-upsdted 3",
+              "metaKeywords": "ddddsd"
+          }
+        disabled: true
+      - name: bannerImageTitle
+        type: text
+        value: Fffffssrerers
+        disabled: true
+      - name: isActive
+        type: text
+        value: "true"
+        disabled: true
+      - name: isPending
+        type: text
+        value: "false"
+        disabled: true
+      - name: productCategory
+        type: text
+        value: some-update-
+        disabled: true
+      - name: clientId
+        type: text
+        value: 66ea7d64de91ce9b8c9a7fb3
+        disabled: true
+      - name: isSubCategory
+        type: text
+        value: "true"
+        disabled: true
+      - name: productDetailsProductTitle
+        type: text
+        value: ill title4##$$ill title 2
+        disabled: true
+      - name: productDetailsProductCode
+        type: text
+        value: 46117051##$$46162977
+        disabled: true
+      - name: subProductDescription
+        type: text
+        value: ill desc4##$$ill desc 3
+        disabled: true
+      - name: productDetailsProductDescription
+        type: text
+        value: niceoneplus2dddddd223
+        disabled: true
+      - name: otherFields
+        type: text
+        value: |-
+          {
+                      "price": 2000
+                   
+          }
+        disabled: true
+      - name: categorySpecificFields
+        type: text
+        value: |-
+          {
+                      "price": 2000,
+                      "availabilits": "in-stock"
+                    
+          }
+        disabled: true
+      - name: industries
+        type: text
+        value: '["all"]'
+        disabled: true
+      - name: countries
+        type: text
+        value: '[ "671644a0cfd7ec621d17f471"]'
+        disabled: true
+      - name: cities
+        type: text
+        value: '["all"]'
+        disabled: true
+      - name: priceRangeFrom
+        type: text
+        value: "101111"
+        disabled: true
+      - name: priceRangeTo
+        type: text
+        value: "120211"
+        disabled: true
+      - name: minOrder
+        type: text
+        value: " "
+      - name: data
+        type: text
+        value: |-
+          { "searchKeywords":["question","yahiiii3","answer","abhi2"]
+          }
+        disabled: true
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/2.png
+        disabled: true
+      - name: bannerimagemain
+        type: text
+        value: |-
+          [
+                      {
+                          "uuid": "69140a68-2c64-4500-a49e-03e9659ddfc7",
+                          "title": "2.png",
+                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/2.png_1746868753839.png",
+                          "contentType": "image/png"
+                      }
+                  ]
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/gmail.png
+        disabled: true
+      - name: bannerimageembedded
+        type: text
+        value: '[ { "productTitle":"ddd","productCode":"71923581","subProductDescription":"ssssss","imageName":"gmail.png"}]'
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

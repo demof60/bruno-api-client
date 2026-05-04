@@ -1,0 +1,29 @@
+info:
+  name: Get Sequence
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/campaign/sequence/68b140dc130414452bf1cff2?offset=0&sort&limit=10"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchTerm
+      value: Updated Step Name
+      type: query
+      disabled: true
+    - name: sort
+      value: ""
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

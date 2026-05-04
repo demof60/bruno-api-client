@@ -1,0 +1,28 @@
+info:
+  name: Permanent Delete Invoice
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/invoice/permanent?type=invoice"
+  params:
+    - name: type
+      value: invoice
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\":[\"696db9322a531ce21840188c\", \"696db9382a531ce2184018a3\"]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

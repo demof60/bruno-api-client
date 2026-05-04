@@ -1,0 +1,15 @@
+info:
+  name: Get Invoice No.
+  type: http
+  seq: 21
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/invoice/billing/number"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

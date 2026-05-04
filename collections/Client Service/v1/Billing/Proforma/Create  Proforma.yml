@@ -1,0 +1,70 @@
+info:
+  name: Create  Proforma
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/proforma"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |
+          {
+          "proformaNo": "P0020",
+          "quotationDate": "",
+          "validUntil": "",
+          "customer": {
+          "leadId": "69ba7b3ff47c34557749e2fa",
+          "paymentTerm": ""
+          },
+          "deliveryTime": "",
+          "memoToSelf": "",
+          "shippingCharges": {
+          "value": 0,
+          "type": ""
+          },
+          "otherCharges": {
+          "value": 0,
+          "type": ""
+          },
+          "discount": {
+          "value": 0,
+          "type": ""
+          },
+          "items": [
+          {
+          "name": "11",
+          "description": "",
+          "quantity": 0.1,
+          "hsn": "",
+          "quantityType": "",
+          "unitPrice": 0,
+          "taxes": ""
+          }],
+          "bankDetails": false,
+          "isEmailConfirmation": true,
+           "options": {
+              "accountSetting": {
+                "accountsToUse": [
+                  "kuldeep@pentagoat.com"
+                ]
+              }
+            }
+          }
+      - name: attachment
+        type: file
+        value:
+          - postman-cloud:///1f05660e-5005-49e0-9903-529cb545a8fa
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

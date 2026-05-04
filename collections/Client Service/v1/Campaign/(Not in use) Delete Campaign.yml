@@ -1,0 +1,22 @@
+info:
+  name: (Not in use) Delete Campaign
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/campaign/68a96abd3d61fc3646091784"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Hello World 2\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: Location by pin code
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/auth/location?pinCode=400017"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+    - name: pinCode
+      value: "400017"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

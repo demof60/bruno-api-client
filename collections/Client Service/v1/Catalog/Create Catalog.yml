@@ -1,0 +1,32 @@
+info:
+  name: Create Catalog
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:9000/api/v1/catalog/create
+  body:
+    type: multipart-form
+    data:
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+      - name: pdf
+        type: file
+        value:
+          - postman-cloud:///1ef8b9ff-089d-4340-9d51-0be208338967
+      - name: title
+        type: text
+        value: "or yeh bhi  "
+      - name: clientId
+        type: text
+        value: 67626dcb7c7b9a6a3d38604f
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

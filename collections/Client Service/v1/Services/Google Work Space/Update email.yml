@@ -1,0 +1,24 @@
+info:
+  name: Update email
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/services/google-workspace/auth/email/6891e91e22af86fb87a275de"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"isActive\": false,\r
+
+      \    \"isWarmUp\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

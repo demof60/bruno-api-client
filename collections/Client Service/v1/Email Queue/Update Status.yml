@@ -1,0 +1,28 @@
+info:
+  name: Update Status
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/email-queue"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"status\": \"paused\", // paused , resume\r
+
+      \    \"ids\": [\r
+
+      \        \"69afb7794729e62d3964e5d0\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

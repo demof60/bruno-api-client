@@ -1,0 +1,41 @@
+info:
+  name: get all stash rfq
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/rfq/stash/all"
+  params:
+    - name: searchTerm
+      value: Officia
+      type: query
+      disabled: true
+    - name: limit
+      value: "1"
+      type: query
+      disabled: true
+    - name: offset
+      value: "2"
+      type: query
+      disabled: true
+    - name: dateFrom
+      value: 2025-09-02
+      type: query
+      disabled: true
+    - name: dateTo
+      value: 2025-09-03
+      type: query
+      disabled: true
+    - name: hasAttachment
+      value: "false"
+      type: query
+      description: true or false
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

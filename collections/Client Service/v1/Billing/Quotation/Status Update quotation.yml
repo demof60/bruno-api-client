@@ -1,0 +1,18 @@
+info:
+  name: Status Update quotation
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/quotation/status/69ba8e7eeacb411db9c2125a"
+  body:
+    type: json
+    data: "{\r\n    \"status\":\"rejected\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

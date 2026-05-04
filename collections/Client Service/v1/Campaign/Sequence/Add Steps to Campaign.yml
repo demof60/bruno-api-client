@@ -1,0 +1,36 @@
+info:
+  name: Add Steps to Campaign
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/campaign/addStepToCampaign/68906562ce0e6003afd3f693"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"stepName\": \"Step 1\",\r
+
+      \  \"stepOrder\": 89,\r
+
+      \  \"emails\": [\r
+
+      \    {\r
+
+      \      \"subject\": \"Welcome! Vin\",\r
+
+      \      \"body\": \"vin body, Hello, welcome to our service.\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

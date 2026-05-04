@@ -1,0 +1,29 @@
+info:
+  name: Email Action
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/email-queue/email-action?token=eyJhY3Rpb24iOiJuZWdvdGlhdGlvbiIsIl9pZCI6IjY5ZWM5YzRlODYxMzM4MTUxYzkyODEwMiIsImVtYWlsSWQiOiI2OTY3NTJmMC0xNTZlLTQ4ODEtOTRhNy1hYmE1OTY0MWM1NGUiLCJ0eXBlIjoicWlwIiwiY2xpZW50SWQiOiI2OGY4YzJhYjdiMGFjZTVmY2QxMjliNzciLCJiaWxsaW5nTm8iOiJRMzIzMCIsImJpbGxpbmdUeXBlIjoiUXVvdGF0aW9uIiwiY29tcGFueU5hbWUiOiJKYXlLaWNvbXBhbnkiLCJjdXN0b21lck5hbWUiOiJWaW5EYVRlc3RlciJ9.f431389824a790e71b9792bd00b3177c8e883a41f0ebe48c817ee9a4b4a1792a&type=negotiation"
+  params:
+    - name: token
+      value: eyJhY3Rpb24iOiJuZWdvdGlhdGlvbiIsIl9pZCI6IjY5ZWM5YzRlODYxMzM4MTUxYzkyODEwMiIsImVtYWlsSWQiOiI2OTY3NTJmMC0xNTZlLTQ4ODEtOTRhNy1hYmE1OTY0MWM1NGUiLCJ0eXBlIjoicWlwIiwiY2xpZW50SWQiOiI2OGY4YzJhYjdiMGFjZTVmY2QxMjliNzciLCJiaWxsaW5nTm8iOiJRMzIzMCIsImJpbGxpbmdUeXBlIjoiUXVvdGF0aW9uIiwiY29tcGFueU5hbWUiOiJKYXlLaWNvbXBhbnkiLCJjdXN0b21lck5hbWUiOiJWaW5EYVRlc3RlciJ9.f431389824a790e71b9792bd00b3177c8e883a41f0ebe48c817ee9a4b4a1792a
+      type: query
+    - name: type
+      value: negotiation
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"description\":\"Price is too high\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

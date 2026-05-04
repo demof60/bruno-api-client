@@ -1,0 +1,24 @@
+info:
+  name: Redeem Promo Code
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/promo-codes/redeem"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"promoCode\": \"FAMKL3636\",\r
+
+      \  \"planId\": \"68ff01af149505367c5b4d11\"\r
+
+      } "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

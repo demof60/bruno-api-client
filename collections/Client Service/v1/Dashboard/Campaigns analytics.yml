@@ -1,0 +1,30 @@
+info:
+  name: Campaigns analytics
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/dashboard/campaigns-analytics?campaignId=690439adbb1c1ecee6c657e8&timePeriod=yearly"
+  params:
+    - name: startDate
+      value: 2025-08-07
+      type: query
+      disabled: true
+    - name: endDate
+      value: 2025-08-07
+      type: query
+      disabled: true
+    - name: campaignId
+      value: 690439adbb1c1ecee6c657e8
+      type: query
+    - name: timePeriod
+      value: yearly
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

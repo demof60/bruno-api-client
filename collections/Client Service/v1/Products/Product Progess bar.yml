@@ -1,0 +1,77 @@
+info:
+  name: Product Progess bar
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/product/progressbarstrength"
+  body:
+    type: multipart-form
+    data:
+      - name: productTitle
+        type: text
+        value: ""
+      - name: url
+        type: text
+        value: ""
+      - name: productDescription
+        type: text
+        value: ""
+      - name: productDescriptionHeading
+        type: text
+        value: ""
+      - name: FAQ
+        type: text
+        value: "[]"
+      - name: head
+        type: text
+        value: "{}"
+      - name: countries
+        type: text
+        value: "[]"
+      - name: cities
+        type: text
+        value: "[]"
+      - name: industries
+        type: text
+        value: "[]"
+      - name: categorySpecificFields
+        type: text
+        value: "{}"
+      - name: priceRangeFrom
+        type: text
+        value: ""
+      - name: priceRangeTo
+        type: text
+        value: ""
+      - name: otherFields
+        type: text
+        value: "{}"
+      - name: minOrder
+        type: text
+        value: "0"
+      - name: minOrderUnit
+        type: text
+        value: ""
+      - name: productDetailsProductDescription
+        type: text
+        value: ""
+      - name: productDetails
+        type: text
+        value: "[]"
+      - name: folderId
+        type: text
+        value: "null"
+      - name: bannerImages
+        type: text
+        value: "[]"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

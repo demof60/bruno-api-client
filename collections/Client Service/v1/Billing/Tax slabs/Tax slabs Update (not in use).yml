@@ -1,0 +1,24 @@
+info:
+  name: Tax slabs Update (not in use)
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/taxslab/68ccfcd75755092261076ec9"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\":\"GST1\",\r
+
+      \    \"value\":20\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

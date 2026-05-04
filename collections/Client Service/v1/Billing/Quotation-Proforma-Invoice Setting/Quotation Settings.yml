@@ -1,0 +1,31 @@
+info:
+  name: Quotation Settings
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/quotation/settings?type=invoice"
+  params:
+    - name: projection
+      value: quotation.signature,quotation.logo
+      type: query
+      disabled: true
+    - name: projection
+      value: sequence,schedule,option
+      type: query
+      disabled: true
+    - name: projection
+      value: quotation
+      type: query
+      disabled: true
+    - name: type
+      value: invoice
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

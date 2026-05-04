@@ -1,0 +1,43 @@
+info:
+  name: Share & schedule Quotation/Porfoma/Invoice
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/billing-reminder/billing/pdf/send-schedule/:quotationId?type=quotation"
+  params:
+    - name: type
+      value: quotation
+      type: query
+    - name: quotationId
+      value: 69ec9f104d9292ee1dd6cca8
+      type: path
+  body:
+    type: multipart-form
+    data:
+      - name: attachment
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/Vin/test_10.xlsx
+      - name: email
+        type: text
+        value: arfan.pathan@f70.co.in
+        disabled: true
+      - name: accountsToUse
+        type: text
+        value: priti@pentagoat.com
+      - name: launch
+        type: text
+        value: "true"
+        disabled: true
+      - name: accountConfigType
+        type: text
+        value: "true"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

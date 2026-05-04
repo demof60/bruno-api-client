@@ -1,0 +1,62 @@
+info:
+  name: Create profile and vcard
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/staff"
+  body:
+    type: multipart-form
+    data:
+      - name: profile
+        type: text
+        value: |-
+          {
+            "email": "gadddd@example.com",
+            "password": "Test@1234",
+             "username": "",
+            "firstName": "",
+            "lastName": "",
+            "department": "",
+            "designation": "",
+            "number": "",
+            "region":{"dialCode":"+91","isoCode":"IN","name":"India"},
+              "profileImg": null
+          }
+      - name: vcardSettings
+        type: text
+        value: ""
+      - name: vcardProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/Delta Fitt.jpg
+        disabled: true
+      - name: userProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/f60host1.png
+        disabled: true
+      - name: ""
+        type: text
+        value: |-
+          {
+             "firstName": "",
+            "lastName": "",
+            "designation": "",
+            "number": "",
+            "whatsappNo": "",
+            "email": "ffdbd@example.com",
+            "isActive": "false",
+            "region":{"dialCode":"+91","isoCode":"IN","name":"India"},
+            "whatsappNoRegion":{"dialCode":"+91","isoCode":"IN","name":"India"},
+            "profileImg": null
+          }
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

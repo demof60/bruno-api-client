@@ -1,0 +1,73 @@
+info:
+  name: Delete
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/lead/bulk-delete"
+  params:
+    - name: searchTerm
+      value: salma
+      type: query
+      disabled: true
+    - name: offset
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "// {\r
+
+      //     // \"excludedIds\": [\r
+
+      //     //     \"698c312c166ec69db655a818\",\r
+
+      //     //     \"698c312c166ec69db655a815\",\r
+
+      //     //     \"698c312c166ec69db655a812\"\r
+
+      //     // ],\r
+
+      //     \"socketId\": \"YuZcZOc4XmdU__GTAAAB\",\r
+
+      //     \"locations\": \"\",\r
+
+      //     \"labels\": \"\",\r
+
+      //     \"sources\": \"\",\r
+
+      //     \"searchTerm\": \"\",\r
+
+      //     \"status\": \"all\"\r
+
+      // }\r
+
+      {\r
+
+      \    \"leadIds\": [\r
+
+      \        \"6990272a1c294d1788239d9f\"\r
+
+      \    ],\r
+
+      \    \"socketId\": \"UGj4Jd3JDaE_dXTHAAAB\",\r
+
+      \    \"locations\": \"\",\r
+
+      \    \"labels\": \"\",\r
+
+      \    \"sources\": \"\",\r
+
+      \    \"searchTerm\": \"\",\r
+
+      \    \"status\": \"all\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

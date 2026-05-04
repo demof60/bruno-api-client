@@ -1,0 +1,47 @@
+info:
+  name: Permanent Delete Quotation
+  type: http
+  seq: 18
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/quotation/permanent"
+  params:
+    - name: searchTerm
+      value: Recusandae Vel aut
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"ids\":[\"all\"]\r
+
+      \    \"ids\": [\r
+
+      \        \"all\"\r
+
+      \        // \"6983223c841ee3f6f555f4e3\",\r
+
+      \        // \"6983223c841ee3f6f555f4e3\"\r
+
+      \    ],\r
+
+      \    \"excludedIds\": [\r
+
+      \        // \"6981c02573d2444cd546c86b\",\r
+
+      \        // \"6983223c841ee3f6f555f4e3\"\r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

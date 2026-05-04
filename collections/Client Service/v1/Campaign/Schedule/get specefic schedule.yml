@@ -1,0 +1,15 @@
+info:
+  name: get specefic schedule
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/campaign/schedule/6891f3a340a8925ffb06e17e/6891f3a340a8925ffb06e17f"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,44 @@
+info:
+  name: Checkout Client
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/payment/checkout"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"packagePlanId\": \"69e0c5d51ee43b7ef56bd59c\",\r
+
+      \    \"paymentPlanId\": \"668e1ff99c820c8ae19dd123\",\r
+
+      \    \"startPlan\": \"04-16-2026\",\r
+
+      \    \"endPlan\": \"05-15-2026\",\r
+
+      \    \"tenure\": 30,\r
+
+      \    \"currency\": \"inr\"\r
+
+      }\r
+
+      // {\r
+
+      //     \"packagePlanId\": \"69e758ded0aab83b93454f67\",\r
+
+      //     \"paymentPlanId\": \"668e1ff99c820c8ae19dd123\",\r
+
+      //     \"startPlan\": \"04-29-2026\",\r
+
+      //     \"currency\": \"inr\"\r
+
+      // }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

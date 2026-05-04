@@ -1,0 +1,26 @@
+info:
+  name: get specefic billing settings
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/billing-reminder/billing/settings/:quotationId?type=quotation"
+  params:
+    - name: type
+      value: quotation
+      type: query
+    - name: projection
+      value: option.accountSetting.accountsToUse
+      type: query
+      disabled: true
+    - name: quotationId
+      value: 69c666ae105d985042f1a6ea
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

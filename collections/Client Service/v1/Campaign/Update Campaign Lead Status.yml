@@ -1,0 +1,38 @@
+info:
+  name: Update Campaign Lead Status
+  type: http
+  seq: 11
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/campaign/updateLeadStatus/:campaignId/lead"
+  params:
+    - name: campaignId
+      value: 68b59c35050fe9d90b898ffd
+      type: path
+  body:
+    type: json
+    data: "{\r
+
+      \    \"leadIds\": [\r
+
+      \        \"68b17842a3961ad2b4cd23d4\",\r
+
+      \        \"68b17842a3961ad2b4cd23cf\",\r
+
+      \        \"68b17841a3961ad2b4cd23cc\",\r
+
+      \        \"68b17842a3962ad2b4cd23cf\"\r
+
+      \    ],\r
+
+      \    \"leadStatus\": \"interested\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

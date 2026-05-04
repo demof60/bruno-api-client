@@ -1,0 +1,29 @@
+info:
+  name: Get All Email Custom Template
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/email/custom/templates?offset=0&limit=10"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: searchTerm
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: Delete Leads In Campaign Copy
+  type: http
+  seq: 12
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/campaign/leads/68932c2fc93fbc493da2dce8"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"leadIds\": [\"689329f59aa0acf0b6ba87eb\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

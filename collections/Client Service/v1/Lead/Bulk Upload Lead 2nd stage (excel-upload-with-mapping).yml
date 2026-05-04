@@ -1,0 +1,40 @@
+info:
+  name: Bulk Upload Lead 2nd stage (excel-upload-with-mapping)
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/lead/bulk/excel-upload-with-mapping"
+  body:
+    type: multipart-form
+    data:
+      - name: lead
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/import_customer_sample  - import_customer_sample (1) (2).csv
+      - name: listId
+        type: text
+        value: 69c124627558e82acccc4232
+      - name: headerMapping
+        type: text
+        value: |
+          {"personName":"CustomerName","email":"EmailAddress","phone":"MobileNo.","company":"CompanyName","location":"Address","address_type":"AddressType","city":"City","state":"State","postal_code":"PostalCode","country":"Country","designation":"Designation","linkedinURL":"LinkedInUrl","businessType":"BusinessType","notes":"AddNote", "gstNo":"GSTNo."}
+      - name: socketId
+        type: text
+        value: fV02shyKHsHa6k_xAAAD
+        disabled: true
+      - name: AllowAll
+        type: text
+        value: "true"
+      - name: dontAdd
+        type: text
+        value: "true"
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

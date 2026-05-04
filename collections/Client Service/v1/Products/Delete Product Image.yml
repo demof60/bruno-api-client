@@ -1,0 +1,19 @@
+info:
+  name: Delete Product Image
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://localhost:9000/api/v1/product/delete/image/6773c10c9673539a1f87924c/3a358f9d-3b58-440b-bd5b-8ed9c5201311?status=main
+  params:
+    - name: status
+      value: main
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

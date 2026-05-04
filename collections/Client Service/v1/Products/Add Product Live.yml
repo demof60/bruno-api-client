@@ -1,0 +1,19 @@
+info:
+  name: Add Product Live
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/product/live/68c3f986fd93dc7456b5f6b1"
+  body:
+    type: multipart-form
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Restore stash rfq
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/rfq/stash/restore/68b7e503eaa4ff99c4d6f948"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

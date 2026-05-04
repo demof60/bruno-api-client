@@ -1,0 +1,26 @@
+info:
+  name: Get Category For Dropdown
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/category/dropdown"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\":\"6729fd001482c718a83a736d\",\r
+
+      \    \"product\":true\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

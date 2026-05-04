@@ -1,0 +1,45 @@
+info:
+  name: Update RFQ Client
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/rfq/report/update/691aadf380ad603988b1dc82"
+  params:
+    - name: type
+      value: lastWeek
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"starred\": true\r
+
+      \    // \"important\": true\r
+
+      \    \"label\":\"important\",\r
+
+      \    //  \"leadLabel\": \"dealDone\"\r
+
+      \    //  \"bulkDealLabel\":[ \"hello\", \"hello world\"],\r
+
+      \    //  \"leadSubStageLabel\": [\"bulkDealLabel\"],\r
+
+      \     \"status\": \"\",\r
+
+      \     \"blockReason\":\"Received repeated or fake RFQ’s\"\r
+
+      \    //  \"irrelevantReason\": \"Hello There\",\r
+
+      \    // \"note\":\"hieeee thereee\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

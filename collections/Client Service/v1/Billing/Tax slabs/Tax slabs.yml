@@ -1,0 +1,80 @@
+info:
+  name: Tax slabs
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/taxslab?type=quotation"
+  params:
+    - name: type
+      value: quotation
+      type: query
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"_id\": \"69b3b8a8a8e200f09658cad2\",\r
+
+      \        \"name\": \"GST\",\r
+
+      \        \"value\": 5,\r
+
+      \        \"primary\": false,\r
+
+      \        \"type\": \"quotation\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"_id\": \"69b3b8a8a8e200f09658cad3\",\r
+
+      \        \"name\": \"IST\",\r
+
+      \        \"value\": 67,\r
+
+      \        \"primary\": false,\r
+
+      \        \"type\": \"quotation\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"_id\": \"69b3b8a8a8e200f09658cad4\",\r
+
+      \        \"name\": \"GST\",\r
+
+      \        \"value\": 16,\r
+
+      \        \"primary\": true,\r
+
+      \        \"type\": \"quotation\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"_id\": \"69b3b8a8a8e200f09658cad5\",\r
+
+      \        \"name\": \"TGST\",\r
+
+      \        \"value\": 50,\r
+
+      \        \"primary\": false,\r
+
+      \        \"type\": \"quotation\"\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Email Stats
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/services/google-workspace/auth/email/68f8e2728b0f8aee64a3a237/stats"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

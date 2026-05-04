@@ -1,0 +1,23 @@
+info:
+  name: Get a template
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/billing-template/690c6f7d414066ad6d8c4b71"
+  params:
+    - name: type
+      value: quotation
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

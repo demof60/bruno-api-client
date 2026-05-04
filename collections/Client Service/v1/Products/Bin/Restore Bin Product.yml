@@ -1,0 +1,22 @@
+info:
+  name: Restore Bin Product
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:9000/api/v1/product/restore/67ada4ef06883c9f8da8fe05/679c5e35da00c5e1d23e8513
+  params:
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

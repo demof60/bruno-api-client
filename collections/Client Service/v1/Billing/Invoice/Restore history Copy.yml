@@ -1,0 +1,72 @@
+info:
+  name: Restore history Copy
+  type: http
+  seq: 15
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/invoice/history/restore/690d9e44bd5af612707b9c4c"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  ## Get Quotation Leads
+
+  This endpoint allows you to retrieve a list of quotation leads based on a search term. It supports pagination through the `offset` and `limit` parameters.
+
+  ### Request Parameters
+
+  - **searchTerm** (string): A term to filter the leads. In this example, the search term is set to "lyle".
+      
+  - **offset** (integer): The number of records to skip before starting to collect the result set. This is useful for pagination. In this case, it is set to `0`, meaning the results will start from the first record.
+      
+  - **limit** (integer): The maximum number of records to return. Here, it is set to `10`, indicating that up to 10 leads will be returned.
+      
+
+  ### Response
+
+  On a successful request, the API returns a JSON object with the following structure:
+
+  - **success** (boolean): Indicates whether the request was successful. A value of `true` means the request was processed correctly.
+      
+  - **message** (string): A message providing additional information about the request. This may be empty.
+      
+  - **data** (object): Contains the results of the request, including:
+      
+      - **leads** (array): An array of lead objects, each containing:
+          
+          - **_id** (string): The unique identifier for the lead.
+              
+          - **personName** (string): The name of the person associated with the lead.
+              
+          - **email** (string): The email address of the lead.
+              
+          - **countryCode** (string): The country code for the lead's phone number.
+              
+          - **phone** (string): The phone number of the lead.
+              
+          - **designation** (string): The job title or position of the lead.
+              
+          - **company** (string): The company associated with the lead.
+              
+          - **address** (string|null): The address of the lead, which may be null.
+              
+          - **missingFields** (array): A list of fields that are missing from the lead's information.
+              
+          - **missingFieldsCount** (integer): The count of missing fields.
+              
+      - **totalCount** (integer): The total number of leads available that match the search criteria.
+          
+      - **actualCount** (integer): The actual number of leads returned in this response.
+          
+
+  ### Notes
+
+  - Ensure that the `searchTerm` is relevant to the leads you wish to retrieve to improve the effectiveness of your query.
+      
+  - The `offset` and `limit` parameters are essential for managing large sets of leads and should be adjusted according to your pagination needs.

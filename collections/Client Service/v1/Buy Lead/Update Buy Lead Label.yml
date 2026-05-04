@@ -1,0 +1,30 @@
+info:
+  name: Update Buy Lead Label
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/buyleads/69200021b6f0e341fd88b919"
+  body:
+    type: json
+    data: "{\r
+
+      \    \r
+
+      \    // \"userId\":\"\",\r
+
+      \    \"buyleadLabel\" :\"shortlisted\" \r
+
+      \    \r
+
+      \  //  [\"shortlisted, irrelevant\",\"relevant\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

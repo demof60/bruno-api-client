@@ -1,0 +1,125 @@
+info:
+  name: Seller - Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/auth/login"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\": \"picaryta@fxzig.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"zaleliji@forexzig.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\":\"ht1ner94s1@jkotypc.com\",\r
+
+      \    // \"password\": \"Pipex@f60\"\r
+
+      \    // \"email\": \"puqazo@forexzig.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"kalasssss@lnovic.com\",\r
+
+      \    // \"password\": \"Pipex@f60\"\r
+
+      \    // \"email\": \"dyluzo@forexzig.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"krish.jain@f70.co.in\",\r
+
+      \    // \"password\": \"Pipex@f60\"\r
+
+      \    // \"email\": \"sayinad171@alexida.com\",\r
+
+      \    // \"password\": \"Parag@7155\"\r
+
+      \    // \"email\": \"spam@lnovic.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"hupysyke@forexzig.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    //  \"email\": \"wamodady@denipl.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\":\"kabelete@denipl.net\",\r
+
+      \    // \"password\":\"Pipex@f60\"\r
+
+      \    // \"email\": \"gypipecu@denipl.net\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    \"email\": \"vinay.poojary@f70.co.in\",\r
+
+      \    \"password\": \"Pipex@F69\"\r
+
+      \r
+
+      // \"email\": \"picaryta@fxzig.com\",\r
+
+      //  \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"pooja.vishakarma@f70.co.in\",\r
+
+      \    // \"password\": \"pooja\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "const response = res.getBody();\r
+
+        // pm.environment.set(\"token\",response.token);\r
+
+        \r
+
+        //Define token mappings\r
+
+        const tokenKeys = {\r
+
+        \    SELLER_TOKEN: \"sellerToken\",\r
+
+        \    BUYER_TOKEN: \"buyerToken\",\r
+
+        \    BUYER_SELLER_TOKEN: \"buyerSellerToken\"\r
+
+        };\r
+
+        \r
+
+        // Iterate over tokenKeys and set them if they exist in the response\r
+
+        Object.entries(tokenKeys).forEach(([envKey, responseKey]) => {\r
+
+        \    if (response?.data?.[responseKey] || response?.[responseKey]) {\r
+
+        \        console.log(\"Extracted Token:\",envKey, response?.data?.[responseKey]);\r
+
+        \        bru.setEnvVar(\"token\", response.data?.[responseKey] || response[responseKey]);\r
+
+        \    }\r
+
+        });"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

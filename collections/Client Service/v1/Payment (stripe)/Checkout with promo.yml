@@ -1,0 +1,30 @@
+info:
+  name: Checkout with promo
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/payment/promo/checkout"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"packagePlanId\": \"69e1cd1570f8a46b4880651d\",\r
+
+      \    \"paymentPlanId\": \"668e1ff99c820c8ae19dd123\",\r
+
+      \    \"promoCode\": \"ROQW6674\",\r
+
+      \    \"startPlan\": \"04-24-2026\",\r
+
+      \    \"currency\": \"inr\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

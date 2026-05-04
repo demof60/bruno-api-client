@@ -1,0 +1,44 @@
+info:
+  name: Set reminder Scedule
+  type: http
+  seq: 18
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/proforma/sequence/schedule/:proformaId"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+    - name: proformaId
+      value: 6927df38d07f8e563680f96b
+      type: path
+  body:
+    type: json
+    data: "{\r
+
+      \  \"scheduleName\": \"Morning Outreach\",\r
+
+      \  \"isActive\": true,\r
+
+      \  \"startDate\": \"2025-11-01T00:00:00.000Z\",\r
+
+      \  \"endDate\": \"2026-12-31T23:59:59.000Z\",\r
+
+      \  \"timeFrom\": \"01:00\",\r
+
+      \  \"timeTo\": \"23:30\",\r
+
+      \  \"timeZone\": \"Asia/Kolkata\",\r
+
+      \  \"weekDays\":[\"monday\", \"tuesday\", \"wednesday\", \"thursday\", \"friday\", \"saturday\"]\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

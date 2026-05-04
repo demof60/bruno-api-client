@@ -1,0 +1,15 @@
+info:
+  name: delete schedule
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/campaign/schedule/6891f3a340a8925ffb06e17e/6891f57340a8925ffb06e289"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

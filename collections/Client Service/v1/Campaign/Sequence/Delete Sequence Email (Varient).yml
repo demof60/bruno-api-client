@@ -1,0 +1,15 @@
+info:
+  name: Delete Sequence Email (Varient)
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/campaign/deleteSequenceEmail/68906562ce0e6003afd3f693/email/6890671f48e452e0eae10452"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

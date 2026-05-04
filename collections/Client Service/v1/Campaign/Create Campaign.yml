@@ -1,0 +1,22 @@
+info:
+  name: Create Campaign
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/campaign"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"New product launch campaign\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

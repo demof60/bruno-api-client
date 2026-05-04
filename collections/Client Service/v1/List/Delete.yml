@@ -1,0 +1,45 @@
+info:
+  name: Delete
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/list/bulk-delete"
+  params:
+    - name: searchTerm
+      value: salma
+      type: query
+      disabled: true
+    - name: offset
+      value: ""
+      type: query
+      disabled: true
+    - name: customer
+      value: "true"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"excludedIds\": [\r
+
+      \    //     \"698c6d6112ab4366e1906f16\"\r
+
+      \    // ],\r
+
+      \    \"listIds\":[\"all\"],\r
+
+      \    \"customer\": true,\r
+
+      \    \"socketId\": \"Uq9HxXF5YVT_4z76AAAB\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

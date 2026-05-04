@@ -1,0 +1,23 @@
+info:
+  name: Product Get Specific
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/product/get/:productId"
+  params:
+    - name: search
+      value: square
+      type: query
+      disabled: true
+    - name: productId
+      value: 69958379c26c79ba8e4cb037
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

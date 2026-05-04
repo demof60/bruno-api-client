@@ -1,0 +1,107 @@
+info:
+  name: Update Client Company Profile
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v2/admin/client/profile/update-company-profile/68149987d31d1d2e7dcd3e39"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          {"name":"Celestde Peckdd",
+          "ownerName":"shaqeebddd",
+          "website":"https://CelestePeck.co.in",
+          "description":"A company that provide no. one steel in the market",
+          "businessType":"Supplier",
+          "addresses":[{"name":"ergerg","address_type":"sergs","address_line1":"sergse","address_line2":"sergse","city":"mast h yehn","country":"erge","postal_code":"344344","primary":true}],
+          "deletedContactIds":[],"deletedEmailIds":[],"deletedAddressIds":[]}
+      - name: logo
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        disabled: true
+      - name: companyGif
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        disabled: true
+      - name: notes
+        type: text
+        value: ddddd132464364mnjh
+        disabled: true
+      - name: coverType
+        type: text
+        value: coverImage
+        disabled: true
+      - name: head
+        type: text
+        value: |
+          { "metaDescription":"meta description",
+           "url":"yeh url hai"
+
+            
+
+          }
+        disabled: true
+      - name: responseTime
+        type: text
+        value: "1 din "
+      - name: annualRevenue
+        type: text
+        value: "45"
+      - name: projectsCompleted
+        type: text
+        value: "100"
+      - name: experience
+        type: text
+        value: "5000"
+      - name: name
+        type: text
+        value: compay name
+      - name: features
+        type: text
+        value: |-
+          [
+              "Four party inspection.",
+              "ISO certified company"
+          ]
+        disabled: true
+      - name: mtcReport
+        type: text
+        value: yes
+        description: '["yes","no"]'
+        disabled: true
+      - name: thirdPartyInspection
+        type: text
+        value: yes
+        description: '["yes","no"]'
+        disabled: true
+      - name: customSizes
+        type: text
+        value: no
+        description: '["yes","no"]'
+        disabled: true
+      - name: countriesCode
+        type: text
+        value: "12"
+        disabled: true
+      - name: companyGst
+        type: text
+        value: "121"
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

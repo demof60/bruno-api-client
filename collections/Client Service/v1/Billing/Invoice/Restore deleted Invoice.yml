@@ -1,0 +1,32 @@
+info:
+  name: Restore deleted Invoice
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/invoice/restore?type=invoice"
+  params:
+    - name: type
+      value: invoice
+      type: query
+    - name: searchTerm
+      value: Manus
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\":[\"695276bd43aaee833cb84a3d\", \"6957a17e351bc298147add64\"]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: Delete Connected Emails
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/services/google-workspace/auth/email/696f7851b9b2a804ad603065"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

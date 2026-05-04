@@ -1,0 +1,22 @@
+info:
+  name: PATCH metrics/:id
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/metrics/:id"
+  params:
+    - name: id
+      value: 69a5701175e29be83362ab5a
+      type: path
+  body:
+    type: json
+    data: "{\r\n  \"name\": \"Box (Large)\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

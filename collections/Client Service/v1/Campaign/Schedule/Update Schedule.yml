@@ -1,0 +1,52 @@
+info:
+  name: Update Schedule
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/campaign/updateSchedule/6891f3a340a8925ffb06e17e/6891f3a340a8925ffb06e17f"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"scheduleName\": \"Default dddddddd\",\r
+
+      \    \"isActive\": true,\r
+
+      \    \"startDate\": \"2025-02-01\" ,\r
+
+      \    \"endDate\": \"2025-02-31\",\r
+
+      \    \"timeFrom\": \"10:00\",\r
+
+      \    \"timeTo\": \"19:00\",\r
+
+      \    \"timeZone\": \"Asia/Kolkata\",\r
+
+      \    \"weekDays\": {\r
+
+      \        \"monday\": true,\r
+
+      \        \"tuesday\": true,\r
+
+      \        \"wednesday\": true,\r
+
+      \        \"thursday\": true,\r
+
+      \        \"friday\": true,\r
+
+      \        \"saturday\": false,\r
+
+      \        \"sunday\": false\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

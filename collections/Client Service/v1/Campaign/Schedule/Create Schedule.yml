@@ -1,0 +1,48 @@
+info:
+  name: Create Schedule
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/campaign/createSchedule/6892e635ac95c9ce6d63bb52"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"scheduleName\": \"Ek Billa \",\r
+
+      \  \"startDate\": \"2025-08-01\",\r
+
+      \  \"endDate\": \"2025-08-31\",\r
+
+      \  \"timeFrom\": \"10:00\",\r
+
+      \  \"timeTo\": \"19:00\",\r
+
+      \  \"timeZone\": \"Asia/Kolkata\",\r
+
+      \  \"weekDays\": {\r
+
+      \    \"monday\": true,\r
+
+      \    \"tuesday\": true,\r
+
+      \    \"wednesday\": true,\r
+
+      \    \"thursday\": true,\r
+
+      \    \"friday\": true\r
+
+      \  }\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

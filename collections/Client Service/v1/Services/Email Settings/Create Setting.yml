@@ -1,0 +1,78 @@
+info:
+  name: Create Setting
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/services/google-workspace/setting/"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"firstName\": \"Ajay\",\r
+
+      \  \"lastName\": \"Kamble\",\r
+
+      \  \"signature\": \"Best regards, Ajay\",\r
+
+      \  \"tag\": \"IT\",\r
+
+      \  \"campaignSettings\": {\r
+
+      \    \"dailySendingLimit\": 50,\r
+
+      \    \"minimumWaitTime\": 1,\r
+
+      \    \"campaignSlowRamp\": true,\r
+
+      \    \"replyToAddress\": \"ajay.kamble@f70.co.in\",\r
+
+      \    \"dailyInboxPlacementTestLimit\": 30\r
+
+      \  },\r
+
+      \  \"customTrackingDomain\": {\r
+
+      \    \"enableCustomTrackingDomain\": false\r
+
+      \  },\r
+
+      \  \"warmupSettings\": {\r
+
+      \    \"increasePerDay\": 1,\r
+
+      \    \"replyRate\": 30,\r
+
+      \    \"warmupFilterTag\": \"\",\r
+
+      \    \"disableSlowWarmup\": false\r
+
+      \  },\r
+
+      \  \"warmupSettingsAdvanced\": {\r
+
+      \    \"weekdaysOnly\": true,\r
+
+      \    \"readEmulation\": true,\r
+
+      \    \"warmCustomTrackingDomain\": true,\r
+
+      \    \"openRate\": 50,\r
+
+      \    \"spamProtection\": 50,\r
+
+      \    \"markImportant\": 50\r
+
+      \  }\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzQwMTkwNGI1YjlhYmNiNTk3NTFhYSIsInJvbGUiOiJidXllcl9zZWxsZXIiLCJ1c2VybmFtZSI6IkRlbW8gVXNlcjIzcyIsImlhdCI6MTc1NDM2ODQzNiwiZXhwIjoxNzU0NTQxMjM2fQ.kqhm7OC3HPEnIgLc1ntPNsZ5gjSIrwh7HgFv2ZmchYA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

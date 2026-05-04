@@ -1,0 +1,19 @@
+info:
+  name: covert to quotation
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/quotation/69849ffccd9cd3bfc5900006?fromType=invoice"
+  params:
+    - name: fromType
+      value: invoice
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

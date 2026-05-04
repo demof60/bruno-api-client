@@ -1,0 +1,15 @@
+info:
+  name: Get specific email message
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/unibox/mail/68dfaddd3beeca3465ea039c"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

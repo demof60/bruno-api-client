@@ -1,0 +1,18 @@
+info:
+  name: Update Labels
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/unibox/label/68d608bcf83734203b70819e"
+  body:
+    type: json
+    data: "{\r\n    \"name\": \"Blocck2\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

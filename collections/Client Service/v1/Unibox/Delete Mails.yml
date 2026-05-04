@@ -1,0 +1,24 @@
+info:
+  name: Delete Mails
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/unibox/mails"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"emailIds\": [\"68d47afd3beeca3465e94426\"],\r
+
+      \    \"accountId\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

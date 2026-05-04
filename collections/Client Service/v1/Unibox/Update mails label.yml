@@ -1,0 +1,23 @@
+info:
+  name: Update mails label
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/unibox/mail/68d544c93beeca3465e95b18?uniboxLabel=personal label"
+  params:
+    - name: label
+      value: UNREAD
+      type: query
+      disabled: true
+    - name: uniboxLabel
+      value: personal label
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

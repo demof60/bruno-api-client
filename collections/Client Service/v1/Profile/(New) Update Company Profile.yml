@@ -1,0 +1,118 @@
+info:
+  name: (New) Update Company Profile
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/profile/company"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: qqq
+      - name: emails
+        type: text
+        value: |
+          [{"_id":"698430f54d467009a9c13d1b","clientId":"697aed84c82a9d1500fb0eae","email":"s@mailinator.com","primary":true,"createdAt":"2026-02-05T05:56:05.460Z","updatedAt":"2026-03-16T05:19:22.616Z","__v":0}]
+        disabled: true
+      - name: contacts
+        type: text
+        value: |
+          [{"_id":"698430f54d467009a9c13d16","number":2123244768,"primary":false,"whatsApp":true,"createdAt":"2026-02-05T05:56:05.443Z","updatedAt":"2026-03-16T05:19:22.495Z","__v":0,"region":{"name":"India","isoCode":"IN","dialCode":"+91"}},{"_id":"69843672bdb75e195f21cd16","number":6789034233,"primary":true,"whatsApp":false,"createdAt":"2026-02-05T06:19:30.091Z","updatedAt":"2026-03-16T05:19:22.531Z","__v":0,"region":{"name":"India","isoCode":"IN","dialCode":"+91"}}]
+        disabled: true
+      - name: description
+        type: text
+        value: ergergerge
+      - name: businessType
+        type: text
+        value: Exporter
+      - name: website
+        type: text
+        value: https://www.google.com
+      - name: addresses
+        type: text
+        value: |
+          [{"address_type":"","address_line1":"Building A-14 virar","address_line2":"","city":"Mumbai","country":"","postal_code":"400050","primary":true}]
+      - name: annualRevenue
+        type: text
+        value: "4666666"
+      - name: projectsCompleted
+        type: text
+        value: |
+          511
+      - name: responseTime
+        type: text
+        value: "611"
+      - name: experience
+        type: text
+        value: "1810"
+      - name: features
+        type: text
+        value: '["Four Paarrtyy Inspection231","Iso Certified Company23","Ip Rating Certified","Military Certified"]'
+      - name: notes
+        type: text
+        value: Notes
+      - name: additionalInfos
+        type: text
+        value: '{"companyGst":"27ABCDE1234F1Z6","companyCode":3243534534,"countriesCode":8,"companyYearEst":1899,"panCard":"AAPFU0939F","thirdPartyInspection":true,"customSizes":true,"mtcReport":true}'
+      - name: catlog
+        type: text
+        value: |
+          [{"title":"a"}]
+      - name: socialMediaLink
+        type: text
+        value: |
+          [{"name":"Facebook","link":"https://grumpy-viability.name","_id":"698430f54d467009a9c13d29"}]
+      - name: companyTeam
+        type: text
+        value: |
+          [{"name":"Simple12","email":"team244@gmail.com","designation":"Owner","number":6789034353,"region":{"name":"India","isoCode":"IN","dialCode":"+91"},"companyTeamImage":{"uuid":"ad5aab28-310f-4390-9fe5-66cfa5bef884","title":"Simple12","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/leon_1769666640324.jpg","contentType":"image/jpeg"},"_id":"697af850c82a9d1500fb1b54"}]
+      - name: companyCertificate
+        type: text
+        value: |
+          [{"title":"Asd","_id":"6982d268cf84e7dd7ab5d6ee","companyCertificateCoverImage":{"uuid":"75cc6f23-bc6e-4c83-b078-f6fb804ccae4","title":"Asd","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/images_1770181223638.jpg","contentType":"image/jpeg"},"companyCertificateCoverPdf":{"uuid":"6f54ecb3-2799-4240-a76c-1b72967fcbd4","title":"Asd","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/be_information-technology_semester-8_2025_may_blockchain-and-dlt-rev-2019-c-scheme_1770181223773.pdf","contentType":"application/pdf"}},{"title":"Fdgdfg","_id":"697af850c82a9d1500fb1b55"}]
+      - name: coverImage
+        type: text
+        value: |
+          [{"uuid":"d03a6647-16b8-4db7-822d-2b52a88b28ab","title":"Cropped Image1770973810140.jpeg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/cropped-image1770973810140_1770973798881.jpeg","contentType":"image/jpeg"}]
+        disabled: true
+      - name: logo
+        type: text
+        value: |
+          {"uuid":"83e9b81f-34ab-4008-bb5e-4166132a7a79","title":"Epo_tech.jpg Logo","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/epo_tech_1772082622412.jpg","contentType":"image/jpeg"}
+        disabled: true
+      - name: companyGallery
+        type: text
+        value: |
+          [{"uuid":"a2ba2c31-6af6-4456-ba92-432e30459289","title":"Cropped Image1770973769678.jpeg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/cropped-image1770973769678_1770973772813.jpeg","contentType":"image/jpeg"}]
+        disabled: true
+      - name: clientGallery
+        type: text
+        value: |
+          [{"uuid":"4014bcf4-06cc-4821-8ef0-ed78bd25fdce","title":"Cropped Image1770973776350.jpeg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/cropped-image1770973776350_1770973772956.jpeg","contentType":"image/jpeg"}]
+        disabled: true
+      - name: logo
+        type: text
+        value: |
+          {"uuid":"2a8ea2e1-453a-49bc-acd6-ca9cd6d6ffc3","title":"Images.jpg Logo","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/images_1770368220264.jpg","contentType":"image/jpeg"}
+        disabled: true
+      - name: coverImages
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/pipex.svg
+        disabled: true
+      - name: firstName
+        type: text
+        value: 1st name
+      - name: lastName
+        type: text
+        value: last name 2nd
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,34 @@
+info:
+  name: Update User Profile / staff update profile
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/profile/user/update"
+  body:
+    type: multipart-form
+    data:
+      - name: profile
+        type: text
+        value: '{"firstName":"profile", "lastName": "profile"}'
+        disabled: true
+      - name: vcardSettings
+        type: text
+        value: '{"designation":"Owner","whatsappNoRegion":{"name":"India","isoCode":"IN","dialCode":"+91"},"whatsappNo":"7898711119","region":{"name":"India","isoCode":"IN","dialCode":"+91"},"number":7898711119,"firstName":"Parag","lastName":"Yadav","isActive":false,"profileImg":null,"email":"bdid.h.i.d.v.s.kd.ior@gmail.com"}'
+      - name: vcardProfileImage
+        type: text
+        value: |-
+          {
+              "uuid": "d5dba05e-d4c9-40df-bd0d-8a87e6cc0df2",
+              "title": "{0B149074-68E7-40ED-8A42-8F07B44CD9AA}.png-profileImg",
+              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineUserDevelopment/%7B0b149074-68e7-40ed-8a42-8f07b44cd9aa%7D_1774260117318.png",
+              "contentType": "image/png"
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

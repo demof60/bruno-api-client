@@ -1,0 +1,93 @@
+info:
+  name: Lead bulk Update
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/lead/bulk/update"
+  params:
+    - name: searchTerm
+      value: salma
+      type: query
+      disabled: true
+    - name: offset
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "// {\r
+
+      \    // \"updates\": {\r
+
+      \    //     \"source\": \"Black Hole\",\r
+
+      \    //     \"designation\": \"Super Man\",\r
+
+      \    //     // \"notes\": \"Updated via ids edit\"\r
+
+      \    //     // \"customFields\": [\r
+
+      \    //     //     {\r
+
+      \    //     //         \"label\": \"Founder\",\r
+
+      \    //     //         \"value\": \"43\"\r
+
+      \    //     //     }\r
+
+      \    //     // ]\r
+
+      \    //     // optional\r
+
+      \    // //     \"address\": {\r
+
+      \    // //         \"address_line1\": \"{{$randomStreetName}}\",\r
+
+      \    // //         \"address_line2\": \"{{$randomStreetAddress}}\",\r
+
+      \    // //         \"address_type\": \"Warehouse\",\r
+
+      \    // //         \"city\": \"{{$randomCity}}\",\r
+
+      \    // //         \"state\": \"{{$randomStreetName}}\",\r
+
+      \    // //         \"postal_code\": \"{{$randomCountryCode}}\",\r
+
+      \    // //         \"country\": \"{{$randomCountry}}\"\r
+
+      \    // //     }\r
+
+      \    // },\r
+
+      // }\r
+
+      \r
+
+      {\r
+
+      \    \"updates\": {\r
+
+      \        \"personName\": \"hQWEQWsasal\"\r
+
+      \    },\r
+
+      \    \"updateIds\": [\r
+
+      \        \"69a97dc6f207629902830b98\",\r
+
+      \        \"69a97dc6f207629902830b99\",\r
+
+      \        \"69a97dc6f207629902830b97\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

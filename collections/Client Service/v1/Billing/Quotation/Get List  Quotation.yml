@@ -1,0 +1,69 @@
+info:
+  name: Get List  Quotation
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/quotation/getAll/?type=all&excelExport=true"
+  params:
+    - name: isDeleted
+      value: "false"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+      disabled: true
+    - name: searchTerm
+      value: ""
+      type: query
+      disabled: true
+    - name: status
+      value: ""
+      type: query
+      disabled: true
+    - name: last30Days
+      value: "false"
+      type: query
+      disabled: true
+    - name: last15Days
+      value: "false"
+      type: query
+      disabled: true
+    - name: currency
+      value: USD
+      type: query
+      disabled: true
+    - name: last7Days
+      value: fals
+      type: query
+      disabled: true
+    - name: type
+      value: all
+      type: query
+    - name: excelExport
+      value: "true"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"excludedIds\": [\r
+
+      \        // \"6981c02573d2444cd546c86b\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

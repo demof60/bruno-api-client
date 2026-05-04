@@ -1,0 +1,32 @@
+info:
+  name: Restore deleted Proforma
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/quotation/restore?type=quotation"
+  params:
+    - name: searchTerm
+      value: Soluta
+      type: query
+      disabled: true
+    - name: type
+      value: quotation
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\":[\"69bd3676afabc96098c3278b\"]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

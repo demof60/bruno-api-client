@@ -1,0 +1,24 @@
+info:
+  name: Restore
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/staff/restore/684bf6f936efb520785728a1"
+  params:
+    - name: searchTerm
+      value: salma
+      type: query
+      disabled: true
+    - name: offset
+      value: ""
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

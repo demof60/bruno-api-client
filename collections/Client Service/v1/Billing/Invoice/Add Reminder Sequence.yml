@@ -1,0 +1,123 @@
+info:
+  name: Add Reminder Sequence
+  type: http
+  seq: 18
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/invoice/sequence/addSequence/690ae10cd283af49769f57b2"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sequence\": [\r
+
+      \        {\r
+
+      \            \"stepOrder\": 1,\r
+
+      \            \"stepName\": \"first\",\r
+
+      \            \"nextMsgInDays\": 1,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to the Family!\",\r
+
+      \                \"body\": \"We’re thrilled {{personName}} to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                \"isActive\": true,\r
+
+      \                \"placeholders\": [\r
+
+      \                    {\r
+
+      \                        \"key\": \"personName\",\r
+
+      \                        \"description\": \"hehe\",\r
+
+      \                        \"sampleValue\": \"vindefault\"\r
+
+      \                    }\r
+
+      \                ]\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 2,\r
+
+      \            \"stepName\": \"second\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 4,\r
+
+      \            \"stepName\": \"forth\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 3,\r
+
+      \            \"nextMsgInDays\": 3,\r
+
+      \            \"stepName\": \"third\",\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

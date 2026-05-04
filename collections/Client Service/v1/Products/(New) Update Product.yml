@@ -1,0 +1,247 @@
+info:
+  name: (New) Update Product
+  type: http
+  seq: 12
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/product/update/:productId"
+  params:
+    - name: productId
+      value: 69956eee347833509fbf6029
+      type: path
+  body:
+    type: multipart-form
+    data:
+      - name: productTitle
+        type: text
+        value: Hi-Priti
+      - name: productDescription
+        type: text
+        value: DespiteDespite the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever knownDespite the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever known the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever knownDespite the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever known
+        disabled: true
+      - name: productDescriptionHeading
+        type: text
+        value: Sunt nulla placeat veniam culpa modi tempor qui quidem vero et aliquip saepe aliqua Excepturi ipsa
+      - name: deleteImages
+        type: text
+        value: '["cc0e2e3f-ff95-4830-8d3f-130c91853b81","c4cff9d3-385b-41fd-9ddb-6c266d3f7a1b"]'
+        disabled: true
+      - name: bannerImageContent
+        type: text
+        value: new banner image content helpetr
+        disabled: true
+      - name: FAQ
+        type: text
+        value: |-
+          [
+              {
+                "question": "best",
+                "answer": " bast"
+              },
+              {
+                "question": "bhy ",
+                "answer": "hgiiii"
+              },
+              {
+                "question": "fdddd",
+                "answer": "bdddd"
+              }
+            ]
+      - name: searchKeywords
+        type: text
+        value: |2-
+           [
+                  "flddange",
+                  "bronzeflangdde"
+              ]
+        disabled: true
+      - name: folderId
+        type: text
+        value: 6982ee0d803ccf3ddfbc308f
+      - name: head
+        type: text
+        value: |-
+          {
+              "metaTitle": "some-metass-title-ddd 4",
+              "metaDescription": "some-meta-description-upsdted 3",
+              "metaKeywords": "ddddsd"
+          }
+      - name: bannerImageTitle
+        type: text
+        value: Fffffssrerers
+        disabled: true
+      - name: isActive
+        type: text
+        value: "true"
+        disabled: true
+      - name: data
+        type: text
+        value: |-
+          {
+              "productTitle": "SSSssssssssssss",
+              "productDescription": "   sss  ",
+              "productDescriptionHeading": " xzxzxz",
+              "bannerImageContent": "",
+              "FAQ": [
+                  {
+                      "question": "west",
+                      "answer": " east"
+                  },
+                  {
+                      "question": "Why ",
+                      "answer": "niiii"
+                  },
+                  {
+                      "question": "ddddd",
+                      "answer": "ddddd"
+                  }
+              ],
+              "searchKeywords": [
+                  "flange",
+                  "bronzeflange"
+              ]
+          }
+        disabled: true
+      - name: isPending
+        type: text
+        value: "false"
+        disabled: true
+      - name: productCategory
+        type: text
+        value: some-update-
+        disabled: true
+      - name: clientId
+        type: text
+        value: 685e7e92be12adc3e45e0897
+        disabled: true
+      - name: otherFields
+        type: text
+        value: |-
+          {
+                      "price": 2000
+                   
+          }
+        disabled: true
+      - name: categorySpecificFields
+        type: text
+        value: |-
+          {
+                      "price": 2000,
+                      "availabilits": "in-stock"
+                    
+          }
+        disabled: true
+      - name: industries
+        type: text
+        value: '["all"]'
+      - name: countries
+        type: text
+        value: '[ "all"]'
+      - name: cities
+        type: text
+        value: '["all"]'
+      - name: priceRangeFrom
+        type: text
+        value: "10"
+      - name: priceRangeTo
+        type: text
+        value: "12"
+      - name: minOrder
+        type: text
+        value: 100 kg
+      - name: minOrderUnit
+        type: text
+        value: sheet
+      - name: bannerImages
+        type: text
+        value: |-
+          [
+                      {
+                          "original": {
+                              "uuid": "f5320674-5c52-4d32-9dba-7f849c5ff591",
+                              "title": "006",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/006_1771400703022.png",
+                              "contentType": "image/png"
+                          },
+                          "720x1280": {
+                              "uuid": "af4390c7-17d4-43f4-8a05-7278be76fe3f",
+                              "title": "006",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/006_720x1280_1771400941041",
+                              "contentType": "image/png"
+                          },
+                          "1920x1080": {
+                              "uuid": "9395d229-ecea-4804-a490-801a341b544f",
+                              "title": "006",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/006_1920x1080_1771400941210",
+                              "contentType": "image/png"
+                          }
+                      },
+                      {
+                          "original": {
+                              "uuid": "2de58df5-e57c-47e3-821b-9b49926fba4f",
+                              "title": "005",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/005_1771400703162.png",
+                              "contentType": "image/png"
+                          },
+                          "720x1280": {
+                              "uuid": "08e4daa9-e9ca-4c03-a030-13e0939f5531",
+                              "title": "005",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/005_720x1280_1771400941340",
+                              "contentType": "image/png"
+                          },
+                          "1920x1080": {
+                              "uuid": "a5e7ac18-bd53-47c4-875e-edf25ee9aa9a",
+                              "title": "005",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/005_1920x1080_1771400941493",
+                              "contentType": "image/png"
+                          }
+                      }]
+      - name: |
+          bannerimagemain
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - postman-cloud:///1f05660e-5005-49e0-9903-529cb545a8fa
+          - /C:/Users/ABC/Downloads/gmail.png
+        disabled: true
+      - name: productDetails
+        type: text
+        value: |-
+          [
+                      {
+                          "productTitle": "some tids",
+                          "subProductDescription": "oldqweds",
+                          "productCode": "ddsds",
+          "imageName": "6.png(1).jpg"
+          }
+                  ]
+        disabled: true
+      - name: data
+        type: text
+        value: |-
+          { "searchKeywords":["question","yahiiii3","answer","abhi2"]
+          }
+        disabled: true
+      - name: url
+        type: text
+        value: |-
+          
+          voluptas-consequat-totam-modi-corrupti-nobis-omnis-inn
+      - name: productDetailsProductDescription
+        type: text
+        value: mast section title 2
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

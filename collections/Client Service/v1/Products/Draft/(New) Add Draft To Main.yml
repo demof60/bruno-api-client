@@ -1,0 +1,276 @@
+info:
+  name: (New) Add Draft To Main
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/product/draft/add"
+  body:
+    type: json
+    data: " {\r
+
+      \            \"_id\": \"69956dff347833509fbf6018\",\r
+
+      \            \"head\": {\r
+
+      \                \"metaDescription\": \"sample sample\"\r
+
+      \            },\r
+
+      \            \"productTitle\": \"hi priti\",\r
+
+      \            \"productDescriptionHeading\": \"saasdnasjkd\",\r
+
+      \            \"productDescription\": \"<p>sample sample</p>\",\r
+
+      \            \"bannerImageContent\": \"\",\r
+
+      \            \"productDetails\": [],\r
+
+      \            \"productDetailsProductDescription\": \"\",\r
+
+      \            \"bannerImgTitle\": \"\",\r
+
+      \            \"bannerImageTitle\": \"\",\r
+
+      \            \"bannerImages\": [\r
+
+      \                {\r
+
+      \                    \"uuid\": \"f5320674-5c52-4d32-9dba-7f849c5ff591\",\r
+
+      \                    \"title\": \"006\",\r
+
+      \                    \"data\": \"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/006_1771400703022.png\",\r
+
+      \                    \"contentType\": \"image/png\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"uuid\": \"2de58df5-e57c-47e3-821b-9b49926fba4f\",\r
+
+      \                    \"title\": \"005\",\r
+
+      \                    \"data\": \"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/005_1771400703162.png\",\r
+
+      \                    \"contentType\": \"image/png\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"uuid\": \"db004bb6-f395-4f4c-83cf-6845721e6598\",\r
+
+      \                    \"title\": \"004\",\r
+
+      \                    \"data\": \"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/004_1771400703201.png\",\r
+
+      \                    \"contentType\": \"image/png\"\r
+
+      \                }\r
+
+      \            ],\r
+
+      \            \"FAQ\": [\r
+
+      \                {\r
+
+      \                    \"question\": \"wqwqd\",\r
+
+      \                    \"answer\": \"wqqw\"\r
+
+      \                }\r
+
+      \            ],\r
+
+      \            \"searchKeywords\": [],\r
+
+      \            \"categorySpecificFields\": { \"4\": [ \"43345\", \"443\", \"5345345\" ], \"44\": \"34\", \"4444444\": [ \"44\", \"4444\" ] },\r
+
+      \            \"otherFields\": {\r
+
+      \                \"5454\": \"5454\",\r
+
+      \                \"4trger\": \"grerge\"\r
+
+      \            },\r
+
+      \            \"ignoreForBan\": false,\r
+
+      \            \"priceRangeFrom\": 100,\r
+
+      \            \"priceRangeTo\": 300,\r
+
+      \            \"minOrder\": \"300\",\r
+
+      \            \"minOrderUnit\": \"unit\",\r
+
+      \            \"url\": \"sample-product-1240-1008.html\",\r
+
+      \            \"createdBy\": \"68c7f136e3f89c4f129f212e\",\r
+
+      \            \"completion\": 94.12,\r
+
+      \            \"updatedAt\": \"2026 02 18T07:45:03.500Z\",\r
+
+      \            \"selectedClient\": {\r
+
+      \                \"_id\": \"68f8c2ab7b0ace5fcd129b77\",\r
+
+      \                \"name\": \"los pollos hermanos\"\r
+
+      \            },\r
+
+      \            \"selectedFolders\": [\r
+
+      \                {\r
+
+      \                    \"name\": \"apli category\",\r
+
+      \                    \"_id\": \"69030b597d0a94c17ffaab2f\",\r
+
+      \                    \"depth\": 0,\r
+
+      \                    \"child\": true\r
+
+      \                }\r
+
+      \            ],\r
+
+      \            \"selectedIndustries\": [\r
+
+      \                {\r
+
+      \                    \"_id\": \"69859e23eb0ce27be6b55404\",\r
+
+      \                    \"name\": \"naya plan haio ye444\"\r
+
+      \                }\r
+
+      \            ],\r
+
+      \            \"selectedCountries\": [\r
+
+      \                {\r
+
+      \                    \"_id\": \"694a2f4c067278bd72ee15a3\",\r
+
+      \                    \"name\": \"aniketg\"\r
+
+      \                }\r
+
+      \            ],\r
+
+      \            \"selectedCities\": [\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f13a69240bd3d0c4e59a\",\r
+
+      \                    \"name\": \"ff\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f1b469240bd3d0c4e648\",\r
+
+      \                    \"name\": \"fff\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f60869240bd3d0c4e828\",\r
+
+      \                    \"name\": \"fgfdg\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960df9861a4b1ddb50c4101\",\r
+
+      \                    \"name\": \"giug\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f29969240bd3d0c4e6a7\",\r
+
+      \                    \"name\": \"hggfhf\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960fb4e69240bd3d0c4e9bd\",\r
+
+      \                    \"name\": \"qq\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f5b969240bd3d0c4e804\",\r
+
+      \                    \"name\": \"sasddsf\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f36d69240bd3d0c4e769\",\r
+
+      \                    \"name\": \"uuu\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960efb869240bd3d0c4e432\",\r
+
+      \                    \"name\": \"uyfuy\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f9ea69240bd3d0c4e884\",\r
+
+      \                    \"name\": \"vbfdgdfgdfgfdg\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960efd269240bd3d0c4e489\",\r
+
+      \                    \"name\": \"yfu\"\r
+
+      \                },\r
+
+      \                {\r
+
+      \                    \"_id\": \"6960f01c69240bd3d0c4e50d\",\r
+
+      \                    \"name\": \"yfuyuy\"\r
+
+      \                }\r
+
+      \            ]\r
+
+      \        }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

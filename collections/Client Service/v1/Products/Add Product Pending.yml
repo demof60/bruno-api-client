@@ -1,0 +1,19 @@
+info:
+  name: Add Product Pending
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/product/pending/687de8176029b9014b09b090"
+  body:
+    type: multipart-form
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

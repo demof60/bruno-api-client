@@ -1,0 +1,123 @@
+info:
+  name: Merge Buyer
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/auth/mergeWithBuyer"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "var template = `\r
+
+        <canvas id=\"lineChart\" height=\"100\"></canvas>\r
+
+        \r
+
+        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js\"></script> \r
+
+        \r
+
+        <script>\r
+
+        \    var ctx = document.getElementById(\"lineChart\");\r
+
+        \r
+
+        \    var lineChart = new Chart(ctx, {\r
+
+        \        type: \"line\",\r
+
+        \        data: {\r
+
+        \            labels: [\"Success\", \"Message\"],\r
+
+        \            datasets: [{\r
+
+        \                data: [],\r
+
+        \                label: \"Response Data\",\r
+
+        \                borderColor: \"#3e95cd\",\r
+
+        \                fill: false\r
+
+        \            }]\r
+
+        \        },\r
+
+        \        options: {\r
+
+        \            title: {\r
+
+        \                display: true,\r
+
+        \                text: 'Response Data Visualization'\r
+
+        \            }\r
+
+        \        }\r
+
+        \    });\r
+
+        \r
+
+        \    // Access the data passed to pm.visualizer.set() from the JavaScript\r
+
+        \    // code of the Visualizer template\r
+
+        \    bru.getData(function (err, value) {\r
+
+        \        lineChart.data.datasets[0].data = [value.response.success, value.response.message];\r
+
+        \        lineChart.update();\r
+
+        \    });\r
+
+        \r
+
+        </script>`;\r
+
+        \r
+
+        function constructVisualizerPayload() {\r
+
+        \    var res = res.getBody();\r
+
+        \    \r
+
+        \    var visualizerData = {\r
+
+        \        success: res.success ? 1 : 0,\r
+
+        \        message: res.message ? 1 : 0\r
+
+        \    };\r
+
+        \r
+
+        \    return {response: visualizerData};\r
+
+        }\r
+
+        \r
+
+        bru.visualize(\"html\", {\r
+
+        \    template: template,\r
+
+        \    data: constructVisualizerPayload()\r
+
+        });"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

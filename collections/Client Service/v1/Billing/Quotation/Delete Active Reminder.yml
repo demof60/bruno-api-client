@@ -1,0 +1,25 @@
+info:
+  name: Delete Active Reminder
+  type: http
+  seq: 14
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/quotation/reminder/:quotationId/:reminderId"
+  params:
+    - name: quotationId
+      value: 68fb16bb73c7f838089d2464
+      type: path
+    - name: reminderId
+      value: 68fb1af2e49ef6db8960d07f
+      type: path
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,38 @@
+info:
+  name: Send Quotation/Porfoma/Invoice Pdf
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/quotation/pdf/send/:quotationId"
+  params:
+    - name: quotationId
+      value: 69e707743147d9143fa0e0d8
+      type: path
+  body:
+    type: multipart-form
+    data:
+      - name: attachment
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/Vin/Item3.xlsx
+      - name: email
+        type: text
+        value: vinay.poojary@f70.co.in
+        disabled: true
+      - name: accountConfigType
+        type: text
+        value: "true"
+        disabled: true
+      - name: accountsToUse
+        type: text
+        value: vinay.poojary@f70.co.in
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

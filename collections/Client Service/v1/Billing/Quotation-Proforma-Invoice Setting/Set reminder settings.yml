@@ -1,0 +1,195 @@
+info:
+  name: Set reminder settings
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/billing-reminder/settings"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"options\": {\r
+
+      \        \"accountSetting\": {\r
+
+      \            \"accountsToUse\": [\r
+
+      \                \"sa223@ceeompany.com\",\r
+
+      \                \"marketing@company.com\"\r
+
+      \            ],\r
+
+      \            \"stopSendingOnReply\": true,\r
+
+      \            \"sendEmailAsTextOnly\": false,\r
+
+      \            \"sendFirstEmailAsTextOnly\": true,\r
+
+      \            \"dailyLimit\": 250\r
+
+      \        },\r
+
+      \        \"ccBcc\": {\r
+
+      \            \"ccRecipients\": \"manager@company.com,teamlead@company.com\",\r
+
+      \            \"bccRecipients\": \"audit@company.com\"\r
+
+      \        }\r
+
+      \    },\r
+
+      \    \"schedule\": [\r
+
+      \        {\r
+
+      \            \"scheduleName\": \"Morning Outreach\",\r
+
+      \            \"isActive\": true,\r
+
+      \            \"startDate\": \"2025-11-01T00:00:00.000Z\",\r
+
+      \            \"endDate\": \"2026-12-31T23:59:59.000Z\",\r
+
+      \            \"timeFrom\": \"01:00\",\r
+
+      \            \"timeTo\": \"23:30\",\r
+
+      \            \"timeZone\": \"Asia/Kolkata\",\r
+
+      \            \"weekDays\": [\r
+
+      \                \"monday\",\r
+
+      \                \"tuesday\",\r
+
+      \                \"wednesday\",\r
+
+      \                \"thursday\",\r
+
+      \                \"friday\",\r
+
+      \                \"saturday\"\r
+
+      \            ]\r
+
+      \        }\r
+
+      \    ],\r
+
+      \    \"sequence\": [\r
+
+      \        {\r
+
+      \            \"stepOrder\": 1,\r
+
+      \            \"stepName\": \"first proforma1\",\r
+
+      \            \"nextMsgInDays\": 1,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to the Family!\",\r
+
+      \                \"body\": \"We’re thrilled {{personName}} to have you. Let’s take a quick tour of what you can do here.\",\r
+
+      \                \"isActive\": true,\r
+
+      \                \"placeholders\": [\r
+
+      \                    {\r
+
+      \                        \"key\": \"personName\",\r
+
+      \                        \"description\": \"hehe\",\r
+
+      \                        \"sampleValue\": \"vindefault\"\r
+
+      \                    }\r
+
+      \                ]\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 2,\r
+
+      \            \"stepName\": \"second\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 4,\r
+
+      \            \"stepName\": \"forth\",\r
+
+      \            \"nextMsgInDays\": 2,\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"stepOrder\": 3,\r
+
+      \            \"nextMsgInDays\": 3,\r
+
+      \            \"stepName\": \"third\",\r
+
+      \            \"emails\": {\r
+
+      \                \"subject\": \"Welcome to dashboard\",\r
+
+      \                \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
+
+      \                \"isActive\": true\r
+
+      \            }\r
+
+      \        }\r
+
+      \    ]\r
+
+      \    // \"launch\": false\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

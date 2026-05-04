@@ -1,0 +1,33 @@
+info:
+  name: Create a template
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/billing-template"
+  params:
+    - name: type
+      value: quotation
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"Quotation Approval Template\",\r
+
+      \  \"subject\": \"Quotation Approved - {{quotationNo}}\",\r
+
+      \  \"body\": \"<p>Hello {{customer.personName}},</p><p>Your quotation <strong>{{quotationNo}}</strong> has been approved.</p><p>Thank you,<br/>{{company}}</p>\",\r
+
+      \  \"isActive\": true\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Quotation/Proforma/Invoice Setting
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

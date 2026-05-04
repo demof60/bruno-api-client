@@ -1,0 +1,53 @@
+info:
+  name: Get profile and vcard
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/profile/get"
+  body:
+    type: multipart-form
+    data:
+      - name: profile
+        type: text
+        value: |-
+          {
+                  "username": "abe ek dam mast",
+                  "firstName": "fff",
+                  "lastName": "World",
+                  "department": "",
+                  "designation": "",
+                  "countryCode": "2",
+                  "number": "34343",
+                  "email": "f6012@gmail.com"
+              }
+      - name: vcardSettings
+        type: text
+        value: |2-
+           {
+                  "firstName": "Hello",
+                  "lastName": "Word",
+                  "designation":"sdf sdf",
+                  "countryCode": "asdfasd",
+                  "number": 54552,
+                  "whatsappNoCountryCode": "asd d ",
+                  "whatsappNo": 5487548,
+                  "email": "sdasd@gmail.com",
+                  "isActive": false
+              }
+      - name: vcardProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/Delta Fitt.jpg
+      - name: userProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/f60host1.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

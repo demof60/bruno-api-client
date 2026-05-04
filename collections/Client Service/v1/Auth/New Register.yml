@@ -1,0 +1,74 @@
+info:
+  name: New Register
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/auth/registration?captcha=01"
+  params:
+    - name: captcha
+      value: "01"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \  \"username\": \"dsdcrynajev  oerter\",\r
+
+      \  \"email\": \"rynajevo@fxzig.com\",\r
+
+      \  \"pinCode\": \"400060\",\r
+
+      \  \"city\": \"Mumbai\",\r
+
+      \  \"country\": \"India\",\r
+
+      \  \"number\": 4358155343,\r
+
+      \  \"companyName\":\"hehe comp\",\r
+
+      \  \"password\": \"Pipex@F60\",\r
+
+      //   \"fullname\": \"game\"\r
+
+      \  \"firstName\": \"nation 1st \",\r
+
+      \  \"lastName\": \"nation last\"\r
+
+      //   \"email\": \"gybeceba@denipl.net\",\r
+
+      //   \"password\": \"Pipex@F60\"\r
+
+      \r
+
+      }\r
+
+      // {\r
+
+      //     // \"username\": \"Yeager\",\r
+
+      //     \"companyName\": \"Fr23231 Skin4rer gee2881331\",\r
+
+      //     // \"number\": \"337323\",\r
+
+      //     \"email\": \"e88@draughtier.com\",\r
+
+      //     // \"address\": \"\",\r
+
+      //     // \"pinCode\": \"\",\r
+
+      //     // \"city\": \"\",\r
+
+      //     // \"countryCode\": \"+91\",\r
+
+      //     \"password\": \"Pipex@F70\"\r
+
+      // }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: pause / unpause lead from camapign
+  type: http
+  seq: 13
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/lead/pause-unpause/68c3b1fe8337eb461ab4f0cd/68b2af868b7242b931083958"
+  body:
+    type: json
+    data: "{\r\n    \"pause\" : true\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

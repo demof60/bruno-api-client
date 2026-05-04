@@ -1,0 +1,38 @@
+info:
+  name: Delete Email Queue
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/email-queue?type=billing&status=&searchTerm"
+  params:
+    - name: type
+      value: billing
+      type: query
+    - name: status
+      value: ""
+      type: query
+    - name: searchTerm
+      value: ""
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"permaDelete\": true,\r
+
+      \    \"ids\": [\r
+
+      \        \"6952796449ea569d00ac931e\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: covert to Invoice
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/invoice/:billingId?fromType=quotation"
+  params:
+    - name: fromType
+      value: quotation
+      type: query
+    - name: billingId
+      value: 698ec0796d32aee23b2a2a4e
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

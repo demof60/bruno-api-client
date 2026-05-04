@@ -1,0 +1,71 @@
+info:
+  name: Add Varient or Update
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/campaign/updateSequenceStep/68906562ce0e6003afd3f693/step/68a83c04efe0326bfd54ff59"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "//Body to Add Email:\r
+
+      //     {\r
+
+      //   \"emails\": [\r
+
+      //     {\r
+
+      //       \"subject\": \"New Follow-up\",\r
+
+      //       \"body\": \"Here's a follow-up email.\"\r
+
+      //     }\r
+
+      //   ]\r
+
+      // }\r
+
+      // Body to Update Email:\r
+
+      // {\r
+
+      //     \"emails\": [\r
+
+      //         {\r
+
+      //             \"_id\": \"68a83c04efe0326bfd54ff5a\",\r
+
+      //             \"subject\": \"\",\r
+
+      //             \"body\": \"dem\",\r
+
+      //             \"isActive\": true\r
+
+      //         }\r
+
+      //     ]\r
+
+      // }\r
+
+      // Body to Rename Step or update delay days:\r
+
+      {\r
+
+      //   \"stepName\": \"Updated Step Name\",\r
+
+      \  \"nextMsgInDays\":20\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

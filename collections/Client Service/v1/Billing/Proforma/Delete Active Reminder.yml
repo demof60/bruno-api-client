@@ -1,0 +1,28 @@
+info:
+  name: Delete Active Reminder
+  type: http
+  seq: 10
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/proforma/reminder/:quotationId/:reminderId?type=proforma"
+  params:
+    - name: type
+      value: proforma
+      type: query
+    - name: quotationId
+      value: 68da299d3a7a3e47ef07ef5b
+      type: path
+    - name: reminderId
+      value: 68da886db9496b854d737d09
+      type: path
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

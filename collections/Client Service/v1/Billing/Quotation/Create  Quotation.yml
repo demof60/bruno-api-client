@@ -1,0 +1,77 @@
+info:
+  name: Create  Quotation
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/quotation"
+  body:
+    type: multipart-form
+    data:
+      - name: attachment
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/quotation_1764397444900.pdf
+        disabled: true
+      - name: data
+        type: text
+        value: |-
+          {
+            "quotationDate": "",
+            "validUntil": "",
+            "quotationNo": "Q3131",
+            "currency": "",
+            "companyName": "",
+            "customer": {
+              "leadId": "69ba7b3ff47c34557749e2fa",
+              "paymentTerm": ""
+            },
+            "deliveryTime": "",
+            "memoToSelf": "",
+            "shippingCharges": {
+              "type": "",
+              "value": 0
+            },
+            "otherCharges": {
+              "type": "",
+              "value": 0
+            },
+            "discount": {
+              "type": "",
+              "value": 0
+            },
+            "items": [
+              {
+                "name": "Child",
+                "description": "",
+                "quantity": 0,
+                "hsn": "",
+                "quantityType": "",
+                "unitPrice": 0,
+                "taxes": "697c492a87053d477f7345d3"
+              }
+            ],
+            "footerNote": {
+              "notes": "",
+              "terms": ""
+            },
+            "signature": false,
+            "isEmailConfirmation": true,
+            "options": {
+              "accountSetting": {
+                "accountsToUse": [
+                  "kuldeep@pentagoat.com"
+                ]
+              }
+            }
+          }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

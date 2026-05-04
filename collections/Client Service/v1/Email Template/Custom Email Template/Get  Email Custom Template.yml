@@ -1,0 +1,18 @@
+info:
+  name: Get  Email Custom Template
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/email/custom/template/698c10789ecbac1484f04769"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

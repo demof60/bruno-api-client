@@ -1,0 +1,25 @@
+info:
+  name: Status Update Invoice
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/invoice/status/:proformaId?type=invoice"
+  params:
+    - name: type
+      value: invoice
+      type: query
+    - name: proformaId
+      value: 69bcd9447b4cfb1d6a9b90f0
+      type: path
+  body:
+    type: json
+    data: "{\r\n    \"status\":\"draft\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

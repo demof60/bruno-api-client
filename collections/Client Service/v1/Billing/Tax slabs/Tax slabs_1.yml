@@ -1,0 +1,22 @@
+info:
+  name: Tax slabs_1
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/taxslab?type=quotation"
+  params:
+    - name: type
+      value: quotation
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

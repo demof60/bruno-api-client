@@ -1,0 +1,29 @@
+info:
+  name: Delete Catalog
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: http://localhost:9000/api/v1/catalog/delete/676d010c3b58d8916b28f16d
+  body:
+    type: multipart-form
+    data:
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+      - name: pdf
+        type: file
+        value:
+          - postman-cloud:///1ef8b9ff-089d-4340-9d51-0be208338967
+      - name: title
+        type: text
+        value: hello catalog is here
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

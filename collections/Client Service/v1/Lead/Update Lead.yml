@@ -1,0 +1,82 @@
+info:
+  name: Update Lead
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/lead/6951f960cb8764961306460d"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"label\": \"done\",\r
+
+      \    \"phone\": \"159874236\",\r
+
+      \    \"countryCode\": \"91\",\r
+
+      \   \r
+
+      \    // \"notes\": \"update ids\",\r
+
+      \    // \"customFields\": [\r
+
+      \    //     {\r
+
+      \    //         \"label\": \"222\",\r
+
+      \    //         \"value\": \"22\"\r
+
+      \    //     }\r
+
+      \    // ],\r
+
+      \    \"address\": {\r
+
+      \        \"address_line1\": \"{{$randomStreetName}}\",\r
+
+      \        \"address_line2\": \"{{$randomStreetAddress}}\",\r
+
+      \        \"address_type\": \"Warehouse\",\r
+
+      \        \"city\": \"{{$randomCity}}\",\r
+
+      \        \"state\": \"{{$randomStreetName}}\",\r
+
+      \        // \"postal_code\": \"{{$randomCountryCode}}\",\r
+
+      \        \"postal_code\": \"hi how are\",\r
+
+      \        \"country\": \"{{$randomCountry}}\"\r
+
+      \    // },\r
+
+      \    // \"shippingAddress\": {\r
+
+      \    //     \"address_line1\": \"{{$randomStreetName}}\",\r
+
+      \    //     \"address_line1\": \"{{$randomStreetName}}\",\r
+
+      \    //     \"address_line2\": \"{{$randomStreetAddress}}\",\r
+
+      \    //     \"address_type\": \"Warehouse\",\r
+
+      \    //     \"city\": \"{{$randomCity}}\",\r
+
+      \    //     \"state\": \"{{$randomStreetName}}\",\r
+
+      \    //     \"postal_code\": \"{{$randomCountryCode}}\",\r
+
+      \    //     \"country\": \"{{$randomCountry}}\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

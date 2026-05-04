@@ -1,0 +1,36 @@
+info:
+  name: Update Setting
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/services/google-workspace/setting/{CLIENTID}"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"firstName\": \"Ajay Updated\",\r
+
+      \  \"campaignSettings\": {\r
+
+      \    \"dailySendingLimit\": 75\r
+
+      \  },\r
+
+      \  \"warmupSettingsAdvanced\": {\r
+
+      \    \"openRate\": 65\r
+
+      \  }\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MzQwMTkwNGI1YjlhYmNiNTk3NTFhYSIsInJvbGUiOiJidXllcl9zZWxsZXIiLCJ1c2VybmFtZSI6IkRlbW8gVXNlcjIzcyIsImlhdCI6MTc1NDM2ODQzNiwiZXhwIjoxNzU0NTQxMjM2fQ.kqhm7OC3HPEnIgLc1ntPNsZ5gjSIrwh7HgFv2ZmchYA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

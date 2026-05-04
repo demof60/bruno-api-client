@@ -1,0 +1,43 @@
+info:
+  name: Restore Deleted Quotation
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/quotation/restore"
+  params:
+    - name: searchTerm
+      value: vinvin
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\": [\r
+
+      \        // \"all\"\r
+
+      \        // \"6983223c841ee3f6f555f4e3\",\r
+
+      \    //     \"6983223c841ee3f6f555f4e3\"\r
+
+      \    ],\r
+
+      \    \"excludedIds\": [\r
+
+      \        // \"6981c02573d2444cd546c86b\"\r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

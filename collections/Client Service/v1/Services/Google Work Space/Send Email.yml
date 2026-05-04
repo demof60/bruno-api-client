@@ -1,0 +1,32 @@
+info:
+  name: Send Email
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/services/google-workspace/auth/email/send"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"to\": \"shubhambhosale@pentagoat.com\",\r
+
+      \  \"cc\": \"shubhambhosale@pentagoat.com\",\r
+
+      \  \"bcc\": \"kuldeep@pentagoat.com\",\r
+
+      \  \"subject\": \"Welcome to Pipex!\",\r
+
+      \  \"htmlBody\": \"<h1>Hello</h1><p>This is a test email sent via Gmail API.</p>\",\r
+
+      \  \"from\": \"sanskar@pentagoat.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

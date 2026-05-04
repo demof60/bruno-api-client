@@ -1,0 +1,24 @@
+info:
+  name: Quotation Bulk Item processing
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/quotation/item-upload"
+  body:
+    type: multipart-form
+    data:
+      - name: billingItem
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/sample_data_file_1773145751005 (2).xlsx
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

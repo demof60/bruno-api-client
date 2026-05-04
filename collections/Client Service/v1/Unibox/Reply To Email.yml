@@ -1,0 +1,37 @@
+info:
+  name: Reply To Email
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/unibox/reply"
+  body:
+    type: multipart-form
+    data:
+      - name: emailId
+        type: text
+        value: 68d3f65a3beeca3465e9378b
+      - name: subject
+        type: text
+        value: "Replying to your email "
+      - name: body
+        type: text
+        value: Hello How are you reply with attachments? sYSTEM gENERATED
+      - name: attachments
+        type: file
+        value:
+          - /C:/Users/priti vishwakarma/OneDrive/Pictures/2015_ford_mustang_gt_by_gurnade_d762cqz.jpg
+      - name: to
+        type: text
+        value: demo@pentagoat.com
+      - name: cc
+        type: text
+        value: shubhambhosle@pentagoat.com, kuldeep@pentagoat.com
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

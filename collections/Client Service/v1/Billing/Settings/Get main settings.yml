@@ -1,0 +1,23 @@
+info:
+  name: Get main settings
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/billing-reminder/main/settings?type=quotation&projection=option.accountSetting.accountsToUse"
+  params:
+    - name: type
+      value: quotation
+      type: query
+      description: "[quotation , proforma , invoice]"
+    - name: projection
+      value: option.accountSetting.accountsToUse
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

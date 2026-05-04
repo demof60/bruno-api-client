@@ -1,0 +1,46 @@
+info:
+  name: Create Email Custom Template
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/email/custom/template"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"Welcome Email\",\r
+
+      \  \"subject\": \"Sales started on PipeX, {{userName}}!\",\r
+
+      \  \"body\": \"<h1>Hello {{userName}},</h1><p>Have a look what execiting opportunity !</p>\",\r
+
+      \  \"placeholders\": [\r
+
+      \    {\r
+
+      \      \"key\": \"userName\",\r
+
+      \      \"description\": \"The name of the user\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"key\": \"signupDate\",\r
+
+      \      \"description\": \"The date when the user signed up\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

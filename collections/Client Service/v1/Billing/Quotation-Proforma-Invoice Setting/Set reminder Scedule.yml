@@ -1,0 +1,64 @@
+info:
+  name: Set reminder Scedule
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/billing-reminder/schedule"
+  params:
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"_id\": \"6911972cd527515715eab541\",\r
+
+      \    \"scheduleName\": \"Morning Outreach\",\r
+
+      \    \"isActive\": true,\r
+
+      \    \"startDate\": \"2025-10-30T12:13:01.000Z\",\r
+
+      \    \"endDate\": \"2026-12-31T23:59:59.000Z\",\r
+
+      \    \"timeFrom\": \"09:00\",\r
+
+      \    \"timeTo\": \"17:30\",\r
+
+      \    \"timeZone\": \"Asia/Kolkata\",\r
+
+      \    \"weekDays\": {\r
+
+      \        \"monday\": true,\r
+
+      \        \"tuesday\": true,\r
+
+      \        \"wednesday\": true,\r
+
+      \        \"thursday\": true,\r
+
+      \        \"friday\": true\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: before-request
+      code: "const moment = require('moment');\r
+
+        const todayDate = moment().format(\"YYYY-MM-DD\");\r
+
+        bru.setEnvVar(\"todayDate\", todayDate);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

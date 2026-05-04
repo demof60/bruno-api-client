@@ -1,0 +1,15 @@
+info:
+  name: Get Quotation company
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/quotation/company"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

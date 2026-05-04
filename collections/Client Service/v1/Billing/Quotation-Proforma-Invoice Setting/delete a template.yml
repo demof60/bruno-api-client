@@ -1,0 +1,62 @@
+info:
+  name: delete a template
+  type: http
+  seq: 13
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/billing-template/690c6f7d414066ad6d8c4b71"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"Quotation Approval Template\",\r
+
+      \  \"subject\": \"Quotation Approved - {{quotationNo}}\",\r
+
+      \  \"body\": \"<p>Hello {{customer.personName}},</p><p>Your quotation <strong>{{quotationNo}}</strong> has been approved.</p><p>Thank you,<br/>{{company}}</p>\",\r
+
+      \  \"placeholders\": [\r
+
+      \    {\r
+
+      \      \"key\": \"customer.personName\",\r
+
+      \      \"description\": \"Name of the customer\",\r
+
+      \      \"sampleValue\": \"John Doe\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"key\": \"quotationNo\",\r
+
+      \      \"description\": \"Unique quotation number\",\r
+
+      \      \"sampleValue\": \"QTN-2025-001\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"key\": \"company\",\r
+
+      \      \"description\": \"Company name sending the email\",\r
+
+      \      \"sampleValue\": \"Pipex Solutions\"\r
+
+      \    }\r
+
+      \  ],\r
+
+      \  \"isActive\": true\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

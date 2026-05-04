@@ -1,0 +1,106 @@
+info:
+  name: Update Proforma
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{clientUrl}}/api/v1/proforma/:proformaId"
+  params:
+    - name: proformaId
+      value: 69ae75d41f4ff72dc0a0da94
+      type: path
+  body:
+    type: json
+    data: "{\r
+
+      \    \"proformaNo\":\"P0003\",\r
+
+      \    \"quotationDate\":\"2025-10-01\",\r
+
+      \      \"validUntil\":\"2025-10-03\",\r
+
+      \    \"currency\": \"\",\r
+
+      \    \"customer\": {\r
+
+      \        \"leadId\": \"69ae8f63f082d54c3dc713e3\",\r
+
+      \        \"paymentTerm\": \"\"\r
+
+      \    },\r
+
+      \    \"footerNote\": {\r
+
+      \        \"terms\": \"\",\r
+
+      \        \"notes\": \"\"\r
+
+      \    },\r
+
+      \     \"deliveryTime\": \"\",\r
+
+      \    \"memoToSelf\": \"\",\r
+
+      \    \"shippingCharges\": {},\r
+
+      \    \"otherCharges\": {},\r
+
+      \    \"discount\": {},\r
+
+      \    \"items\": [\r
+
+      \        {\r
+
+      \            \"name\": \"hiiii\",\r
+
+      \            \"description\": \"\",\r
+
+      \            \"hsn\": \"\",\r
+
+      \            \"quantity\": 1,\r
+
+      \            \"quantityType\": \"\",\r
+
+      \            \"unitPrice\": 0,\r
+
+      \            \"taxes\": \"\",\r
+
+      \            \"total\": 0,\r
+
+      \            \"_id\": \"\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"name\": \"Widget B\",\r
+
+      \            \"description\": \"\",\r
+
+      \            \"quantity\": 1,\r
+
+      \            \"quantityType\": \"\",\r
+
+      \            \"unitPrice\": 0,\r
+
+      \            \"taxes\": \"\",\r
+
+      \            \"total\": 0\r
+
+      \        }\r
+
+      \    ],\r
+
+      \         \"bankDetails\": false\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

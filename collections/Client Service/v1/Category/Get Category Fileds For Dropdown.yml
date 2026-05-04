@@ -1,0 +1,20 @@
+info:
+  name: Get Category Fileds For Dropdown
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:9000/api/v1/category/fields/6809e6fa821afcd462f8a6bf
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

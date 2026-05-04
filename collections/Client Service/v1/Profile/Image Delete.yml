@@ -1,0 +1,25 @@
+info:
+  name: Image Delete
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://localhost:9000/api/v1/profile/delete/image/56beecdb-5abd-40c6-a598-37991e8c4841?status=Main&type=cover&collType=additionalInfo
+  params:
+    - name: status
+      value: Main
+      type: query
+    - name: type
+      value: cover
+      type: query
+    - name: collType
+      value: additionalInfo
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

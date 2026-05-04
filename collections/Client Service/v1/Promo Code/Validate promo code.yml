@@ -1,0 +1,22 @@
+info:
+  name: Validate promo code
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/promo-codes/validate"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"promoCode\": \"NRGSE27762\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

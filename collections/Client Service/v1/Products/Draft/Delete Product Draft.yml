@@ -1,0 +1,15 @@
+info:
+  name: Delete Product Draft
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/product/draft/clear"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

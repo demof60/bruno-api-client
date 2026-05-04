@@ -1,0 +1,31 @@
+info:
+  name: Register(Deprecated)
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/auth/register"
+  params:
+    - name: captcha
+      value: "11"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"username\": \"billa\", username is being generated dynamically\r
+
+      \    \"password\": \"Pipex@F60\",\r
+
+      \    \"email\": \"neluweme@denipl.net\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

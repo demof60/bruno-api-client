@@ -1,0 +1,134 @@
+info:
+  name: Health Check
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{clientUrl}}/healthcheck"
+  body:
+    type: multipart-form
+    data:
+      - name: footerNote
+        type: text
+        value: '{"terms":"This is terms and condition","notes":"lolhehe"}'
+        disabled: true
+      - name: signature
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/005.png
+        disabled: true
+      - name: logo
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/004.png
+        disabled: true
+      - name: signature
+        type: text
+        value: |-
+          {
+                          "uuid": "2d8a404c-d59e-427c-aea5-cde415786a26",
+                          "title": "172.png-quotationSignature",
+                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineBillingDevelopment/172_1761546101550.png",
+                          "_id": "68ff0f75020fd4f6862556a1"
+                      }
+        disabled: true
+      - name: logo
+        type: text
+        value: |-
+          {
+                          "uuid": "0fad3143-e469-40e8-9e84-2d06d983b540",
+                          "title": "255.png-quotationLogo",
+                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineBillingDevelopment/255_1761545794864.png",
+                          "_id": "68ff0e425c3d79c706dd6b6b"
+                      }
+        disabled: true
+      - name: deleteFiles
+        type: text
+        value: |-
+          [{  "signature": {
+              "uuid": "79405413-c6d6-49ec-a4b3-794d788ad210",
+              "title": "download_(11).jpg-quotationSignature",
+              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineBillingDevelopment/download_%2811%29_1758264558139.jpg"
+            }},{  "logo": {
+              "uuid": "79405413-c6d6-49ec-a4b3-794d788ad210",
+              "title": "download_(11).jpg-quotationSignature",
+              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineBillingDevelopment/download_%2811%29_1758264558139.jpg"
+            }}]
+        disabled: true
+      - name: taxSlabs
+        type: text
+        value: '[{"name":"billa tax","value":17,"default":false}]'
+        description: |2-
+          
+                              "_id": "690aff2be34349003f4d9d3f",
+                              "name": "GST",
+                              "value": 0,
+                              "default": true
+                          },
+                          {
+                              "_id": "6914781be9244cefa1798af3",
+                              "name": "GST-18",
+                              "value": 18,
+                              "default": false
+                          },
+                          {
+                              "_id": "6914781be9244cefa1798af4",
+                              "name": "GST",
+                              "value": 19,
+                              "default": true
+                          }
+        disabled: true
+      - name: companyName
+        type: text
+        value: QUOTATION
+        disabled: true
+      - name: ownerName
+        type: text
+        value: vin22
+        disabled: true
+      - name: email
+        type: text
+        value: vin@gmail.conm
+        disabled: true
+      - name: countryCode
+        type: text
+        value: "91"
+        disabled: true
+      - name: number
+        type: text
+        value: "9136285805"
+        disabled: true
+      - name: city
+        type: text
+        value: mumbai
+        disabled: true
+      - name: state
+        type: text
+        value: maharashtra
+        disabled: true
+      - name: postal_code
+        type: text
+        value: "400080"
+        disabled: true
+      - name: country
+        type: text
+        value: India
+        disabled: true
+      - name: address_type
+        type: text
+        value: Office
+        disabled: true
+      - name: address
+        type: text
+        value: my_address
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

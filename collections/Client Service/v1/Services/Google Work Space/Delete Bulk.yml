@@ -1,0 +1,26 @@
+info:
+  name: Delete Bulk
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{clientUrl}}/api/v1/services/google-workspace/auth/emails/bulk"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"ids\": [ \"all\"],\r
+
+      \  \"excludedIds\":[\"698c6f492da3b9ded1c79a84\"]\r
+
+      //   \"label\":\"billing\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

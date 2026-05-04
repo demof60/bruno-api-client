@@ -1,0 +1,22 @@
+info:
+  name: Get Single Sequence Email
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/campaign/sequence/email/68944a33e5c1c97c008e6ea1?stepId=68944be27d7eebf84facd224&emailId=68944be27d7eebf84facd225"
+  params:
+    - name: stepId
+      value: 68944be27d7eebf84facd224
+      type: query
+    - name: emailId
+      value: 68944be27d7eebf84facd225
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

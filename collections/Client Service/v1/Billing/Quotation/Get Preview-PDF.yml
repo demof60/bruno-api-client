@@ -1,0 +1,30 @@
+info:
+  name: Get Preview/PDF
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{clientUrl}}/api/v1/quotation/pdf/:quotationId"
+  params:
+    - name: type
+      value: pdf
+      type: query
+      disabled: true
+    - name: hist
+      value: "true"
+      type: query
+      disabled: true
+    - name: quotationId
+      value: 69c3b2a524bd941a3d385f56
+      type: path
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

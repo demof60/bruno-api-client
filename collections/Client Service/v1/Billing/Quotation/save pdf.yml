@@ -1,0 +1,26 @@
+info:
+  name: save pdf
+  type: http
+  seq: 23
+
+http:
+  method: PUT
+  url: "{{clientUrl}}/api/v1/quotation/pdf/:quotationId"
+  params:
+    - name: quotationId
+      value: 69e707743147d9143fa0e0d8
+      type: path
+  body:
+    type: multipart-form
+    data:
+      - name: billing
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/Vin/quotation.csv
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
