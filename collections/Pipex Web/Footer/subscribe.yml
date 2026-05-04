@@ -1,0 +1,33 @@
+info:
+  name: subscribe
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/footer/subscribe"
+  params:
+    - name: userId
+      value: 67e773776babd81957515c62
+      type: query
+      disabled: true
+    - name: clientId
+      value: 67e773776babd81957515c60
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"pooja\",\r
+
+      \    \"email\": \"diksha@gmail.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

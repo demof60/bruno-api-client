@@ -1,0 +1,33 @@
+info:
+  name: createTrendyProducts
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5050/api/v1/trendyProducts/create
+  params:
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productId\": \"690f179c61c0f8f6986bb6cc\",\r
+
+      \    \"rank\": 2\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

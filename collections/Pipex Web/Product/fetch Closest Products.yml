@@ -1,0 +1,29 @@
+info:
+  name: fetch Closest Products
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5050/api/v1/products/closest?offset=0&limit=10
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

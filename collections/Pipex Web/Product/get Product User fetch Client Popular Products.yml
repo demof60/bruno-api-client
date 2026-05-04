@@ -1,0 +1,33 @@
+info:
+  name: get Product User fetch Client Popular Products
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/products/client/popular"
+  params:
+    - name: limit
+      value: "4"
+      type: query
+      disabled: true
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productTitle\" : \"incoloy-800ht-flanges\",\r
+
+      \    \"clientId\": \"679cb4cf7e3edfa6d0c405f6\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

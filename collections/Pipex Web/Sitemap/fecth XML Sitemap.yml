@@ -1,0 +1,26 @@
+info:
+  name: fecth XML Sitemap
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{webUrl}}/api/v1/sitemap/xml/blogs-1.xml"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

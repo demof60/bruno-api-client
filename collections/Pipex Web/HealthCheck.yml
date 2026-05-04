@@ -1,0 +1,18 @@
+info:
+  name: HealthCheck
+  type: http
+  seq: 15
+
+http:
+  method: GET
+  url: http://localhost:5050/healthcheck
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

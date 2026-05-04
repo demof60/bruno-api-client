@@ -1,0 +1,39 @@
+info:
+  name: Rfq
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/contactus/create"
+  body:
+    type: multipart-form
+    data:
+      - name: clientId
+        type: text
+        value: ""
+      - name: userId
+        type: text
+        value: ""
+      - name: name
+        type: text
+        value: ""
+      - name: email
+        type: text
+        value: ""
+      - name: countryCode
+        type: text
+        value: ""
+      - name: number
+        type: text
+        value: ""
+      - name: message
+        type: text
+        value: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

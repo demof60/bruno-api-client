@@ -1,0 +1,75 @@
+info:
+  name: fetchProducts
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/products/get"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "// {\r
+
+      //   \"filters\": {\r
+
+      //     \"Products\": [\"alloy-20-pipes\"],\r
+
+      //     \"Industries\": [],\r
+
+      //     \"Countries\": [],\r
+
+      //     \"Cities\": [],\r
+
+      //     \"Suppliers\": [],\r
+
+      //     \"search\": \"\",\r
+
+      //     \"sort\": \"\",\r
+
+      //     \"type\": \"product\"\r
+
+      //   },\r
+
+      //   \"isCategoryPage\": true,\r
+
+      //   \"deviceType\": \"desktop\"\r
+
+      // }\r
+
+      // {\r
+
+      //     \"filters\": {\r
+
+      //         // \"search\": \"Dolby-Dj\",\r
+
+      //         \"type\": \"product\"\r
+
+      //         // \"shaqeeb\": [\r
+
+      //         //     \"lala\"\r
+
+      //         // ]\r
+
+      //     },\r
+
+      //     \"deviceType\": \"desktop\"\r
+
+      // }\r
+
+      {\"filters\":{\"search\":\"\",\"type\":\"product\",\"sort\":\"popular\",\"Products\":[\"flanges\"]},\"isCategoryPage\":true}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

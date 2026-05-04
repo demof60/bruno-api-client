@@ -1,0 +1,20 @@
+info:
+  name: click Products After Search
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/products/click/6864bc4104e15f6a7a0769ec"
+  params:
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

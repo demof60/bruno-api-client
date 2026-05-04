@@ -1,0 +1,65 @@
+info:
+  name: requestForQuotationClient Copy
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/rfq/client"
+  params:
+    - name: userId
+      value: 67e773776babd81957515c62
+      type: query
+      disabled: true
+    - name: clientId
+      value: 68afe1b89c78d9a4d5672c4c
+      type: query
+      disabled: true
+    - name: _id
+      value: 68837a17535c9a1a7eee4904
+      type: query
+      disabled: true
+    - name: answer
+      value: "17"
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: clientId
+        type: text
+        value: 6835b9312c3c90d321632eeb
+      - name: name
+        type: text
+        value: priti vishwakarma
+      - name: countryCode
+        type: text
+        value: "+91"
+      - name: email
+        type: text
+        value: priti@pentagoat.com
+      - name: number
+        type: text
+        value: "7418529630"
+      - name: product
+        type: text
+        value: '{"_id":null,"name":"Java Script Cheat Sheet","type":"productModel"}'
+      - name: message
+        type: text
+        value: Aniket Aaj Kay Khanar
+      - name: attachments
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/download (2).jpg
+      - name: userId
+        type: text
+        value: 68c3aa771515b85db521bdc2
+        description: only in case of v card rfq form
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

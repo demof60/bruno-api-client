@@ -1,0 +1,24 @@
+info:
+  name: Verily  your captcha
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/captcha/verify"
+  body:
+    type: json
+    data: "{\r
+
+      \r
+
+      \    \"captchaAnswer\":\"12\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

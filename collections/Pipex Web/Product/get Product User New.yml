@@ -1,0 +1,227 @@
+info:
+  name: get Product User New
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{webUrl}}/api/v1/products/new/sssssssssssss-1112.html"
+  params:
+    - name: deviceType
+      value: desktop
+      type: query
+      disabled: true
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: get Product User New
+    request:
+      url: "{{webUrl}}/api/v1/products/new/all-selected-1112.html"
+      method: GET
+      params:
+        - name: search
+          value: ""
+          type: query
+          disabled: true
+      body:
+        type: json
+        data: ""
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Vary
+          value: Origin
+        - name: Access-Control-Allow-Credentials
+          value: "true"
+        - name: Content-Security-Policy
+          value: "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+        - name: Cross-Origin-Opener-Policy
+          value: same-origin
+        - name: Cross-Origin-Resource-Policy
+          value: same-origin
+        - name: Origin-Agent-Cluster
+          value: ?1
+        - name: Referrer-Policy
+          value: no-referrer
+        - name: Strict-Transport-Security
+          value: max-age=31536000; includeSubDomains
+        - name: X-Content-Type-Options
+          value: nosniff
+        - name: X-DNS-Prefetch-Control
+          value: off
+        - name: X-Download-Options
+          value: noopen
+        - name: X-Frame-Options
+          value: SAMEORIGIN
+        - name: X-Permitted-Cross-Domain-Policies
+          value: none
+        - name: X-XSS-Protection
+          value: "0"
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Content-Length
+          value: "4796"
+        - name: ETag
+          value: W/"12bc-N8gHQMiZdrfJeUgPBsRaAYFs3H8"
+        - name: Date
+          value: Fri, 26 Dec 2025 10:33:54 GMT
+        - name: Connection
+          value: keep-alive
+        - name: Keep-Alive
+          value: timeout=5
+      body:
+        type: json
+        data: |-
+          {
+              "success": true,
+              "data": {
+                  "product": {
+                      "_id": "690ed36ebe35f3a128c482a1",
+                      "head": {
+                          "metaTitle": "Aspernatur Ex Quia Do Impedit Eius Omnis Officia Dolor Quia Vitae",
+                          "metaDescription": "Aspernatur Ex Quia Do Impedit Eius Omnis Officia Dolor Quia Vitae Cillum Vitae Incidunt Culpa Fugit",
+                          "metaKeywords": ""
+                      },
+                      "productTitle": "Aspernatur Ex Quia Do Impedit Eius Omnis Officia Dolor Quia Vitae Cillum Vitae Incidunt Culpa Fugit Copy",
+                      "productDescriptionHeading": "Cum velit cupidatat ratione omnis qui",
+                      "productDescription": "",
+                      "productDetails": [],
+                      "productDetailsProductDescription": "",
+                      "bannerImages": [
+                          {
+                              "original": {
+                                  "uuid": "98a1629e-0067-489a-9a63-16172df75c99",
+                                  "title": "Img 20250603 Wa0010_(1)",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/f6e1dc0f-54dd-4255-b64c-80021abbc0a3__img-20250603-wa0010_(1)_1762579291464.jpg",
+                                  "contentType": "image/jpeg"
+                              },
+                              "720x1280": {
+                                  "uuid": "5418729e-d920-49ef-b310-18e493fa5eb1",
+                                  "title": "Img 20250603 Wa0010_(1)",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/img-20250603-wa0010_%281%29_720x1280_1762579309798.jpg",
+                                  "contentType": "image/jpeg"
+                              },
+                              "1920x1080": {
+                                  "uuid": "226206a9-1686-4963-8ad7-39d05222f4b4",
+                                  "title": "Img 20250603 Wa0010_(1)",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/img-20250603-wa0010_%281%29_1920x1080_1762579310021.jpg",
+                                  "contentType": "image/jpeg"
+                              }
+                          }
+                      ],
+                      "FAQ": [],
+                      "clientId": "68fb0587e9c18f6f3718e21c",
+                      "industries": [],
+                      "countries": [],
+                      "cities": [],
+                      "priceRangeFrom": 908,
+                      "priceRangeTo": 6470,
+                      "minOrder": "973",
+                      "minOrderUnit": "bundle",
+                      "url": "aspernatur-ex-quia-do-impedit-eius-omnis-officia-dolor-quia-vitae-cillum-vitae-incidunt-culpa-fugit-copy-1012.html",
+                      "folderId": "69030b597d0a94c17ffaab2f",
+                      "completion": 26.67,
+                      "client": {
+                          "_id": "68fb0587e9c18f6f3718e21c",
+                          "name": "Paolo Escobar Pvt Ltd",
+                          "counter": 1012,
+                          "ownerName": "Paolo Escobar",
+                          "isVerified": false,
+                          "profileCompletion": 90.91,
+                          "annualRevenue": "₹420000000",
+                          "businessType": "Manufacturer",
+                          "coverImage": [
+                              {
+                                  "uuid": "f50c0123-0994-444e-819a-fa9e622439f3",
+                                  "title": "Cropped Image1761282096091.png",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/cropped-image1761282096091_1761282878959.png",
+                                  "contentType": "image/jpeg"
+                              }
+                          ],
+                          "description": "Founded in a small garage with a dangerously strong cup of coffee, Paolo Escobar Pvt. Ltd. has grown into a totally legitimate business empire specializing in “importing and exporting” top-tier digital vibes. Our core mission is to push boundaries — of innovation, productivity, and sometimes the legal limit of how many espressos one can drink in a day.\r\n\r\nFrom cloud solutions to “mysteriously fast” logistics, we make the impossible look suspiciously easy. Our team operates with passion, precision, and a questionable sleep schedule.\r\n\r\n💼 Industries: Tech, Coffee, Logistics, Memes\r\n🌎 Headquarters: Somewhere with strong Wi-Fi and weak supervision\r\n☕ Company Motto: “Don’t call it hustle, call it survival mode.”",
+                          "experience": "11",
+                          "logo": {
+                              "uuid": "2a6dcacb-fea4-4e5f-b02b-96281cf74281",
+                              "title": "Paolo.jpg Logo",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/paolo_1761282878815.jpg",
+                              "contentType": "image/jpeg"
+                          },
+                          "projectsCompleted": "312",
+                          "responseTime": "1",
+                          "website": "https://drug-cartel.com",
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "endpoint": "paolo-escobar-pvt-ltd",
+                          "companyCertificate": [
+                              {
+                                  "title": "Paolo Medical Certificate",
+                                  "companyCertificateCoverImage": {
+                                      "uuid": "df45ce4e-3087-44ad-9e29-b45465f70cfd",
+                                      "title": "Paolo Medical Certificate",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/download_1762168188169.jpg",
+                                      "contentType": "image/jpeg"
+                                  },
+                                  "companyCertificateCoverPdf": {
+                                      "uuid": "1fbb24cb-fe59-4d8c-816f-4f5e55b3ee91",
+                                      "title": "Paolo Medical Certificate",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/introduction-to-bash-scripting-light_1754026677039_1762168188278.pdf",
+                                      "contentType": "application/pdf"
+                                  },
+                                  "_id": "69088d7cdb5ca98fe2d4ab94"
+                              }
+                          ],
+                          "contact": [
+                              {
+                                  "_id": "68fb0721e9c18f6f3718e59f",
+                                  "countryCode": "+91",
+                                  "number": 9999999999,
+                                  "primary": false,
+                                  "whatsApp": true
+                              },
+                              {
+                                  "_id": "68fb0721e9c18f6f3718e5a1",
+                                  "countryCode": "+91",
+                                  "number": 9999999999,
+                                  "primary": true,
+                                  "whatsApp": false
+                              }
+                          ],
+                          "email": [
+                              {
+                                  "_id": "68fb0721e9c18f6f3718e5a5",
+                                  "email": "paolo@escobar.com",
+                                  "primary": true
+                              }
+                          ]
+                      }
+                  },
+                  "routes": [
+                      {
+                          "id": "69030b597d0a94c17ffaab2f",
+                          "name": "Apli Category",
+                          "endpoint": "apli-category"
+                      },
+                      {
+                          "id": "690ed36ebe35f3a128c482a1",
+                          "name": "Aspernatur Ex Quia Do Impedit Eius Omnis Officia Dolor Quia Vitae Cillum Vitae Incidunt Culpa Fugit Copy",
+                          "endpoint": "aspernatur-ex-quia-do-impedit-eius-omnis-officia-dolor-quia-vitae-cillum-vitae-incidunt-culpa-fugit-copy-1012.html"
+                      }
+                  ],
+                  "sessionId": "ae0c25d9-acb0-40bc-b515-11a04dd62e85"
+              }
+          }

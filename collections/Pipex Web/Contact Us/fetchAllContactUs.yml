@@ -1,0 +1,22 @@
+info:
+  name: fetchAllContactUs
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5050/api/v1/contactus/get?userId=67e773776babd81957515c62&clientId=67e773776babd81957515c60
+  params:
+    - name: userId
+      value: 67e773776babd81957515c62
+      type: query
+    - name: clientId
+      value: 67e773776babd81957515c60
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

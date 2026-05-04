@@ -10,6 +10,8 @@ collections:
     path: "collections/User-Buyer  Service"
   - name: "Script Service"
     path: "collections/Script Service"
+  - name: "Pipex Web"
+    path: "collections/Pipex Web"
 
 specs:
 

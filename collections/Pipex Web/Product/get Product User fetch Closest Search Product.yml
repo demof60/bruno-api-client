@@ -1,0 +1,35 @@
+info:
+  name: get Product User fetch Closest Search Product
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/products/search/closest?offset=0&limit=10"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productTitle\" : \"incoloy-800ht-flanges\",\r
+
+      \    \"productId\": \"69522295f785ab59cef1f056\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

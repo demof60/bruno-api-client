@@ -1,0 +1,57 @@
+info:
+  name: request For Quotation
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/rfq/user"
+  params:
+    - name: ""
+      value: 67e773776babd81957515c62
+      type: query
+      disabled: true
+    - name: ""
+      value: 67e773776babd81957515c60
+      type: query
+      disabled: true
+    - name: _id
+      value: 688379ea535c9a1a7eee48e8
+      type: query
+      disabled: true
+    - name: answer
+      value: "9"
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: hello
+      - name: countryCode
+        type: text
+        value: "+91"
+      - name: email
+        type: text
+        value: shaqeeb@pentagoat.com
+      - name: number
+        type: text
+        value: "1245788552"
+      - name: product
+        type: text
+        value: '{"_id":"677e289007bf3df3fcafaa06","name":"alloy-steel-f9-flanges" , "type" :"folderModel"}'
+      - name: attachments
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+      - name: message
+        type: text
+        value: Aniket Ajj Kay Khanaarrrrrr
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

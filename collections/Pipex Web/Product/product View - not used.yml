@@ -1,0 +1,29 @@
+info:
+  name: product View - not used
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{webUrl}}/api/v1/products/stainless-steel-wire-mesh-manufacturers-in-india-1022.html"
+  params:
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productTitle\" : \"Stainless Steel Wire Mesh Manufacturers In India\",\r
+
+      \    \"clientId\": \"672080388ff573adb353eb10\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

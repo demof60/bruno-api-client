@@ -1,0 +1,18 @@
+info:
+  name: getBlogs
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{webUrl}}/api/v1/blog"
+  body:
+    type: text
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

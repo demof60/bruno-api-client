@@ -1,0 +1,23 @@
+info:
+  name: get Product Filters(category & sector)
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{webUrl}}/api/v1/products/filter"
+  params:
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

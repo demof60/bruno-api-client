@@ -1,0 +1,31 @@
+info:
+  name: fetch Product Search Suggestions
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/products/searchsuggestions"
+  params:
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"categories\": [\"Gasket\"],\r
+
+      \     \"sectors\": [\"Sugar Industry\"], \r
+
+      \     \"search\": \"Gasket Manufacturer In India\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,19 @@
+info:
+  name: fetchCategoriesAndProducts
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{webUrl}}/api/v1/category/products?name=Nodejs-Pipeline"
+  params:
+    - name: name
+      value: Nodejs-Pipeline
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
