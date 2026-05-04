@@ -1,1 +1,9 @@
 name: f20
+color: "#C77A0F"
+variables:
+  - name: clientUrl
+    value: https://backend.f20.co.in/client
+  - name: userUrl
+    value: https://backend.f20.co.in/web
+  - name: url
+    value: https://backend.f20.co.in

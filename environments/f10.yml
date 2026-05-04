@@ -1,1 +1,13 @@
 name: f10
+color: "#2E8A54"
+variables:
+  - name: clientUrl
+    value: https://backend.f10.co.in/client
+  - name: userUrl
+    value: https://backend.f10.co.in/buyer
+  - name: webUrl
+    value: https://backend.f10.co.in/web
+  - name: url
+    value: https://backend.f10.co.in
+  - name: scriptUrl
+    value: https://backend.f10.co.in/script

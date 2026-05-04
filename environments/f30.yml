@@ -1,1 +1,11 @@
 name: f30
+color: "#CE4F3B"
+variables:
+  - name: url
+    value: https://core.pipex.ai
+  - name: clientUrl
+    value: https://seller.f20.co.in
+  - name: scriptUrl
+    value: https://core.pipex.ai/script
+  - name: userUrl
+    value: https://core.pipex.ai/buyer
