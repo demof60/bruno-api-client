@@ -1,0 +1,35 @@
+info:
+  name: Update Buyer Profile(company)
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v1/profile"
+  params:
+    - name: type
+      value: lastWeek
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: kaak
+      - name: ownerName
+        type: text
+        value: asas4
+      - name: website
+        type: text
+        value: sasa2
+      - name: notes
+        type: text
+        value: assa2
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

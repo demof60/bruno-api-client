@@ -1,0 +1,48 @@
+info:
+  name: Update Profile
+  type: http
+  seq: 14
+
+http:
+  method: PUT
+  url: "{{userUrl}}/api/v1/auth/profile"
+  body:
+    type: multipart-form
+    data:
+      - name: username
+        type: text
+        value: gawejfklerg
+      - name: firstName
+        type: text
+        value: ""
+      - name: lastName
+        type: text
+        value: ""
+      - name: designation
+        type: text
+        value: sss3
+      - name: number
+        type: text
+        value: "21345453454"
+        disabled: true
+      - name: profileImg
+        type: text
+        value: "null"
+        disabled: true
+      - name: profileImg
+        type: file
+        value:
+          - postman-cloud:///1f05660e-5005-49e0-9903-529cb545a8fa
+        disabled: true
+      - name: region
+        type: text
+        value: '{"isoCode":"IN","name":"India","dialCode":"+91"}'
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

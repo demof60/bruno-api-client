@@ -1,0 +1,33 @@
+info:
+  name: New Request
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://api.deepai.org/api/text2img
+  headers:
+    - name: Api-Key
+      value: tryit-21961882608-03081b10e9184f9d46b7acf0229cafe0
+  params:
+    - name: panoramaId
+      value: 48ccc15c3d76a46ee491608236edbd9563ce14387e92e641f1154286a355e2d4
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: text
+        type: text
+        value: flying data
+  auth:
+    type: apikey
+    key: tryit
+    value: 51044578476-2141ff7d0575772e8c6bf50ef650b855
+    placement: header
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

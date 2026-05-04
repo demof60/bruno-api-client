@@ -1,0 +1,33 @@
+info:
+  name: Update RFQ Seller Label
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{userUrl}}/api/v1/rfq/updateRfqSellerLabel/691c4a5b776f7457c13c1f07"
+  params:
+    - name: type
+      value: lastWeek
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"starred\": true,\r
+
+      \    // \"label\": \"dealDone\",\r
+
+      \    // \"viewed\": '',\r
+
+      \    \"sellerId\": \"68f8bcf6bd7052c72d5596c1\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

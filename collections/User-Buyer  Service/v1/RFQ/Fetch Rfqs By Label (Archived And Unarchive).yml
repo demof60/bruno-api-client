@@ -1,0 +1,33 @@
+info:
+  name: Fetch Rfqs By Label (Archived And Unarchive)
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{userUrl}}/api/v1/rfq/labels?isA=archived"
+  params:
+    - name: label
+      value: archived
+      type: query
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: isA
+      value: archived
+      type: query
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

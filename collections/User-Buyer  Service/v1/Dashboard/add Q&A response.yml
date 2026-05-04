@@ -1,0 +1,30 @@
+info:
+  name: add Q&A response
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v1/dashboard/create/qa/response"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"question\": \"All Question & Answer fetched successfully\",\r
+
+      \    \"questionId\": \"6830243694a1589c547d7986\",\r
+
+      \    \"userId\": \"6825c5714849d70ba441e577\",\r
+
+      \    \"answer\": [],\r
+
+      \    \"skip\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

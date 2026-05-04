@@ -6,6 +6,8 @@ info:
 collections:
   - name: "Client Service"
     path: "collections/Client Service"
+  - name: "User/Buyer  Service"
+    path: "collections/User-Buyer  Service"
 
 specs:
 

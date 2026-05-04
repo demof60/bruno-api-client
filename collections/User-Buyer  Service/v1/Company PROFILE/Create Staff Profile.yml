@@ -1,0 +1,42 @@
+info:
+  name: Create Staff Profile
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v1/profile/staff"
+  params:
+    - name: searchTerm
+      value: logg
+      type: query
+      disabled: true
+    - name: username
+      value: ""
+      type: query
+      description: "[all, unassigned, direct, assigned]"
+      disabled: true
+    - name: email
+      value: ""
+      type: query
+      disabled: true
+    - name: buyerId
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: username
+        type: text
+        value: sas
+      - name: email
+        type: text
+        value: gj5@gmail.com
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

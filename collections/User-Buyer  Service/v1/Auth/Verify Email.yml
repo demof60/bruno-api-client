@@ -1,0 +1,32 @@
+info:
+  name: Verify Email
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v1/auth/verify-email?id=6835a858eb588d04cabd4e0d&type=2&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODM1YTg1OGViNTg4ZDA0Y2FiZDRlMGQiLCJpYXQiOjE3NDgzNTAxNDYsImV4cCI6MTc0ODM1MDI2Nn0.7VutsfHu1XlGbtgEQ9wECv6oUbGXBQJTbOfboBpt0JE"
+  params:
+    - name: id
+      value: 6835a858eb588d04cabd4e0d
+      type: query
+    - name: type
+      value: "2"
+      type: query
+    - name: token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODM1YTg1OGViNTg4ZDA0Y2FiZDRlMGQiLCJpYXQiOjE3NDgzNTAxNDYsImV4cCI6MTc0ODM1MDI2Nn0.7VutsfHu1XlGbtgEQ9wECv6oUbGXBQJTbOfboBpt0JE
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"password\":\"Pass@1234\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

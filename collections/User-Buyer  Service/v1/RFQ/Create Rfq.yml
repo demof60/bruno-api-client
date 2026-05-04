@@ -1,0 +1,47 @@
+info:
+  name: Create Rfq
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{webUrl}}/api/v1/rfq/user"
+  params:
+    - name: ""
+      value: logg
+      type: query
+      disabled: true
+    - name: countryCode
+      value: "+91"
+      type: query
+      description: "[all, unassigned, direct, assigned]"
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: Pooja V
+      - name: attachments
+        type: file
+        value:
+          - postman-cloud:///1f05bcba-a19c-4670-8336-cfd5ad812e82
+      - name: countryCode
+        type: text
+        value: "+91"
+      - name: email
+        type: text
+        value: jonija@forexnews.bg
+      - name: number
+        type: text
+        value: "9872494777"
+      - name: product
+        type: text
+        value: '{"_id":"68539a259a8f1501f5e42160","name":"Test Product 45" , "type" :"productModel"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

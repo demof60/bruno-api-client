@@ -1,0 +1,53 @@
+info:
+  name: RFQ Editing
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{userUrl}}/api/v1/rfq/updaterfq/69802f53507e26e7fbc27b56"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: "SHAKEEEB "
+      - name: countryCode
+        type: text
+        value: "+91"
+      - name: number
+        type: text
+        value: "9999999999"
+        disabled: true
+      - name: product
+        type: text
+        value: |-
+          {"_id": "6809e6fa821afcd462f8a6bf",
+           "name": "Get Quotation",
+          "type": "folderModel"}
+      - name: message
+        type: text
+        value: "HIII SHAKKK KEEEBBBBBBBBBBBBBBBBBBBBBBBBB "
+      - name: attachments
+        type: file
+        value:
+          - postman-cloud:///1f087c14-310d-45a0-8d3d-066bce9ef1ae
+          - postman-cloud:///1f05660e-5005-49e0-9903-529cb545a8fa
+        disabled: true
+      - name: attachments
+        type: text
+        value: |2-
+           [
+                      {
+                          "url": "https://pipingproject.s3.ap-south-1.amazonaws.com/contactUsDevelopment/1751960148110_1762171383957.jpg",
+                          "type": "image/jpeg"
+                      }
+                  ]
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

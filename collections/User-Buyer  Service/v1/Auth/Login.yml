@@ -1,0 +1,195 @@
+info:
+  name: Login
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v1/auth/login"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\": \"anish2@pentagoat.com\",\r
+
+      \    // \"password\": \"anish\"\r
+
+      \    //    \"email\": \"jaracelo@denipl.com\",\r
+
+      \    //    \"password\" : \"Pipex@F60\" \r
+
+      \    //   \"email\": \"client12@pentagoat.com\",\r
+
+      \    //  \"password\" : \"client@12\" \r
+
+      \    // \"email\": \"demo@pentagoat.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"mycugi@denipl.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \     \"email\": \"heisenberg\",\r
+
+      \    \"password\": \"Pipex@F70\"\r
+
+      \    // \"email\": \"sebali@cyclelove.cc\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    //  \"email\": \"shaqeeb@pentagoat.com\",\r
+
+      \    // \"password\": \"Shaqeeb@123\"\r
+
+      \    // \"email\": \"alien7@pentagoat.com\",\r
+
+      \    // \"password\": \"Palado@logsmarter.net1\"\r
+
+      \    // \"password\": \"Palado@logsmarter.net1\",\r
+
+      \    // \"email\": \"rangela1@pentagoat.com\"\r
+
+      \    // \"email\": \"loqydu@azuretechtalk.net\",\r
+
+      \    //  \"email\": \"loqydu@azuretechtalk.net\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"yash.mali@f70.co.in\",\r
+
+      \    // \"password\": \"sallbro\"\r
+
+      \    //  \"email\": \"heisenberg\",\r
+
+      \    // \"password\": \"Pipex@f60\"\r
+
+      \    //    \"email\": \"puqazo@forexzig.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"pooja.vishakarma@f70.co.in\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\": \"sayinad171@alexida.com\",\r
+
+      \    // \"password\": \"Parag@7155\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "const response = res.getBody();\r
+
+        // pm.environment.set(\"token\",response.token);\r
+
+        \r
+
+        //Define token mappings\r
+
+        const tokenKeys = {\r
+
+        \    SELLER_TOKEN: \"sellerToken\",\r
+
+        \    BUYER_TOKEN: \"buyerToken\",\r
+
+        \    BUYER_SELLER_TOKEN: \"buyerSellerToken\"\r
+
+        };\r
+
+        \r
+
+        // Iterate over tokenKeys and set them if they exist in the response\r
+
+        Object.entries(tokenKeys).forEach(([envKey, responseKey]) => {\r
+
+        \    if (response?.data?.[responseKey] || response?.[responseKey]) {\r
+
+        \        console.log(\"Extracted Token:\",envKey, response?.data?.[responseKey]);\r
+
+        \        bru.setEnvVar(\"token\", response.data?.[responseKey] || response[responseKey]);\r
+
+        \    }\r
+
+        });\r
+
+        var template = `\r
+
+        <style type=\"text/css\">\r
+
+        \    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r
+
+        \    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r
+
+        \    .tftable tr {background-color:#ffffff;}\r
+
+        \    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r
+
+        \    .tftable tr:hover {background-color:#e0ffff;}\r
+
+        </style>\r
+
+        \r
+
+        <table class=\"tftable\" border=\"1\">\r
+
+        \    <tr>\r
+
+        \        <th>Token</th>\r
+
+        \        <th>Username</th>\r
+
+        \        <th>Email</th>\r
+
+        \        <th>Role</th>\r
+
+        \        <th>Is OTP Verified</th>\r
+
+        \    </tr>\r
+
+        \    <tr>\r
+
+        \        <td>{{response.data.token}}</td>\r
+
+        \        <td>{{response.data.userDetails.username}}</td>\r
+
+        \        <td>{{response.data.userDetails.email}}</td>\r
+
+        \        <td>{{response.data.userDetails.role}}</td>\r
+
+        \        <td>{{response.data.userDetails.isOtpVerified}}</td>\r
+
+        \    </tr>\r
+
+        </table>\r
+
+        `;\r
+
+        \r
+
+        function constructVisualizerPayload() {\r
+
+        \    return {response: res.getBody()};\r
+
+        }\r
+
+        \r
+
+        bru.visualize(\"html\", {\r
+
+        \    template: template,\r
+
+        \    data: constructVisualizerPayload()\r
+
+        });"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: Send Verify Email
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v1/auth/send-verify-email"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"email\": \"hucyguzo@forexzig.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
