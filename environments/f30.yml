@@ -1,10 +1,9 @@
 name: f30
-color: "#CE4F3B"
 variables:
   - name: url
     value: https://core.pipex.ai
   - name: clientUrl
-    value: https://seller.f20.co.in
+    value: https://core.pipex.ai/client
   - name: scriptUrl
     value: https://core.pipex.ai/script
   - name: userUrl
