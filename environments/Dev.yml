@@ -1,0 +1,4 @@
+name: Dev
+variables:
+  - name: clientUrl
+    value: http://localhost:9000
