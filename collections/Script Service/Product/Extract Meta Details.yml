@@ -1,0 +1,17 @@
+info:
+  name: Extract Meta Details
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/product/extraxt-meta-details"
+  auth:
+    type: bearer
+    token: "@AFxIrep*CWE&sva!Hug)bKTf(cz6PJQmt7dDkyUB%"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

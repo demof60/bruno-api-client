@@ -1,0 +1,15 @@
+info:
+  name: syncBillingSettingsRegion
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:4060/api/v2/countryCode/syncBillingSettingsRegion
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

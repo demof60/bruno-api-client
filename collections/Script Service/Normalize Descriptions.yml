@@ -1,0 +1,17 @@
+info:
+  name: Normalize Descriptions
+  type: http
+  seq: 20
+
+http:
+  method: GET
+  url: http://localhost:4060/api/script/normalize-descriptions
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

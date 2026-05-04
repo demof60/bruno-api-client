@@ -1,0 +1,17 @@
+info:
+  name: fetch all products update link Copy
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/product/fetch-all-categories-product-update-links/67a46a5d48cf2d4003857efc"
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

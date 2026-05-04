@@ -1,0 +1,17 @@
+info:
+  name: Create user for all client
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/client/create-seller-user"
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

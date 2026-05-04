@@ -1,0 +1,25 @@
+info:
+  name: Delete bulk rfq
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{userUrl}}/api/v2/rfq/bulk/delete?limit=2&batchSize=2"
+  params:
+    - name: limit
+      value: "2"
+      type: query
+    - name: batchSize
+      value: "2"
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

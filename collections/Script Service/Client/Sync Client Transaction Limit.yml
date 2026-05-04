@@ -1,0 +1,22 @@
+info:
+  name: Sync Client Transaction Limit
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/client/sync/client-transaction?batchSize=10&limit=5"
+  params:
+    - name: batchSize
+      value: "10"
+      type: query
+    - name: limit
+      value: "5"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

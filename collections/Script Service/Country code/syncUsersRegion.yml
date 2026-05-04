@@ -1,0 +1,17 @@
+info:
+  name: syncUsersRegion
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{scriptUrl}}/api/v2/countryCode/syncUsersRegion"
+  auth:
+    type: bearer
+    token: "{{sellerToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,17 @@
+info:
+  name: Flush Indexing
+  type: http
+  seq: 22
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/sync-indexing"
+  auth:
+    type: bearer
+    token: "{{sellerToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

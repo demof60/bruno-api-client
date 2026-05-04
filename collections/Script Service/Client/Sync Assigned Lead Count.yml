@@ -1,0 +1,22 @@
+info:
+  name: Sync Assigned Lead Count
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/client/sync/assigned-count?batchSize=10&limit=5"
+  params:
+    - name: batchSize
+      value: "10"
+      type: query
+    - name: limit
+      value: "5"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

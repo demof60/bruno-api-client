@@ -8,6 +8,8 @@ collections:
     path: "collections/Client Service"
   - name: "User/Buyer  Service"
     path: "collections/User-Buyer  Service"
+  - name: "Script Service"
+    path: "collections/Script Service"
 
 specs:
 

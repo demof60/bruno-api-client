@@ -1,0 +1,17 @@
+info:
+  name: Client id endpoint fix
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/client/sync-client-id"
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

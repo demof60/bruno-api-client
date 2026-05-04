@@ -1,0 +1,20 @@
+info:
+  name: RFQ Single to Multiple attachment
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{userUrl}}/api/v2/rfq/rfq-migrate-attachments-to-multiple"
+  headers:
+    - name: token
+      value: $2y$12$DGteT7skW4TzhDk392yjo.kF.3Rg56DEGMcfgDIXA6BLVMjXFKv.W
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

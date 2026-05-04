@@ -1,0 +1,18 @@
+info:
+  name: Create Bulk Rfq
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v2/rfq/bulk/create"
+  body:
+    type: json
+    data: "{\r\n  \"totalRfqs\": 50\r\n}\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

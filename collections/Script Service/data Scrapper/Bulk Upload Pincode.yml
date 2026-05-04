@@ -1,0 +1,21 @@
+info:
+  name: Bulk Upload Pincode
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{scriptUrl}}}/api/v2/geocode/upload-csv"
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value: []
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

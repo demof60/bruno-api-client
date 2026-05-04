@@ -1,0 +1,17 @@
+info:
+  name: Sync product url field
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{scriptUrl}}/api/v2/product/sync-url-field"
+  auth:
+    type: bearer
+    token: "@AFxIrep*CWE&sva!Hug)bKTf(cz6PJQmt7dDkyUB%"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
