@@ -12,6 +12,8 @@ collections:
     path: "collections/Script Service"
   - name: "Pipex Web"
     path: "collections/Pipex Web"
+  - name: "AI Model"
+    path: "collections/AI Model"
 
 specs:
 

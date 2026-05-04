@@ -1,0 +1,22 @@
+info:
+  name: Convert Text To Humanize
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/ai/convertTextToHumanize"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"text\": \"When choosing a Round Bar Supplier in India for industrial applications, it’s essential to consider several key factors such as material quality, certification, manufacturing standards, delivery timelines, and pricing. A reliable supplier should offer round bars in various grades like stainless steel, carbon steel, and alloy steel, along with test certificates and compliance with international standards such as ASTM or DIN. Additionally, check for the supplier’s reputation, customer reviews, and their ability to handle bulk orders with consistent supply. Partnering with a trusted Round Bar Supplier in India ensures long-term reliability and performance in demanding industrial environments.\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

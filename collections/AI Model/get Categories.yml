@@ -1,0 +1,22 @@
+info:
+  name: get Categories
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:5000/api/categories/68403f99355ec38ce835bf1f
+  body:
+    type: text
+    data: "{\r
+
+      \  \"name\": \"Modern Times\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
