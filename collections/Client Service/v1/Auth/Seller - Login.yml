@@ -8,75 +8,43 @@ http:
   url: "{{clientUrl}}/api/v1/auth/login"
   body:
     type: json
-    data: "{\r
+    data: |-
+      {
+          // "email": "picaryta@fxzig.com",
+          // "password": "Pipex@F60"
+          // "email": "zaleliji@forexzig.com",
+          // "password": "Pipex@F60"
+          // "email":"ht1ner94s1@jkotypc.com",
+          // "password": "Pipex@f60"
+          // "email": "puqazo@forexzig.com",
+          // "password": "Pipex@F60"
+          // "email": "kalasssss@lnovic.com",
+          // "password": "Pipex@f60"
+          // "email": "dyluzo@forexzig.com",
+          // "password": "Pipex@F60"
+          // "email": "krish.jain@f70.co.in",
+          // "password": "Pipex@f60"
+          // "email": "sayinad171@alexida.com",
+          // "password": "Parag@7155"
+          // "email": "spam@lnovic.com",
+          // "password": "Pipex@F60"
+          // "email": "hupysyke@forexzig.com",
+          // "password": "Pipex@F60"
+          //  "email": "wamodady@denipl.com",
+          // "password": "Pipex@F60"
+          // "email":"kabelete@denipl.net",
+          // "password":"Pipex@f60"
+          // "email": "gypipecu@denipl.net",
+          // "password": "Pipex@F60"
+          "email": "vinay.poojary@f70.co.in",
+          "password": "Pipex@F70"
+        
 
-      \    // \"email\": \"picaryta@fxzig.com\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    // \"email\": \"zaleliji@forexzig.com\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    // \"email\":\"ht1ner94s1@jkotypc.com\",\r
-
-      \    // \"password\": \"Pipex@f60\"\r
-
-      \    // \"email\": \"puqazo@forexzig.com\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    // \"email\": \"kalasssss@lnovic.com\",\r
-
-      \    // \"password\": \"Pipex@f60\"\r
-
-      \    // \"email\": \"dyluzo@forexzig.com\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    // \"email\": \"krish.jain@f70.co.in\",\r
-
-      \    // \"password\": \"Pipex@f60\"\r
-
-      \    // \"email\": \"sayinad171@alexida.com\",\r
-
-      \    // \"password\": \"Parag@7155\"\r
-
-      \    // \"email\": \"spam@lnovic.com\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    // \"email\": \"hupysyke@forexzig.com\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    //  \"email\": \"wamodady@denipl.com\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    // \"email\":\"kabelete@denipl.net\",\r
-
-      \    // \"password\":\"Pipex@f60\"\r
-
-      \    // \"email\": \"gypipecu@denipl.net\",\r
-
-      \    // \"password\": \"Pipex@F60\"\r
-
-      \    \"email\": \"vinay.poojary@f70.co.in\",\r
-
-      \    \"password\": \"Pipex@F69\"\r
-
-      \r
-
-      // \"email\": \"picaryta@fxzig.com\",\r
-
-      //  \"password\": \"Pipex@F60\"\r
-
-      \    // \"email\": \"pooja.vishakarma@f70.co.in\",\r
-
-      \    // \"password\": \"pooja\"\r
-
-      }"
+      // "email": "picaryta@fxzig.com",
+      //  "password": "Pipex@F60"
+          // "email": "pooja.vishakarma@f70.co.in",
+          // "password": "pooja"
+      }
   auth:
     type: bearer
     token: "{{token}}"

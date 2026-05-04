@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{clientUrl}}/api/v1/payment/plans/monthly?sellerPlan=true"
+  url: "{{clientUrl}}/api/v1/payment/plans/duration?sellerPlan=true"
   params:
     - name: sellerPlan
       value: "true"
