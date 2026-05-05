@@ -10,4 +10,4 @@ variables:
   - name: webUrl
     value: http://localhost:5050
   - name: url
-    value: http://localhost:9000
+    value: http://localhost:5000
