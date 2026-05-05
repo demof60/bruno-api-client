@@ -8,53 +8,31 @@ http:
   url: "{{url}}/api/v2/admin/subscription"
   body:
     type: json
-    data: "{\r
+    data: |-
+      {
+        "clientId": "6981a7083c0993b603e047ce",
+        "planId": "69e0c6091ee43b7ef56bd5ad",
+        "paymentPlanId": "663c5f590263685ba00dfd75",
+        "deactivateOld": true,
+      //   "billingId": "65f1a2b3c4d5e6f7890a2222",
+      //   "taxId": "69b3a72754fbd4b32869e460",
 
-      \  \"clientId\": \"6981a7083c0993b603e047ce\",\r
+        "discount_type": "percentage",
+        "discount_value": 5,
 
-      \  \"planId\": \"697afa86ccc56fe165856872\",\r
+        "totalAmount": 4999,
+        "paymentMethod": "cash",
 
-      \  \"paymentPlanId\": \"663c5f590263685ba00dfd75\",\r
+      // //   "customerId": "cus_Q123456789",
+      //   "subscriptionId": "sub1234",
 
-      \  \"deactivateOld\": true,\r
+      // //   "startDate": "2026-04-13T00:00:00.000Z",
+      // //   "endDate": "2026-05-13T00:00:00.000Z",
 
-      //   \"billingId\": \"65f1a2b3c4d5e6f7890a2222\",\r
+      //   "sendInvoiceEmail": true,
 
-      //   \"taxId\": \"69b3a72754fbd4b32869e460\",\r
-
-      \r
-
-      \  \"discount_type\": \"percentage\",\r
-
-      \  \"discount_value\": 5,\r
-
-      \r
-
-      \  \"totalAmount\": 4999,\r
-
-      \  \"paymentMethod\": \"cash\",\r
-
-      \r
-
-      //   \"customerId\": \"cus_Q123456789\",\r
-
-      \  \"subscriptionId\": \"sub1234\",\r
-
-      \r
-
-      //   \"startDate\": \"2026-04-13T00:00:00.000Z\",\r
-
-      //   \"endDate\": \"2026-05-13T00:00:00.000Z\",\r
-
-      \r
-
-      \  \"sendInvoiceEmail\": true,\r
-
-      \r
-
-      \  \"internalNote\": \"Test subscription with full data\"\r
-
-      }"
+        "internalNote": "Test subscription with full data"
+      }
   auth: inherit
 
 settings:
