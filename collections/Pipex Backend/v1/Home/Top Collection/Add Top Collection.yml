@@ -1,0 +1,15 @@
+info:
+  name: Add Top Collection
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/web/home/collection
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

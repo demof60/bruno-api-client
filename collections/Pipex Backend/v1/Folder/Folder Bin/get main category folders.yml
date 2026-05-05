@@ -1,0 +1,25 @@
+info:
+  name: get main category folders
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v1/folder/stash?offset=0&limit=25&searchQuery="
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: limit
+      value: "25"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

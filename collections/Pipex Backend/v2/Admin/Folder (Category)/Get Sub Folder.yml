@@ -1,0 +1,29 @@
+info:
+  name: Get Sub Folder
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/folder/688475734dfb8470ec63f5e2?limit=10&offset=0&status=all"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+      disabled: true
+    - name: status
+      value: all
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

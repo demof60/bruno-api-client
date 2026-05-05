@@ -1,0 +1,15 @@
+info:
+  name: Supplier get based on package pages (phase 3)
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/getSupplierLiveByProduct/gh
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

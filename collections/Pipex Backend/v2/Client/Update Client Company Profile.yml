@@ -1,0 +1,100 @@
+info:
+  name: Update Client Company Profile
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v2/client/update
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          { "contacts":[{ "number":1225110209,"primary":"true","whatsApp":false}]
+          }
+        disabled: true
+      - name: logo
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/download (7).jpg
+      - name: companyGif
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/galaxy-3468_256.gif
+        disabled: true
+      - name: coverImage
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/netflix.png
+        disabled: true
+      - name: notes
+        type: text
+        value: ddddd132464364mnjh
+        disabled: true
+      - name: coverType
+        type: text
+        value: coverImage
+        disabled: true
+      - name: head
+        type: text
+        value: |
+          { "metaDescription":"meta description",
+           "url":"yeh url hai"
+
+            
+
+          }
+        disabled: true
+      - name: responseTime
+        type: text
+        value: "1 din "
+        disabled: true
+      - name: annualRevenue
+        type: text
+        value: "45"
+        disabled: true
+      - name: projectsCompleted
+        type: text
+        value: "10000000"
+        disabled: true
+      - name: experience
+        type: text
+        value: "5000"
+        disabled: true
+      - name: features
+        type: text
+        value: |-
+          [
+              "Four party inspection.",
+              "ISO certified company"
+          ]
+        disabled: true
+      - name: data
+        type: text
+        value: '{ "emails":[{ "email":"contctkro3@example.com","primary":true}]}'
+      - name: data
+        type: text
+        value: |
+          {
+            "addresses": [
+              {
+                "name": "Office",
+                "address_line1": "123 Main Street",
+                "address_line2": "Suite 100",
+                "city": "Cityville",
+                "postal_code": "12345",
+                "country": "Countryland",
+                "primary": true
+              }
+            ]
+          }
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Blog Permanent Delete
+  type: http
+  seq: 10
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/blog/permanent/680a147fea9dd622817931e8"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: Bulk Resume Mail Queue
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/email/resume/bulk"
+  body:
+    type: json
+    data: "{\r\n    \"ids\": \"all\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

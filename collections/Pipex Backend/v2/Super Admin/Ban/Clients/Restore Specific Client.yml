@@ -1,0 +1,22 @@
+info:
+  name: Restore Specific Client
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/ban/clients/restore/671f7d37aaa77919ed297a42?childsLiveOption=live_all_possible"
+  params:
+    - name: childsLiveOption
+      value: live_all_possible
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

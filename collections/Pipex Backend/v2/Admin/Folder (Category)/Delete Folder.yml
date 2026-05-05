@@ -1,0 +1,33 @@
+info:
+  name: Delete Folder
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/folder/delete/69c4e76ef04f4a7d9896683a?type=deleteTree"
+  params:
+    - name: type
+      value: uncategorizedTreePages
+      type: query
+      description: '["deleteTree","uncategorizedTreePages", "deleteOnlyParent"]'
+      disabled: true
+    - name: type
+      value: deleteTree
+      type: query
+    - name: type
+      value: deleteOnlyParent
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWUzMGZiZmRkODZkYWFkOWFkZmYzZSIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJ2aW5kYWdvYXQiLCJpYXQiOjE3NjA3NjQ1MDQsImV4cCI6MTc2MDkzNzMwNH0.RATE2-XuJM8gDS0B0LlPSF8u8mR4ra17KjJiCEhWhus
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

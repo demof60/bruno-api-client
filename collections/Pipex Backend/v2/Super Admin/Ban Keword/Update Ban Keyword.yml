@@ -1,0 +1,22 @@
+info:
+  name: Update Ban Keyword
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/superadmin/bankeyword/update/68fb15cbca56587afad56e4f"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"keyword\": \"projhtect\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

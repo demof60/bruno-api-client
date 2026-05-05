@@ -14,9 +14,9 @@ collections:
     path: "collections/Pipex Web"
   - name: "AI Model"
     path: "collections/AI Model"
+  - name: "Pipex Backend"
+    path: "collections/Pipex Backend"
 
 specs:
 
 docs: ''
-
-activeEnvironmentUid: s1eiq0000000000000000

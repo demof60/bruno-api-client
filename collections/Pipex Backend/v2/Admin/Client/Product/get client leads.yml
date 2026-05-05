@@ -1,0 +1,29 @@
+info:
+  name: get client leads
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/product/leads/699e9b3eec338488c8b9492b?limit=10&offset=0&type=direct"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: type
+      value: direct
+      type: query
+    - name: searchTerm
+      value: ""
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

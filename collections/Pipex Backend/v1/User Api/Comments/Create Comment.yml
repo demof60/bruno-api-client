@@ -1,0 +1,28 @@
+info:
+  name: Create Comment
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/user/createComment"
+  body:
+    type: json
+    data: "{\r
+
+      \   \"content\":\"Aniket\",\r
+
+      \   \"pageId\":\"66474a0bd9f7c789a3d8efa2\",\r
+
+      \   \"review\":2\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

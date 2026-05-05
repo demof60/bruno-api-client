@@ -1,0 +1,34 @@
+info:
+  name: GetcityLiveClients
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/location/:id/liveClients?limit=10&offset=0&search=&type=all&sort=createdAt"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: search
+      value: ""
+      type: query
+    - name: type
+      value: all
+      type: query
+    - name: sort
+      value: createdAt
+      type: query
+    - name: id
+      value: 694a2f4c067278bd72ee15a3
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

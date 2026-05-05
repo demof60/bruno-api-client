@@ -1,0 +1,30 @@
+info:
+  name: Get Category/Subcategory/Products Leads
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/report/get/categories/leads/6809e6fa821afcd462f8a6bf?limit=10&offset=0"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchTerm
+      value: ""
+      type: query
+      disabled: true
+    - name: type
+      value: unassigned
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

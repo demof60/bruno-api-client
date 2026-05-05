@@ -1,0 +1,78 @@
+info:
+  name: Create Client
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/client"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |
+          {
+            "name": "Vivek Test Client",
+            "businessType": "manufactures",
+            "rating": 1,
+            "website": "https://test15.com",
+            "contacts": [
+              {
+                "countryCode": "+123",
+                "number": "000107010",
+                "primary": true,
+                "whatsApp": true
+              },
+              {
+                "countryCode": "+993",
+                "number": "8909000111",
+                "primary": false,
+                "whatsApp": false
+              }
+            ],
+            "emails": [
+              {
+                "email": "contact13@example.com",
+                "primary": true
+              },
+              {
+                "email": "contact13@example.com",
+                "primary": false
+              }
+            ],
+            "addresses": [
+              {
+                "name": "Office"
+               
+              }
+            ]
+          }
+        contentType: application/json
+      - name: logo
+        type: file
+        value:
+          - postman-cloud:///1ef3ebd0-f9d6-48d0-a5f6-3de287e1c59e
+      - name: companyGif
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/heart-10930_256.gif
+      - name: coverImage
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/pexels-derice-jason-fahnkow-745824-1595244.jpg
+          - /C:/Users/admin/Downloads/adrien-olichon-RCAhiGJsUUE-unsplash.jpg
+      - name: notes
+        type: text
+        value: edeeeeeee
+        disabled: true
+      - name: coverType
+        type: text
+        value: coverimage
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

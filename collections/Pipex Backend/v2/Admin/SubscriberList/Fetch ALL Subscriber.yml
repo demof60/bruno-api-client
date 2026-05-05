@@ -1,0 +1,502 @@
+info:
+  name: Fetch ALL Subscriber
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/web/rfq/subscriber/get?limit=50&offset=0"
+  params:
+    - name: limit
+      value: "50"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchTerm
+      value: pipex@gmail.com
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Fetch ALL Subscriber
+    request:
+      url: "{{url}}/api/v2/web/rfq/subscriber/get?limit=50&offset=0"
+      method: GET
+      params:
+        - name: limit
+          value: "50"
+          type: query
+        - name: offset
+          value: "0"
+          type: query
+        - name: searchTerm
+          value: pipex
+          type: query
+          disabled: true
+      body:
+        type: multipart-form
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Vary
+          value: Origin
+        - name: Access-Control-Allow-Credentials
+          value: "true"
+        - name: Content-Security-Policy
+          value: "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+        - name: Cross-Origin-Opener-Policy
+          value: same-origin
+        - name: Cross-Origin-Resource-Policy
+          value: same-origin
+        - name: Origin-Agent-Cluster
+          value: ?1
+        - name: Referrer-Policy
+          value: no-referrer
+        - name: Strict-Transport-Security
+          value: max-age=15552000; includeSubDomains
+        - name: X-Content-Type-Options
+          value: nosniff
+        - name: X-DNS-Prefetch-Control
+          value: off
+        - name: X-Download-Options
+          value: noopen
+        - name: X-Frame-Options
+          value: SAMEORIGIN
+        - name: X-Permitted-Cross-Domain-Policies
+          value: none
+        - name: X-XSS-Protection
+          value: "0"
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Content-Length
+          value: "7903"
+        - name: ETag
+          value: W/"1edf-jD7Y0q91EvshbHiVSzTsv+OY+Xk"
+        - name: Date
+          value: Thu, 01 Jan 2026 07:32:15 GMT
+        - name: Connection
+          value: keep-alive
+        - name: Keep-Alive
+          value: timeout=5
+      body:
+        type: json
+        data: |-
+          {
+              "success": true,
+              "data": {
+                  "totalSubscribers": 103,
+                  "data": [
+                      {
+                          "_id": "695600f15d55152366ae690a",
+                          "name": "",
+                          "email": "rahil@scalemeetvelaspan.com",
+                          "number": null,
+                          "formattedDate": "01-January-2026",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "694f80694ce0eece5a9bc24b",
+                          "name": "Asdasd",
+                          "email": "das@fff.com",
+                          "number": null,
+                          "formattedDate": "27-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "6948db8bf7db096819e8df7b",
+                          "name": "Parag",
+                          "email": "testquotation@gmail.com",
+                          "number": 7781534843,
+                          "formattedDate": "22-December-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "693ff33fb1c41c3900c12cda",
+                          "name": "Shubh2124",
+                          "email": "shubh2124@pentagoat.com",
+                          "number": 3525252525,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "693ff2d0b1c41c3900c12cb2",
+                          "name": "Vishwakarma",
+                          "email": "vishwakarma@pentagoat.com",
+                          "number": 6734524524,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693ff1ddb1c41c3900c12c3c",
+                          "name": "Hello Billi",
+                          "email": "egfsdgsdg@pentagoat.com",
+                          "number": 6345646456,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 2
+                      },
+                      {
+                          "_id": "693fef9ab1c41c3900c12b1a",
+                          "name": "Hello Vidya",
+                          "email": "vidya@pentagoat.com",
+                          "number": 2523523523,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "693fed07b1c41c3900c12a63",
+                          "name": "Johnny Liver",
+                          "email": "johnny@pentagoat.com",
+                          "number": 4534735467,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693fec42b1c41c3900c129d0",
+                          "name": "Hii Vinay",
+                          "email": "sdgsgg@pentagoat.com",
+                          "number": 6345646456,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693febcfb1c41c3900c1299e",
+                          "name": "Yash Mali",
+                          "email": "prixcvgdfti1@pentagoat.com",
+                          "number": 6345646456,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693fea21b1c41c3900c12916",
+                          "name": "Hiiii Cat",
+                          "email": "pritery@pentagoat.com",
+                          "number": 6757674745,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693fe664b1c41c3900c12701",
+                          "name": "Iouertgsieurthsidughdsriu",
+                          "email": "prkdjghb@pentagoat.com",
+                          "number": 5674299486,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693fb50bb1c41c3900c12220",
+                          "name": "Arfan",
+                          "email": "tricks7er244@gmail.com",
+                          "number": null,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693fa52db1c41c3900c11e3f",
+                          "name": "Test Name",
+                          "email": "Parag7155@gmail.com",
+                          "number": 8828422796,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "693fa313b1c41c3900c11db6",
+                          "name": "546546",
+                          "email": "54757@gmail.com",
+                          "number": 5475475475,
+                          "formattedDate": "15-December-2025",
+                          "clientCount": 2
+                      },
+                      {
+                          "_id": "693bea8dfec07b3da4fbe77e",
+                          "name": "Asd",
+                          "email": "sdf@sdf.com",
+                          "number": 3453453453,
+                          "formattedDate": "12-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "693be5dffec07b3da4fbe6df",
+                          "name": "Wrwerwer",
+                          "email": "sfsdfsdf@syudg.com",
+                          "number": 2342342342,
+                          "formattedDate": "12-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "6939051782f6a57c8e7c8da9",
+                          "name": "Ajay Nigatron",
+                          "email": "ajay@kulkarni.com",
+                          "number": 9879877987,
+                          "formattedDate": "10-December-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "69325ccb29fad45d156b9b4d",
+                          "name": "Ssfasd Fasf",
+                          "email": "sdfsd@gmail.com",
+                          "number": 2324234234,
+                          "formattedDate": "05-December-2025",
+                          "clientCount": 6
+                      },
+                      {
+                          "_id": "69325c9929fad45d156b9b3d",
+                          "name": "Sdef",
+                          "email": "dfsd@gmail.com",
+                          "number": 2342342343,
+                          "formattedDate": "05-December-2025",
+                          "clientCount": 4
+                      },
+                      {
+                          "_id": "693125b729fad45d156b8bb9",
+                          "name": "Test",
+                          "email": "test@gmail.com",
+                          "number": 4897788979,
+                          "formattedDate": "04-December-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "6931243b29fad45d156b8ade",
+                          "name": "Asdasdasda",
+                          "email": "asdasd@f.nyn",
+                          "number": 4564564564,
+                          "formattedDate": "04-December-2025",
+                          "clientCount": 5
+                      },
+                      {
+                          "_id": "693037b529fad45d156b85f5",
+                          "name": "Sss",
+                          "email": "sneha@pentagoat.com",
+                          "number": 6546546546,
+                          "formattedDate": "03-December-2025",
+                          "clientCount": 5
+                      },
+                      {
+                          "_id": "6930275c29fad45d156b82fe",
+                          "name": "Shubham Bbhosale",
+                          "email": "rb.rishibhosale@gmail.com",
+                          "number": 2093029309,
+                          "formattedDate": "03-December-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "692e7e4029fad45d156b6b83",
+                          "name": "Ek Sample Quotation",
+                          "email": "ws@gmail.com",
+                          "number": 9874565554,
+                          "formattedDate": "02-December-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "6929994229fad45d156b5c35",
+                          "name": "Eu Et Tempore Fugiat Voluptas Sint Dolorem Quis Quasi Perf",
+                          "email": "yewonen726@dpwev.com",
+                          "number": 7987888888,
+                          "formattedDate": "28-November-2025",
+                          "clientCount": 3
+                      },
+                      {
+                          "_id": "6929954a29fad45d156b5be7",
+                          "name": "Darshan Bhai Ke Liye Rfq",
+                          "email": "darshanBhai@gmail.com",
+                          "number": 7777789999,
+                          "formattedDate": "28-November-2025",
+                          "clientCount": 2
+                      },
+                      {
+                          "_id": "692989dd29fad45d156b5b6e",
+                          "name": "Dorsongmail",
+                          "email": "p@gmail.com",
+                          "number": 9595959554,
+                          "formattedDate": "28-November-2025",
+                          "clientCount": 6
+                      },
+                      {
+                          "_id": "6929857329fad45d156b5b33",
+                          "name": "Hkhjhjhjhjhjhjhjhjhjhjhjhjh",
+                          "email": "d@gmail.com",
+                          "number": 4564564645,
+                          "formattedDate": "28-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "69292c615e0334cadf5ad392",
+                          "name": "Plastic Industry 3333333333333",
+                          "email": "pooja.vishwakarma45@f60host.in",
+                          "number": 9797898889,
+                          "formattedDate": "28-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "69218989b93cc3625f845fa7",
+                          "name": "Vin",
+                          "email": "vinay.po1245544254ary@f70.co.in",
+                          "number": 4536475486,
+                          "formattedDate": "22-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "6921638764fa7c00ddf14d23",
+                          "name": "Shubham",
+                          "email": "dsfgsd@gmail.com",
+                          "number": 5436756756,
+                          "formattedDate": "22-November-2025",
+                          "clientCount": 2
+                      },
+                      {
+                          "_id": "6920626dcea824f2d70e4923",
+                          "name": "Egevevevvvvev",
+                          "email": "ergrgerg@gmail.com",
+                          "number": 6564564564,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "69206256cea824f2d70e4909",
+                          "name": "Parent",
+                          "email": "dghgd@gmail.com",
+                          "number": 5647676678,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "6920623fcea824f2d70e48ef",
+                          "name": "Fhthrth",
+                          "email": "ffaf@gmail.com",
+                          "number": 6645645645,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "6920622dcea824f2d70e48d5",
+                          "name": "",
+                          "email": "sdgfas@gmail.com",
+                          "number": 4536536556,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "6920621dcea824f2d70e48b0",
+                          "name": "Fewfewf",
+                          "email": "ergr@gmail.com",
+                          "number": 4534634643,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "692060c5cea824f2d70e4851",
+                          "name": "",
+                          "email": "sdf@gmail.com",
+                          "number": 4555454545,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "6920528393c959aa83ed5e2e",
+                          "name": "Rrrrr",
+                          "email": "fiwidfsdfpo@fxzig.com",
+                          "number": 6664654654,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "6920524f991b6c574bcf3930",
+                          "name": "Xyz",
+                          "email": "rewerwr45345shma@gmail.com\n",
+                          "number": 7418529630,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "69204c44cede5350013f796b",
+                          "name": "Shubhamamamma",
+                          "email": "kdjfk@gmail.com",
+                          "number": 3498394893,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 1
+                      },
+                      {
+                          "_id": "69202d16cede5350013f7661",
+                          "name": "Main Industry",
+                          "email": "devtes34234ter12@evoxury.com",
+                          "number": 5254234234,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 2
+                      },
+                      {
+                          "_id": "6920137ecede5350013f74fc",
+                          "name": "Baniye Ka Dimaag Aur Amanbhai Ki Chal",
+                          "email": "fadfsf@gmail.com",
+                          "number": 8989898989,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "69201318cede5350013f74eb",
+                          "name": "Baniye Ka Dimag Amanbhai Ki Chal",
+                          "email": "badnaamraja@gmail.com",
+                          "number": 8282828282,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 3
+                      },
+                      {
+                          "_id": "6920124acede5350013f74ba",
+                          "name": "Badnaam Raja",
+                          "email": "rajakipraja@gmail.com",
+                          "number": 8282828282,
+                          "formattedDate": "21-November-2025",
+                          "clientCount": 2
+                      },
+                      {
+                          "_id": "691f17c1b6f0e341fd88b6af",
+                          "name": "Premium User",
+                          "email": "premium@user.com",
+                          "number": 3049593475,
+                          "formattedDate": "20-November-2025",
+                          "clientCount": 0
+                      },
+                      {
+                          "_id": "691f14ccb6f0e341fd88b65d",
+                          "name": "Cycle Melon",
+                          "email": "ll@gamil.com",
+                          "number": 7841926261,
+                          "formattedDate": "20-November-2025",
+                          "clientCount": 5
+                      },
+                      {
+                          "_id": "691f141db6f0e341fd88b5d4",
+                          "name": "Sagar `",
+                          "email": "T@GMAIL.COM",
+                          "number": 1321564545,
+                          "formattedDate": "20-November-2025",
+                          "clientCount": 3
+                      },
+                      {
+                          "_id": "691f132cb6f0e341fd88b567",
+                          "name": "Efwefe",
+                          "email": "retertrt@gmail.com",
+                          "number": 4456346346,
+                          "formattedDate": "20-November-2025",
+                          "clientCount": 3
+                      },
+                      {
+                          "_id": "691ee1be26abc0b28bdd8b98",
+                          "name": "Gdrgdrghertgertg",
+                          "email": "dgfgdfg@gmail.com",
+                          "number": 7645645654,
+                          "formattedDate": "20-November-2025",
+                          "clientCount": 3
+                      }
+                  ]
+              }
+          }

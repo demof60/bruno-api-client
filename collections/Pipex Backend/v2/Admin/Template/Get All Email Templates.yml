@@ -1,0 +1,32 @@
+info:
+  name: Get All Email Templates
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/template/?offset=2&search=priti"
+  params:
+    - name: status
+      value: all
+      type: query
+      disabled: true
+    - name: offset
+      value: "2"
+      type: query
+    - name: limit
+      value: "2"
+      type: query
+      disabled: true
+    - name: search
+      value: priti
+      type: query
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,17 @@
+info:
+  name: User Restore
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/superAdmin/restoreUser/6673cae6c1bccae78d5ce703
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

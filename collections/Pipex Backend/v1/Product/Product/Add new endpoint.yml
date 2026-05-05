@@ -1,0 +1,24 @@
+info:
+  name: Add new endpoint
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/product/endpoint"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\":\"chalo-jaaneddddd\",\r
+
+      \    \"productId\": \"667faf9f7bfc2f6725930465\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

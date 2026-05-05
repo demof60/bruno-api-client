@@ -1,0 +1,69 @@
+info:
+  name: Fetch Client User profile User profile and vcardsetting
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/user/67ee22db8115e94258e36146"
+  params:
+    - name: searchTerm
+      value: Kailash
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"profile\": {\r
+
+      \        \"username\": \"saginan121gggss\",\r
+
+      \        \"firstName\": \"Hello \",\r
+
+      \        \"lastName\": \"World\",\r
+
+      \        \"department\": \"\",\r
+
+      \        \"designation\": \"\",\r
+
+      \        \"countryCode\": \"2\",\r
+
+      \        \"number\": \"34343\",\r
+
+      \        \"email\": \"sagiantpiping122w122@gmail.com\",\r
+
+      \        \"password\": \"Pipex@f60\"\r
+
+      \    },\r
+
+      \     \"vcardSettings\": {\r
+
+      \        \"firstName\": \"Hello \",\r
+
+      \        \"lastName\": \"\",\r
+
+      \        \"designation\": \"dd\",\r
+
+      \        \"countryCode\": \"\",\r
+
+      \        \"number\": \"\",\r
+
+      \        \"whatsappNoCountryCode\": \"\",\r
+
+      \        \"whatsappNo\": \"\",\r
+
+      \        \"email\": \"sagiantpiping1221@gmail.com\",\r
+
+      \        \"isActive\": true\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

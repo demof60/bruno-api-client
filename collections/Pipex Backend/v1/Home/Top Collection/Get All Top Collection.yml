@@ -1,0 +1,25 @@
+info:
+  name: Get All Top Collection
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{url}}/api/v1/web/home/collection/all?limit=6&offset=0"
+  params:
+    - name: limit
+      value: "6"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

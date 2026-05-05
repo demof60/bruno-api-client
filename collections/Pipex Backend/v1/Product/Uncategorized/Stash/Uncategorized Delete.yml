@@ -1,0 +1,17 @@
+info:
+  name: Uncategorized Delete
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/uncategorizedDelete/66a33ad051da01ca2ef28894
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

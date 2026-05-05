@@ -1,0 +1,31 @@
+info:
+  name: GetcityLivePages
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/location/:id/livePages?offset=0&searchQuery=&type=all&limit=250"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+    - name: type
+      value: all
+      type: query
+    - name: limit
+      value: "250"
+      type: query
+    - name: id
+      value: 694a2f4c067278bd72ee15a3
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

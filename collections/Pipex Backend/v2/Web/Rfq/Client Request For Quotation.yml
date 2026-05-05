@@ -1,0 +1,39 @@
+info:
+  name: Client Request For Quotation
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/web/rfq/client"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: "tesssst "
+      - name: number
+        type: text
+        value: "9872494777"
+      - name: email
+        type: text
+        value: fatabufe@cyclelove.cc
+      - name: countryCode
+        type: text
+        value: "+91"
+      - name: product
+        type: text
+        value: '{"_id":"68539a259a8f1501f5e42160","name":"Test Product 45" , "type" :"productModel"}'
+      - name: message
+        type: text
+        value: sdjkhdgkhdkgh  gdg,dfng,d ,fmgn,dng
+      - name: clientId
+        type: text
+        value: 683ea0171324c57b71f15803
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

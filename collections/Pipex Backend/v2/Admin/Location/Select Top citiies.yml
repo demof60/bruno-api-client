@@ -1,0 +1,80 @@
+info:
+  name: Select Top citiies
+  type: http
+  seq: 9
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/location/cities/selectTop"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"cityIds\": [\r
+
+      \       \"6790d1ff610a03a8ee7d0b22\",\r
+
+      \       \"6790d262610a03a8ee7d0e51\",\r
+
+      \       \"6790d246610a03a8ee7d0d69\",\r
+
+      \       \"6790d276610a03a8ee7d0e9c\"\r
+
+      \    ],\r
+
+      \    \"countryId\":\"6790892bb3671eea6cd1565a\"\r
+
+      }\r
+
+      //   [ \"6790d1d5610a03a8ee7d09fa\",   Dubai\r
+
+      //         \"6790d1ff610a03a8ee7d0b22\"]\r
+
+      \r
+
+      \ // \"671644a2cfd7ec621d17f672\",\r
+
+      \        // \"671644a2cfd7ec621d17f672\",\r
+
+      \        // \"671644a2cfd7ec621d17f7f1\",\r
+
+      \        // \"671644a2cfd7ec621d17f799\",\r
+
+      \        // \"671644a2cfd7ec621d17f779\",\r
+
+      \        // \"671644a2cfd7ec621d17fa1a\",\r
+
+      \        // \"671644a2cfd7ec621d17fa63\",\r
+
+      \        // \"671644a2cfd7ec621d17faa2\",\r
+
+      \        // \"671644a2cfd7ec621d17fb1c\",\r
+
+      \        // \"671644a2cfd7ec621d17fb1d\",\r
+
+      \        // \"671644a2cfd7ec621d17fb78\",\r
+
+      \        // \"671644a2cfd7ec621d17fc9a\",\r
+
+      \        // \"671644a2cfd7ec621d17feb5\",\r
+
+      \        // \"671644a2cfd7ec621d17feb6\",\r
+
+      \        // \"671644a2cfd7ec621d17fecd\",\r
+
+      \        // \"671644a2cfd7ec621d17fefe\",\r
+
+      \        // \"671644a2cfd7ec621d17fd6d\",\r
+
+      \        // \"671644a2cfd7ec621d17ff8e\",\r
+
+      \        // \"671644a2cfd7ec621d17ff70\",\r
+
+      \        // \"671644a2cfd7ec621d17fc9b\""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

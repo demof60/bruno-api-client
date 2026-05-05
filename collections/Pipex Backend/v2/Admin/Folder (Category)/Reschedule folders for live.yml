@@ -1,0 +1,22 @@
+info:
+  name: Reschedule folders for live
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/folder/reschedule/all"
+  body:
+    type: multipart-form
+    data:
+      - name: categoryExcelFile
+        type: file
+        value:
+          - /C:/Users/fourty new/Downloads/pipex-bulk category.xlsx
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

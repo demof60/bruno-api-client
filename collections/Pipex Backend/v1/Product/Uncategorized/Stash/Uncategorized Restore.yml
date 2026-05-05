@@ -1,0 +1,17 @@
+info:
+  name: Uncategorized Restore
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/uncategorizedRestore/66a33ad051da01ca2ef28894
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

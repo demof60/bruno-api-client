@@ -1,0 +1,18 @@
+info:
+  name: update client package
+  type: http
+  seq: 6
+
+http:
+  method: PATCH
+  url: "{{url}}/api/v2/admin/client/package"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

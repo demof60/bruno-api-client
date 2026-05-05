@@ -1,0 +1,132 @@
+info:
+  name: Create Home Top Category
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/web/home/folder"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"mainCategoryId\": \"66a8c177d822f994b8dc3d9e\",\r
+
+      \    \"rank\": 10,\r
+
+      \    \"subCategories\": [\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66a8e43155f9e48fbdd382ce\",\r
+
+      \            \"ind\": 2,\r
+
+      \            \"pages\": [\r
+
+      \                \"66a8e72f55f9e48fbdd3867b\"\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66aa003455f9e48fbdd3a0ad\",\r
+
+      \            \"ind\": 1,\r
+
+      \            \"pages\": [\r
+
+      \                \"66aa10ab55f9e48fbdd3ab2c\"\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66aa065f55f9e48fbdd3a6bb\",\r
+
+      \            \"ind\": 3,\r
+
+      \            \"pages\": [\r
+
+      \                \"66aa0c8355f9e48fbdd3a968\"\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66aa0abe55f9e48fbdd3a890\",\r
+
+      \            \"ind\": 4,\r
+
+      \            \"pages\": [\r
+
+      \                \"66aa0f8355f9e48fbdd3aa58\"\r
+
+      \            ]\r
+
+      \        }\r
+
+      \        ,\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66aa129355f9e48fbdd3ac33\",\r
+
+      \            \"ind\": 6,\r
+
+      \            \"pages\": [\r
+
+      \                \"66aa200d55f9e48fbdd3bc1f\"\r
+
+      \            ]\r
+
+      \        }\r
+
+      \        ,\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66aa134e55f9e48fbdd3acce\",\r
+
+      \            \"ind\": 5,\r
+
+      \            \"pages\": [\r
+
+      \                \"66aa1c0255f9e48fbdd3b698\"\r
+
+      \            ]\r
+
+      \        }\r
+
+      \        ,\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66aa13ea55f9e48fbdd3ad33\",\r
+
+      \            \"ind\": 7,\r
+
+      \            \"pages\": [\r
+
+      \                \"66aa174d55f9e48fbdd3b055\"\r
+
+      \            ]\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

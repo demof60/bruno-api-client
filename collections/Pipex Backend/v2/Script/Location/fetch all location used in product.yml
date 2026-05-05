@@ -1,0 +1,26 @@
+info:
+  name: fetch all location used in product
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/location/only-product-use-location"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: limit
+      value: "100"
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

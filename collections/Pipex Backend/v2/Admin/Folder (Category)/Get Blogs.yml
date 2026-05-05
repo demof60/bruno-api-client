@@ -1,0 +1,28 @@
+info:
+  name: Get Blogs
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/folder/blogs/671647faddce4ba6bbc7c1ed?limit=10&offset=0&searchQuery=&status=all"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+    - name: status
+      value: all
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,40 @@
+info:
+  name: Reject Promo code
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/promo-codes/reject/690300ec8630e93b50620950"
+  body:
+    type: json
+    data: "\r
+
+      // {\r
+
+      //   \"clientId\": \"6901fc4dc28c6e36102e3674\",\r
+
+      //   \"transactionId\": \"690300f92ada05c3837829d9\"\r
+
+      // }\r
+
+      \r
+
+      \r
+
+      // promocode id - params \r
+
+      // client and transaction id - body \r
+
+      \r
+
+      \r
+
+      \r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

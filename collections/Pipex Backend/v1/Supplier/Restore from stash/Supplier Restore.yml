@@ -1,0 +1,15 @@
+info:
+  name: Supplier Restore
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/supplierRestore/6655b9094e0639e52cbde40c
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

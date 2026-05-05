@@ -1,0 +1,36 @@
+info:
+  name: User Request For Quotation
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/web/rfq/user"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: sanskar mail test 44
+      - name: number
+        type: text
+        value: "9872494777"
+      - name: email
+        type: text
+        value: sanskar@pentagoat.com
+      - name: countryCode
+        type: text
+        value: "+91"
+      - name: product
+        type: text
+        value: '{"_id":"68539a259a8f1501f5e42160","name":"Test Product 45" , "type" :"productModel"}'
+      - name: message
+        type: text
+        value: sdjkhdgkhdkgh  gdg,dfng,d ,fmgn,dng
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

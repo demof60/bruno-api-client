@@ -1,0 +1,18 @@
+info:
+  name: Ban Specific Client
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/superadmin/ban/clients/remove/671f7d37aaa77919ed297a42"
+  body:
+    type: json
+    data: "{\r\n    \"keyword\": \"client\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

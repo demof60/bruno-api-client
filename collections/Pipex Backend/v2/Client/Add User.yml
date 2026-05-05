@@ -1,0 +1,40 @@
+info:
+  name: Add User
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/auth/client/user/add"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\":\"Clinet ban ja 22\",\r
+
+      \    \"email\":\"shaqeeb@pentagoat.com\",\r
+
+      \    // \"role\":\"client\",\r
+
+      \    \"clientId\":\"66a0f4ade04b0c3c68216542\"   \r
+
+      \    // \"permissions\":[\r
+
+      \    //     {\r
+
+      \    //         \"id\":\"661e0d8fd51d91874ee65e00\",\r
+
+      \    //         \"permissionValue\":[\"read\", \"create\", \"update\", \"delete\"]\r
+
+      \    //     }\r
+
+      \    // ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

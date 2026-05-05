@@ -1,0 +1,22 @@
+info:
+  name: Restore Product
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/restore/:id_subcategoryproducts/:folderId"
+  params:
+    - name: id_subcategoryproducts
+      value: 6979e1d1707f3737209fad53
+      type: path
+    - name: folderId
+      value: 6903444eac5000a4a41b9df9
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

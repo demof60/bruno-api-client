@@ -1,0 +1,52 @@
+info:
+  name: add client live free package
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/client/package/freepackage"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"clientId\": \"67a1df61651ea731d3893893\"\r
+
+      \    // \"startPlan\": \"2025-02-07\",\r
+
+      \    // \"packageId\": \"663c5ece0263685ba00dfd66\",\r
+
+      \    // \"deactivateOld\": true,\r
+
+      \    // \"scheduleLive\": false,\r
+
+      \    // // \"productIds\": [\r
+
+      \    // //     \"678df8dfb21ceb581970852b\",\r
+
+      \    // //     \"6789017c2129617278788cfa\"\r
+
+      \    // // ],\r
+
+      \    // \"paymentPlanId\": \"668e1ff99c820c8ae19dd123\",\r
+
+      \    // \"domain\": true,\r
+
+      \    // \"theme\": true,\r
+
+      \    // \"businessCard\": false,\r
+
+      \    // \"socialBranding\": true,\r
+
+      \    // \"tenure\":1,\r
+
+      \    // \"endPlan\":\"2025-03-06\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

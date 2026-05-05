@@ -1,0 +1,169 @@
+info:
+  name: Client Progress Bar
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/client/profile/progressbarstrength"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: poole-jensen-traders
+      - name: emails
+        type: text
+        value: '[{"email":"woxumatem14@mailinator.com","primary":true}]'
+        disabled: true
+      - name: contacts
+        type: text
+        value: '[{"countryCode":"+91","number":"206","primary":true,"whatsApp":true}]'
+        disabled: true
+      - name: ownerName
+        type: text
+        value: Owner name
+        disabled: true
+      - name: description
+        type: text
+        value: descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription
+        disabled: true
+      - name: businessType
+        type: text
+        value: supplier
+        disabled: true
+      - name: website
+        type: text
+        value: https://google.com
+        disabled: true
+      - name: addresses
+        type: text
+        value: '[{"_id":"68149bb5d31d1d2e7dcd3e54","name":"Gamble And Brooks Co","address_line1":"Dickson Erickson Associates","address_line2":"Holloway Oneill Traders","city":"Parks Griffin LLC","postal_code":"Id ullam ad nulla do","country":"Rem dolore sit offic","primary":true,"address_type":"Sharp Donovan LLC"}]'
+        disabled: true
+      - name: annualRevenue
+        type: text
+        value: "4666666"
+        disabled: true
+      - name: projectsCompleted
+        type: text
+        value: "511"
+        disabled: true
+      - name: responseTime
+        type: text
+        value: "611"
+        disabled: true
+      - name: experience
+        type: text
+        value: "1810"
+        disabled: true
+      - name: features
+        type: text
+        value: |-
+          [
+              "Four paarrtyy inspection231",
+              "ISO certified company23",
+              "IP rating certified",
+              "Military certified"
+          ]
+        disabled: true
+      - name: rating
+        type: text
+        value: "4"
+        disabled: true
+      - name: reviewCount
+        type: text
+        value: "45"
+        disabled: true
+      - name: head
+        type: text
+        value: |
+          { "metaDescription":"meta description1"}
+        disabled: true
+      - name: notes
+        type: text
+        value: Notes
+        disabled: true
+      - name: additionalInfos
+        type: text
+        value: '{"companyGst":"","companyCode":"","countriesCode":"","companyYearEst":"","panCard":""}'
+        disabled: true
+      - name: catlog
+        type: text
+        value: |-
+          [
+            { "title": "hello world" }
+          ]
+        disabled: true
+      - name: companyTeam
+        type: text
+        value: |-
+          [
+                              {
+                                  "name": "Hello World"
+                              },
+             {
+                                  "name": "Vrother",
+          "companyTeamImageName": "f60host3.png"
+                              },
+                              {
+                                  "name": "Hello Delta World War"
+                              }
+                          ]
+        disabled: true
+      - name: companyCertificate
+        type: text
+        value: |-
+          [
+          { 
+          "title": "Hello World",
+          "companyCertificateCoverPdfName": "6.png"
+          }
+          ]
+        disabled: true
+      - name: coverImage
+        type: text
+        value: '[ { "imageName":"2.png"} ]'
+        disabled: true
+      - name: logo
+        type: text
+        value: '[{"imageName":"2.png"}]'
+        disabled: true
+      - name: companyGallery
+        type: text
+        value: '[{"imageName":"2.png"}]'
+        disabled: true
+      - name: clientGallery
+        type: text
+        value: '[{"imageName":"2.png"}]'
+        disabled: true
+      - name: addresses
+        type: text
+        value: '[{"address_type":"","address_line1":"test address line 2","address_line2":"","city":"","country":"","postal_code":"","primary":true}]'
+        disabled: true
+      - name: socialMediaLink
+        type: text
+        value: |-
+          [ {
+                "name": "Twitter",
+                "link": "https://twitter.com"
+             }] 
+        disabled: true
+      - name: emails
+        type: text
+        value: "[]"
+        disabled: true
+      - name: contacts
+        type: text
+        value: "[]"
+        disabled: true
+      - name: socialMediaLink
+        type: text
+        value: "[]"
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

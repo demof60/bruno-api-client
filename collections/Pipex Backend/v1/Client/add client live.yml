@@ -1,0 +1,36 @@
+info:
+  name: add client live
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/client/live/66e165561e36fe6e39a0b69f"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"currentPlanId\": \"663c5f590263685ba00dfd75\",\r
+
+      \    \"startPlan\":\"2024-09-13\",\r
+
+      \    \"endPlan\":\"2025-09-11\",\r
+
+      \    \"currentPaymentPlanId\": \"663c5f590263685ba00dfd75\",\r
+
+      \    \"transactionId\": \"4564564564545645\",\r
+
+      \    \"productIds\":[\"66a8d2dfacb2bdd561beaf96\"],\r
+
+      \    \"categoryIds\":[\"669a403a9de356fe56f4bba6\"],\r
+
+      \    \"folderIds\":[\"669a4b4a39fda7ad5ddcce07\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

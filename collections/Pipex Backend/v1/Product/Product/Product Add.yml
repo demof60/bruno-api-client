@@ -1,0 +1,171 @@
+info:
+  name: Product Add
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/productAdd"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          {
+              "productTitle": "v1-test",
+              "productDescription": "Liiii",
+          "productDescriptionHeading": "fsdf",
+              "bannerImageContent": "Nice hai",
+              "productSpecifications": [
+                  {
+                      "title": "Bronze Flange - Specifications nhi dengy humlog.",
+                      "description": "chal",
+                      "HTML": " HTML "
+                  }
+              ],
+              "productTableContents": [
+                  {
+                      "title": "Inconal Pipe Sizes & Weight in Kg, Mm PDF",
+                      "description": " ccc",
+                      "tableCode": "HTML"
+                  }
+              ],
+              "supplyCountriesDetails":
+                  {
+                      "title": "Inconel to Following Countries:",
+                      "description": "Piping Projects Middle East is a leading Steel Pipes Manufacturer in UAE. We proudly supply high-quality Steel pipes to major countries. We have dominated the market as the Middle East’s leading Steel Pipes Exporter for a long time.",
+                      "country": [
+                          {
+                              "name": "USA",
+                              "url": "https://usa.php"
+                          },
+                          {
+                              "name": "UK",
+                              "url": "https://uk.php"
+                          },
+                          {
+                              "name": "China",
+                              "url": "https://china.php"
+                          },
+                          {
+                              "name": "India",
+                              "url": "https://india.php"
+                          }
+                      ]
+                  }
+              ,
+              "supplyCitiesDetails":
+                  {
+                      "title": "Bronze Flanges to Following Cities:",
+                      "description": "Piping Projects Middle East is a leading Steel Pipes Manufacturer in UAE. We proudly supply high-quality Steel pipes to major countries. We have dominated the market as the Middle East’s leading Steel Pipes Exporter for a long time.",
+                      "city": [
+                          {
+                              "name": "gujrat",
+                              "url": "https://gujrat.php"
+                          },
+                          {
+                              "name": "Pune",
+                              "url": "https://pune.php"
+                          },
+                          {
+                              "name": "Delhi",
+                              "url": "https://delhi.php"
+                          }
+                      ]
+                  }
+              ,
+              "FAQ": [
+                  {
+                      "question": "west",
+                      "answer": " east"
+                  },
+                  {
+                      "question": "Why ",
+                      "answer": "niiii"
+                  },
+                  {
+                      "question": "ddddd",
+                      "answer": "ddddd"
+                  }
+              ],
+              "searchKeywords": [
+                  "flange",
+                  "bronzeflange"
+              ],
+              "applicationUsage": [
+                  "Sugar costamicts",
+                  "Hello",
+                  "bolo",
+                  "Nice",
+                  "chalo",
+                  "bhago",
+                  "ss",
+                  "ddd"
+              ]
+          }
+        contentType: application/json
+      - name: head
+        type: text
+        value: |-
+          {
+              "metaTitle": "some-meta-title",
+              "metaDescription": "some-meta-description",
+              "metaKeywords": "some-meta-keywords"
+          }
+        contentType: application/json
+      - name: bannerImageTitle
+        type: text
+        value: nice
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/duplex-stub-end.jpg
+          - /C:/Users/admin/Desktop/New folder/Compressed/duplex-tee-pipe-fittings.jpg
+          - /C:/Users/admin/Desktop/New folder/Compressed/duplex-unions.jpg
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-cross-pipe-fittings.jpg
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-cross-pipe-fittings.jpg
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-elbow-pipe-fittings.jpg
+          - /C:/Users/admin/Desktop/New folder/Compressed/stainless-steel-304-elbow-pipe-fittings.jpg
+      - name: productDetailsProductTitle
+        type: text
+        value: some-title##$$bumtittle
+      - name: productDetailsProductCode
+        type: text
+        value: 44444##$$4423433
+      - name: subProductDescription
+        type: text
+        value: old##$$new
+      - name: bannerimageembedded
+        type: file
+        value:
+          - postman-cloud:///1ef2ef88-cb84-4b70-8fd8-a2ffef42b410
+      - name: productDetailsProductDescription
+        type: text
+        value: newaayalelo
+      - name: isMainCategory
+        type: text
+        value: "true"
+        disabled: true
+      - name: isSubCategory
+        type: text
+        value: "true"
+        disabled: true
+      - name: isUncategorized
+        type: text
+        value: "true"
+      - name: folderId
+        type: text
+        value: 668b89692cb2d0f1ff51d31c
+      - name: productEndpoint
+        type: text
+        value: v1-test-vik-vik
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

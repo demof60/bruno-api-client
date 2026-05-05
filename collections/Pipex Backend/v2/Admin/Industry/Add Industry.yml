@@ -1,0 +1,44 @@
+info:
+  name: Add Industry
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/industry/add"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: afbsdfbzKSDSdsaweqsdsd
+      - name: head
+        type: text
+        value: |-
+          {
+                  "metaDescription": "meta       dessss cr      iptttttio  "
+                }
+      - name: description
+        type: text
+        value: ooo   gggg   descc  ripttto    on                     gdgdg
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+      - name: industryIcon
+        type: file
+        value:
+          - postman-cloud:///1f00ef26-452a-4e20-ae6c-55c3b5be7937
+          - /C:/Users/admin/Desktop/New folder/Compressed/stainless-steel-304-cross-pipe-fittings.jpg
+      - name: productFields
+        type: text
+        value: "{}"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjA4NmZlMGMzMmNkZjI4ZWI1ZGU0YSIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJrcmlzaC1qYWluIiwiaWF0IjoxNzYxMjg2MDU5LCJleHAiOjE3NjE0NTg4NTl9.ykCRkWiyP7F-rziXsA7vjSX84ikeV_euOoyMznRMb9c
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

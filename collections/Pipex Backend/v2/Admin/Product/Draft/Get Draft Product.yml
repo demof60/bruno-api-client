@@ -1,0 +1,17 @@
+info:
+  name: Get Draft Product
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/product/draft/get"
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

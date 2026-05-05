@@ -1,0 +1,17 @@
+info:
+  name: Restore Category
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/categoryRestore/6676ca26033ab65d33c4e2a3/6676c920033ab65d33c4e29b
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

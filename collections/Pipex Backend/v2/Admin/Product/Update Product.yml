@@ -1,0 +1,20 @@
+info:
+  name: Update Product
+  type: http
+  seq: 16
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/product/update/68b8402aa1d8630864563984"
+  body:
+    type: text
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

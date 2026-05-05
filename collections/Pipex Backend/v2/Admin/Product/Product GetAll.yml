@@ -1,0 +1,213 @@
+info:
+  name: Product GetAll
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/product/fetch?offset=0&searchQuery=&type=all&clientId=68f8c2ab7b0ace5fcd129b77"
+  params:
+    - name: limit
+      value: "100"
+      type: query
+      disabled: true
+    - name: offset
+      value: "10"
+      type: query
+      disabled: true
+    - name: type
+      value: deleted
+      type: query
+      disabled: true
+    - name: searchQuery
+      value: sdf
+      type: query
+      disabled: true
+    - name: createdUserId
+      value: 697c392f93ccfe314d0a5278
+      type: query
+      disabled: true
+    - name: folder
+      value: "true"
+      type: query
+      disabled: true
+    - name: type
+      value: deleted
+      type: query
+      disabled: true
+    - name: search
+      value: ojhoy
+      type: query
+      disabled: true
+    - name: export
+      value: "true"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+    - name: type
+      value: all
+      type: query
+    - name: limit
+      value: "25"
+      type: query
+      disabled: true
+    - name: clientId
+      value: 68f8c2ab7b0ace5fcd129b77
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"column\": {\r
+
+      \        \"productTitle\": {\r
+
+      \            \"label\": \"Product Title\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"clientName\": {\r
+
+      \            \"label\": \"Client\",\r
+
+      \            \"view\": false,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"productCategory\": {\r
+
+      \            \"label\": \"Category\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"isActive\": {\r
+
+      \            \"label\": \"Active\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"isBan\": {\r
+
+      \            \"label\": \"Banned\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"createdByUser\": {\r
+
+      \            \"label\": \"Created By\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"updatedByUser\": {\r
+
+      \            \"label\": \"Updated By\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"formattedCreatedAt\": {\r
+
+      \            \"label\": \"Created At\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"formattedUpdatedAt\": {\r
+
+      \            \"label\": \"Updated At\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"viewCount\": {\r
+
+      \            \"label\": \"Views\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"endPoint\": {\r
+
+      \            \"label\": \"Endpoint\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"completion\": {\r
+
+      \            \"label\": \"Completion\",\r
+
+      \            \"view\": true,\r
+
+      \            \"sort\": 0\r
+
+      \        },\r
+
+      \        \"type\": {\r
+
+      \            \"label\": \"Status Type\",\r
+
+      \            \"view\": false,\r
+
+      \            \"sort\": 0\r
+
+      \        }\r
+
+      \    }\r
+
+      }\r
+
+      // //{}\r
+
+      \r
+
+      // {}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

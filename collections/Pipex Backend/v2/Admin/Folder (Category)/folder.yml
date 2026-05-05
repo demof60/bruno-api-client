@@ -1,0 +1,7 @@
+info:
+  name: Folder (Category)
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

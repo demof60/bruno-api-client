@@ -1,0 +1,22 @@
+info:
+  name: Get Invoices
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/payment/subscription/invoices?excelExport=true"
+  headers:
+    - name: excelExport
+      value: "true"
+  params:
+    - name: excelExport
+      value: "true"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

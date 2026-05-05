@@ -1,0 +1,31 @@
+info:
+  name: Fetch Client's products
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/product/694a240da8195ad1b9a31a02?search=Ullam"
+  params:
+    - name: limit
+      value: "20"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: search
+      value: Ullam
+      type: query
+    - name: status
+      value: clientProduct
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

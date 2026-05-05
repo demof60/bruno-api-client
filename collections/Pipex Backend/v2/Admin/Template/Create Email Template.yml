@@ -1,0 +1,39 @@
+info:
+  name: Create Email Template
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/template/"
+  params:
+    - name: search
+      value: "10512"
+      type: query
+      disabled: true
+    - name: status
+      value: all
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"type\": \"email\",\r
+
+      \  \"subType\": \"confirm_rfq_to_user\",\r
+
+      \  \"body\": \"<p> hiii priti</p>\",\r
+
+      \  \"subject\": \"a \",\r
+
+      \  \"variables\": [\"hiii\", \"hello\", \"vannakam\", \"namaste\", \"namaskar\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

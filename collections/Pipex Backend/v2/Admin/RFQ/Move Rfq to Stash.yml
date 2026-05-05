@@ -1,0 +1,15 @@
+info:
+  name: Move Rfq to Stash
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/rfq/673f274816df5b5ce7a27911"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

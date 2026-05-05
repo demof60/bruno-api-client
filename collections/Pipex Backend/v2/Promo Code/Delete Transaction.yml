@@ -1,0 +1,18 @@
+info:
+  name: Delete Transaction
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/promo-codes/transactions/69df3ad50980be6198995edf"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

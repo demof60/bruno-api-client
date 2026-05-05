@@ -1,0 +1,45 @@
+info:
+  name: Fetch Products
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/web/products/get?limit=12&offset=0"
+  params:
+    - name: limit
+      value: "12"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"filters\": {\r
+
+      \        \"search\": \"fasteners\",\r
+
+      \        \"type\": \"product\",\r
+
+      \        \"sort\": \"popular\",\r
+
+      \        \"Products\": [\r
+
+      \            \"fasteners\"\r
+
+      \        ]\r
+
+      \    },\r
+
+      \    \"isCategoryPage\": true\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

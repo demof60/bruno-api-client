@@ -1,0 +1,15 @@
+info:
+  name: activate qa
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/qa/activate/682c6121ecf36adf6f800324"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

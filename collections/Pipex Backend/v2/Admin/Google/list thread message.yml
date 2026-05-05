@@ -1,0 +1,22 @@
+info:
+  name: list thread message
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/google/listThreads?limit=100&search"
+  params:
+    - name: limit
+      value: "100"
+      type: query
+    - name: search
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

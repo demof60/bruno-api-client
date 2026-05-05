@@ -1,0 +1,30 @@
+info:
+  name: Get Cities For Country
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/location/cities/67bd5ce37969bf7fd7a3129d?limit=10&offset=0"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchTerm
+      value: pani
+      type: query
+      disabled: true
+    - name: status
+      value: all
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

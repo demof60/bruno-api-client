@@ -1,0 +1,296 @@
+info:
+  name: Create Company Profile
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/client/profile/create-companydfgdfg"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: fsfdfsdssddfsdf@forexzig.com
+        description: Shaqeeb  Enterprises
+      - name: emails
+        type: text
+        value: '[{"email":"dsf@foxzig.com","primary":true}]'
+        description: '[{"email":"woxumatem1wew4@mailinator.com","primary":true}]'
+      - name: contacts
+        type: text
+        value: '[{"countryCode":"+91","number":"654467231","primary":true,"whatsApp":true}]'
+        description: '[{"countryCode":"+91","number":"234234342","primary":true,"whatsApp":true}]'
+      - name: ownerName
+        type: text
+        value: sfdasf@orzig.com
+        description: Owner name
+      - name: description
+        type: text
+        value: asdsadasd
+        description: descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription
+      - name: businessType
+        type: text
+        value: supplier
+        description: supplier
+      - name: website
+        type: text
+        value: https://google.com
+        description: https://google.com
+      - name: addresses
+        type: text
+        value: '[{"_id":"68149bb5d31d1d2e7dcd3e54","name":"Gamble And Brooks Co","address_line1":"Dickson Erickson Associates","address_line2":"Holloway Oneill Traders","city":"Parks Griffin LLC","postal_code":"Id ullam ad nulla do","country":"Rem dolore sit offic","primary":true,"address_type":"Sharp Donovan LLC"}]'
+        description: '[{"_id":"68149bb5d31d1d2e7dcd3e54","name":"Gamble And Brooks Co","address_line1":"Dickson Erickson Associates","address_line2":"Holloway Oneill Traders","city":"Parks Griffin LLC","postal_code":"Id ullam ad nulla do","country":"Rem dolore sit offic","primary":true,"address_type":"Sharp Donovan LLC"}]'
+      - name: annualRevenue
+        type: text
+        value: ₹50
+        description: "4666666"
+      - name: projectsCompleted
+        type: text
+        value: "511"
+        description: "511"
+      - name: responseTime
+        type: text
+        value: "611"
+        description: "611"
+      - name: experience
+        type: text
+        value: "1810"
+        description: "1810"
+      - name: features
+        type: text
+        value: |-
+          [
+              "Four paarrtyy inspection231",
+              "ISO certified company23",
+              "IP rating certified",
+              "Military certified"
+          ]
+        description: |-
+          [
+              "Four paarrtyy inspection231",
+              "ISO certified company23",
+              "IP rating certified",
+              "Military certified"
+          ]
+      - name: rating
+        type: text
+        value: "4"
+        description: "4"
+        disabled: true
+      - name: reviewCount
+        type: text
+        value: "45"
+        description: "45"
+        disabled: true
+      - name: head
+        type: text
+        value: '{ "metaDescription":"meta description1"}'
+        description: '{ "metaDescription":"meta description1"}'
+        disabled: true
+      - name: notes
+        type: text
+        value: Notes
+        description: Notes
+        disabled: true
+      - name: logo
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+      - name: coverImages
+        type: file
+        value:
+          - /C:/Users/admin/Documents/f60host1.png
+        disabled: true
+      - name: coverImage
+        type: text
+        value: '[{"uuid":"55484204-461b-41a9-b75c-3fcff2a475f5","title":"Istockphoto 814423752 2048x2048.jpg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225155879.jpg","contentType":"image/jpeg"}]'
+        description: |2-
+           [
+                              {
+                                 "imageName": "f60host1.png"
+                              }
+                          ]
+        disabled: true
+      - name: industryImage
+        type: file
+        value:
+          - SKdmzXgBE/white.jpg
+      - name: companyGalleryImages
+        type: file
+        value:
+          - /C:/Users/admin/Documents/6.png
+          - /C:/Users/admin/Documents/7.png
+          - /C:/Users/admin/Documents/7.png
+        disabled: true
+      - name: companyGallery
+        type: text
+        value: '[{"uuid":"3ce67c38-5115-4cbd-a8f3-360514c20b66","title":"Istockphoto 814423752 2048x2048.jpg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160871.jpg","contentType":"image/jpeg"}]'
+        description: |-
+          [
+                              {
+                                  "imageName": "7.png"
+                              },
+          { 
+          "imageName": "7.png"
+          },
+          { 
+          "imageName": "6.png"
+          }
+                          ]
+      - name: clientGalleryImages
+        type: file
+        value:
+          - /C:/Users/admin/Documents/F60 Logo.jpg
+          - /C:/Users/admin/Documents/Delta Fitt.jpg
+          - /C:/Users/admin/Documents/F60 Logo.jpg
+        disabled: true
+      - name: clientGallery
+        type: text
+        value: '[{"uuid":"3ce67c38-5115-4cbd-a8f3-360514c20b66","title":"Istockphoto 814423752 2048x2048.jpg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160871.jpg","contentType":"image/jpeg"}]'
+        description: |-
+          [
+                              { 
+          "imageName": "f60 logo.jpg"
+                                 },
+          { 
+          "imageName": "f60 logo.jpg"
+          },
+          { 
+          "imageName": "delta fitt.jpg"
+          }
+                          ]
+      - name: additionalInfos
+        type: text
+        value: '{"companyGst":"27ABCDE1234F2Z5","companyCode":4324325325,"countriesCode":9,"companyYearEst":9825,"panCard":"ABCDE1234F","thirdPartyInspection":true,"customSizes":true,"mtcReport":true}'
+        description: |-
+          { 
+          "companyGst": "113",
+          "companyCode": 23434234,
+          "countriesCode": "234234",
+          "companyYearEst": "200",
+          "panCard": "K34234",
+          "thirdPartyInspection": true,
+          "mtcReport": false,
+          "customSizes": true
+          }
+      - name: catlogPdf
+        type: file
+        value:
+          - /C:/Users/admin/Documents/Delta Fitt.jpg
+        disabled: true
+      - name: catlogCoverImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/Delta Fitt.jpg
+        disabled: true
+      - name: catlog
+        type: text
+        value: '[{"title":"Test","coverImage":{"uuid":"ae9a75f5-7ce4-4230-b2f6-0e78bff15cf6","title":"Test","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160507.jpg","contentType":"image/jpeg"},"pdf":{"uuid":"1220df3c-1919-4654-8c40-be8fb5404a5a","title":"Test","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160628.pdf","contentType":"application/pdf"}}]'
+        description: |-
+          [
+                              {
+                                  "title": "hello world how are you",
+                                  "coverImageName": "delta fitt.jpg",
+                                  "pdfName": "delta fitt.jpg"
+          }
+                          ]
+      - name: companyTeamImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/Delta Fitt.jpg
+        disabled: true
+      - name: companyTeam
+        type: text
+        value: '[{"name":"Demo Fourty60","email":"demo@pentagoat.com","designation":"Captain America ","number":3453453496,"countryCode":"+91","companyTeamImage":{"uuid":"0d83d117-bf65-4dcf-96a0-d2d96d00dcf5","title":"Demo Fourty60","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160138.jpg","contentType":"image/jpeg"},"_id":"6992c04886f356f41157c7e2"}]'
+        description: |-
+          [
+                              {
+                                  "name": "Shaqeeb World",
+                              },
+                              {
+                                  "companyTeamImage": {
+                                      "uuid": "b0c4b349-4bb6-414b-9c28-f71df53a2991",
+                                      "title": "Hii Vrother",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/f60host3.png_1746683719327.png",
+                                      "contentType": "image/png"
+                                  },
+                                  "name": "Vrother name",
+                                  "_id": "681c47481eb5a6ab5241b5fa"
+                              },
+                              {
+                                  "companyTeamImage": {
+                                      "uuid": "ab1929ab-f8e6-4edb-a2c7-699b3728fdcd",
+                                      "title": "Hello Delta World",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/Delta_Fitt.jpg_1746770189790.jpg",
+                                      "contentType": "image/jpeg"
+                                  },
+                                  "name": "Hello Delta World",
+                                  "_id": "681d990d28b1f308d86b8d10"
+                              }
+                          ]
+      - name: certificateCoverImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/6.png
+          - /C:/Users/admin/Documents/Delta Fitt.jpg
+        disabled: true
+      - name: certificateCoverPdf
+        type: file
+        value:
+          - /C:/Users/admin/Documents/6.png
+          - /C:/Users/admin/Documents/6.png
+        disabled: true
+      - name: companyCertificate
+        type: text
+        value: '[{"title":"Wrwrwar","companyCertificateCoverImage":{"uuid":"d1719a10-3b69-4369-9eaf-1196e468ebbb","title":"Wrwrwar","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160262.jpg","contentType":"image/jpeg"},"companyCertificateCoverPdf":{"uuid":"acf869e9-d60f-4edf-8fd6-2ae95bf978c7","title":"Wrwrwar","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160389.pdf","contentType":"application/pdf"}}]'
+        description: |-
+          [
+          { 
+          "title": "Hello World",
+          "companyCertificateCoverImageName": "delta fitt.jpg",
+          "companyCertificateCoverPdfName": "6.png"
+          },
+          { 
+          "title": "Jio World",
+          "companyCertificateCoverImageName": "6.png",
+          "companyCertificateCoverPdfName": "6.png"
+          }
+          ]
+      - name: logo
+        type: text
+        value: '{"imageName":"wallpaperflare.com_wallpaper (1).jpg"}'
+      - name: socialMediaLink
+        type: text
+        value: |-
+          [
+                              {
+                                  "name": "Instagram",
+                                  "link": "https://google.com",
+                                  "_id": "681dd77c5bad0ceee6b9a0a5"
+                              },
+          { 
+          "name": "Facebook",
+          "link": "https://amazon.in"
+          }
+                          ]
+        description: |-
+          [
+                              {
+                                  "name": "Instagram",
+                                  "link": "https://google.com",
+                                  "_id": "681dd77c5bad0ceee6b9a0a5"
+                              },
+          { 
+          "name": "Facebook",
+          "link": "https://amazon.in"
+          }
+                          ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

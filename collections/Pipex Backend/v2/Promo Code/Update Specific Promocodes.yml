@@ -1,0 +1,22 @@
+info:
+  name: Update Specific Promocodes
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/promo-codes/690089c66d91be9a6b293a3e"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"status\": \"pause\"}\r
+
+      \  \r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Un Mark search keyword
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/searchkeyword/unMarkIrrelevant/Flanges"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

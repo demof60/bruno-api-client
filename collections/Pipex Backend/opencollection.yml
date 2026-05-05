@@ -1,0 +1,15 @@
+opencollection: 1.0.0
+
+info:
+  name: Pipex Backend
+
+request:
+  variables:
+    - name: https___backend.f10.co.in_api
+      value: ""
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

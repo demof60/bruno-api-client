@@ -1,0 +1,19 @@
+info:
+  name: Get Admin Access
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/auth/getaccess/admin?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGUxZGE1YjM2NzFlZWE2Y2NmYjU2MyIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJ-c2Fuc2thciIsImlhdCI6MTc1Mzc4MjY1MSwiZXhwIjoxNzUzOTU1NDUxfQ.CekCoEahGzeYJj7W-97qAK1IkiBGOSFjcENqI2sTWbE"
+  params:
+    - name: token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OGUxZGE1YjM2NzFlZWE2Y2NmYjU2MyIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJ-c2Fuc2thciIsImlhdCI6MTc1Mzc4MjY1MSwiZXhwIjoxNzUzOTU1NDUxfQ.CekCoEahGzeYJj7W-97qAK1IkiBGOSFjcENqI2sTWbE
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

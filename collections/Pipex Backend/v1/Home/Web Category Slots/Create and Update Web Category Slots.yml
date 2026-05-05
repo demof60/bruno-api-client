@@ -1,0 +1,43 @@
+info:
+  name: Create and Update Web Category Slots
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/web/home/webCategorySlots/669a4bfd39fda7ad5ddcce41"
+  params:
+    - name: folderName
+      value: pipe-klm
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "// {\r
+
+      //       \"categorySlotId\":\"66b098ceb3b8f9ffcee64eaf\", //only when you want to updae your slots \r
+
+      //       \"rank\":1,\r
+
+      //      \"productIds\": [\"667d0afe18a0da4661a744ff\",\"667be5bdc763b57edd54a17a\",\"667d0cb785cf03baf567d95d\",\"668b7ea1796e783daf6c5e1c\"] \r
+
+      // }\r
+
+      //for stage \r
+
+      {\r
+
+      \    // \"categorySlotId\":\"66b0ba3b72bf3e3fa0b5c575\", //only when you want to updae your slots \r
+
+      \      \"rank\":9,\r
+
+      \     \"productIds\": [\"669a595e1b9c7c87cfc17167\",\"66acbcf1b22bbf0e4f82db21\",\"66acce10b22bbf0e4f82e4d7\",\"66b0b6f6f97647c9a4b9024e\"] \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

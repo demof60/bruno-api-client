@@ -1,0 +1,44 @@
+info:
+  name: Delete Location
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/location/delete/6716446ccfd7ec621d1765ec"
+  body:
+    type: json
+    data: "// // city\r
+
+      // {\r
+
+      //     \"type\": \"city\",\r
+
+      //     \"name\": \"INDORE\",\r
+
+      //     \"code\": \"IN\",\r
+
+      //     \"countryId\": \"66fe3de0516b510c991bd985\"\r
+
+      // }\r
+
+      //country \r
+
+      {\r
+
+      \    \"type\": \"country\",\r
+
+      \    \"name\": \"SOUTH AFRICA\",\r
+
+      \    \"code\": \"ZA\",\r
+
+      \    \"countryId\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

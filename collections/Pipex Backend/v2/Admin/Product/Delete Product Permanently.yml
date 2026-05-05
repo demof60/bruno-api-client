@@ -1,0 +1,15 @@
+info:
+  name: Delete Product Permanently
+  type: http
+  seq: 20
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/product/permanent/delete/6989925424559caa801f1417"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

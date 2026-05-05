@@ -1,0 +1,24 @@
+info:
+  name: Fetch Threads
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/services/google-workspace/thread"
+  params:
+    - name: pageToken
+      value: "10300835856761609440"
+      type: query
+      disabled: true
+    - name: search
+      value: rfq
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

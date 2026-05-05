@@ -1,0 +1,35 @@
+info:
+  name: Fetch User Only
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/superadmin/user/get?offset=0&limit=1000&labels=seller"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: limit
+      value: "1000"
+      type: query
+    - name: searchTerm
+      value: shaqeeb
+      type: query
+      disabled: true
+    - name: type
+      value: inactive
+      type: query
+      description: "[active.inactive]"
+      disabled: true
+    - name: labels
+      value: seller
+      type: query
+      description: "[seller,buyer]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

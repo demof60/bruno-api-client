@@ -1,0 +1,17 @@
+info:
+  name: Delete Permission by Super Admin
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/superAdmin/deletePermission/6679458222889516d972023a
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

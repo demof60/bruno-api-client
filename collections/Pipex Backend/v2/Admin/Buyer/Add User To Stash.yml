@@ -1,0 +1,15 @@
+info:
+  name: Add User To Stash
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/buyer/stash/6960d53b94f66c7ec8bb9f5f"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

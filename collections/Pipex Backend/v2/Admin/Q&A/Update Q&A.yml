@@ -1,0 +1,28 @@
+info:
+  name: Update Q&A
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/qa/update/682b10f54ce2aef4fe51d777"
+  body:
+    type: json
+    data: " \r
+
+      \  {\r
+
+      \    \"question\": \"Which indusrty do you primerily operate innn \",\r
+
+      \    \"options\": [\"Electronics\", \"Home Decor\", \"Books\",\"Apparel\"],\r
+
+      \    \"type\": \"industry\"\r
+
+      \  }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

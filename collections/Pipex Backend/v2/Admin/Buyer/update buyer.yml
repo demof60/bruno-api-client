@@ -1,0 +1,22 @@
+info:
+  name: update buyer
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/buyer/update/67d161bea3a101a576248207"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\":\"nitya 301\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

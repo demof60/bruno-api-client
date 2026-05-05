@@ -1,0 +1,7 @@
+info:
+  name: Restore From Stash
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

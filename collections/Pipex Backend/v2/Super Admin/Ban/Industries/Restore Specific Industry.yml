@@ -1,0 +1,15 @@
+info:
+  name: Restore Specific Industry
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/ban/industries/restore/671c8a0dc15cc74928dfdc15"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

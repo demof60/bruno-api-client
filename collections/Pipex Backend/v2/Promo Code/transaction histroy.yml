@@ -1,0 +1,43 @@
+info:
+  name: transaction histroy
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/promo-codes/transactions/get?offset=0&status=approved&last7Days=true&last15Days=true&last30Days=true&limit=10"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: status
+      value: approved
+      type: query
+      description: cancelled, pending, approved
+    - name: last7Days
+      value: "true"
+      type: query
+    - name: last15Days
+      value: "true"
+      type: query
+    - name: last30Days
+      value: "true"
+      type: query
+    - name: last2Days
+      value: "true"
+      type: query
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+    - name: searchTerm
+      value: team rocket
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

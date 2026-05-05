@@ -1,0 +1,118 @@
+info:
+  name: Client Product Get
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/product/fetch/client/get?limit=25&offset=0&searchQuery=&type=active&clientId=69d387be55e43b0bf141be7e"
+  params:
+    - name: limit
+      value: "25"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+    - name: type
+      value: active
+      type: query
+    - name: search
+      value: pratik
+      type: query
+      disabled: true
+    - name: clientId
+      value: 69d387be55e43b0bf141be7e
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"type\": \"pending\"\r
+
+      \    // \"searchQuery\": \"Cat\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  ### Fetch Users
+
+  This endpoint retrieves a list of users based on the specified search criteria and pagination parameters. It allows administrators to filter users by their status and search term, facilitating efficient user management.
+
+  #### Request
+
+  - **Method**: GET
+      
+  - **URL**: `{{url}}/api/v2/admin/product/fetch/user/get`
+      
+
+  ##### Query Parameters:
+
+  - `limit` (integer): The maximum number of users to return. Default is 10.
+      
+  - `offset` (integer): The starting point for the user retrieval. Default is 0.
+      
+  - `status` (string): The status of users to filter by. Acceptable values include `all`, `active`, `inactive`.
+      
+  - `search` (string): A search term to filter users based on their username or other attributes.
+      
+
+  ##### Example Request:
+
+  ```
+  GET {{url}}/api/v2/admin/product/fetch/user/get?limit=10&offset=0&status=all&search=pratik
+
+   ```
+
+  #### Response
+
+  - **Status Code**: 200 OK
+      
+  - **Content-Type**: application/json
+      
+
+  ##### Response Structure:
+
+  ``` json
+  {
+    "success": true,
+    "data": {
+      "totalUser": 0,
+      "users": [
+        {
+          "_id": "",
+          "username": ""
+        }
+      ]
+    }
+  }
+
+   ```
+
+  - `success` (boolean): Indicates whether the request was successful.
+      
+  - `data` (object): Contains the results of the user fetch.
+      
+      - `totalUser` (integer): The total number of users matching the criteria.
+          
+      - `users` (array): An array of user objects. Each user object includes:
+          
+          - `_id` (string): The unique identifier for the user.
+              
+          - `username` (string): The username of the user.
+              
+
+  #### Headers
+
+  Ensure to include any necessary authentication headers as required by your API for access control.
+
+  This endpoint is particularly useful for administrators needing to manage user data efficiently with the ability to search and paginate results.

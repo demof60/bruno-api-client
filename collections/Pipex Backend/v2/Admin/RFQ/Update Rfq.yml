@@ -1,0 +1,54 @@
+info:
+  name: Update Rfq
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/rfq/690836ee524c493bd2b362dc"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: Divya rathai
+      - name: email
+        type: text
+        value: divya@gmail.com
+      - name: countryCode
+        type: text
+        value: "+91"
+      - name: number
+        type: text
+        value: "9999999999"
+      - name: product
+        type: text
+        value: |-
+          {"_id": "6853d9454779cd2aee8be7e2",
+           "name": "Sssssssssssssss",
+          "type": "productModel"}
+      - name: message
+        type: text
+        value: jsadgjagg jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+      - name: attachments
+        type: file
+        value:
+          - postman-cloud:///1f055b4b-9b2c-4360-9314-3e3b0e4c0f71
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+      - name: attachments
+        type: text
+        value: |2-
+           [
+                      {
+                          "url": "https://pipingproject.s3.ap-south-1.amazonaws.com/contactUsDevelopment/1751960148110_1762171383957.jpg",
+                          "type": "image/jpeg"
+                      }
+                  ]
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

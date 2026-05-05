@@ -1,0 +1,19 @@
+info:
+  name: Get specific rfqs
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/profile/rfq/:rfqId"
+  params:
+    - name: rfqId
+      value: 692d5d0b29fad45d156b63a8
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

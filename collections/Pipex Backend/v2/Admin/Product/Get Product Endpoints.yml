@@ -1,0 +1,15 @@
+info:
+  name: Get Product Endpoints
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/product/endpoint/693babfc88373d6ff43f11bc"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

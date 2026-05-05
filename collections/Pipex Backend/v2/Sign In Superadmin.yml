@@ -1,0 +1,137 @@
+info:
+  name: Sign In Superadmin
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/auth/signin"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\": \"nitesh.jha@pentagoat.com\",\r
+
+      \    // \"password\": \"Pipex@f60\"\r
+
+      \    // \"email\": \"shaqeeb1@pentagoat.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // // admin\r
+
+      \    // \"email\": \"sanskar@pentagoat.com\",\r
+
+      \    // \"password\": \"Sanskar@2001\"\r
+
+      \    // // dev admin\r
+
+      \    // \"email\":\"vivekv2@gmail.com\",\r
+
+      \    // \"password\": \"wnMqSxwk*#8G\"\r
+
+      \    // dev \r
+
+      \    // \"email\": \"bon@gmail.com\",\r
+
+      \    // \"password\":\"SK12345@sk\"\r
+
+      \    // \"email\": \"shaqeeb@pentagoat.com\",\r
+
+      \    //  \"password\":\"Rehana@123\"\r
+
+      \    // \"password\":\"#snnD3Xe^ktS\"\r
+
+      \    //stage\r
+
+      \    // \"email\": \"shubhambhosale@pentagoat.com\",\r
+
+      \    // \"password\":\"ShubhamB16@\"\r
+
+      \    // \"email\": \"superadminstage@pipex.com\",\r
+
+      \    // \"password\":\"Pipex@f60\"\r
+
+      \    // \"email\": \"anish@pentagoat.com\",\r
+
+      \    // \"password\": \"$2kFCH7dAhQ2\"\r
+
+      \    // \"email\": \"kaif@pentagoat.com\",\r
+
+      \    // \"password\":\"Kaif@F60\"\r
+
+      \    // \"email\": \"ajay.kamble@f70.co.in\",\r
+
+      \    // \"password\": \"Pipex@f60\"\r
+
+      \    //    \"email\": \"sanskar@pentagoat.com\",\r
+
+      \    //     \"password\": \"Sanskar@2001\"\r
+
+      \    // \"email\": \"krish@f70.co.in\",\r
+
+      \    // \"password\": \"Pipex@f60\"\r
+
+      \    \"email\": \"priti@pentagoat.com\",\r
+
+      \    \"password\": \"Priti@2025\"\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "test(\"Response status code is 502\", function () {\r
+
+        \    expect(res.getStatus()).to.equal(502);\r
+
+        });\r
+
+        \r
+
+        test(\"Response content type is 'text/html'\", function () {\r
+
+        \    expect(res.getHeader('Content-Type')).to.eql('text/html');\r
+
+        });\r
+
+        \r
+
+        test(\"Response time is less than 200ms\", function () {\r
+
+        \    expect(res.getResponseTime()).to.be.below(200);\r
+
+        });\r
+
+        \r
+
+        test(\"Response body contains an error message\", function () {\r
+
+        \    const responseData = JSON.stringify(res.getBody());\r
+
+        \    \r
+
+        \    expect(responseData).to.include(\"error\");\r
+
+        });\r
+
+        \r
+
+        test(\"Response body follows the expected error schema\", function () {\r
+
+        \    const responseData = JSON.stringify(res.getBody()); // Changed from json() to text()\r
+
+        \r
+
+        \    expect(responseData).to.be.a('string'); // Check if the response is a string\r
+
+        \    expect(responseData).to.include(\"error\"); // Check for the presence of \"error\"\r
+
+        });"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

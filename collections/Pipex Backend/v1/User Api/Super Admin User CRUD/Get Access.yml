@@ -1,0 +1,15 @@
+info:
+  name: Get Access
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/superAdmin/getAccess/66d6b5ee9d9b1cc11fbcf5a5"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

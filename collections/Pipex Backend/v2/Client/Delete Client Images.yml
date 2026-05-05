@@ -1,0 +1,22 @@
+info:
+  name: Delete Client Images
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: http://localhost:9000/api/v1/client/delete/image/67207a2ba0c455a255f8ac37/82d498d1-81b1-41bb-919a-bb5403971ecd?status=main&type=cover
+  params:
+    - name: status
+      value: main
+      type: query
+    - name: type
+      value: cover
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

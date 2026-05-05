@@ -1,0 +1,17 @@
+info:
+  name: Product Delete Images
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/productDeleteImages/667d0cb785cf03baf567d95d/e2402892-ea78-4e6d-9950-23ce79cd7e0d
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

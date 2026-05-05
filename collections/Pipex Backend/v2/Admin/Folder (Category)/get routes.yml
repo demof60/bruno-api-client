@@ -1,0 +1,22 @@
+info:
+  name: get routes
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/folder/routes"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"folderId\":\"671c8b3dc15cc74928dfdcae\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

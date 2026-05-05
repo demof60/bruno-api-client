@@ -1,0 +1,73 @@
+info:
+  name: Folder Name Update
+  type: http
+  seq: 15
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/folder/update/69141b976d9b1580112e1cf8"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: sizuka
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        disabled: true
+      - name: description
+        type: text
+        value: <p><b>Others</b></p>
+        disabled: true
+      - name: categoryIcon
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        disabled: true
+      - name: head
+        type: text
+        value: |-
+          {
+                          "metaTitle": "Testing-fields-upate",
+                          "metaDescription": " ",
+          "metaKeywords":"dddd"
+                         
+                      }
+        disabled: true
+      - name: productFields
+        type: text
+        value: |-
+          {
+                      "availability     ": {
+                          "type": "radio",
+                          "required": true,
+                          "options": [
+                              "in stock",
+                              "out of-stock",
+                              "pre-order"
+                          ],
+                          "limit": 0
+                      },
+                       "availability     2 ": {
+                          "type": "radio",
+                          "required": true,
+                          "options": [
+                              "in-stock",
+                              "out-of-stock",
+                              "pre-order"
+                          ],
+                          "limit": 0
+                      }
+          }
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

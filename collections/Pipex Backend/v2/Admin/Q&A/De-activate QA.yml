@@ -1,0 +1,15 @@
+info:
+  name: De-activate QA
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/qa/deactivate/682c6121ecf36adf6f800324"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

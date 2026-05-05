@@ -1,0 +1,30 @@
+info:
+  name: search suggestions
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/v1/web/products/searchsuggestions"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"filters\":{\r
+
+      \        \"search\": \"\",\r
+
+      \        \"categories\": [],\r
+
+      \        \"sectors\": []\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

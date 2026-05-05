@@ -1,0 +1,15 @@
+info:
+  name: fetch specific client by id
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/profile/get/6870e3d62ffd9105efce58f6"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

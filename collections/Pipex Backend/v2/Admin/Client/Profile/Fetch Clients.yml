@@ -1,0 +1,1744 @@
+info:
+  name: Fetch Clients
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/profile/get?offset=0&limit=25&sort=createdAt&type=active"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: search
+      value: asdsd@sdf.co
+      type: query
+      disabled: true
+    - name: type
+      value: pending
+      type: query
+      disabled: true
+    - name: limit
+      value: "25"
+      type: query
+    - name: sort
+      value: createdAt
+      type: query
+      description: createdAt, updatedAt
+    - name: export
+      value: "true"
+      type: query
+      disabled: true
+    - name: type
+      value: active
+      type: query
+    - name: search
+      value: ""
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Fetch Clients
+    request:
+      url: "{{url}}/api/v2/admin/client/profile/get?offset=0&limit=10"
+      method: GET
+      params:
+        - name: offset
+          value: "0"
+          type: query
+        - name: search
+          value: ubeda seller
+          type: query
+          disabled: true
+        - name: type
+          value: active
+          type: query
+          disabled: true
+        - name: limit
+          value: "10"
+          type: query
+      body:
+        type: json
+        data: ""
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Vary
+          value: Origin
+        - name: Access-Control-Allow-Credentials
+          value: "true"
+        - name: Content-Security-Policy
+          value: "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+        - name: Cross-Origin-Opener-Policy
+          value: same-origin
+        - name: Cross-Origin-Resource-Policy
+          value: same-origin
+        - name: Origin-Agent-Cluster
+          value: ?1
+        - name: Referrer-Policy
+          value: no-referrer
+        - name: Strict-Transport-Security
+          value: max-age=15552000; includeSubDomains
+        - name: X-Content-Type-Options
+          value: nosniff
+        - name: X-DNS-Prefetch-Control
+          value: off
+        - name: X-Download-Options
+          value: noopen
+        - name: X-Frame-Options
+          value: SAMEORIGIN
+        - name: X-Permitted-Cross-Domain-Policies
+          value: none
+        - name: X-XSS-Protection
+          value: "0"
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Content-Length
+          value: "7085"
+        - name: ETag
+          value: W/"1bad-qNzOFZoAEp/b/CHn019RYrLtZOQ"
+        - name: Date
+          value: Tue, 23 Dec 2025 07:17:38 GMT
+        - name: Connection
+          value: keep-alive
+        - name: Keep-Alive
+          value: timeout=5
+      body:
+        type: json
+        data: |-
+          {
+              "success": true,
+              "message": "Clients fetched successfully!",
+              "data": {
+                  "clients": [
+                      {
+                          "_id": "694a412e6e245562ccd89336",
+                          "name": "Preston Hampton Inc",
+                          "businessType": "",
+                          "website": "",
+                          "notes": null,
+                          "isActive": true,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 30.3,
+                          "allowedEmailSendQueue": {
+                              "billing_main": 20,
+                              "email_queue_limit_per_day_by_email": 50
+                          },
+                          "createdByUser": "Priti Vishwakarma",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694a41336e245562ccd89355",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-23T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694a41316e245562ccd8934e",
+                              "username": "Ferris Vaughan"
+                          },
+                          "startPlan": "23 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "23 Dec 2025",
+                          "updatedAtFormatted": "23 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694a2fee24f59af8ef4f8f2e",
+                          "name": "Hiiii",
+                          "businessType": "supplier",
+                          "website": "https://google.com",
+                          "notes": null,
+                          "isActive": true,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 33.33,
+                          "allowedEmailSendQueue": {
+                              "billing_main": 20,
+                              "email_queue_limit_per_day_by_email": 50
+                          },
+                          "createdByUser": "Priti Vishwakarma",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694a2ff424f59af8ef4f8f4a",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-23T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694a2ff224f59af8ef4f8f43",
+                              "username": "Shaqeeb Shaikh Hiiii"
+                          },
+                          "startPlan": "23 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "23 Dec 2025",
+                          "updatedAtFormatted": "23 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694a2bfe067278bd72ee1474",
+                          "name": "Sexton And Smith Traders",
+                          "businessType": "",
+                          "website": "",
+                          "notes": null,
+                          "isActive": true,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 30.3,
+                          "allowedEmailSendQueue": {
+                              "billing_main": 20
+                          },
+                          "createdByUser": "Priti Vishwakarma",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694a2c06067278bd72ee1493",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-23T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694a2c03067278bd72ee148c",
+                              "username": "Nasim Cash"
+                          },
+                          "startPlan": "23 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "23 Dec 2025",
+                          "updatedAtFormatted": "23 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694a240da8195ad1b9a31a02",
+                          "name": "Demo Pentagoat",
+                          "notes": null,
+                          "isActive": true,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 90.91,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "Manufacturer",
+                          "website": "https://www.google.com",
+                          "isPaid": true,
+                          "createdByUser": "Demo Bf30e0ee320",
+                          "updatedByUser": "Demo Bf30e0ee320",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694a2655067278bd72ee10a7",
+                                  "planId": "68218901f87bbc730497a9a2",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-23T00:00:00.000Z",
+                                  "endPlan": "2026-03-23T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694a240da8195ad1b9a31a04",
+                              "username": "Demo Bf30e0ee320"
+                          },
+                          "startPlan": "23 Dec 2025",
+                          "endPlan": "23 Mar 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "23 Dec 2025",
+                          "updatedAtFormatted": "23 Dec 2025",
+                          "pakagePlan": "golden +",
+                          "pagesCount": 140,
+                          "totalPages": 2,
+                          "livePages": 1,
+                          "pendingPages": 1,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6948f1e9ae7fa4fe25b55f1f",
+                          "name": "",
+                          "notes": null,
+                          "isActive": false,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 0,
+                          "allowedEmailSendQueue": {},
+                          "createdByUser": "Sample170_cb77cce67",
+                          "activeTransaction": [],
+                          "sellerUser": {
+                              "_id": "6948f1e9ae7fa4fe25b55f21",
+                              "username": "Sample170_cb77cce67"
+                          },
+                          "startPlan": null,
+                          "endPlan": null,
+                          "activeTransactionCount": 0,
+                          "createdAtFormatted": "22 Dec 2025",
+                          "updatedAtFormatted": "22 Dec 2025",
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6948ee0f6e053ad278b7ee86",
+                          "name": "Wooten Fischer Trading",
+                          "notes": null,
+                          "isActive": true,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 27.27,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "",
+                          "website": "",
+                          "isPaid": true,
+                          "createdByUser": "Fegin43282@4e1417689",
+                          "updatedByUser": "Fegin43282@4e1417689",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6948efc282c9745e243198e4",
+                                  "planId": "690891a7d94e09decb28e5ae",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-22T00:00:00.000Z",
+                                  "endPlan": "2026-12-20T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6948ee0f6e053ad278b7ee88",
+                              "username": "Fegin43282@4e1417689"
+                          },
+                          "startPlan": "22 Dec 2025",
+                          "endPlan": "20 Dec 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "22 Dec 2025",
+                          "updatedAtFormatted": "22 Dec 2025",
+                          "pakagePlan": "Langar hai kal ajao",
+                          "pagesCount": 400,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6948e5c77fff1a028d74a603",
+                          "name": "Ware Alvarez Traders",
+                          "businessType": "",
+                          "website": "",
+                          "notes": null,
+                          "isActive": true,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 30.3,
+                          "allowedEmailSendQueue": {
+                              "billing_main": 20
+                          },
+                          "createdByUser": "Priti Vishwakarma",
+                          "updatedByUser": "Priti Vishwakarma",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6948e5cb7fff1a028d74a622",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-22T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6948e5ca7fff1a028d74a61b",
+                              "username": "Sheila Willis"
+                          },
+                          "startPlan": "22 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "22 Dec 2025",
+                          "updatedAtFormatted": "22 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6948e255e1747f06f829ae84",
+                          "name": "",
+                          "notes": null,
+                          "isActive": false,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 0,
+                          "allowedEmailSendQueue": {},
+                          "createdByUser": "Cisew26713 B3269e777",
+                          "activeTransaction": [],
+                          "sellerUser": {
+                              "_id": "6948e256e1747f06f829ae86",
+                              "username": "Cisew26713 B3269e777"
+                          },
+                          "startPlan": null,
+                          "endPlan": null,
+                          "activeTransactionCount": 0,
+                          "createdAtFormatted": "22 Dec 2025",
+                          "updatedAtFormatted": "22 Dec 2025",
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6948e1183bc44895edbdd833",
+                          "name": "Mushkir And Kummar Traders",
+                          "notes": null,
+                          "isActive": true,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 27.27,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "",
+                          "website": "",
+                          "isPaid": true,
+                          "updatedByUser": "Pybere",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6948e2e40460180268c0ce18",
+                                  "planId": "6932b52f987d61fe103bf02b",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-22T00:00:00.000Z",
+                                  "endPlan": "2026-03-22T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6948e0f73bc44895edbdd80b",
+                              "username": "Pybere"
+                          },
+                          "startPlan": "22 Dec 2025",
+                          "endPlan": "22 Mar 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "22 Dec 2025",
+                          "updatedAtFormatted": "22 Dec 2025",
+                          "pakagePlan": "shubham tetetehehh",
+                          "pagesCount": 400,
+                          "totalPages": 1,
+                          "livePages": 1,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6948e07ae1747f06f829a9e4",
+                          "name": "",
+                          "notes": null,
+                          "isActive": false,
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 0,
+                          "allowedEmailSendQueue": {},
+                          "createdByUser": "Casarele_5ee6d8581",
+                          "activeTransaction": [],
+                          "sellerUser": {
+                              "_id": "6948e07ae1747f06f829a9e8",
+                              "username": "Casarele_5ee6d8581"
+                          },
+                          "startPlan": null,
+                          "endPlan": null,
+                          "activeTransactionCount": 0,
+                          "createdAtFormatted": "22 Dec 2025",
+                          "updatedAtFormatted": "22 Dec 2025",
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      }
+                  ],
+                  "active": 226,
+                  "pending": 98,
+                  "ban": 1,
+                  "deleted": 7,
+                  "total": 325
+              }
+          }
+  - name: Fetch Clients
+    request:
+      url: "{{url}}/api/v2/admin/client/profile/get?offset=0&limit=25"
+      method: GET
+      params:
+        - name: offset
+          value: "0"
+          type: query
+        - name: search
+          value: ubeda seller
+          type: query
+          disabled: true
+        - name: type
+          value: active
+          type: query
+          disabled: true
+        - name: limit
+          value: "25"
+          type: query
+      body:
+        type: json
+        data: ""
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Vary
+          value: Origin
+        - name: Access-Control-Allow-Credentials
+          value: "true"
+        - name: Content-Security-Policy
+          value: "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+        - name: Cross-Origin-Opener-Policy
+          value: same-origin
+        - name: Cross-Origin-Resource-Policy
+          value: same-origin
+        - name: Origin-Agent-Cluster
+          value: ?1
+        - name: Referrer-Policy
+          value: no-referrer
+        - name: Strict-Transport-Security
+          value: max-age=15552000; includeSubDomains
+        - name: X-Content-Type-Options
+          value: nosniff
+        - name: X-DNS-Prefetch-Control
+          value: off
+        - name: X-Download-Options
+          value: noopen
+        - name: X-Frame-Options
+          value: SAMEORIGIN
+        - name: X-Permitted-Cross-Domain-Policies
+          value: none
+        - name: X-XSS-Protection
+          value: "0"
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Content-Length
+          value: "25748"
+        - name: ETag
+          value: W/"6494-rfr4pYtXAiTH90RF3/+deS0yGuM"
+        - name: Date
+          value: Fri, 02 Jan 2026 09:28:22 GMT
+        - name: Connection
+          value: keep-alive
+        - name: Keep-Alive
+          value: timeout=5
+      body:
+        type: json
+        data: |-
+          {
+              "success": true,
+              "message": "Clients fetched successfully!",
+              "data": {
+                  "clients": [
+                      {
+                          "_id": "695751378f5ea7b63f9dd076",
+                          "name": "Cannon And Page Traders",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "695751378f5ea7b63f9dd078",
+                          "updatedBy": "695751378f5ea7b63f9dd078",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 31.25,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 25
+                          },
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "createdByUser": "Xycowelo D2883f96438",
+                          "updatedByUser": "Xycowelo D2883f96438",
+                          "activeTransaction": [
+                              {
+                                  "_id": "695751a88f5ea7b63f9dd11b",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2026-01-02T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "695751378f5ea7b63f9dd078",
+                              "username": "Xycowelo D2883f96438"
+                          },
+                          "startPlan": "02 Jan 2026",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "02 Jan 2026",
+                          "updatedAtFormatted": "02 Jan 2026",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "695217643e18343f9464abc9",
+                          "name": "Alpha Infra",
+                          "description": "",
+                          "logo": null,
+                          "coverImage": [],
+                          "businessType": "",
+                          "website": "",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "681887a7550ed5052ce1d1cd",
+                          "updatedBy": "",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 25,
+                          "allowedEmailSendQueue": {
+                              "billing_main": 20,
+                              "email_queue_limit_per_day_by_email": 25
+                          },
+                          "createdByUser": "Sagar Sathe",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6952176d3e18343f9464abe6",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-29T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6952176a3e18343f9464abdf",
+                              "username": "User Alpha Infra"
+                          },
+                          "startPlan": "29 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "29 Dec 2025",
+                          "updatedAtFormatted": "29 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694e1d79a7ba03bc45ca4718",
+                          "name": "C Company",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694e1d79a7ba03bc45ca471a",
+                          "updatedBy": "694e1d79a7ba03bc45ca471a",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 90.63,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 25
+                          },
+                          "businessType": "Supplier",
+                          "coverImage": [
+                              {
+                                  "uuid": "916bd665-4f40-48cc-bf4d-7ddbb43c1341",
+                                  "title": "Cropped Image1766727461530.png",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/cropped-image1766727461530_1766727473421.png",
+                                  "contentType": "image/jpeg"
+                              }
+                          ],
+                          "description": "This is a test company",
+                          "logo": {
+                              "uuid": "fe5b3715-77e3-42fb-a42c-27cf4f1ab027",
+                              "title": "Company_logo.jpg Logo",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/company_logo_1766727473304.jpg",
+                              "contentType": "image/jpeg"
+                          },
+                          "website": "https://www.test.com",
+                          "createdByUser": "Nihicoc294 Bd9358e8553",
+                          "updatedByUser": "Nihicoc294 Bd9358e8553",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694e1ddda7ba03bc45ca481a",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-26T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694e1d79a7ba03bc45ca471a",
+                              "username": "Nihicoc294 Bd9358e8553"
+                          },
+                          "startPlan": "26 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "26 Dec 2025",
+                          "updatedAtFormatted": "26 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694e15b5fcb7e93a95425b30",
+                          "name": "Shafee Rosini Trading",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694e15b5fcb7e93a95425b32",
+                          "updatedBy": "694e15b5fcb7e93a95425b32",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 31.25,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 25
+                          },
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "createdByUser": "Syxizi@fbd3f1af729",
+                          "updatedByUser": "Syxizi@fbd3f1af729",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694e1b493e18343f9464a3bb",
+                                  "planId": "690ae189b38d64f1aafb89e7",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-26T00:00:00.000Z",
+                                  "endPlan": "2026-06-25T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694e15b5fcb7e93a95425b32",
+                              "username": "Syxizi@fbd3f1af729"
+                          },
+                          "startPlan": "26 Dec 2025",
+                          "endPlan": "25 Jun 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "26 Dec 2025",
+                          "updatedAtFormatted": "26 Dec 2025",
+                          "pakagePlan": "newsilverpack",
+                          "pagesCount": 190,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694cd7f7fcb7e93a95424717",
+                          "name": "Shah Enterprise",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694cd7f7fcb7e93a95424719",
+                          "updatedBy": "694cd7f7fcb7e93a95424719",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 43.75,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 25
+                          },
+                          "businessType": "Manufacturer",
+                          "coverImage": [],
+                          "description": "Buildings: metal roofing, steel beams, reinforcing steel and mounting brackets. Vehicles: private cars, trucks, trains and cycles. Infrastructure: Bridges, steel safety barriers for roads, lighting and high voltage pylons, railings and railways. Art and design: sculptures and jewellery.",
+                          "logo": {
+                              "uuid": "ef91b8b4-4b86-4209-919e-0a2b65399e40",
+                              "title": "Logo_compressed.jpg Logo",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/logo_compressed_1766753202374.jpg",
+                              "contentType": "image/jpeg"
+                          },
+                          "website": "https://f20.co.in",
+                          "isPaid": true,
+                          "createdByUser": "Pisell3",
+                          "updatedByUser": "Pisell3",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694cdc915393223d12244561",
+                                  "planId": "663c5f590263685ba00dfd75",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-25T00:00:00.000Z",
+                                  "endPlan": "2026-06-24T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694cd7f7fcb7e93a95424719",
+                              "username": "Pisell3"
+                          },
+                          "startPlan": "25 Dec 2025",
+                          "endPlan": "24 Jun 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "25 Dec 2025",
+                          "updatedAtFormatted": "26 Dec 2025",
+                          "pakagePlan": "Gold",
+                          "pagesCount": 240,
+                          "totalPages": 1,
+                          "livePages": 1,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694cd4a8676b70924f7d59df",
+                          "name": "Miles Meadows Traders",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "",
+                          "updatedBy": "694cd48f676b70924f7d59b4",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 96.88,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 25
+                          },
+                          "businessType": "Supplier",
+                          "coverImage": [
+                              {
+                                  "uuid": "97c36bbb-e40e-474b-9bca-5290ed63cb56",
+                                  "title": "Cropped Image1766642968651.png",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/cropped-image1766642968651_1766643462304.png",
+                                  "contentType": "image/jpeg"
+                              }
+                          ],
+                          "description": "Natus excepteur ex sint laboris eius consectetur dolorum eiusmod praesentium eum ex voluptas ut assumenda dolore sit",
+                          "logo": {
+                              "uuid": "aaa0154f-160e-4a59-91ed-d91bc261166e",
+                              "title": "Scared_hamster.jpg Logo",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/scared_hamster_1766643462160.jpg",
+                              "contentType": "image/jpeg"
+                          },
+                          "website": "https://www.pevuhovejofys.ws",
+                          "isPaid": true,
+                          "updatedByUser": "Luna",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694cda1e5393223d12244382",
+                                  "planId": "68b7ce8e219eda0fb964b26a",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-25T00:00:00.000Z",
+                                  "endPlan": "2026-12-23T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694cd48f676b70924f7d59b4",
+                              "username": "Luna"
+                          },
+                          "startPlan": "25 Dec 2025",
+                          "endPlan": "23 Dec 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "25 Dec 2025",
+                          "updatedAtFormatted": "26 Dec 2025",
+                          "pakagePlan": "kyaaaaaaaaaaaaaaaaaaaaaa",
+                          "pagesCount": 20,
+                          "totalPages": 3,
+                          "livePages": 2,
+                          "pendingPages": 1,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694cd3a12d1c3f541094a197",
+                          "name": "Ward Melton Trading",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694cd3a12d1c3f541094a199",
+                          "updatedBy": "694cd3a12d1c3f541094a199",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 31.25,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 25
+                          },
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "createdByUser": "Krishjain_6db952d9887",
+                          "updatedByUser": "Krishjain_6db952d9887",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694cd47203cd66a232574703",
+                                  "planId": "68b7d3ca4d3eeeca91c8467f",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-25T00:00:00.000Z",
+                                  "endPlan": "2026-12-23T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694cd3a12d1c3f541094a199",
+                              "username": "Krishjain_6db952d9887"
+                          },
+                          "startPlan": "25 Dec 2025",
+                          "endPlan": "23 Dec 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "25 Dec 2025",
+                          "updatedAtFormatted": "25 Dec 2025",
+                          "pakagePlan": "Nobitaa",
+                          "pagesCount": 20,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6943ff15e5b0a6f5e10df28c",
+                          "name": "Watson Doyle Plc",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "6943ff16e5b0a6f5e10df28e",
+                          "updatedBy": "6943ff16e5b0a6f5e10df28e",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 27.27,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "createdByUser": "5646756765",
+                          "updatedByUser": "5646756765",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6943ff4be5b0a6f5e10df3b8",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-18T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6943ff16e5b0a6f5e10df28e",
+                              "username": "5646756765"
+                          },
+                          "startPlan": "18 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "18 Dec 2025",
+                          "updatedAtFormatted": "18 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6943b04de5b0a6f5e10dd361",
+                          "name": "Maynard And Neal Co",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "6943b04de5b0a6f5e10dd363",
+                          "updatedBy": "6943b04de5b0a6f5e10dd363",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 27.27,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "createdByUser": "Thekarnamacompany",
+                          "updatedByUser": "Thekarnamacompany",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6943b0cf83257b586f98d7a8",
+                                  "planId": "690ae189b38d64f1aafb89e7",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-18T00:00:00.000Z",
+                                  "endPlan": "2026-01-14T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6943b04de5b0a6f5e10dd363",
+                              "username": "Thekarnamacompany"
+                          },
+                          "startPlan": "18 Dec 2025",
+                          "endPlan": "14 Jan 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "18 Dec 2025",
+                          "updatedAtFormatted": "18 Dec 2025",
+                          "pakagePlan": "newsilverpack",
+                          "pagesCount": 190,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694397839dc3ffccf3af0105",
+                          "name": "The Red Snow Co Lmt",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694397839dc3ffccf3af0107",
+                          "updatedBy": "694397839dc3ffccf3af0107",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 27.27,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "createdByUser": "Thenightking",
+                          "updatedByUser": "Thenightking",
+                          "activeTransaction": [
+                              {
+                                  "_id": "69439843c54a745a76f855e3",
+                                  "planId": "690adecab38d64f1aafb8902",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-18T00:00:00.000Z",
+                                  "endPlan": "2026-03-18T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694397839dc3ffccf3af0107",
+                              "username": "Thenightking"
+                          },
+                          "startPlan": "18 Dec 2025",
+                          "endPlan": "18 Mar 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "18 Dec 2025",
+                          "updatedAtFormatted": "18 Dec 2025",
+                          "pakagePlan": "testing plan > buisness",
+                          "pagesCount": 240,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694387879dc3ffccf3aedb6e",
+                          "name": "Chaipecharcha Technologies",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694387879dc3ffccf3aedb70",
+                          "updatedBy": "694387879dc3ffccf3aedb70",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 72.73,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "Exporter",
+                          "coverImage": [
+                              {
+                                  "uuid": "1c5cb6dc-9778-44ec-8f96-c9bfa491782e",
+                                  "title": "Cropped Image1766033892783.png",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/cropped-image1766033892783_1766033916659.png",
+                                  "contentType": "image/jpeg"
+                              }
+                          ],
+                          "description": "Voluptate corporis mollit ipsam minim quia vero velit quo error",
+                          "logo": null,
+                          "website": "https://www.qijyteti.com",
+                          "isPaid": true,
+                          "createdByUser": "Demo_testing_f20",
+                          "updatedByUser": "Demo_testing_f20",
+                          "activeTransaction": [
+                              {
+                                  "_id": "69438a82c54a745a76f854e1",
+                                  "planId": "663c5f590263685ba00dfd75",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-18T00:00:00.000Z",
+                                  "endPlan": "2026-12-16T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694387879dc3ffccf3aedb70",
+                              "username": "Demo_testing_f20"
+                          },
+                          "startPlan": "18 Dec 2025",
+                          "endPlan": "16 Dec 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "18 Dec 2025",
+                          "updatedAtFormatted": "18 Dec 2025",
+                          "pakagePlan": "Gold",
+                          "pagesCount": 240,
+                          "totalPages": 1,
+                          "livePages": 1,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694383ae9dc3ffccf3aed70c",
+                          "name": "Wiley Ratliff Trading Wiley Ratliff Trading Wiley Ratliff Tradin",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694383ae9dc3ffccf3aed70e",
+                          "updatedBy": "694383ae9dc3ffccf3aed70e",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 27.27,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "createdByUser": "Towuf",
+                          "updatedByUser": "Towuf",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6943841cc20c531c209d830b",
+                                  "planId": "663c5f590263685ba00dfd75",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-18T00:00:00.000Z",
+                                  "endPlan": "2026-12-16T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694383ae9dc3ffccf3aed70e",
+                              "username": "Towuf"
+                          },
+                          "startPlan": "18 Dec 2025",
+                          "endPlan": "16 Dec 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "18 Dec 2025",
+                          "updatedAtFormatted": "18 Dec 2025",
+                          "pakagePlan": "Gold",
+                          "pagesCount": 240,
+                          "totalPages": 2,
+                          "livePages": 1,
+                          "pendingPages": 1,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6942af3e9dc3ffccf3aed321",
+                          "name": "Buchanan And Alford Associates",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "6942af3e9dc3ffccf3aed323",
+                          "updatedBy": "6942af3e9dc3ffccf3aed323",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 27.27,
+                          "allowedEmailSendQueue": {},
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "createdByUser": "Jjjjjjjjjjjjjjjjjjjjjjjjj",
+                          "updatedByUser": "Jjjjjjjjjjjjjjjjjjjjjjjjj",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6942af889dc3ffccf3aed3e7",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-17T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6942af3e9dc3ffccf3aed323",
+                              "username": "Jjjjjjjjjjjjjjjjjjjjjjjjj"
+                          },
+                          "startPlan": "17 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "17 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6942768bdb043337eb5f49b2",
+                          "name": "Rush Talley Inc",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "6942768bdb043337eb5f49b4",
+                          "updatedBy": "6942768bdb043337eb5f49b4",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 39.39,
+                          "businessType": "Manufacturer",
+                          "coverImage": [
+                              {
+                                  "uuid": "6751c7f7-566d-4b50-bc74-f124b1e56251",
+                                  "title": "Cropped Image1766033232290.png",
+                                  "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/cropped-image1766033232290_1766033260575.png",
+                                  "contentType": "image/jpeg"
+                              }
+                          ],
+                          "description": "",
+                          "logo": {
+                              "uuid": "9f4e74ce-5fad-48f0-b45b-8d33381e49de",
+                              "title": "Image_(14).png Logo",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientStageing/image_%2814%29_1766033260374.png",
+                              "contentType": "image/png"
+                          },
+                          "website": "https://www.pesafynuk.tv",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Ficazoce",
+                          "updatedByUser": "Ficazoce",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694387e5c20c531c209d844d",
+                                  "planId": "690ed6cd7bb597088e927668",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-18T00:00:00.000Z",
+                                  "endPlan": "2026-01-14T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6942768bdb043337eb5f49b4",
+                              "username": "Ficazoce"
+                          },
+                          "startPlan": "18 Dec 2025",
+                          "endPlan": "14 Jan 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "18 Dec 2025",
+                          "pakagePlan": "AJAX 225566",
+                          "pagesCount": 190,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "69426142db043337eb5f3fcd",
+                          "name": "Ye",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "69426142db043337eb5f3fcf",
+                          "updatedBy": "69426142db043337eb5f3fcf",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "T",
+                          "updatedByUser": "T",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6942621b6b69be9722d6d494",
+                                  "planId": "690c8f877bb597088e926fea",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-17T00:00:00.000Z",
+                                  "endPlan": "2026-01-13T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "69426142db043337eb5f3fcf",
+                              "username": "T"
+                          },
+                          "startPlan": "17 Dec 2025",
+                          "endPlan": "13 Jan 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "17 Dec 2025",
+                          "pakagePlan": "AJAX",
+                          "pagesCount": 190,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6942475edebd9c159cab4db3",
+                          "name": "Pumuluqy",
+                          "description": "",
+                          "logo": null,
+                          "coverImage": [],
+                          "businessType": "",
+                          "website": "",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "6784ac52435a52c6a584c707",
+                          "updatedBy": "6784ac52435a52c6a584c707",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Priti Vishwakarma",
+                          "updatedByUser": "Priti Vishwakarma",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694247b9debd9c159cab4e60",
+                                  "planId": "690c8f877bb597088e926fea",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-17T00:00:00.000Z",
+                                  "endPlan": "2026-03-17T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6942475fdebd9c159cab4dcb",
+                              "username": "Hu Bishop"
+                          },
+                          "startPlan": "17 Dec 2025",
+                          "endPlan": "17 Mar 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "17 Dec 2025",
+                          "pakagePlan": "AJAX",
+                          "pagesCount": 190,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "6942471d63152bd6b1b158aa",
+                          "name": "Ms Tech",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "6942471d63152bd6b1b158ac",
+                          "updatedBy": "6942471d63152bd6b1b158ac",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 21.21,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Pi2sell",
+                          "updatedByUser": "Pi2sell",
+                          "activeTransaction": [
+                              {
+                                  "_id": "69424844debd9c159cab4f5c",
+                                  "planId": "663c5f590263685ba00dfd75",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-17T00:00:00.000Z",
+                                  "endPlan": "2026-01-13T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "6942471d63152bd6b1b158ac",
+                              "username": "Pi2sell"
+                          },
+                          "startPlan": "17 Dec 2025",
+                          "endPlan": "13 Jan 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "18 Dec 2025",
+                          "pakagePlan": "Gold",
+                          "pagesCount": 240,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "69424654debd9c159cab4c5e",
+                          "name": "Fukelede",
+                          "description": "",
+                          "logo": null,
+                          "coverImage": [],
+                          "businessType": "",
+                          "website": "",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "6784ac52435a52c6a584c707",
+                          "updatedBy": "6784ac52435a52c6a584c707",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Priti Vishwakarma",
+                          "updatedByUser": "Priti Vishwakarma",
+                          "activeTransaction": [
+                              {
+                                  "_id": "69424655debd9c159cab4c7d",
+                                  "planId": "663c5ece0263685ba00dfd66",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-17T00:00:00.000Z",
+                                  "endPlan": null
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "69424654debd9c159cab4c76",
+                              "username": "Ivory Dillard"
+                          },
+                          "startPlan": "17 Dec 2025",
+                          "endPlan": null,
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "17 Dec 2025",
+                          "pakagePlan": "Free",
+                          "pagesCount": 5,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694244df63152bd6b1b14d82",
+                          "name": "Aparajitha Co Lmt",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694244df63152bd6b1b14d84",
+                          "updatedBy": "694244df63152bd6b1b14d84",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Rehmandakait",
+                          "updatedByUser": "Rehmandakait",
+                          "activeTransaction": [
+                              {
+                                  "_id": "694248efdebd9c159cab4fe1",
+                                  "planId": "68b7d3ca4d3eeeca91c8467f",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-17T00:00:00.000Z",
+                                  "endPlan": "2026-01-13T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694244df63152bd6b1b14d84",
+                              "username": "Rehmandakait"
+                          },
+                          "startPlan": "17 Dec 2025",
+                          "endPlan": "13 Jan 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "17 Dec 2025",
+                          "pakagePlan": "Nobitaa",
+                          "pagesCount": 20,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "694242a363152bd6b1b14976",
+                          "name": "Kumar Sharif Traders",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "694242a363152bd6b1b14978",
+                          "updatedBy": "694242a363152bd6b1b14978",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Gggg",
+                          "updatedByUser": "Gggg",
+                          "activeTransaction": [
+                              {
+                                  "_id": "6942433adebd9c159cab4b25",
+                                  "planId": "690c8f877bb597088e926fea",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-17T00:00:00.000Z",
+                                  "endPlan": "2026-12-15T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "694242a363152bd6b1b14978",
+                              "username": "Gggg"
+                          },
+                          "startPlan": "17 Dec 2025",
+                          "endPlan": "15 Dec 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "17 Dec 2025",
+                          "updatedAtFormatted": "17 Dec 2025",
+                          "pakagePlan": "AJAX",
+                          "pagesCount": 190,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "693ced80d9385a682ed3de7a",
+                          "name": "Newwwwcompany",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "693ced80d9385a682ed3de7c",
+                          "updatedBy": "693ced80d9385a682ed3de7c",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 22.58,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Satttest",
+                          "updatedByUser": "Satttest",
+                          "activeTransaction": [
+                              {
+                                  "_id": "693cefcc52a967b5ff1f0301",
+                                  "planId": "690ae189b38d64f1aafb89e7",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-13T00:00:00.000Z",
+                                  "endPlan": "2026-03-13T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "693ced80d9385a682ed3de7c",
+                              "username": "Satttest"
+                          },
+                          "startPlan": "13 Dec 2025",
+                          "endPlan": "13 Mar 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "13 Dec 2025",
+                          "updatedAtFormatted": "13 Dec 2025",
+                          "pakagePlan": "newsilverpack",
+                          "pagesCount": 190,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "693ced61d9385a682ed3de1f",
+                          "name": "Rosa Morton Inc",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "693ced61d9385a682ed3de21",
+                          "updatedBy": "693ced61d9385a682ed3de21",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Hihi25",
+                          "updatedByUser": "Hihi25",
+                          "activeTransaction": [
+                              {
+                                  "_id": "693cede152a967b5ff1f028b",
+                                  "planId": "663c5f590263685ba00dfd75",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-13T00:00:00.000Z",
+                                  "endPlan": "2026-03-13T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "693ced61d9385a682ed3de21",
+                              "username": "Hihi25"
+                          },
+                          "startPlan": "13 Dec 2025",
+                          "endPlan": "13 Mar 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "13 Dec 2025",
+                          "updatedAtFormatted": "13 Dec 2025",
+                          "pakagePlan": "Gold",
+                          "pagesCount": 240,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "693bec2fd9385a682ed3d97a",
+                          "name": "Newwww",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "693bec2fd9385a682ed3d97c",
+                          "updatedBy": "693bec2fd9385a682ed3d97c",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Newphoneno",
+                          "updatedByUser": "Newphoneno",
+                          "activeTransaction": [
+                              {
+                                  "_id": "693bf0e252a967b5ff1f00c4",
+                                  "planId": "663c5f590263685ba00dfd75",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-12T00:00:00.000Z",
+                                  "endPlan": "2026-06-11T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "693bec2fd9385a682ed3d97c",
+                              "username": "Newphoneno"
+                          },
+                          "startPlan": "12 Dec 2025",
+                          "endPlan": "11 Jun 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "12 Dec 2025",
+                          "updatedAtFormatted": "12 Dec 2025",
+                          "pakagePlan": "Gold",
+                          "pagesCount": 240,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "693b9cf7d9385a682ed39135",
+                          "name": "Lindsey Hunter Inc",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "693b9cf7d9385a682ed39137",
+                          "updatedBy": "693b9cf7d9385a682ed39137",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Jef",
+                          "updatedByUser": "Jef",
+                          "activeTransaction": [
+                              {
+                                  "_id": "693b9d6e52a967b5ff1efb75",
+                                  "planId": "663c5f590263685ba00dfd75",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-12T00:00:00.000Z",
+                                  "endPlan": "2026-06-11T00:00:00.000Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "693b9cf7d9385a682ed39137",
+                              "username": "Jef"
+                          },
+                          "startPlan": "12 Dec 2025",
+                          "endPlan": "11 Jun 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "12 Dec 2025",
+                          "updatedAtFormatted": "12 Dec 2025",
+                          "pakagePlan": "Gold",
+                          "pagesCount": 240,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      },
+                      {
+                          "_id": "693b9ca5d9385a682ed390c4",
+                          "name": "Sell",
+                          "notes": null,
+                          "isActive": true,
+                          "createdBy": "693b9ca5d9385a682ed390c6",
+                          "updatedBy": "693b9ca5d9385a682ed390c6",
+                          "isBan": null,
+                          "isVerified": false,
+                          "profileCompletion": 29.03,
+                          "businessType": "",
+                          "coverImage": [],
+                          "description": "",
+                          "logo": null,
+                          "website": "",
+                          "isPaid": true,
+                          "allowedEmailSendQueue": {
+                              "email_queue_limit_per_day_by_email": 40
+                          },
+                          "createdByUser": "Morningtest",
+                          "updatedByUser": "Morningtest",
+                          "activeTransaction": [
+                              {
+                                  "_id": "693bca15d9385a682ed3b650",
+                                  "planId": "663c5efb0263685ba00dfd6b",
+                                  "isActive": true,
+                                  "startPlan": "2025-12-12T07:54:21.422Z",
+                                  "endPlan": "2026-01-08T07:54:21.422Z"
+                              }
+                          ],
+                          "sellerUser": {
+                              "_id": "693b9ca5d9385a682ed390c6",
+                              "username": "Morningtest"
+                          },
+                          "startPlan": "12 Dec 2025",
+                          "endPlan": "08 Jan 2026",
+                          "activeTransactionCount": 1,
+                          "createdAtFormatted": "12 Dec 2025",
+                          "updatedAtFormatted": "12 Dec 2025",
+                          "pakagePlan": "Bronze",
+                          "pagesCount": 140,
+                          "totalPages": 0,
+                          "livePages": 0,
+                          "pendingPages": 0,
+                          "banPages": 0
+                      }
+                  ],
+                  "paid": 621,
+                  "active": 458,
+                  "pending": 324,
+                  "ban": 0,
+                  "deleted": 0,
+                  "total": 782
+              }
+          }

@@ -1,0 +1,15 @@
+info:
+  name: Restore Product
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/client/product/restore/6708bf2a0e4e6b0773379e25/66a225a8e2c6f7a707438d26"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

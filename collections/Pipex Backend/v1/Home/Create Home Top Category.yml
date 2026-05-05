@@ -1,0 +1,130 @@
+info:
+  name: Create Home Top Category
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/web/home/folder"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"mainCategoryId\": \"669a3c269de356fe56f4ba4c\",\r
+
+      \    \"rank\": 1,\r
+
+      \    \"subCategories\": [\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"669a40fc9de356fe56f4bc3a\",\r
+
+      \            \"pages\": [\r
+
+      \                \"669e3db6cc50abc069530d4f\",\r
+
+      \                \"669e3db6cc50abc069530d4f\",\r
+
+      \                \"669e3db6cc50abc069530d4f\",\r
+
+      \                \"669e3db6cc50abc069530d4f\",\r
+
+      \                \"669e3db6cc50abc069530d4f\"\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"669a34c79de356fe56f4b34b\",\r
+
+      \            \"pages\": [\r
+
+      \                \"669f9dadbc0197b1f5b42b95\",\r
+
+      \                \"669f9dadbc0197b1f5b42b95\",\r
+
+      \                \"669f9dadbc0197b1f5b42b95\",\r
+
+      \                \"669f9dadbc0197b1f5b42b95\",\r
+
+      \                \"669f9dadbc0197b1f5b42b95\",\r
+
+      \                \"669f9dadbc0197b1f5b42b95\"\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66a38cace2c6f7a70743db1f\",\r
+
+      \            \"pages\": [\r
+
+      \                \"66a3925ae2c6f7a70743e124\",\r
+
+      \                \"66a3925ae2c6f7a70743e124\",\r
+
+      \                \"66a3925ae2c6f7a70743e124\",\r
+
+      \                \"66a3925ae2c6f7a70743e124\",\r
+
+      \                \"66a3925ae2c6f7a70743e124\"\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66a3950fe2c6f7a70743e4a0\",\r
+
+      \            \"pages\": [\r
+
+      \                \"66a39f93e2c6f7a70743ea5f\",\r
+
+      \                \"66a39f93e2c6f7a70743ea5f\",\r
+
+      \                \"66a39f93e2c6f7a70743ea5f\",\r
+
+      \                \"66a39f93e2c6f7a70743ea5f\",\r
+
+      \                \"66a39f93e2c6f7a70743ea5f\"\r
+
+      \            ]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"subCategoryId\": \"66a7644e4b6d4b73cdd04af1\",\r
+
+      \            \"pages\": [\r
+
+      \                \"66a79749d822f994b8dc140e\",\r
+
+      \                \"66a79749d822f994b8dc140e\",\r
+
+      \                \"66a79749d822f994b8dc140e\",\r
+
+      \                \"66a79749d822f994b8dc140e\",\r
+
+      \                \"66a79749d822f994b8dc140e\"\r
+
+      \            ]\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

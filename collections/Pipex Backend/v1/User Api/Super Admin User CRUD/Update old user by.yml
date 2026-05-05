@@ -1,0 +1,48 @@
+info:
+  name: Update old user by
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/superAdmin/updateUser/66791a72a910e43ddd5fd2f3
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\":\"admintest12364\",\r
+
+      \    // \"email\":\"admintest1@gmail.com\", // update after excluding email.\r
+
+      \    \"role\":\"admin\",\r
+
+      \    \"permissions\":[\r
+
+      \        {\r
+
+      \            \"id\":\"661e0d8fd51d91874ee65e00\",\r
+
+      \            \"permissionValue\":[\"create\"]\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"id\":\"661e0dbad51d91874ee65e0f\",\r
+
+      \            \"permissionValue\":[\"create\"]\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

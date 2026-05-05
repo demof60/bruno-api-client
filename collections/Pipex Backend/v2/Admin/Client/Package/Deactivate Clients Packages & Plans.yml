@@ -1,0 +1,15 @@
+info:
+  name: Deactivate Clients Packages & Plans
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/client/package/deactivate/package/67e0fdaee6a28b46dd394e9d"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

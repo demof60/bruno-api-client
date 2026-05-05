@@ -1,0 +1,15 @@
+info:
+  name: Fetch folders route
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/folder/route/671b2e605c5029eb0738a752"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

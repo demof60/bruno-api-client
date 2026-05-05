@@ -1,0 +1,55 @@
+info:
+  name: fetch buyers rfq
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/buyer/rfq/5434563455465?searchTerm=115089"
+  params:
+    - name: searchTerm
+      value: "115089"
+      type: query
+    - name: limit
+      value: "100"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: dateTo
+      value: ""
+      type: query
+      disabled: true
+    - name: dateFrom
+      value: ""
+      type: query
+      disabled: true
+    - name: labels
+      value: markAsClosed
+      type: query
+      disabled: true
+    - name: filterType
+      value: unconnected
+      type: query
+      disabled: true
+    - name: isStared
+      value: "true"
+      type: query
+      disabled: true
+    - name: isArchive
+      value: "false"
+      type: query
+      disabled: true
+    - name: isClosed
+      value: "false"
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

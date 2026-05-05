@@ -1,0 +1,15 @@
+info:
+  name: Mark search keyword as irrelevant
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/searchkeyword/markIrrelevant/alag"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,49 @@
+info:
+  name: Add Industry Pending
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/industry/pending/68fb17ca8caabf1a3fbefda2"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: First industry
+      - name: head
+        type: text
+        value: |-
+          {
+                  "metaDescription": "meta       dessss cr      iptttttio  "
+                }
+      - name: description
+        type: text
+        value: ooo   gggg   descc  ripttto    on                     gdgdg
+      - name: coverImage
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/stainless-steel-304-cross-pipe-fittings.jpg
+      - name: industryIcon
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/stainless-steel-304-coupling.jpg
+      - name: productFields
+        type: text
+        value: |-
+          {
+              "price": {
+                "type": "number",
+                "required": true,
+                "options": [],
+                "limit": 0
+              }
+          }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

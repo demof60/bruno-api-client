@@ -1,0 +1,15 @@
+info:
+  name: Resume Mail Queue
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/email/resume/679ca2268304ff31f126f3a2"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

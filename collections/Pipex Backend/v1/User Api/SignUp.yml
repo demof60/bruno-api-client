@@ -1,0 +1,37 @@
+info:
+  name: SignUp
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/userSignUp"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\": \"Shubham Bhosale\",\r
+
+      \    \"password\": \"Shubham@123\",\r
+
+      \    \"email\": \"shubham@pentagoat.com\"\r
+
+      \    // \"role\": \"user\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "const response = res.getBody();\r
+
+        bru.setEnvVar(\"token\",response.token);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

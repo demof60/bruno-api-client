@@ -1,0 +1,26 @@
+info:
+  name: Add Folder
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/folder/add"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"PVC Pipes 7\",\r
+
+      \    \"parent\": null\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjA4NmZlMGMzMmNkZjI4ZWI1ZGU0YSIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJrcmlzaC1qYWluIiwiaWF0IjoxNzYxNTQyNzAxLCJleHAiOjE3NjE3MTU1MDF9.Av7o5r2_YCrD3n80xV7RkxbJK9XxrR9oHN_v0CLToxs
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

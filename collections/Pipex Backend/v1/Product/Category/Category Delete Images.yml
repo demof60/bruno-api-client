@@ -1,0 +1,17 @@
+info:
+  name: Category Delete Images
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/categoryDeleteImages/667d09bb35dcbf4770b22851/0d519cf7-bf86-4ac2-a8da-2c01c9d63963
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

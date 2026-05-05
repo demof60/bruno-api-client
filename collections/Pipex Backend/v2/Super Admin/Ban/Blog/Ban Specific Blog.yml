@@ -1,0 +1,18 @@
+info:
+  name: Ban Specific Blog
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/superadmin/ban/blogs/remove/680c95488b2d11e88f845bb7"
+  body:
+    type: json
+    data: "{\r\n    \"keyword\": \"client\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

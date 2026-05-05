@@ -1,0 +1,279 @@
+info:
+  name: Fetch Page Content List
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/web/content/list?limit=10&offset=0"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: search
+      value: home page
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: bannerTitle
+        type: text
+        value: Reliable bulk 23
+      - name: bannerHighlightedText
+        type: text
+        value: Increased your Purchasing Power
+      - name: bannerBtnText
+        type: text
+        value: Drop your request and bomb
+      - name: popularProductsHighlightedText
+        type: text
+        value: pipex.ai
+      - name: popularProductsTitle
+        type: text
+        value: Popular products
+      - name: popularProductsViewMoreBtn
+        type: text
+        value: View more Products
+      - name: buyerSupplierBannerTitle
+        type: text
+        value: pipex.ai
+      - name: buyerSupplierBannerDescription
+        type: text
+        value: Our B2B platform connect suppliers<br/> and buyers for <b>Efficient trade</b>
+      - name: buyerText
+        type: text
+        value: Buyers
+      - name: supplierText
+        type: text
+        value: Sellers
+      - name: buyerSupplierBannerTitleMobile
+        type: text
+        value: Get the best seller for your requirement
+      - name: buyerSupplierBannerBtnMobile
+        type: text
+        value: Post requirement
+      - name: productWiseListingsHighlightedTest
+        type: text
+        value: product
+      - name: productWiseListingsTitle
+        type: text
+        value: Wise Listings
+      - name: productWiseListingsSeeMoreBtn
+        type: text
+        value: See more
+      - name: whyChooseUsTitle
+        type: text
+        value: Why Buyer Choose pipex.ai
+      - name: startSellingOnPipexTitle
+        type: text
+        value: Start Selling on Pipex.ai Today!
+      - name: startSellingOnPipexDescription
+        type: text
+        value: List your business and connect with customerss
+        disabled: true
+      - name: startSellingOnPipexPoints
+        type: text
+        value: "null"
+        description: |-
+          [ {
+                              "image": [
+                                  {
+                                     
+                                      "title": "sample-logo"
+                                  }
+                              ],
+                              "desc": "Access Millions of Customers"
+                          }
+          ]
+        disabled: true
+      - name: pipexDescription
+        type: text
+        value: Your B2B Marketplace For Industrial Supplies
+      - name: registerAsSellerBtn
+        type: text
+        value: Register as an Pipex seller
+      - name: howItWorkTitle
+        type: text
+        value: How it work
+      - name: industrySpecificHighlightedText
+        type: text
+        value: Industry Specifics
+      - name: industrySpecificTitle
+        type: text
+        value: Solution Product
+      - name: businessBannerTitle
+        type: text
+        value: Looking to buy in bulk for your business needs??
+      - name: enquiryText
+        type: text
+        value: For inquiries, email us at now
+      - name: enquiryEmail
+        type: text
+        value: Sales@pipex.ai
+      - name: recentListedHighlightedText
+        type: text
+        value: Recently.
+      - name: recentListedText
+        type: text
+        value: Listed.
+      - name: 6.png
+        type: file
+        value:
+          - /C:/Users/admin/Documents/6.png
+      - name: 7.png
+        type: file
+        value:
+          - /C:/Users/admin/Documents/7.png
+      - name: whyChooseUsPoints
+        type: text
+        value: |
+          [
+            {
+              "description": "Fast Deliverys",
+              "alt": "deliveryicons",
+              "title": "deliveryicons",
+
+            "imageMetadata": [
+
+                                  {
+                                      "original": {
+                                          "uuid": "88821e36-37d7-4b18-bc78-0898288ca25b",
+                                          "title": "7.png",
+                                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/webPageContentDevelopment/7_1753101066646.png",
+                                          "contentType": "image/png"
+                                      },
+                                      "720x1280": {
+                                          "uuid": "fdac9b55-d173-4e14-a0f2-13b896a6663f",
+                                          "title": "7.png",
+                                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/webPageContentDevelopment/7_720x1280_1753101067181.jpg",
+                                          "contentType": "image/png"
+                                      },
+                                      "1920x1080": {
+                                          "uuid": "7b704079-77e4-436f-bcaf-ca458da5d7d0",
+                                          "title": "7.png",
+                                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/webPageContentDevelopment/7_1920x1080_1753101067666.jpg",
+                                          "contentType": "image/png"
+                                      }
+                                  }
+                              ]
+
+
+
+
+            }
+          ]
+      - name: getStartedPoints
+        type: text
+        value: |-
+          [    {
+                              "title": "Search Products",
+                              "icon": [
+                                  {
+                                      "uuid": "ccf7fd77-34cc-45eb-b36c-bd84f446beeb",
+                                      "title": "gmail.png",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/homePageContentDevelopment/gmail_1752320451139.png",
+                                      "contentType": "image/png"
+                                  }
+                              ],
+                              "description": "Find flanges, fasteners, or valves using filters",
+                              "_id": "687249c34f081ccbbe9f58a6"
+                          },
+                          {
+                              "title": "Search Products",
+                              "imageName": [
+                                "gmail.png"
+                              ],
+                              "description": "Find flanges, fasteners, or valves using filters"
+                             
+                          }
+                      ]
+        description: |-
+          [
+                          {
+                              "title": "Search Products",
+                              "imageName": [
+                                "gmail.png"
+                              ],
+                              "description": "Find flanges, fasteners, or valves using filters"
+                             
+                          }
+                      ]
+        disabled: true
+      - name: getStartedPointsIcon
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/gmail.png
+        disabled: true
+      - name: startSellingOnPipexPointsImage
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/gmail.png
+        disabled: true
+      - name: startSellingOnPipexPoints
+        type: text
+        value: |
+          [     {
+                              "image": [
+                                  {
+                                      "uuid": "5ea9e073-ae4f-4987-86a9-937bb90eab37",
+                                      "title": "gmail.png",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/homePageContentDevelopment/gmail_1752322331726.png",
+                                      "contentType": "image/png"
+                                  },
+                                  {
+                                      "uuid": "d8513ab3-06e5-445a-a7b9-08292079a53f",
+                                      "title": "gmail.png",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/homePageContentDevelopment/gmail_1752322331821.png",
+                                      "contentType": "image/png"
+                                  }
+                              ],
+                              "desc": "Run Your Business Smoother Than Ever!",
+                              "_id": "6872511be1538ca3f4d86e48"
+                          }
+          ]
+        description: |
+          [   
+              {
+                "imageName": ["gmail.png"],
+                "desc": "Run Your Business Smoother Than Ever!"
+              }
+          ]
+        disabled: true
+      - name: wcrMainContentPoints
+        type: text
+        value: "null"
+        description: |
+          [  {
+                              "icon": [
+                                  {
+                                      "uuid": "fd260a39-dc0a-4c41-9acd-a238256c1b35",
+                                      "title": "gmail.png",
+                                      "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/homePageContentDevelopment/gmail_1752152460371.png",
+                                      "contentType": "image/png"
+                                  }
+                              ],
+                              "description": "Run Your Business Smoother Than Ever!",
+                              "_id": "686fb98c317572638f7ce924"
+                          },
+            {
+              "imageName": ["gmail.png"],
+              "description": "Run Your Business Smoother Than Ever!"
+            }
+          ]
+        disabled: true
+      - name: wcrMainContentPointsIcon
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/gmail.png
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

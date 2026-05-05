@@ -1,0 +1,17 @@
+info:
+  name: Uncategorized Define
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/uncategorizedDefine/66b9b9df17d91f7d2f4e2fc8/668b898b2cb2d0f1ff51d322"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

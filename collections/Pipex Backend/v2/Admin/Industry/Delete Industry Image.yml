@@ -1,0 +1,25 @@
+info:
+  name: Delete Industry Image
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/industry/delete/image/6735f588a2e7b9501783bacb/4b2cc382-7e6a-4bc3-8f7a-cd42ced29d48?status=maiN&type=icon"
+  params:
+    - name: status
+      value: maiN
+      type: query
+    - name: type
+      value: icon
+      type: query
+  body:
+    type: json
+    data: "{\r\n    \"type\": \"cover\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

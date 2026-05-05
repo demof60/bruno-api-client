@@ -1,0 +1,31 @@
+info:
+  name: Fetch Ban Result
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/superadmin/ban/clients/result?limit=10&offset=0&date=&type=unbanned&search="
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: date
+      value: ""
+      type: query
+    - name: type
+      value: unbanned
+      type: query
+    - name: search
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

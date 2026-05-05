@@ -1,0 +1,17 @@
+info:
+  name: Run Ban Script
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{scriptUrl}}/api/v2/product/runban"
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

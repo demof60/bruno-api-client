@@ -1,0 +1,22 @@
+info:
+  name: bulk upload category
+  type: http
+  seq: 20
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/folder/bulkUpload"
+  body:
+    type: multipart-form
+    data:
+      - name: categoryExcelFile
+        type: file
+        value:
+          - /C:/Users/fourty new/Downloads/pipex-bulk category.xlsx
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

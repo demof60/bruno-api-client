@@ -1,0 +1,26 @@
+info:
+  name: Fetch Client Customer
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/user/staff/684ffcf38fd02a5c8da81261?limit=0&offset=0"
+  params:
+    - name: limit
+      value: "0"
+      type: query
+    - name: searchTerm
+      value: Kailash
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

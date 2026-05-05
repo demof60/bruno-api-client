@@ -1,0 +1,100 @@
+info:
+  name: Supplier Update
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/supplierUpdate/666bda69c94cd7f3a04ae2d0
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: '{"companyName":"ratna-steel-updated","companyRatings":"5","companyEmail":["manilaxmioverseas@gmail.com"],"companyWhatsappNumber":"+919920012522","companyCall":["+919920012522"],"companyUrl":"https://manilaxmioverseas.com/contact/","supplyCities":[{"name":"Pune","url":"https://pune.com"},{"name":"Nashik","url":"https://nashik.com"},{"name":"Mumbai","url":"https://mumbai.com"},{"name":"Aurangabad","url":"https://aurangabad.com"},{"name":"Solapur","url":"https://solapur.com"},{"name":" Kolhapur","url":"https://kolhapur.com"},{"name":"Achalpur","url":"https://achalpur.com"},{"name":"Amravati","url":"https://amravati.com"}],"supplyCountry":[{"name":"Albania","url":"https://albania.com"},{"name":" Armenia","url":"https://armenia.com"},{"name":"Afghanistan","url":"https://afghanistan.com"},{"name":"Algeria","url":"https://algeria.com"},{"name":" Andorra","url":"https://andorra.com"},{"name":"India","url":"https://india.com"},{"name":"Angola","url":"https://angola.com"},{"name":" Argentina","url":"https://argentina.com"}],"companyAbout":"Manilaxmi Overseas is a well known Flanges and Pipe Fittings Manufacturer under the HSN Code 7307. We are proud to offer a wide range of Pipe Fittings and Flanges manufactured under different materials and as per custom requirements of our clients. Our manufacturing unit has a multi-layered quality check facility that ensures the product quality and durability at each manufacturing stage.We started our exporters journey 10 years ago with our first exports being SS 304 Flanges to a Oil Industry in Dubai, since then we have not looked back. In the last decade we as a Pipe Fitting and Flange manufacturer & exporter have seen a significant rise in demand for our products in UAE, Qatar, UK, Saudi Arabia, Quwait, Netherlands, Germany, Belgium, Algeria, and other Middle East & European Nations. Our products include Stainless Steel Flanges, Stainless Steel Pipe Fittings, SS Elbow, SS Tee, SS Blind Flange and more. We have manufactured and have exported more than 350 tons of Flanges & Fittings in the last 3 years. Our SS 304 Flanges are used in the Oil industries in Dubai.","mtcReport":false,"customSize":false,"thirdPartyInspection":true,"importExportCode":"KEAKM9641J","businessType":"Supplier","addressDetails":[{"addressOf":"Address","address":"13th Katewala Building, Shop No. -2, Ground Floor, 4th Cross Lane, Opp. 7th Khetwadi Backside, Mumbai 400004"},{"addressOf":"Address1","address":"13th Katewala Building, Shop No. -2, Ground Floor, 4th Cross Lane, Opp. 7th Khetwadi Backside, Mumbai 400004"},{"addressOf":"Address2","address":"13th Katewala Building, Shop No. -2, Ground Floor, 4th Cross Lane, Opp. 7th Khetwadi Backside, Mumbai 400004"}],"countryReached":"20","companyEstablishYear":"2006","companyGSTN":"29KLWKR93157E2G","applicationUsage":["shipbuilding","power-industry","oil-gas-plant","medical-application","construction","mechanical","sugar","communication","petrochemical","fertilizer"],"searchKeywords":["Pipe Fittings","Elbow Outlet","Nipoflange","Nipple Outlet","Stainless Steel Outlet Fittings","Stainless Steel Threaded Outlet","Stainless Steel Lateral Outlet","ASTM A105 Weld O Lets","Stainless Steel Weld O Lets","Stainless Steel Socket Weld Outlet","Stainless Steel Threaded Outlet","Stainless Steel Elbow Outlet","Stainless Steel Nipple Outlet","Stainless Steel Sweep Outlet","Pipe Outlet Fittings","Braze Outlet","Coupling Outlet","Flexo Outlet","Insert Outlet","Weld O Lets","Socket Weld Outlet","Threaded Outlets","Lateral Outlet","Elbow Outlet","Sweep Outlet","Nipoflange","Nipple Outlet","Stainless Steel Outlet Fittings","Stainless Steel Threaded Outlet","Stainless Steel Lateral Outlet","ASTM A105 Weld O Lets","Stainless Steel Weld O Lets","Stainless Steel Socket Weld Outlet","Stainless Steel Threaded Outlet","Stainless Steel Elbow Outlet","Stainless Steel Nipple Outlet","Stainless Steel Sweep Outlet","Flanges","Ductile Iron Flange","Blind Flange","Weld Neck Flange","Long Weld Neck Flange","Bleed Ring Flange","Slip On Flange","Socket Weld Flange","Threaded Flange","Al-6xn Flange","Lap Joint Flange","Spectacle Blind Flange","Orifice Flange","Square Flange","Nipo Flange","Spade Flange","Forged Flanges","Plate Flange","Swivel Flange","Anchor Flange","Expander Flange","Reducing Flange","Pad Flange","Weldo Flange","Puddle Flange","Ring Spacer Flange","High Hub Blind Flange","Flanges Bolt Hole Orientation","Raised Face Flange","Flat Face Flange","Ring Type Joint Flange","Tongue And Froove Flange","Male Female Flange","Stock Finish Flange","Spiral Serrated Flange","Concentric Serrated Flange","Smooth Finish Flange","Flanges Standards","Alloy Steel Flanges","Stainless Steel 304L Flanges","Stainless Steel 316 Flanges","ASTM A182 F22 Flanges","Stainless Steel 304 Flanges","ASTM A105 Flange","ASTM A350 LF2 Flanges","ASTM A182 F11 Flanges","Stainless Steel 316L Flanges","ASTM A694 F52 Flanges","Nickel Alloy Flange","Duplex Flange","Super Duplex Flange","API Flange","Titanium Flange","Mild Steel Flange","Stainless Steel Flanges","Fasteners","Fasteners Standards","ASTM Fasteners Standards","Grade 8.8 Bolts","Grade 10.9 Bolt","Grade 12.9 Bolt","Al6xn Bolts","MP35N Fasteners","Zirconium Bolts","MP159 Bolts","Maraging Steel Fasteners","Structural Bolts","Tie Rods","Types Of Steel Nuts","Types Of Screws","Threaded Rebar","Types Of Stud Bolts","Types Of Washers","Springs","Dowel Pin","Self Drilling SMS","Types Of Bolts","Stainless Steel Fasteners","Stainless Steel Washer","Stainless Steel Screws","Stainless Steel 304 Fasteners","Stainless Steel 304L Fasteners","Stainless Steel 316 Fasteners","Stainless Steel 316L Fasteners","High Tensile Fasteners","Nitronic 60 Fasteners","Tantalum Fasteners","Silicon Bronze Fasteners","Duplex Fasteners","Super Duplex Fasteners","Alloy Steel Fasteners","Stainless Steel Hex Bolts","Beryllium Copper Screws","Nickel Alloy Fasteners","Monel Fasteners","Hastelloy Fasteners","Inconel Fasteners","Titanium Fasteners","Mild Steel Threaded Rod","Aluminium Fasteners","Aluminum Bronze Fastener","Molybdenum Fasteners","Tungsten Fasteners","Phosphor Bronze Fasteners","Stainless Steel Stud Bolts","Stainless Steel Threaded Rod","Cast Iron Fasteners"]}'
+        disabled: true
+      - name: head
+        type: text
+        value: '{"metaTitle":"Enquiry Now","metaDescription":"Pipe Fittings & Flanges Manufacturers & Supplier in India. We supply different types and grades of Pipe Fitting & Flanges in Mumbai, Pune, and Other Cities.","metaKeywords":"pipe fittings manufacturer in india, flanges supplier in india, fasteners manufacturer in india, forged fittings price list, round bar price, round bar manufacturer in india"}'
+        disabled: true
+      - name: companylogo
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-nipple-pipe-fittings.jpg
+        disabled: true
+      - name: certificateTitle
+        type: text
+        value: registration-update
+        disabled: true
+      - name: certificate
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/duplex-coupling.jpg
+        disabled: true
+      - name: companysellingproductsTitle
+        type: text
+        value: Pipe Fittings##$$Flanges
+        disabled: true
+      - name: companysellingproducts
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/duplex-pipe-fittings.jpg
+        disabled: true
+      - name: galleryimages
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-reducer-pipe-fittings.jpg
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-stub-end-pipe-fittings.jpg
+        disabled: true
+      - name: clientImageTitle
+        type: text
+        value: BPCL
+        disabled: true
+      - name: clientimages
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/stainless-steel-304-reducer-fittings.jpg
+        disabled: true
+      - name: catalogThumbnailTitle
+        type: text
+        value: thumbnailtitle-updated-2
+        disabled: true
+      - name: catalogthumbnailimage
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/duplex-reducer.jpg
+        disabled: true
+      - name: catalogpdf
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/Guidelines for smooth management of Postal Ballot Papers - regarding..pdf
+        disabled: true
+      - name: companyempName
+        type: text
+        value: A
+        disabled: true
+      - name: companyempDesignation
+        type: text
+        value: B
+        disabled: true
+      - name: companyempEmail
+        type: text
+        value: aniket@pentagoat.com
+        disabled: true
+      - name: companyempNumber
+        type: text
+        value: "12345678"
+        disabled: true
+      - name: companyempimage
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-coupling.jpg
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

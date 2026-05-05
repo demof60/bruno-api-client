@@ -1,0 +1,23 @@
+info:
+  name: Restore Specific Folder
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/ban/folders/restore/6809e6fa821afcd462f8a6bf?childsLiveOption=pending_all_possible"
+  params:
+    - name: childsLiveOption
+      value: pending_all_possible
+      type: query
+      description: '["live_all_possible", "keep_as_it_is_if_possible", "pending_all_possible"]'
+  body:
+    type: json
+    data: "{\r\n    \"keyword\": \"client\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

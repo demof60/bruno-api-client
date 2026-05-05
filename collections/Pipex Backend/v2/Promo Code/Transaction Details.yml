@@ -1,0 +1,23 @@
+info:
+  name: Transaction Details
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/promo-codes/transactions/6901df266d3be67f3c3e8d1d"
+  params:
+    - name: clientId
+      value: 671f7d37aaa77919ed297a42
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

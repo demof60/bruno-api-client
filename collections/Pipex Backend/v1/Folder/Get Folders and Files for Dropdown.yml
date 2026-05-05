@@ -1,0 +1,15 @@
+info:
+  name: Get Folders and Files for Dropdown
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/folder/dropdown/668b85d52cb2d0f1ff51d2e0
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

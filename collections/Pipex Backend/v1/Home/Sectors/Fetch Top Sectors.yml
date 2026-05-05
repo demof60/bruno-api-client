@@ -1,0 +1,22 @@
+info:
+  name: Fetch Top Sectors
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{url}}/api/v1/web/home/sectors/top?limit=11&offset=5"
+  params:
+    - name: limit
+      value: "11"
+      type: query
+    - name: offset
+      value: "5"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

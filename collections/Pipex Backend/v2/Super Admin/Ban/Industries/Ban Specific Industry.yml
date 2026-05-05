@@ -1,0 +1,15 @@
+info:
+  name: Ban Specific Industry
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/superadmin/ban/industries/remove/671c8a0dc15cc74928dfdc15"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

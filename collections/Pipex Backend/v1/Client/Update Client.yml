@@ -1,0 +1,48 @@
+info:
+  name: Update Client
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{url}}/api/v1/client"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |
+          {
+            "_id":"66a354ec22a97d0e3bc9ea88" ,
+            "name": "teestClient"
+          }
+      - name: logo
+        type: file
+        value:
+          - postman-cloud:///1ef2ef88-cb84-4b70-8fd8-a2ffef42b410
+        disabled: true
+      - name: companyGif
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/galaxy-3468_256.gif
+        disabled: true
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef2ef88-cb84-4b70-8fd8-a2ffef42b410
+        disabled: true
+      - name: notes
+        type: text
+        value: dd
+        disabled: true
+      - name: coverType
+        type: text
+        value: coverImage
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

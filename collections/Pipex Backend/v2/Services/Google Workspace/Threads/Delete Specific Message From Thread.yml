@@ -1,0 +1,15 @@
+info:
+  name: Delete Specific Message From Thread
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/services/google-workspace/thread/message/198e647a9e7c4c0d"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

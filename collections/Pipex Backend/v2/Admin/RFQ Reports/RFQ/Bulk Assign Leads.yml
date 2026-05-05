@@ -1,0 +1,36 @@
+info:
+  name: Bulk Assign Leads
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/report/bulk-assign"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"rfqIds\": [\r
+
+      \        \"69a90c79287773bc6c5dd7f5\",\r
+
+      \        \"69a90bac287773bc6c5dd7e3\",\r
+
+      \        \"69a90b68287773bc6c5dd7d3\"\r
+
+      \    ],\r
+
+      \    \"assignedClients\": [\r
+
+      \        \"6998510c1097ea6480d60564\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

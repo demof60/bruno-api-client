@@ -1,0 +1,92 @@
+info:
+  name: (New) Add Draft To Main
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/draft/add"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"clientId\": \"697c8e8c620cb7355882d1bf\",\r
+
+      \    // \"completion\": \"63.16\",\r
+
+      \    \"productTitle\": \"Stainless-Steel-Round-Tube\",\r
+
+      \    // \"productDescription\": \"<p>hi</p>\",\r
+
+      \    \"productDescriptionHeading\": \"Stainless Steel Round Tube\",\r
+
+      \    // \"FAQ\": [],\r
+
+      \    // \"bannerImageContent\": \"\",\r
+
+      \    // \"searchKeywords\": [],\r
+
+      \    \"url\": \"Stainless Steel Round Tube-0.html\",\r
+
+      \    // \"head\": {\r
+
+      \    //     \"metaTitle\": \"\",\r
+
+      \    //     \"metaDescription\": \"\",\r
+
+      \    //     \"metaKeywords\": \"\"\r
+
+      \    // },\r
+
+      \    // \"productDetails\": [],\r
+
+      \    // \"productDetailsProductDescription\": \"\",\r
+
+      \    // \"bannerImageTitle\": \"\",\r
+
+      \    // \"bannerImages\": [\r
+
+      \    //     {\r
+
+      \    //         \"uuid\": \"2a7a6fea-6a55-42c1-9e8d-d011e62ef9f7\",\r
+
+      \    //         \"title\": \"cartoonify\",\r
+
+      \    //         \"data\": \"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/cartoonify_1776076277324.png\",\r
+
+      \    //         \"contentType\": \"image/png\"\r
+
+      \    //     }\r
+
+      \    // ],\r
+
+      \    \"folderId\": \"69d9fcb4ec803fc4fb4d1179\",\r
+
+      \    // \"categorySpecificFields\": {},\r
+
+      \    // \"otherFields\": {},\r
+
+      \    \"priceRangeFrom\": \"1\",\r
+
+      \    \"priceRangeTo\": \"1\"\r
+
+      \    // \"minOrder\": \"34\",\r
+
+      \    // \"minOrderUnit\": \"piece\",\r
+
+      \    // \"industries\": [],\r
+
+      \    // \"countries\": [],\r
+
+      \    // \"cities\": []\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

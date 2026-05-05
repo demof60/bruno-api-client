@@ -1,0 +1,229 @@
+info:
+  name: Fetch Clients For Dropdown
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/profile/dropdown?offset=0&search=test&limit=25&isSearchByCategory=true"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: search
+      value: test
+      type: query
+    - name: limit
+      value: "25"
+      type: query
+    - name: isSearchByCategory
+      value: "true"
+      type: query
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Old
+    request:
+      url: "{{url}}/api/v2/admin/client/profile/dropdown?limit=25&offset=0"
+      method: GET
+      params:
+        - name: limit
+          value: "25"
+          type: query
+        - name: offset
+          value: "0"
+          type: query
+        - name: search
+          value: ""
+          type: query
+          disabled: true
+      body:
+        type: multipart-form
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Vary
+          value: Origin
+        - name: Access-Control-Allow-Credentials
+          value: "true"
+        - name: Content-Security-Policy
+          value: "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+        - name: Cross-Origin-Opener-Policy
+          value: same-origin
+        - name: Cross-Origin-Resource-Policy
+          value: same-origin
+        - name: Origin-Agent-Cluster
+          value: ?1
+        - name: Referrer-Policy
+          value: no-referrer
+        - name: Strict-Transport-Security
+          value: max-age=15552000; includeSubDomains
+        - name: X-Content-Type-Options
+          value: nosniff
+        - name: X-DNS-Prefetch-Control
+          value: off
+        - name: X-Download-Options
+          value: noopen
+        - name: X-Frame-Options
+          value: SAMEORIGIN
+        - name: X-Permitted-Cross-Domain-Policies
+          value: none
+        - name: X-XSS-Protection
+          value: "0"
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Content-Length
+          value: "1897"
+        - name: ETag
+          value: W/"769-k0f00DXGTvAGTAIZfHIQu5BJY10"
+        - name: Date
+          value: Tue, 23 Dec 2025 11:50:15 GMT
+        - name: Connection
+          value: keep-alive
+        - name: Keep-Alive
+          value: timeout=5
+      body:
+        type: json
+        data: |-
+          {
+              "success": true,
+              "data": {
+                  "clients": [
+                      {
+                          "_id": "68f8bb9cbd7052c72d5592ea",
+                          "name": "Daryl Son And Co",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68f8bbe1bd7052c72d559394",
+                          "name": "21412421",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68f8bbe3bd7052c72d5593aa",
+                          "name": "Bane",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68f8bdbffe3a74077c3a35dd",
+                          "name": "Tha Grand Company",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68f8be20fe3a74077c3a36c0",
+                          "name": "Test",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68f8c1af38f49bef13e3027f",
+                          "name": "Vishwakarma Steels",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68f8c2ab7b0ace5fcd129b77",
+                          "name": "Los Pollos Hermanos",
+                          "dailyCount": 1
+                      },
+                      {
+                          "_id": "68f8c3117b0ace5fcd129c20",
+                          "name": "Parleg",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68f8d8399d14ec4e05436daa",
+                          "name": "Ajay Pvt Ltd",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68fb01fd9d14ec4e05436def",
+                          "name": "Jp Morgan",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68fb0587e9c18f6f3718e21c",
+                          "name": "Paolo Escobar Pvt Ltd",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68fb24511b44f4ac99087d35",
+                          "name": "Chakli",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68fb67d0e648b395350bee54",
+                          "name": "Head And Vega Plc",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68fef899cc81299a086525fd",
+                          "name": "F10test",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68fefa3e05945a06338d3282",
+                          "name": "Bob",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68fefe71cc81299a08653a03",
+                          "name": "Facebookewgrwg",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff00becc81299a08653f34",
+                          "name": "The First Sat Userrrrr",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff04accc81299a08654519",
+                          "name": "Jhonny Depp Inc",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff06d3cc81299a086548d0",
+                          "name": "Beach And Hooper Plc",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff0a2a05945a06338d3494",
+                          "name": "Test User",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff1e82c2ebceac0230fa21",
+                          "name": "Bates Humphrey Llc",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff3e24528ef2612c122492",
+                          "name": "Petty And Payne Trading",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff54884cbd8e4b75089df3",
+                          "name": "Mcneil Woodard Llc",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff64d199425eb728400681",
+                          "name": "Rojas And Summers Trading",
+                          "dailyCount": 0
+                      },
+                      {
+                          "_id": "68ff68bc0776362ef283c14c",
+                          "name": "Diaz Reynolds Llc",
+                          "dailyCount": 0
+                      }
+                  ],
+                  "total": 229
+              }
+          }

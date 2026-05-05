@@ -1,0 +1,22 @@
+info:
+  name: (Login) Get Access For Buyer and Seller (Login)
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/auth/getaccess/buyerSellerLogin?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODRhYzUyNDM1YTUyYzZhNTg0YzcwNyIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJwcml0aS12aXNod2FrYXJtYSIsImlhdCI6MTc2OTc3MjMyMywiZXhwIjoxNzY5OTQ1MTIzfQ.v9NFhoNjhp553bQcA6tqkjg1E3qsrRCC4ickSgNOED4&userId=697c9504620cb7355882e333"
+  params:
+    - name: token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ODRhYzUyNDM1YTUyYzZhNTg0YzcwNyIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJwcml0aS12aXNod2FrYXJtYSIsImlhdCI6MTc2OTc3MjMyMywiZXhwIjoxNzY5OTQ1MTIzfQ.v9NFhoNjhp553bQcA6tqkjg1E3qsrRCC4ickSgNOED4
+      type: query
+    - name: userId
+      value: 697c9504620cb7355882e333
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

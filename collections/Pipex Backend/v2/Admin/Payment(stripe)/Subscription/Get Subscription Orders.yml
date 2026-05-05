@@ -1,0 +1,33 @@
+info:
+  name: Get Subscription Orders
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/payment/subscription?offset=0&status=all&limit=10"
+  params:
+    - name: reqForCancel
+      value: "true"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+    - name: status
+      value: all
+      type: query
+    - name: search
+      value: Shaikh
+      type: query
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

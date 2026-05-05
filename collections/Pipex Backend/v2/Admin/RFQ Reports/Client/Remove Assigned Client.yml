@@ -1,0 +1,37 @@
+info:
+  name: Remove Assigned Client
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/report/remove-client"
+  params:
+    - name: type
+      value: lastWeek
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"removeClientIds\": [\r
+
+      \        \"671f67ba4ca80612347cb8dc\",\r
+
+      \        \"672081e38ff573adb353ed1a\",\r
+
+      \        \"67207619a0c455a255f8a603\"\r
+
+      \    ],\r
+
+      \    \"rfqId\": \"67a0a6c15291699a3a8ae2e3\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

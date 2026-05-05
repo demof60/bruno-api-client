@@ -1,0 +1,7 @@
+info:
+  name: Folder Bin
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

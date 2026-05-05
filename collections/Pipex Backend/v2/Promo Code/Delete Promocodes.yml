@@ -1,0 +1,18 @@
+info:
+  name: Delete Promocodes
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/promo-codes/68d4f5dca9fcb6c036835133"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

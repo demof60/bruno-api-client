@@ -1,0 +1,19 @@
+info:
+  name: Send Now
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/email/send_now/:id"
+  params:
+    - name: id
+      value: 6948e87a45704c3ac4c07d42
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

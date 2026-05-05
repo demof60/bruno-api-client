@@ -1,0 +1,15 @@
+info:
+  name: Delete Sector Slot
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v1/web/home/sectors/66b1efbd3a8006393dfcf19d"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

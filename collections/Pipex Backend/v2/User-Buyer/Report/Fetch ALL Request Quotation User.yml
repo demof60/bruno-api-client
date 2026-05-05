@@ -1,0 +1,60 @@
+info:
+  name: Fetch ALL Request Quotation User
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/buyer/report/all?offset=0&limit=10&searchTerm="
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: type
+      value: all
+      type: query
+      description: "[all,lastSixty,lastThirty,lastWeek]"
+      disabled: true
+    - name: searchTerm
+      value: akele banda
+      type: query
+      disabled: true
+    - name: rfqType
+      value: all
+      type: query
+      description: "[all, unassigned, direct, assigned]"
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+    - name: searchTerm
+      value: ""
+      type: query
+    - name: labels
+      value: important, unread
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"type\": [\r
+
+      \        \"all\"\r
+
+      \        // ,\r
+
+      \        // \"unstarred\",\r
+
+      \        // \"important\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

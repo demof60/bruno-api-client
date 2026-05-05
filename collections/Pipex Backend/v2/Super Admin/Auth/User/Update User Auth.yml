@@ -1,0 +1,18 @@
+info:
+  name: Update User Auth
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/superadmin/auth/user/updateAuth/67f9ffbba462532cd0c73f62"
+  body:
+    type: json
+    data: "{\r\n    \"isActive\": false\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

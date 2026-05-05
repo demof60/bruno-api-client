@@ -1,0 +1,30 @@
+info:
+  name: Update Catalog
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: http://localhost:9000/api/v1/client/catalog/update/67654b7e96b6f0377387fe7d
+  body:
+    type: multipart-form
+    data:
+      - name: coverImage
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/apple.png
+        disabled: true
+      - name: pdf
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/Dormitory (1).pdf
+      - name: title
+        type: text
+        value: catalog hoon mai
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

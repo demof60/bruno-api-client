@@ -1,0 +1,34 @@
+info:
+  name: get user QA response
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/qa/buyer/response?limit=10&offset=0&questionId=682c550284f7ecd5b4d00df1"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: createdUserId
+      value: 6825c5714849d70ba441e577
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+    - name: questionId
+      value: 682c550284f7ecd5b4d00df1
+      type: query
+  body:
+    type: text
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

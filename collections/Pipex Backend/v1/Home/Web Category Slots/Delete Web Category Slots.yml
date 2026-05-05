@@ -1,0 +1,29 @@
+info:
+  name: Delete Web Category Slots
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/web/home/webCategorySlots/66b0ba3b72bf3e3fa0b5c575
+  params:
+    - name: folderName
+      value: pipe-klm
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"categoryId\":\"66a87f057e4a4319da7aad75\", //only when you want to updae your slots \r
+
+      \    \"productIds\": [\"1\",\"2\",\"3\",\"4\"] \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

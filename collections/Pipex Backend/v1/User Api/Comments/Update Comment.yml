@@ -1,0 +1,26 @@
+info:
+  name: Update Comment
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/user/updateComment/66793ca1487901396404b9bb
+  body:
+    type: json
+    data: "{\r
+
+      \   \"content\":\" geniue supplier! \",\r
+
+      \   \"review\":5\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

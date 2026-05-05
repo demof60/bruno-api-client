@@ -1,0 +1,25 @@
+info:
+  name: Get Citiies by Country Id
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/dropdown/cities/6790892bb3671eea6cd1565a?offset=0&limit=20&searchTerm=Asfasfas"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+    - name: limit
+      value: "20"
+      type: query
+    - name: searchTerm
+      value: Asfasfas
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

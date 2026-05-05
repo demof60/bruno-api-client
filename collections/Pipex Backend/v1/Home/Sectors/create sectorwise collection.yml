@@ -1,0 +1,38 @@
+info:
+  name: create sectorwise collection
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/web/home/sectors"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"sector\": \"Sugar Industry\",\r
+
+      \    \"rank\": 1,\r
+
+      \    \"sectorSlotId\": \"66b1efbd3a8006393dfcf19d\",\r
+
+      \    \"products\": [\r
+
+      \        \"667faf9f7bfc2f6725930465\",\r
+
+      \        \"667faf9f7bfc2f6725930465\",\r
+
+      \        \"667faf9f7bfc2f6725930465\",\r
+
+      \        \"667faf9f7bfc2f6725930465\"\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

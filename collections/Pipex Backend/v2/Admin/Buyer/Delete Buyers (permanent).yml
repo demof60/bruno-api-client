@@ -1,0 +1,20 @@
+info:
+  name: Delete Buyers (permanent)
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/buyer/69649655848ffae6e58d489c"
+  params:
+    - name: search
+      value: steeeel
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

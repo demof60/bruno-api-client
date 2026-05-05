@@ -1,0 +1,129 @@
+info:
+  name: Update Product
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/product/update/6708bf2a0e4e6b0773379e25"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          {
+              "productTitle": "client-update-product"
+          }
+        contentType: application/json
+        disabled: true
+      - name: head
+        type: text
+        value: |-
+          {
+              "metaTitle": "some-meta-title-ddd",
+              "metaDescription": "some-meta-description-updted",
+              "metaKeywords": "ddddd"
+          }
+        contentType: application/json
+        disabled: true
+      - name: bannerImageTitle
+        type: text
+        value: change-it-once
+        disabled: true
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/nickel-alloy-end-cap-pipe-fittings.jpg
+        disabled: true
+      - name: isActive
+        type: text
+        value: "true"
+        disabled: true
+      - name: isPending
+        type: text
+        value: "false"
+        disabled: true
+      - name: productCategory
+        type: text
+        value: some-update-
+        disabled: true
+      - name: clientId
+        type: text
+        value: 66ea7d64de91ce9b8c9a7fb3
+        disabled: true
+      - name: isSubCategory
+        type: text
+        value: "true"
+        disabled: true
+      - name: productDetailsProductTitle
+        type: text
+        value: updathdescrptionkon##$$badiyahre##$$ffffffff
+        disabled: true
+      - name: productDetailsProductCode
+        type: text
+        value: 123456897##$$45334##$$ffffff
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/pexels-derice-jason-fahnkow-745824-1595244.jpg
+          - /C:/Users/ABC/Downloads/pexels-irfanwindows-623147.jpg
+          - /C:/Users/ABC/Downloads/pexels-byrahul-695644.jpg
+        disabled: true
+      - name: subProductDescription
+        type: text
+        value: "mast h re ##$$ddddd##$$fffffff dddd"
+        disabled: true
+      - name: productDetailsProductDescription
+        type: text
+        value: niceoneplus2
+        disabled: true
+      - name: otherFields
+        type: text
+        value: |-
+          {
+                      "price": 1000,
+                      "availability": "in-stock",
+                      "color": "red",
+          		"availability": "out-of-stock",
+                      "description": "This is description",
+           "prices": 1000,
+                      "availability": "in-stock",
+                      "colors": "red",
+          		"availability": "out-of-stock",
+                      "descriptions": "This is description"
+          }
+        disabled: true
+      - name: categorySpecificFields
+        type: text
+        value: |-
+          {
+                      "price": 1000,
+                      "availabilits": "in-stock",
+                      "color": "red",
+          		"availability": "out-of-stock",
+                      "description": "This is description"
+          }
+        disabled: true
+      - name: industries
+        type: text
+        value: '["66f69b22ab4783c6ebbdc98b"]'
+        disabled: true
+      - name: countries
+        type: text
+        value: '["67037f88021a0218f3c1a67c", "67037f89021a0218f3c1a8a5"]'
+        disabled: true
+      - name: cities
+        type: text
+        value: '["67037f76021a0218f3c182e3"]'
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

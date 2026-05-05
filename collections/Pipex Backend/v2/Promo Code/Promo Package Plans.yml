@@ -1,0 +1,28 @@
+info:
+  name: Promo Package Plans
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/promo-codes/promopackages/get"
+  params:
+    - name: limit
+      value: "5"
+      type: query
+      disabled: true
+    - name: offset
+      value: "10"
+      type: query
+      disabled: true
+    - name: ""
+      value: ""
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

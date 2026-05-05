@@ -1,0 +1,39 @@
+info:
+  name: Client profile create
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/client/user/create/68afe1b89c78d9a4d5672c4c"
+  params:
+    - name: searchTerm
+      value: Kailash
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: profile
+        type: text
+        value: '{"username":"d.","firstName":"Willa","lastName":"Mendoza","department":"Molestiae dolor sit ","designation":"Nobis beatae minus e","countryCode":"91","number":6082432342,"email":"difani@mailinator.com","password":"Pipex@F70","profileImg":null}'
+      - name: vcardSettings
+        type: text
+        value: '{"firstName":"d.","lastName":"White","designation":"Proident rerum est","countryCode":"91","number":9202342343,"whatsappNoCountryCode":"91","whatsappNo":3423423432,"email":"nupurej@mailinator.com","isActive":true,"profileImg":null}'
+      - name: vcardProfileImage
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/Gemini_Generated_Image_tj440xtj440xtj44.jpg
+        disabled: true
+      - name: userProfileImage
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/download (1).jpg
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

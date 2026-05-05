@@ -1,0 +1,160 @@
+info:
+  name: Update Company Profile
+  type: http
+  seq: 12
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/client/profile/update-company/bvfghfg"
+  body:
+    type: multipart-form
+    data:
+      - name: name
+        type: text
+        value: Test 4
+      - name: emails
+        type: text
+        value: '[{"_id":"6992c04786f356f41157c7d9","clientId":"6992c04386f356f41157c7cf","email":"luhopyga@denipl.com","primary":true,"createdAt":"2026-02-16T06:59:19.993Z","updatedAt":"2026-02-16T07:39:01.517Z","__v":0}]'
+      - name: contacts
+        type: text
+        value: '[{"countryCode":"+376","number":918482,"primary":false,"whatsApp":true,"createdAt":"2026-02-16T06:59:17.910Z","updatedAt":"2026-02-16T07:39:00.568Z","__v":0},{"countryCode":"+91","number":8828999696,"primary":true,"whatsApp":false,"createdAt":"2026-02-16T06:59:18.908Z","updatedAt":"2026-02-16T07:39:01.356Z","__v":0}]'
+      - name: ownerName
+        type: text
+        value: Test 4
+      - name: description
+        type: text
+        value: wasegdr
+      - name: businessType
+        type: text
+        value: Manufacturer
+      - name: website
+        type: text
+        value: https://www.w3schools.com
+      - name: addresses
+        type: text
+        value: '[{"_id":"68149bb5d31d1d2e7dcd3e54","name":"Gamble And Brooks Co","address_line1":"Dickson Erickson Associates","address_line2":"Holloway Oneill Traders","city":"Parks Griffin LLC","postal_code":"Id ullam ad nulla do","country":"Rem dolore sit offic","primary":true,"address_type":"Sharp Donovan LLC"}]'
+      - name: annualRevenue
+        type: text
+        value: ₹50
+      - name: projectsCompleted
+        type: text
+        value: "5"
+      - name: responseTime
+        type: text
+        value: "25"
+      - name: experience
+        type: text
+        value: "33"
+      - name: features
+        type: text
+        value: |-
+          [
+              "Four paarrtyy inspection231",
+              "ISO certified company23",
+              "IP rating certified",
+              "Military certified"
+          ]
+      - name: rating
+        type: text
+        value: "4"
+        disabled: true
+      - name: reviewCount
+        type: text
+        value: "45"
+        disabled: true
+      - name: head
+        type: text
+        value: |
+          { "metaDescription":"meta description1"}
+        disabled: true
+      - name: notes
+        type: text
+        value: Notes
+        disabled: true
+      - name: logo
+        type: text
+        value: '{"uuid":"3bb7ed0a-7990-4440-afbc-cec2ea6c468a","title":"Istockphoto 814423752 2048x2048.jpg Logo","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225155715.jpg","contentType":"image/jpeg"}'
+      - name: companyGif
+        type: file
+        value:
+          - /C:/Users/fourty new/Downloads/rb_193.png
+        disabled: true
+      - name: coverImage
+        type: text
+        value: '[{"uuid":"3bb7ed0a-7990-4440-afbc-cec2ea6c468a","title":"Istockphoto 814423752 2048x2048.jpg Logo","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225155715.jpg","contentType":"image/jpeg"}]'
+      - name: clientGallery
+        type: text
+        value: '[{"uuid":"3ce67c38-5115-4cbd-a8f3-360514c20b66","title":"Istockphoto 814423752 2048x2048.jpg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160871.jpg","contentType":"image/jpeg"}]'
+      - name: industryImage
+        type: file
+        value:
+          - SKdmzXgBE/white.jpg
+        disabled: true
+      - name: companyGallery
+        type: text
+        value: '[{"uuid":"728ed1bc-d243-4861-b9de-f321317ff1e9","title":"Istockphoto 814423752 2048x2048.jpg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160750.jpg","contentType":"image/jpeg"}]'
+      - name: additionalInfos
+        type: text
+        value: |-
+          { 
+          "companyGst": "113",
+          "companyCode": 23434234,
+          "countriesCode": "234234",
+          "companyYearEst": "200",
+          "panCard": "K34234",
+          "thirdPartyInspection": true,
+          "mtcReport": false,
+          "customSizes": true
+          }
+        disabled: true
+      - name: catlogCoverImage
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+      - name: catlog
+        type: text
+        value: '[{"title":"Test","_id":"6992c04886f356f41157c7e4","coverImage":{"uuid":"ae9a75f5-7ce4-4230-b2f6-0e78bff15cf6","title":"Test","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160507.jpg","contentType":"image/jpeg"},"pdf":{"uuid":"1220df3c-1919-4654-8c40-be8fb5404a5a","title":"Test","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160628.pdf","contentType":"application/pdf"}}]'
+      - name: companyTeamImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/f60host3.png
+        disabled: true
+      - name: companyTeam
+        type: text
+        value: '[{"name":"Demo Fourty60","email":"demo@pentagoat.com","designation":"Captain America ","number":3453453496,"countryCode":"+91","companyTeamImage":{"uuid":"0d83d117-bf65-4dcf-96a0-d2d96d00dcf5","title":"Demo Fourty60","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160138.jpg","contentType":"image/jpeg"},"_id":"6992c04886f356f41157c7e2"}]'
+      - name: certificateCoverImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/7.png
+        disabled: true
+      - name: certificateCoverPdf
+        type: file
+        value:
+          - /C:/Users/admin/Documents/6.png
+        disabled: true
+      - name: companyCertificate
+        type: text
+        value: '[{"title":"Wrwrwar","_id":"6992c04886f356f41157c7e3","companyCertificateCoverImage":{"uuid":"d1719a10-3b69-4369-9eaf-1196e468ebbb","title":"Wrwrwar","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160262.jpg","contentType":"image/jpeg"},"companyCertificateCoverPdf":{"uuid":"acf869e9-d60f-4edf-8fd6-2ae95bf978c7","title":"Wrwrwar","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/istockphoto-814423752-2048x2048_1771225160389.pdf","contentType":"application/pdf"}}]'
+      - name: coverImage
+        type: text
+        value: "null"
+        disabled: true
+      - name: logo
+        type: text
+        value: '{"uuid":"a428d24b-df69-44a9-92e2-56b9c1bb595d","title":"6.png(1).jpg","data":"https://pipingproject.s3.ap-south-1.amazonaws.com/piplineClientDevelopment/no-leads_1752209053533.webp","contentType":"image/webp"}'
+        disabled: true
+      - name: allowedEmailSendQueue
+        type: text
+        value: '{"email_queue_limit_per_day_by_email":25}'
+      - name: socialMediaLink
+        type: text
+        value: '[{"name":"Facebook","link":"https://neptunealloys.com/round-bar.php","_id":"6992c04886f356f41157c7e5"}]'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

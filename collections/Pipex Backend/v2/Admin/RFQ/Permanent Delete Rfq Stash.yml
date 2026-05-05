@@ -1,0 +1,15 @@
+info:
+  name: Permanent Delete Rfq Stash
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/rfq/permanent-delete-rfq-stash/673f274816df5b5ce7a27911"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

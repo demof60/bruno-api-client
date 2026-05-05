@@ -1,0 +1,38 @@
+info:
+  name: Fetch All Contact Us Vcard Client (important)
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/contact/all?clientId=684ffcf38fd02a5c8da81261&userId=68510e773e708d3d8e4c32cd"
+  params:
+    - name: searchTerm
+      value: curry
+      type: query
+      disabled: true
+    - name: labels
+      value: unimportant
+      type: query
+      disabled: true
+    - name: limit
+      value: "100"
+      type: query
+      disabled: true
+    - name: offset
+      value: ""
+      type: query
+      disabled: true
+    - name: clientId
+      value: 684ffcf38fd02a5c8da81261
+      type: query
+    - name: userId
+      value: 68510e773e708d3d8e4c32cd
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

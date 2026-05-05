@@ -1,0 +1,19 @@
+info:
+  name: Delete Product Image
+  type: http
+  seq: 18
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/product/delete/image/671c9c87c15cc74928dff7f9/be302a82-02d9-4ff7-9b3b-ce690a71975f?status=maiN"
+  params:
+    - name: status
+      value: maiN
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

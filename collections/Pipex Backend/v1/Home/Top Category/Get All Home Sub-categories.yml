@@ -1,0 +1,33 @@
+info:
+  name: Get All Home Sub-categories
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/web/home/folder/subfolder?limit=5&offset=0
+  params:
+    - name: limit
+      value: "5"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: folderName
+      value: pipe-klm
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \    \"folderName\": \"pipe-klm\" \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

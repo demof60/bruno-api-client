@@ -1,0 +1,38 @@
+info:
+  name: Fetch ALL Request Quotation
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/report/rfq/get?limit=10&rfqType=all"
+  params:
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: limit
+      value: "10"
+      type: query
+    - name: type
+      value: lastWeek
+      type: query
+      description: "[all, lastSixty, lastThirty, lastWeek]"
+      disabled: true
+    - name: searchTerm
+      value: Pholvipatil
+      type: query
+      disabled: true
+    - name: rfqType
+      value: all
+      type: query
+      description: all, unassigned, direct, assigned, completed,waiting_for_approval,closed,rejected, dealDone
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

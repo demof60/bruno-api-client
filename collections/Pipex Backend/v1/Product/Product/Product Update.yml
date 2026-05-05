@@ -1,0 +1,98 @@
+info:
+  name: Product Update
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{url}}/api/v1/productUpdate/669a595e1b9c7c87cfc17167"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          { "FAQ": [
+                  {
+                      "question": "test",
+                      "answer": " test"
+                  },
+                  {
+                      "question": "Why ",
+                      "answer": "niiii"
+                  },
+                  {
+                      "question": "ddddd",
+                      "answer": "ddddd"
+                  }
+              ]}
+        contentType: application/json
+        disabled: true
+      - name: head
+        type: text
+        value: |-
+          {
+              "metaTitle": "some-meta-title-ddd",
+              "metaDescription": "some-meta-description-updted",
+              "metaKeywords": "ddddd"
+          }
+        contentType: application/json
+        disabled: true
+      - name: bannerImageTitle
+        type: text
+        value: change-it-once
+        disabled: true
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/Rectangle 13.png
+      - name: isActive
+        type: text
+        value: "true"
+        disabled: true
+      - name: isPending
+        type: text
+        value: "false"
+        disabled: true
+      - name: productCategory
+        type: text
+        value: some-update-
+        disabled: true
+      - name: isMainCategory
+        type: text
+        value: ""
+        disabled: true
+      - name: isSubCategory
+        type: text
+        value: "true"
+        disabled: true
+      - name: productDetailsProductTitle
+        type: text
+        value: updathdescrptionkon##$$badiyahre##$$ffffffff
+        disabled: true
+      - name: productDetailsProductCode
+        type: text
+        value: 123456897##$$45334##$$ffffff
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg
+        disabled: true
+      - name: subProductDescription
+        type: text
+        value: "mast h re ##$$ddddd##$$fffffff dddd"
+        disabled: true
+      - name: productDetailsProductDescription
+        type: text
+        value: stainless-steel-round-bars-manufacturers-in-india
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

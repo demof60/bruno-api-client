@@ -1,0 +1,15 @@
+info:
+  name: Delete Top Home Category
+  type: http
+  seq: 10
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/web/home/folder/66aa1dadf5bf0389c5d9826c
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

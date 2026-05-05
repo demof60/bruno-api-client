@@ -1,0 +1,34 @@
+info:
+  name: Add Plans
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/plan/package/add"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Gold Test 2\",\r
+
+      \    \"pagesCount\": 20,\r
+
+      \    \"countryPagesCount\": 10,\r
+
+      \    \"perPageCost\":10,\r
+
+      \    \"assignClientLimit\":50,\r
+
+      \    \"type\": \"gold\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

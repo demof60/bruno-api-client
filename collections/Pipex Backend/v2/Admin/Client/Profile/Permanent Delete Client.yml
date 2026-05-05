@@ -1,0 +1,15 @@
+info:
+  name: Permanent Delete Client
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/client/profile/permanent/delete/6996a888c26c79ba8e4ce279"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: Clone Product
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/clone"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"productId\": \"68f8c4797b0ace5fcd129f96\",\r
+
+      \  \"newClientId\": null,\r
+
+      \  \"newProductTitle\": null,\r
+
+      \  \"newCategoryId\": null\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

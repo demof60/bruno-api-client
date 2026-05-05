@@ -1,0 +1,40 @@
+info:
+  name: Update Location
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/location/update/6719ddaec8d531746256df33"
+  body:
+    type: json
+    data: "// // city\r
+
+      // {\r
+
+      //     \"name\": \"INDORE\",\r
+
+      //     \"code\": \"IN\",\r
+
+      //     \"countryId\": \"66fe3de0516b510c991bd985\"\r
+
+      // }\r
+
+      //country \r
+
+      {\r
+
+      \    \"name\": \"aland-islands\"\r
+
+      \    // \"countryId\": null,\r
+
+      \    // \"code\": \"MU\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

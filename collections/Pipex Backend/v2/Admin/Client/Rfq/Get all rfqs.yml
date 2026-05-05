@@ -1,0 +1,41 @@
+info:
+  name: Get all rfqs
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/profile/rfq/:sellerId/:userId?limit=20&offset=0"
+  params:
+    - name: filterType
+      value: not-replied
+      type: query
+      description: " [all , unread , not-replied, blocked , irrelevant ]"
+      disabled: true
+    - name: searchTerm
+      value: 1sdsdsd
+      type: query
+      disabled: true
+    - name: limit
+      value: "20"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: productTitle
+      value: Basic+Product
+      type: query
+      disabled: true
+    - name: sellerId
+      value: 68f8bcf6bd7052c72d5596c1
+      type: path
+    - name: userId
+      value: 68f8bcf6bd7052c72d5596c3
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

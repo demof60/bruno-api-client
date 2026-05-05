@@ -1,0 +1,56 @@
+info:
+  name: Client profile update
+  type: http
+  seq: 8
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/client/user/update/6889f7bb937cc59b40b553de"
+  params:
+    - name: searchTerm
+      value: Kailash
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: profile
+        type: text
+        value: |+
+          {"countryCode":"+91","department":"It","designation":"MANAGER","firstName":"Radha K","lastName":"Vishwakarma","number":9797898889,"username":"kkkkkkk    ppppppppppppppp","email":"ertgdrfgerdf@azuretechtalk.net"}
+
+
+
+
+
+      - name: userProfileImage
+        type: file
+        value:
+          - postman-cloud:///1f00ef26-5588-4560-b24c-f6aa340df198
+        disabled: true
+      - name: vcardSettings
+        type: text
+        value: |-
+          {
+                  "firstName": "Rollins",
+                  "designation": "nodejs developer",
+                  "countryCode": "43",
+                  "number": 23343332,
+                  "whatsappNoCountryCode": "3333",
+                  "whatsappNo": 343,
+                  "email": "sag11iant55pipin111g122w122@gmail.com",
+                  "isActive": true
+              }
+        disabled: true
+      - name: vcardProfileImage
+        type: file
+        value:
+          - postman-cloud:///1f00ef26-452a-4e20-ae6c-55c3b5be7937
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

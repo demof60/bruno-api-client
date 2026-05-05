@@ -1,0 +1,7 @@
+info:
+  name: Trendy Products
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

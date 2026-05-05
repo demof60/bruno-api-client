@@ -1,0 +1,110 @@
+info:
+  name: Sign In User
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/auth/signin"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\": \"vivek@pentagoat.com\",\r
+
+      \    // \"password\": \"Vivek@123\"\r
+
+      \r
+
+      \    // \"email\": \"anish+1029@pentagoat.com\",\r
+
+      \    // \"password\": \"Anish@F60\"\r
+
+      \r
+
+      \    // \"email\": \"shaqeeb12@pentagoat.com\",\r
+
+      \    // \"password\": \"shaqeeb@F60\"\r
+
+      \r
+
+      \    // // admin\r
+
+      \    // \"email\": \"sanskar@pentagoat.com\",\r
+
+      \    // \"password\": \"Sanskar@123\"\r
+
+      \r
+
+      \    // // dev admin\r
+
+      \    // \"email\":\"vivekv2@gmail.com\",\r
+
+      \    // \"password\": \"wnMqSxwk*#8G\"\r
+
+      \    \r
+
+      \    // dev \r
+
+      \    // \"email\": \"bon@gmail.com\",\r
+
+      \    // \"password\":\"SK12345@sk\"\r
+
+      \    \r
+
+      \    // \"email\": \"shaqeeb@pentagoat.com\",\r
+
+      \    //  \"password\":\"Rehana@123\"\r
+
+      \    // \"password\":\"#snnD3Xe^ktS\"\r
+
+      \r
+
+      \    //stage\r
+
+      \    // \"email\": \"shubhambhosale@pentagoat.com\",\r
+
+      \    // \"password\":\"ShubhamB16@\"\r
+
+      \r
+
+      \    // \"email\": \"superadminstage@pipex.com\",\r
+
+      \    // \"password\":\"Pipex@f60\"\r
+
+      \r
+
+      \    // \"email\": \"anish@pentagoat.com\",\r
+
+      \    // \"password\": \"$2kFCH7dAhQ2\"\r
+
+      \r
+
+      \    //  \"email\": \"user@pentagoat.com\",\r
+
+      \    //  \"password\": \"user@123SK\"  \r
+
+      \r
+
+      //        \"email\": \"shashwant@gmail.com\",\r
+
+      //    \"password\" : \"shashwant@12\" \r
+
+      \r
+
+      \    // \"email\": \"superadminuser@pipex.com\",\r
+
+      \    // \"password\":\"Pipex@f60\"\r
+
+      \           \"email\": \"demo@pentagoat.com\",\r
+
+      \   \"password\" : \"Pipex@f60\" \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

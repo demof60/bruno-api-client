@@ -1,0 +1,27 @@
+info:
+  name: Client Delete Images
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/client/profile/delete/image/6794848ea9d51150e021b070/0eba0782-81ad-423a-8566-81a4f4cc781e?status=main&type=cover"
+  params:
+    - name: status
+      value: main
+      type: query
+    - name: type
+      value: cover
+      type: query
+    - name: collType
+      value: additionalInfo
+      type: query
+      description: if u want to delete additional info images
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

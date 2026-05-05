@@ -1,0 +1,17 @@
+info:
+  name: Migration Get Data
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{scriptUrl}}/api/v2/migration/getMigrations"
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

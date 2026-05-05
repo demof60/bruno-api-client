@@ -1,0 +1,28 @@
+info:
+  name: Get Stash Folder Files
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/folder/files/bin/6719ef9747b1f96579c8aa2b?limit=10&offset=0&searchQuery&status=deleted"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+    - name: status
+      value: deleted
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

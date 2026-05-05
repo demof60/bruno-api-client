@@ -1,0 +1,26 @@
+info:
+  name: Fetch closest products
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/web/products/closest"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"filters\":{\r
+
+      \    \"search\": \"dfgsdpipes\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

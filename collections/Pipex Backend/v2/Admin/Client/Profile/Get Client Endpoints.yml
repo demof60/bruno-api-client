@@ -1,0 +1,19 @@
+info:
+  name: Get Client Endpoints
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/profile/endpoint/:clientId"
+  params:
+    - name: clientId
+      value: 68f8c2ab7b0ace5fcd129b77
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,84 @@
+info:
+  name: Client Get Endpoints
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: http://localhost:9000/api/v1/client/endpoint/get
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          { "contacts":[{ "number":1225110209,"primary":"true","whatsApp":false}]
+          }
+        disabled: true
+      - name: logo
+        type: file
+        value:
+          - postman-cloud:///1ef2ef88-cb84-4b70-8fd8-a2ffef42b410
+        disabled: true
+      - name: companyGif
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/galaxy-3468_256.gif
+        disabled: true
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+      - name: notes
+        type: text
+        value: ddddd132464364mnjh
+        disabled: true
+      - name: coverType
+        type: text
+        value: coverImage
+        disabled: true
+      - name: head
+        type: text
+        value: |
+          { "metaDescription":"meta description",
+           "url":"yeh url hai"
+
+            
+
+          }
+        disabled: true
+      - name: responseTime
+        type: text
+        value: ""
+        disabled: true
+      - name: annualRevenue
+        type: text
+        value: "45"
+        disabled: true
+      - name: projectsCompleted
+        type: text
+        value: "10000000"
+        disabled: true
+      - name: experience
+        type: text
+        value: "5000"
+        disabled: true
+      - name: features
+        type: text
+        value: |-
+          [
+              "Four party inspection.",
+              "ISO certified company"
+          ]
+        disabled: true
+      - name: data
+        type: text
+        value: '{ "emails":[{ "email":"contctkro3@example.com","primary":true}]}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

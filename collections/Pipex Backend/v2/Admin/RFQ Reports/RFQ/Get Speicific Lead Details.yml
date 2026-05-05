@@ -1,0 +1,19 @@
+info:
+  name: Get Speicific Lead Details
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/report/get/:rfqId"
+  params:
+    - name: rfqId
+      value: 69d9d04faf363565a30e4b9b
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

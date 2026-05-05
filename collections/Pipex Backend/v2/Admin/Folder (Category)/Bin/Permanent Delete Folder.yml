@@ -1,0 +1,22 @@
+info:
+  name: Permanent Delete Folder
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/folder/bin/delete/68fb2ee91e6786186ceda3f4/?type=DELETE_ONLY_PARENT&type=DELETE_TREE"
+  params:
+    - name: type
+      value: DELETE_ONLY_PARENT
+      type: query
+    - name: type
+      value: DELETE_TREE
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: Restore Folders
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/folder/restore/667e6b783545ee7496adab6a
+  body:
+    type: json
+    data: "{\r
+
+      \    \"folderId\": \"667512aa17f91b91a94e8d5a\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

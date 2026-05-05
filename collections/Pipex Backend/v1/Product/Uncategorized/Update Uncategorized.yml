@@ -1,0 +1,138 @@
+info:
+  name: Update Uncategorized
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: "{{url}}/api/v1/uncategorizedUpdate/66c48591ca0a5722b5da1d5a"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |
+          {
+            "supplyCountriesDetails": {
+              "title": "Inconel to Following Countries:",
+              "description": "Piping Projects Middle East is a leading Steel Pipes Manufacturer in UAE. We proudly supply high-quality Steel pipes to major countries. We have dominated the market as the Middle East’s leading Steel Pipes Exporter for a long time.",
+              "country": [
+                {
+                  "name": "USA",
+                  "url": ""
+                },
+                {
+                  "name": "UK",
+                  "url": "Uk"
+                },
+                {
+                  "name": "China",
+                  "url": "china"
+                },
+                {
+                  "name": "India",
+                  "url": "india"
+                }
+              ]
+            },
+            "supplyCitiesDetails": {
+              "title": "Bronze Flanges to Following Cities:",
+              "description": "Piping Projects Middle East is a leading Steel Pipes Manufacturer in UAE. We proudly supply high-quality Steel pipes to major countries. We have dominated the market as the Middle East’s leading Steel Pipes Exporter for a long time.",
+              "city": [
+                {
+                  "name": "Mumbai",
+                  "url": "mumbai"
+                },
+                {
+                  "name": "Pune",
+                  "url": "pune"
+                },
+                {
+                  "name": "Delhi",
+                  "url": "delhi"
+                }
+              ]
+            }
+          }
+        disabled: true
+      - name: head
+        type: text
+        value: |2-
+          
+                          {
+                              "name": "USA",
+                              "url": "usa"
+                          },
+                          {
+                              "name": "UK",
+                              "url": "uk"
+                          },
+                          {
+                              "name": "China",
+                              "url": "china"
+                          },
+                          {
+                              "name": "India",
+                              "url": "india"
+                          }
+                      ],
+              "supplyCitiesDetails":
+                  {
+                      "title": "Bronze Flanges to Following Cities:",
+                      "description": "Piping Projects Middle East is a leading Steel Pipes Manufacturer in UAE. We proudly supply high-quality Steel pipes to major countries.
+           We have dominated the market as the Middle East’s leading Steel Pipes Exporter for a long time.",
+                      "city": [
+                          {
+                              "name": "Mumbai",
+                              "url": "mumbai"
+                          },
+                          {
+                              "name": "Pune",
+                              "url": "pune"
+                          },
+                          {
+                              "name": "Delhi",
+                              "url": "delhi"
+                          }
+                      ]
+                  }, }
+        disabled: true
+      - name: bannerImageTitle
+        type: text
+        value: hello
+        disabled: true
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/terry-vlisidis-WsEbnsnKbUE-unsplash.jpg
+      - name: productDetailsProductTitle
+        type: text
+        value: 1##$$2
+        disabled: true
+      - name: productDetailsProductCode
+        type: text
+        value: leleo##$$haikinh
+        disabled: true
+      - name: subProductDescription
+        type: text
+        value: ggg##$$fggf
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/SampleJPGImage_50kbmb.jpg
+          - /C:/Users/ABC/Downloads/image.png
+        disabled: true
+      - name: productDetailsProductDescription
+        type: text
+        value: dedohhhsss
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

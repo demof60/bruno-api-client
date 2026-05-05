@@ -1,0 +1,243 @@
+info:
+  name: Create Client
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/client/profile/create"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: '{"name":"progress bar test ","ownerName":"own5ni97","website":"Lopez and Freeman Inc","description":"Consequuntur ipsam s","businessType":"Supplier","rating":"5","contacts":[{"countryCode":"+91","number":"76455961","primary":true,"whatsApp":true},{"countryCode":"+91","number":"765959","primary":false,"whatsApp":false}],"emails":[{"email":"190j5k519d@br.com","primary":true}],"addresses":[{"address_line1":"Patterson and Ryan Co","address_line2":"Lee Tucker Co","address_type":"Lee Tucker Co","city":"Le Lambert Plc","postal_code":"Dolorum duis volupta","country":"Sint in rerum ex qui","primary":true,"name":"Cortez and Powell Co"}],"isActive":true,"isPaid":false}'
+        contentType: application/json
+        description: '{"name":"progress bar test ","ownerName":"own5ni97","website":"Lopez and Freeman Inc","description":"Consequuntur ipsam s","businessType":"Supplier","rating":"5","contacts":[{"countryCode":"+91","number":"76455961","primary":true,"whatsApp":true},{"countryCode":"+91","number":"765959","primary":false,"whatsApp":false}],"emails":[{"email":"190j5k519d@br.com","primary":true}],"addresses":[{"address_line1":"Patterson and Ryan Co","address_line2":"Lee Tucker Co","address_type":"Lee Tucker Co","city":"Le Lambert Plc","postal_code":"Dolorum duis volupta","country":"Sint in rerum ex qui","primary":true,"name":"Cortez and Powell Co"}],"isActive":true,"isPaid":false}'
+        disabled: true
+      - name: data
+        type: text
+        value: |-
+          {"name":" princy",
+           "emails": [
+                {
+                  "email": "princy212@example.com",
+                  "primary": true
+                }
+              ],
+          "ownerName":"sandeep jaiinn"
+          }
+      - name: logo
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        disabled: true
+      - name: notes
+        type: text
+        value: edeeeeeee
+        disabled: true
+      - name: coverType
+        type: text
+        value: gif
+        disabled: true
+      - name: head
+        type: text
+        value: |
+          { "metaTitle":"cli  ent   ",
+           "metaDescription":"clie  ntdes cription",
+            "url":"dddd"
+
+          }
+        disabled: true
+      - name: annualRevenue
+        type: text
+        value: "11"
+        disabled: true
+      - name: projectsCompleted
+        type: text
+        value: "11"
+        disabled: true
+      - name: responseTime
+        type: text
+        value: "11"
+        disabled: true
+      - name: experience
+        type: text
+        value: "11"
+        disabled: true
+      - name: features
+        type: text
+        value: |-
+          ["sallbro",
+          "com"]
+        disabled: true
+      - name: customDomain
+        type: text
+        value: ""
+        disabled: true
+      - name: companyGst
+        type: text
+        value: qw
+        description: string
+        disabled: true
+      - name: companyCode
+        type: text
+        value: "23"
+        description: number
+        disabled: true
+      - name: companyYearEst
+        type: text
+        value: "1"
+        description: number
+        disabled: true
+      - name: socialMediaLink
+        type: text
+        value: '["sallbro","com"]'
+        description: array
+        disabled: true
+      - name: otherFields
+        type: text
+        value: '{"name":"sallbro"}'
+        description: object
+        disabled: true
+      - name: industryImage
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: companyGallery
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: clientGallery
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: applicationUsesTitle
+        type: text
+        value: sall##$$man
+        description: multiple
+        disabled: true
+      - name: applicationUsesImage
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: companyCertificateTitle
+        type: text
+        value: fc##$$gh
+        description: multiple
+        disabled: true
+      - name: certificateCoverImage
+        type: file
+        value:
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        description: multiple
+        disabled: true
+      - name: certificateCoverPdf
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: companyTeamImage
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: companyTeamName
+        type: text
+        value: sn##$$ux
+        description: multiple
+        disabled: true
+      - name: companyTeamEmail
+        type: text
+        value: dn##$$ui
+        description: multiple
+        disabled: true
+      - name: companyTeamDesignation
+        type: text
+        value: fp##$$gh
+        description: multiple
+        disabled: true
+      - name: companyTeamNumber
+        type: text
+        value: 28##$$67
+        description: multiple
+        disabled: true
+      - name: catlogTitle
+        type: text
+        value: man##$$sal
+        description: multiple
+        disabled: true
+      - name: catlogCoverImage
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: catlogPdf
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+          - postman-cloud:///1ef8b9fe-f0ad-4460-97cc-62819fbdb5d7
+        description: multiple
+        disabled: true
+      - name: countriesCode
+        type: text
+        value: "10"
+        description: number
+        disabled: true
+      - name: thirdPartyInspection
+        type: text
+        value: no
+        description: '["yes", "no"]'
+        disabled: true
+      - name: mtcReport
+        type: text
+        value: no
+        description: '["yes", "no"]'
+        disabled: true
+      - name: customSizes
+        type: text
+        value: yes
+        description: '["yes", "no"]'
+        disabled: true
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "//Fixed the response body structure test\r
+
+        test(\"Response body structure is valid\", function () {\r
+
+        \    expect(res.getBody()).to.have.property('client');\r
+
+        });"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

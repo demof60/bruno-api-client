@@ -1,0 +1,15 @@
+info:
+  name: Delete Product Image
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/client/product/delete/image/6708bf2a0e4e6b0773379e25/e43918ea-e385-4a44-a3ff-68a9e9ec34b3"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

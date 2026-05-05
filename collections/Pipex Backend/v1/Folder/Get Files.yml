@@ -1,0 +1,25 @@
+info:
+  name: Get Files
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/v1/folder/files/66a8b352d822f994b8dc37a7?limit=10&offset=0&searchQuery="
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

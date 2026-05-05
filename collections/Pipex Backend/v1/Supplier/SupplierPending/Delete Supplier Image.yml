@@ -1,0 +1,17 @@
+info:
+  name: Delete Supplier Image
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/supplierDeleteImages/666bda69c94cd7f3a04ae2d0/4e95980c-f796-49fe-852c-7a4cd3729a87
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

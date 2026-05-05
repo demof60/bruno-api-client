@@ -1,0 +1,66 @@
+info:
+  name: Fetch vcard endpoints
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/user/vcard/endpoints/671c9502c15cc74928dfeba2"
+  params:
+    - name: search
+      value: Kailash
+      type: query
+      disabled: true
+    - name: limit
+      value: "1"
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+  body:
+    type: multipart-form
+    data:
+      - name: vcardProfileImage
+        type: text
+        value: |-
+          {
+                  "username": "saginans1gggss",
+                  "firstName": "Hello ",
+                  "lastName": "",
+                  "department": "",
+                  "designation": "",
+                  "countryCode": "",
+                  "number": "",
+                  "email": "sagiantpiping122w122@gmail.com"
+              }
+      - name: vcardSettings
+        type: text
+        value: |-
+          {
+                  "firstName": "Crainnss",
+                  "lastName": "Saa",
+                  "designation": "dd",
+                  "countryCode": "43",
+                  "number": 2334,
+                  "whatsappNoCountryCode": "3",
+                  "whatsappNo": 343,
+                  "email": "sagiantpiping122w122@gmail.com",
+                  "isActive": false
+              }
+      - name: vcardProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/fourty60-4.png
+      - name: userProfileImage
+        type: file
+        value:
+          - /C:/Users/admin/Documents/Fourty60 Logo.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

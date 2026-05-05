@@ -1,0 +1,35 @@
+info:
+  name: Update Email Template
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/template/687f797911746c4a1e5d743b"
+  params:
+    - name: search
+      value: "10512"
+      type: query
+      disabled: true
+    - name: status
+      value: all
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"body\": \"<p>qqqqqqqqqqqqqqqqqqq</p>\",\r
+
+      \  \"subject\": \"wwwwwwwwwwwwwwwwwwwwwww\",\r
+
+      \  \"variables\": [\"abc\", \"xyz\"]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

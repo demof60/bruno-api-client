@@ -1,0 +1,33 @@
+info:
+  name: Pending Blog
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/blog/pending/680b1efde6ed4b01ed2d271f"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          { 
+          "primaryTitle": "Hello World",
+          "secondaryTitle": "Hello World 2",
+          "date": "24/01/2025",
+          "body":"sdfa sdf asdfasdf asdf asdfasf asd f fsa as fa fasd fasd fas fas d",
+          "folderId": "",
+          "head": {}
+          }
+      - name: coverImg
+        type: file
+        value:
+          - /C:/Users/admin/Documents/7.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,32 @@
+info:
+  name: Restore Folder
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/folder/restore/69831faa9ff05df259b3cbe6"
+  params:
+    - name: folderId
+      value: 6809e6fa821afcd462f8a6bf
+      type: query
+      description: (null for main category/ folder id for subcategory )
+      disabled: true
+    - name: folderId
+      value: 68c521b4b245d74166c89830
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"folderId\": \"6809e6fa821afcd462f8a6bf\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

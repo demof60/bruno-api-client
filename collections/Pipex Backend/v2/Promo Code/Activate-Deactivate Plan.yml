@@ -1,0 +1,26 @@
+info:
+  name: Activate/Deactivate Plan
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/promo-codes/plan/status"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"clientId\": \"6913067291967fdb64c2a455\",\r
+
+      \    \"transactionId\": \"6913106037c2818a44e09bb6\",\r
+
+      \    \"action\": \"activate\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

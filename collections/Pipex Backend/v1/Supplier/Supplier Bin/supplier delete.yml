@@ -1,0 +1,17 @@
+info:
+  name: supplier delete
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/supplierDelete/6655b9094e0639e52cbde40c
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

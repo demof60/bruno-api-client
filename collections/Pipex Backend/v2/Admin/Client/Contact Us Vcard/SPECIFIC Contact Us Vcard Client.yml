@@ -1,0 +1,27 @@
+info:
+  name: SPECIFIC Contact Us Vcard Client
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/client/contact/67e3dabb6df0f5072c278e16"
+  params:
+    - name: searchTerm
+      value: curry
+      type: query
+      disabled: true
+    - name: labels
+      value: unimportant
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

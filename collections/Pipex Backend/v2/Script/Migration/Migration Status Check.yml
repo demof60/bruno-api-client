@@ -1,0 +1,15 @@
+info:
+  name: Migration Status Check
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{scriptURL}}/api/v2/migration/status/get"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

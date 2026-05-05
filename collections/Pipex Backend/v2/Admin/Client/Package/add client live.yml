@@ -1,0 +1,46 @@
+info:
+  name: add client live
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/client/package/live"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"clientId\": \"69d387be55e43b0bf141be7e\",\r
+
+      \    \"startPlan\": \"2026-04-15\",\r
+
+      \    \"packageId\": \"69d777f14a72eac1a48aff10\",\r
+
+      \    \"deactivateOld\": false,\r
+
+      \    \"scheduleLive\": false,\r
+
+      \    \"domain\": false,\r
+
+      \    \"theme\": false,\r
+
+      \    \"businessCard\": true,\r
+
+      \    \"socialBranding\": false,\r
+
+      \    \"billing\": true,\r
+
+      \    \"paymentPlanId\": \"663c5f3e0263685ba00dfd70\",\r
+
+      \    \"tenure\": 182,\r
+
+      \    \"endPlan\": \"2026-10-13\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

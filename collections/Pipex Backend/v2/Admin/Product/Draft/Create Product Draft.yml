@@ -1,0 +1,74 @@
+info:
+  name: Create Product Draft
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/draft/create"
+  body:
+    type: multipart-form
+    data:
+      - name: clientId
+        type: text
+        value: " 697c8ee4620cb7355882d464"
+        disabled: true
+      - name: productTitle
+        type: text
+        value: " Fly Ash Bricks – 9x4x3 Inch"
+        disabled: true
+      - name: productDescription
+        type: text
+        value: " "
+        disabled: true
+      - name: productDescriptionHeading
+        type: text
+        value: " Fly Ash Bricks – 9x4x3 Inch"
+        disabled: true
+      - name: url
+        type: text
+        value: " fly-ash-bricks-9x4x3-inch"
+        disabled: true
+      - name: priceRangeFrom
+        type: text
+        value: " 1"
+        disabled: true
+      - name: priceRangeTo
+        type: text
+        value: " 10"
+        disabled: true
+      - name: minOrder
+        type: text
+        value: " 34"
+        disabled: true
+      - name: minOrderUnit
+        type: text
+        value: " ingot"
+        disabled: true
+      - name: folderId
+        type: text
+        value: 69d9fcb4ec803fc4fb4d1179
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/admin/Downloads/Cartoonify.png
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - postman-cloud:///1f00ef26-452a-4e20-ae6c-55c3b5be7937
+        disabled: true
+      - name: productBannerImage
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/pngtree-mafia-skull-graphic-character-png-image_12204466.png
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

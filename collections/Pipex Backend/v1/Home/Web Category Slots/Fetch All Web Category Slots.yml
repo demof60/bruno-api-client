@@ -1,0 +1,36 @@
+info:
+  name: Fetch All Web Category Slots
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{url}}/api/v1/web/home/fetchAllWebCategorySlots?limit=2"
+  params:
+    - name: folderName
+      value: pipe-klm
+      type: query
+      disabled: true
+    - name: limit
+      value: "2"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \      \"categorySlotId\":\"66b0ba3b72bf3e3fa0b5c575\", //only when you want to updae your slots \r
+
+      \      \"rank\":1,\r
+
+      \     \"productIds\": [\"669a595e1b9c7c87cfc17167\",\"66acbcf1b22bbf0e4f82db21\",\"66acce10b22bbf0e4f82e4d7\",\"66b0b6f6f97647c9a4b9024e\"] \r
+
+      \ \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

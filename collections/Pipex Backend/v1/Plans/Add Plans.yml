@@ -1,0 +1,32 @@
+info:
+  name: Add Plans
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/superadmin/addPlan
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"dd\",\r
+
+      \    \"pagesCount\": 1,\r
+
+      \    \"countryPagesCount\": 1,\r
+
+      \    \"amount\": 0,\r
+
+      \    \"type\": \"life-time\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

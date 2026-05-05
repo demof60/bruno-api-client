@@ -1,0 +1,42 @@
+info:
+  name: Create user by Super Admin
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/superAdmin/createUser
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\":\"nitya1\",\r
+
+      \    \"email\":\"bhao@pentagoat.com\",\r
+
+      \    \"role\":\"seller\",\r
+
+      \    \"clientId\":\"672080388ff573adb353eb12\"\r
+
+      \    // \"permissions\":[\r
+
+      \    //     {\r
+
+      \    //         \"id\":\"661e0dadd51d91874ee65e0a\",\r
+
+      \    //         \"permissionValue\":[\"read\",\"update\"]\r
+
+      \    //     }\r
+
+      \    // ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

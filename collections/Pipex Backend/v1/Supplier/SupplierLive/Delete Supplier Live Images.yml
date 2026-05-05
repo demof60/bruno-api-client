@@ -1,0 +1,17 @@
+info:
+  name: Delete Supplier Live Images
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/supplierDeleteLiveImages/66682c373961b6df6363c404/39bdabcb-2deb-4728-ba2a-2c009c311be4
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

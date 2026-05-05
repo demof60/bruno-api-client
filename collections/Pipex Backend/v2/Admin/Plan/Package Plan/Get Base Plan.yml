@@ -1,0 +1,24 @@
+info:
+  name: Get Base Plan
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/plan/package/get/base?type=gold"
+  params:
+    - name: type
+      value: gold
+      type: query
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

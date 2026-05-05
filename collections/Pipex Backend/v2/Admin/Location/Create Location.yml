@@ -1,0 +1,46 @@
+info:
+  name: Create Location
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/location/add"
+  body:
+    type: json
+    data: "// // city\r
+
+      {\r
+
+      \    \"type\": \"city\",\r
+
+      \    \"name\": \"Shambhalla\",\r
+
+      \    \"code\": \"CH\",\r
+
+      \    \"countryId\": \"68fb12f07e22e7f6f5808033\"\r
+
+      }\r
+
+      //country \r
+
+      // {\r
+
+      //     \"type\": \"country\",\r
+
+      //     \"name\": \"Test Country KJ\",\r
+
+      //     \"code\": \"SD\",\r
+
+      //     \"countryId\": \"66fce05be51450c7508b241c\"\r
+
+      // }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjA4NmZlMGMzMmNkZjI4ZWI1ZGU0YSIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJrcmlzaC1qYWluIiwiaWF0IjoxNzYxMjg0ODEwLCJleHAiOjE3NjE0NTc2MTB9.O8oPIHghJlqg1j75j6nfen1uwg_oSOopqwtR3Ni990Y
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

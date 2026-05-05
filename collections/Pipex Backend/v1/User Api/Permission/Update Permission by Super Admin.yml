@@ -1,0 +1,26 @@
+info:
+  name: Update Permission by Super Admin
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/superAdmin/updatePermission/6679458222889516d972023a
+  body:
+    type: json
+    data: "{\r
+
+      \    \"permissionName\": \"update\"\r
+
+      \    // \"default\":\"not_default\" // optional\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

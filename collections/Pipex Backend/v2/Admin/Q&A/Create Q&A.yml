@@ -1,0 +1,30 @@
+info:
+  name: Create Q&A
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/qa/create"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"question\": \"What is your primary area of interest?\",\r
+
+      \  \"options\": [\"Data Science\", \"Web Development\", \"Product Management\", \"UI/UX Design\"],\r
+
+      \  \"type\": \"industry\"\r
+
+      }\r
+
+      \r\n"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

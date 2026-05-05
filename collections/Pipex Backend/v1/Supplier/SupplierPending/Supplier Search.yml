@@ -1,0 +1,17 @@
+info:
+  name: Supplier Search
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/supplierSearch/Nice
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

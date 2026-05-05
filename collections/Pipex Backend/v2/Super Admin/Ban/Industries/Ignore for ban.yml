@@ -1,0 +1,15 @@
+info:
+  name: Ignore for ban
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/superadmin/ban/industries/ignoreForBan/671c83f9c15cc74928dfd38b"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

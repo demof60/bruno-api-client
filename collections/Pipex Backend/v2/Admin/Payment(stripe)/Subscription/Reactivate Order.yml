@@ -1,0 +1,15 @@
+info:
+  name: Reactivate Order
+  type: http
+  seq: 10
+
+http:
+  method: PATCH
+  url: "{{url}}/api/v2/admin/payment/subscription/{{subscriptionId}}/reactivate"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

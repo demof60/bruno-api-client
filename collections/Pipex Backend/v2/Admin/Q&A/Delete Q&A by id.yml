@@ -1,0 +1,15 @@
+info:
+  name: Delete Q&A by id
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/qa/delete/682ad8e58fcc8acdaa2145b7"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

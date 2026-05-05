@@ -1,0 +1,22 @@
+info:
+  name: Merge with seller
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{userUrl}}/api/v2/web/auth/mergeWithSeller"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"email\": \"demo@pentagoat.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,27 @@
+info:
+  name: Verify OTP
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/verifyotp"
+  body:
+    type: json
+    data: "{\r\n    \"otp\": \"848415\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "const response = res.getBody();\r
+
+        bru.setEnvVar(\"token\",response.token);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

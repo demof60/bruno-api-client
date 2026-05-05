@@ -1,0 +1,70 @@
+info:
+  name: ..00123
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/auth/signin"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\": \"shaqeeb@pentagoat.com\",\r
+
+      \    // \"password\" : \"Shaqeeb@123\"\r
+
+      \    //  \"email\": \"demo@pentagoat.com\",\r
+
+      \    // \"password\": \"Pipex@F60\"\r
+
+      \    // \"remember\": true\r
+
+      \    //   \"email\": \"demo@pentagoat.com\",\r
+
+      \    //   \"password\" : \"Pipex@F60\" \r
+
+      \    //   \"email\": \"sahil2@pentagoat.com\",\r
+
+      \    //   \"password\" : \"sallbro\" \r
+
+      \    //F20\r
+
+      \    //   \"email\": \"yawede6675@mytaemin.com\",\r
+
+      \    //   \"password\" : \"yawede6675@mytaemin.comA\" \r
+
+      \    // \"email\": \"fatibe5055@baxidy.com\",\r
+
+      \    // \"password\": \"Fatibe5055@\"\r
+
+      //    \"email\": \"pooja.vishwakarma@f60host.in\",\r
+
+      //     \"password\": \"Pipex@f60\"\r
+
+      //    \"email\": \"pooja.vishwakarma@f60host.in\",\r
+
+      //     \"password\": \"Pipex@f60\"\r
+
+      //    \"email\": \"hucyguzo@forexzig.com\",\r
+
+      //     \"password\": \"Pipex@F60\"\r
+
+      \    \"email\": \"votadew997@gxuzi.com\",\r
+
+      \    \"password\": \"Pipex@F60\"\r
+
+      \    // \"email\":\"arfan.pathan@f70.co.in\",\r
+
+      \    // \"password\":\"u!o%AszZk7=h\"\r
+
+      \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

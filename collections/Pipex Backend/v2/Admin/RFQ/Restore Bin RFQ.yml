@@ -1,0 +1,15 @@
+info:
+  name: Restore Bin RFQ
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/rfq/restore/686cc29fd5e2b54f5187480b"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

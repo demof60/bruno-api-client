@@ -1,0 +1,32 @@
+info:
+  name: SupplierLiveAdd
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v1/supplierLiveAdd/667fb2816df8250e146d7104
+  body:
+    type: json
+    data: "{\r
+
+      \    \"currentPlanId\": \"667e8fcfe2ae67a15961def8\",\r
+
+      \    \"transactionId\": \"4564564564545645\",\r
+
+      \    \"productIds\":[\"668393aa549d5118c5df4c5f\"],\r
+
+      \    \"categoryIds\":[],\r
+
+      \    \"folderIds\":[]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

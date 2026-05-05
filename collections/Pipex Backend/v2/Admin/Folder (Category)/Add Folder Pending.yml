@@ -1,0 +1,24 @@
+info:
+  name: Add Folder Pending
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/folder/pending/69ba4472e613690fdda69998"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"folderId\": null,\r
+
+      \    \"type\": \"liveFolderOnly\" //TODO: remove later\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

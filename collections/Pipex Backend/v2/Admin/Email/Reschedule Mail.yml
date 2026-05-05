@@ -1,0 +1,19 @@
+info:
+  name: Reschedule Mail
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/email/reschedule/:rfqEmailQueueId"
+  params:
+    - name: rfqEmailQueueId
+      value: 6915cc7beaff33930bf92ac7
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

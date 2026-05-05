@@ -1,0 +1,7 @@
+info:
+  name: Super Admin User CRUD
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

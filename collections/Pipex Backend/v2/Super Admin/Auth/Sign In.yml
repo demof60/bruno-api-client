@@ -1,0 +1,106 @@
+info:
+  name: Sign In
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/superadmin/auth/signin?captcha=5"
+  params:
+    - name: captcha
+      value: "5"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"email\": \"vivek@pentagoat.com\",\r
+
+      \    // \"password\": \"Vivek@123\"\r
+
+      \r
+
+      \    // // admin\r
+
+      \    // \"email\": \"sanskar@pentagoat.com\",\r
+
+      \    // \"password\": \"Sanskar@123\"\r
+
+      \r
+
+      \    // // dev admin\r
+
+      \    // \"email\":\"vivekv2@gmail.com\",\r
+
+      \    // \"password\": \"wnMqSxwk*#8G\"\r
+
+      \    \r
+
+      \    // dev \r
+
+      \    // \"email\": \"bon@gmail.com\",\r
+
+      \    // \"password\":\"SK12345@sk\"\r
+
+      \    \r
+
+      \    // \"email\": \"shaqeeb@pentagoat.com\",\r
+
+      \    //  \"password\":\"Rehana@123\"\r
+
+      \    // \"password\":\"#snnD3Xe^ktS\"\r
+
+      \r
+
+      \    //stage\r
+
+      \    // \"email\": \"shubhambhosale@pentagoat.com\",\r
+
+      \    // \"password\":\"ShubhamB16@\"\r
+
+      \r
+
+      \    // \"email\": \"superadminstage@pipex.com\",\r
+
+      \    // \"password\":\"Pipex@f60\"\r
+
+      \r
+
+      \    // \"email\": \"sanskar@pentagoat.com\",\r
+
+      \    // \"password\": \"Sanskar@2001\"\r
+
+      \r
+
+      \    // \"email\": \"superadminuser@pipex.com\",\r
+
+      \    // \"password\":\"Pipex@f60\"\r
+
+      \r
+
+      \    // \"email\": \"sanskar@pentagoat.com\",\r
+
+      \    // \"username\": \"Salman\",\r
+
+      \    // \"password\": \"Sanskar@2001\"\r
+
+      \r
+
+      \    // \"email\":\"kuchnhi2@pentagoat.com\",\r
+
+      \    // \"password\":\"kuchnhi2\"\r
+
+      \r
+
+      \    \"email\":\"vinay@f70.co.in\",\r
+
+      \    \"password\": \"Pipex@F70\"\r
+
+      \    }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

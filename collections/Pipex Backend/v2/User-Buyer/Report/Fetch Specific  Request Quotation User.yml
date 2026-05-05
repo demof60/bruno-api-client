@@ -1,0 +1,17 @@
+info:
+  name: Fetch Specific  Request Quotation User
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/buyer/report/get/6799c47634232d923ccbb71a"
+  body:
+    type: multipart-form
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

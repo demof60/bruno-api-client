@@ -1,0 +1,34 @@
+info:
+  name: Bulk Update Order
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/subscription/bulk"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"action\": \"accept\",   // or \"reject\"\r
+
+      \  \"ids\": [\"69e613356a6d450968d4da7b\", \"69e610cffc04160f12d3a603\"]\r
+
+      }\r
+
+      \r
+
+      // {\r
+
+      //   \"action\": \"reject\",\r
+
+      //   \"all\": true\r
+
+      // }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

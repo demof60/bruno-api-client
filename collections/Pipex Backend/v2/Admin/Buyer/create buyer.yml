@@ -1,0 +1,39 @@
+info:
+  name: create buyer
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/buyer/create"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\":\"Acme Imorts\",\r
+
+      \    \"email\":\"buyer@acme.com\",\r
+
+      \    \"password\": \"Pipefx@F60\"\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "const j = res.getBody();\r
+
+        const buyer = j.data || j.user || {};\r
+
+        bru.setEnvVar(\"BUYER_ID\", buyer._id);\r
+
+        bru.setEnvVar(\"BUYER_NAME\", buyer.username || buyer.name || buyer.buyerName);\r
+
+        test(\"buyer created\", () => expect(bru.getEnvVar(\"BUYER_ID\")).to.exist);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

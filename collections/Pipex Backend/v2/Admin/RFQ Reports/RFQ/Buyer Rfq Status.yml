@@ -1,0 +1,67 @@
+info:
+  name: Buyer Rfq Status
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/rfq/buyerRfq/status/691ea13ce0acbd7e3f3eea13"
+  params:
+    - name: dateFrom
+      value: 2020-04-14
+      type: query
+      disabled: true
+    - name: dateTo
+      value: ""
+      type: query
+      disabled: true
+    - name: status
+      value: relevant
+      type: query
+      disabled: true
+    - name: labels
+      value: important
+      type: query
+      disabled: true
+    - name: productTitle
+      value: Other
+      type: query
+      disabled: true
+    - name: bulkDeal
+      value: Bulk Order
+      type: query
+      disabled: true
+    - name: leadSubStageLabel
+      value: bulkDealLabel
+      type: query
+      disabled: true
+    - name: bulkDealLabel
+      value: bulk-order
+      type: query
+      disabled: true
+    - name: searchTerm
+      value: The Test For Other
+      type: query
+      disabled: true
+    - name: hasAttachment
+      value: "true"
+      type: query
+      disabled: true
+    - name: leadLabel
+      value: quote sent
+      type: query
+      disabled: true
+    - name: userId
+      value: "68c50036488b8aceb74c47ee,68c50cba9814e14ebe9deedb "
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: Bulk Remove email from queue
+  type: http
+  seq: 10
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/email/remove/bulk"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"ids\": \"all\",\r
+
+      \    \"type\": \"all\"\r
+
+      }   "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

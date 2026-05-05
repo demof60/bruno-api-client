@@ -1,0 +1,74 @@
+info:
+  name: Category Update
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{url}}/api/v1/categoryUpdate/669e4aeacc50abc069531388"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: |-
+          {"applicationUsage": [
+                  "Sugar costamicts",
+                  "Hello",
+                  "bolo",
+                  "Nice",
+                  "chalo",
+                  "bhago",
+                  "ss",
+                  "ddd"
+              ]}
+        disabled: true
+      - name: head
+        type: text
+        value: |-
+          {
+              "metaTitle": "some-meta-title-aaa",
+              "metaDescription": "some-meta-sssjaaa",
+              "metaKeywords": "some-meta-keywords-updated"
+          }
+        contentType: application/json
+        disabled: true
+      - name: bannerImageTitle
+        type: text
+        value: valve
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/admin/Desktop/New folder/Compressed/valve-image.jpg
+      - name: productDetailsProductTitle
+        type: text
+        value: hello##$$bwello##$$ddddd
+        disabled: true
+      - name: productDetailsProductCode
+        type: text
+        value: 233333##$$ddd##$$45454
+        disabled: true
+      - name: subProductDescription
+        type: text
+        value: 1212##$$3232##$$dffdfref
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - /C:/Users/ABC/Downloads/view-illuminated-neon-gaming-keyboard-setup-controller.jpg
+          - /C:/Users/ABC/Downloads/pexels-irfanwindows-623147.jpg
+          - /C:/Users/ABC/Downloads/pexels-irfanwindows-623147.jpg
+        disabled: true
+      - name: productDetailsProductDescription
+        type: text
+        value: yahahoonrefddddd
+        disabled: true
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

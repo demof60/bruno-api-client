@@ -1,0 +1,24 @@
+info:
+  name: refund subscription payment
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/payment/refund"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"subscriptionId\": \"sub_1TOCSJ0EnwIaneFX2eLe0sfi\",\r
+
+      \    \"amount\" : 12\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

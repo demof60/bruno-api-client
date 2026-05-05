@@ -1,0 +1,33 @@
+info:
+  name: user get profile
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/superadmin/auth/profile/669e31fecc50abc069530672"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\": \"shaqeeb testo\",\r
+
+      \    \"password\": \"shaqeeb@F60\",\r
+
+      \    \"email\": \"shaqeeb12@pentagoat.com\"\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "const response = res.getBody();\r
+
+        bru.setEnvVar(\"token\",response.token);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

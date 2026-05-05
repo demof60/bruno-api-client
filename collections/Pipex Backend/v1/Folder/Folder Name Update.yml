@@ -1,0 +1,24 @@
+info:
+  name: Folder Name Update
+  type: http
+  seq: 9
+
+http:
+  method: PUT
+  url: "{{url}}/api/v1/folder/66c5736e32920721ebe9851f"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"AAA-AAAA AAA\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

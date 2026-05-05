@@ -1,0 +1,18 @@
+info:
+  name: Get Reviews Analytics
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/getReviewsAnalytics/6696052b61c5bcfaa0521c3e
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

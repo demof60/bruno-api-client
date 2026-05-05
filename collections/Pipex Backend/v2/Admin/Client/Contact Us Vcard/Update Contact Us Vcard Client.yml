@@ -1,0 +1,31 @@
+info:
+  name: Update Contact Us Vcard Client
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/client/contact/67e3dabb6df0f5072c278e16"
+  params:
+    - name: type
+      value: lastWeek
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \   \"starred\": false, \r
+
+      \   \"important\": false \r
+
+      \    //  \"viewed\":false\r
+
+      } "
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

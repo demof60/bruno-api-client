@@ -1,0 +1,28 @@
+info:
+  name: Get Folders
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{url}}/api/v1/folder/669a4b4a39fda7ad5ddcce07?limit=14&offset=0&searchQuery=&clientId=66a24d7de2c6f7a70743a9ba"
+  params:
+    - name: limit
+      value: "14"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: searchQuery
+      value: ""
+      type: query
+    - name: clientId
+      value: 66a24d7de2c6f7a70743a9ba
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,58 @@
+info:
+  name: Create PromoCode
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/promo-codes/"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"aniket\",\r
+
+      \    \"promoCode\": \"aniket\",\r
+
+      \    \"triggerPlanType\": \"68c905a59c04fb82093648ec\",\r
+
+      \    \"reward\": {\r
+
+      \        \"type\": \"discount\",\r
+
+      \        \"value\": \"56\"\r
+
+      \    },\r
+
+      \    \"validPeriod\": {\r
+
+      \        \"unit\": \"days\",\r
+
+      \        \"value\": 30\r
+
+      \    },\r
+
+      \    \"description\": \"Enjoy 25% off during our drop campaign.\",\r
+
+      \    \"usageType\": \"single\",\r
+
+      \    \"maxRedemptions\": 1,\r
+
+      \    \"campaignValidity\": {\r
+
+      \        \"startDate\": \"2025-12-01T00:00:00.000Z\",\r
+
+      \        \"endDate\": \"2026-10-31T05:11:18.000Z\"\r
+
+      \    },\r
+
+      \    \"gracePeriod\": 50\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

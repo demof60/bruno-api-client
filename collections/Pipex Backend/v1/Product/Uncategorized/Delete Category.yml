@@ -1,0 +1,17 @@
+info:
+  name: Delete Category
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/uncategorizedDeleteCategory/6630cd677a8e11d4f7aae7bb
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

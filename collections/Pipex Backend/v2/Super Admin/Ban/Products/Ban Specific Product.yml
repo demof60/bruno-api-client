@@ -1,0 +1,18 @@
+info:
+  name: Ban Specific Product
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/superadmin/ban/products/remove/68f8cca17b0ace5fcd12ba8b"
+  body:
+    type: json
+    data: "{\r\n    \"keyword\": \"client\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

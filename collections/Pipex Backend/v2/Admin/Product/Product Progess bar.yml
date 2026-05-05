@@ -1,0 +1,151 @@
+info:
+  name: Product Progess bar
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/progressbarstrength"
+  body:
+    type: multipart-form
+    data:
+      - name: productTitle
+        type: text
+        value: Rings
+      - name: folderId
+        type: text
+        value: 671b6588c15cc74928dfaee4
+      - name: priceRangeFrom
+        type: text
+        value: "200"
+      - name: priceRangeTo
+        type: text
+        value: "400"
+      - name: minOrder
+        type: text
+        value: "30"
+      - name: minOrderUnit
+        type: text
+        value: Kg
+      - name: productDescription
+        type: text
+        value: Hello World
+      - name: productDescriptionHeading
+        type: text
+        value: Description heading
+      - name: head
+        type: text
+        value: |
+          {"metaTitle": "Title", "metaDescription":"meta description1", "metaKeywords": ""}
+      - name: categorySpecificFields
+        type: text
+        value: |-
+          {
+                          "test 11": [
+                              "200",
+                              "300",
+                              "400",
+                              "500",
+                              "600"
+                          ],
+                          "test 2": "1"
+                      },
+      - name: FAQ
+        type: text
+        value: |-
+          [
+                  {
+                      "question": "west",
+                      "answer": " east"
+                  },
+                  {
+                      "question": "Why ",
+                      "answer": "niiii"
+                  },
+                  {
+                      "question": "ddddd",
+                      "answer": "ddddd"
+                  }
+              ]
+      - name: productDetails
+        type: text
+        value: |-
+          [
+                      {
+                          "productTitle": "test 123",
+                          "subProductDescription": "hii there",
+                          "productBannerImage": {
+                              "uuid": "453d849b-fb00-4620-95e4-a7f1f5d37837",
+                              "title": "f60 logo.jpg",
+                              "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/F60_Logo.jpg_1747207464642.jpg",
+                              "contentType": "image/jpeg"
+                          },
+                          "_id": "682445289fe2ea015666aa00"
+                      },
+          { 
+          "productTitle": "test 2"
+          },
+          { 
+          "productTitle": "test 3",
+          "imageName": "6.png"
+          }
+                  ]
+      - name: countries
+        type: text
+        value: '[ "671644a0cfd7ec621d17f471"]'
+      - name: cities
+        type: text
+        value: '["all"]'
+      - name: industries
+        type: text
+        value: '["all"]'
+      - name: clientId
+        type: text
+        value: 681df07810fb5fa0bf450031
+      - name: bannerImages
+        type: text
+        value: |-
+          [
+                      {
+                          "uuid": "ed32cc0c-08d4-4c57-8fb7-7208b5d194ae",
+                          "title": "6.png",
+                          "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineProductDevelopment/6.png_1747137300193.png",
+                          "contentType": "image/png"
+                      }
+                  ]
+      - name: bannerimagemain
+        type: file
+        value:
+          - /C:/Users/admin/Documents/6.png
+          - /C:/Users/admin/Documents/7.png
+        disabled: true
+      - name: bannerimageembedded
+        type: file
+        value:
+          - /C:/Users/admin/Documents/6.png
+        disabled: true
+      - name: productDetailsProductDescription
+        type: text
+        value: ewffeefewew
+      - name: bannerImageContent
+        type: text
+        value: sdffwe
+        disabled: true
+      - name: otherFields
+        type: text
+        value: |-
+          {
+                      "price": 1000,
+                      "availability": "in-stock",
+                      "color": "red",
+                      "description": "This is description"
+          }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

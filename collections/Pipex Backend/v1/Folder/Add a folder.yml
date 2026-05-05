@@ -1,0 +1,30 @@
+info:
+  name: Add a folder
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/folder"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\":\"Shaapit-subfolder-2\",\r
+
+      \    \"parent\": {\r
+
+      \        \"id\": \"66def39e22a674bb0c64cc67\"\r
+
+      \    }\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZWUzMGZiZmRkODZkYWFkOWFkZmYzZSIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJ2aW5kYWdvYXQiLCJpYXQiOjE3NjA3NjQ1MDQsImV4cCI6MTc2MDkzNzMwNH0.RATE2-XuJM8gDS0B0LlPSF8u8mR4ra17KjJiCEhWhus
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: Add Payment Plans
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/v2/admin/plan/payment/add
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Gold\",\r
+
+      \    \"type\": \"life-time\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

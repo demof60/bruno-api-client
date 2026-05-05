@@ -1,0 +1,24 @@
+info:
+  name: Update Trendy Product
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{url}}/api/v1/web/home/updateTrendyProducts/66b453383527ce2eba15c725"
+  body:
+    type: json
+    data: "{\r
+
+      \          \"rank\":10,\r
+
+      \         \"productId\":\"66741653b5977080c59eb46a\" \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

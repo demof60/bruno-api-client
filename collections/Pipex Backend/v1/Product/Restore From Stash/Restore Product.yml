@@ -1,0 +1,17 @@
+info:
+  name: Restore Product
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/productRestore/669e3721cc50abc0695308cb/669a67c71b9c7c87cfc17f12"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

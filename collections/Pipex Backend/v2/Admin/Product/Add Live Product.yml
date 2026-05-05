@@ -1,0 +1,86 @@
+info:
+  name: Add Live Product
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/live/69c27348e613690fdda6b0d4"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: Add Live Product
+    request:
+      url: "{{url}}/api/v2/admin/product/live/69ae59c9600f97c19f1e7232"
+      method: POST
+      body:
+        type: multipart-form
+    response:
+      status: 200
+      statusText: OK
+      headers:
+        - name: Date
+          value: Mon, 01 Sep 2025 10:10:30 GMT
+        - name: Content-Type
+          value: application/json; charset=utf-8
+        - name: Transfer-Encoding
+          value: chunked
+        - name: Connection
+          value: keep-alive
+        - name: Server
+          value: cloudflare
+        - name: Nel
+          value: '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+        - name: Vary
+          value: Origin
+        - name: Access-Control-Allow-Credentials
+          value: "true"
+        - name: Content-Security-Policy
+          value: "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+        - name: Cross-Origin-Opener-Policy
+          value: same-origin
+        - name: Cross-Origin-Resource-Policy
+          value: same-origin
+        - name: Origin-Agent-Cluster
+          value: ?1
+        - name: Referrer-Policy
+          value: no-referrer
+        - name: Strict-Transport-Security
+          value: max-age=15552000; includeSubDomains
+        - name: X-Content-Type-Options
+          value: nosniff
+        - name: X-DNS-Prefetch-Control
+          value: off
+        - name: X-Download-Options
+          value: noopen
+        - name: X-Frame-Options
+          value: SAMEORIGIN
+        - name: X-Permitted-Cross-Domain-Policies
+          value: none
+        - name: X-XSS-Protection
+          value: "0"
+        - name: ETag
+          value: W/"3c-gHJ4YI0Gfa86Yg+J8f+fe1lL5DQ"
+        - name: cf-cache-status
+          value: DYNAMIC
+        - name: Report-To
+          value: '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5JDggYw86jOE322a1Igd8bQsS3HG%2B4HLszhjqvp2xjf2V1%2FkOewIWnNZHqm0enTm5aKKZKnUIrVDpmf9bfhTOcrV7ZGo6393nu%2BTWcEB3aTB"}]}'
+        - name: Content-Encoding
+          value: br
+        - name: CF-RAY
+          value: 9783fa676e923ce2-BOM
+        - name: alt-svc
+          value: h3=":443"; ma=86400
+      body:
+        type: json
+        data: |-
+          {
+              "success": true,
+              "message": "Product 'Pipe Copy' is live now"
+          }

@@ -1,0 +1,22 @@
+info:
+  name: Update Client User Profile
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/v1/client/userprofile/update/676553842d2b5228f6e5acbb
+  body:
+    type: text
+    data: "{\r
+
+      \    \"username\":\"client hoon h\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,31 @@
+info:
+  name: Fetch Clients
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/clientGet?limit=50&offset=0"
+  params:
+    - name: limit
+      value: "50"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"type\":\"all\",\r
+
+      \    \"searchQuery\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

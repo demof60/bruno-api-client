@@ -1,0 +1,33 @@
+info:
+  name: Product Get
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/admin/productGet?limit=5&offset=15"
+  params:
+    - name: limit
+      value: "5"
+      type: query
+    - name: offset
+      value: "15"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"type\":\"all\",\r
+
+      \    \"searchQuery\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

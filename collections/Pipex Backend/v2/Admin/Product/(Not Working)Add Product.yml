@@ -1,0 +1,26 @@
+info:
+  name: (Not Working)Add Product
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/add"
+  body:
+    type: text
+    data: "{\r
+
+      \  \"productTitle\": \"Eco Friendly Canvas Tote Bag\",\r
+
+      \  \"bannerImages\": \r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

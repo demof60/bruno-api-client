@@ -1,0 +1,37 @@
+info:
+  name: Contact Us
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{url}}/api/v1/web/contactus"
+  body:
+    type: multipart-form
+    data:
+      - name: firstName
+        type: text
+        value: koi baat nahi
+      - name: lastName
+        type: text
+        value: akela
+      - name: email
+        type: text
+        value: johnn@pentagoat.com
+      - name: number
+        type: text
+        value: "8104319200"
+      - name: message
+        type: text
+        value: Hello i have query regarding metal pipes want to order bulk flanges.
+      - name: attachments
+        type: file
+        value:
+          - /C:/Users/admin/Documents/Hospital task.pdf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

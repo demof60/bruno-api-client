@@ -1,0 +1,42 @@
+info:
+  name: Assign Lead
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/report/assign/69283ab45e0334cadf5ad223"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"assignedClients\": [\r
+
+      \         \"68f8d8399d14ec4e05436daa\"\r
+
+      \        // \"671f67ba4ca80612347cb8dc\"\r
+
+      \    ]\r
+
+      \r
+
+      \     //   \"67f6039df11b1fd096c2e139\"\r
+
+      \        // \"6720b91e8ff573adb3540fac\"\r
+
+      \        // ,\r
+
+      \        // \"678f7ae9b3671eea6cd0f0ad\"\r
+
+      \        // // ,\r
+
+      \        // \"672081e38ff573adb353ed1a\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

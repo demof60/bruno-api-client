@@ -1,0 +1,15 @@
+info:
+  name: Add Pending Product
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/client/product/pending/679a08d1eebe1ad1fa10518d"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Client Delete Images
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/v1/client/deleteImage/66a74011027ad844ac6cd0c6/55557634-4f4b-4e76-83dc-164a8a41abfd
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,38 @@
+info:
+  name: (not in use )Update Client
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: "{{url}}/api/v2/admin/client/profile/update/6811ba48f782d0cb4f04039d"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: text
+        value: '{"emails":[{"email":"shhhhhheeeeee@example.com","primary":true}],"reviewCount":31}'
+        description: for email update only
+        disabled: true
+      - name: logo
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+      - name: companyGif
+        type: file
+        value:
+          - /C:/Users/fourty new/Downloads/rb_193.png
+        disabled: true
+      - name: coverImage
+        type: file
+        value:
+          - postman-cloud:///1ef9045d-faa5-4540-9045-fcf4560af7bf
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

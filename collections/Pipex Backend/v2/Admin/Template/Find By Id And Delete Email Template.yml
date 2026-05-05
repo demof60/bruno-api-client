@@ -1,0 +1,35 @@
+info:
+  name: Find By Id And Delete Email Template
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/template/687e29dff311ae9634d35d10"
+  params:
+    - name: search
+      value: "10512"
+      type: query
+      disabled: true
+    - name: status
+      value: all
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"type\": \"email\",\r
+
+      \  \"subType\": \"reset_password\",\r
+
+      \  \"body\": \"<p>update Email Template</p>\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,33 @@
+info:
+  name: Sign Up
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/buyer/auth/signup"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"username\": \"shaqeeb testo\",\r
+
+      \    \"password\": \"shaqeeb@F60\",\r
+
+      \    \"email\": \"shaqeeb12@pentagoat.com\"\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: "const response = res.getBody();\r
+
+        bru.setEnvVar(\"token\",response.token);"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

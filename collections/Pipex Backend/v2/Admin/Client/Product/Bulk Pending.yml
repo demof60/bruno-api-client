@@ -1,0 +1,24 @@
+info:
+  name: Bulk Pending
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/client/product/pending/bulk"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productIds\": \"all\",\r
+
+      \    \"clientId\": \"671f7d37aaa77919ed297a42\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Get All Payment Plan
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: https://backend.f10.co.in/api/v1/package/paymentPlan
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

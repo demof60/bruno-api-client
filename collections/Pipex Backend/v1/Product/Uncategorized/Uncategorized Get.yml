@@ -1,0 +1,17 @@
+info:
+  name: Uncategorized Get
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:5000/api/v1/uncategorizedGet
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

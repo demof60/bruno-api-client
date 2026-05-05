@@ -1,0 +1,18 @@
+info:
+  name: Delete Trendy Product
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v1/web/home/deleteTrendyProducts/66b31eb880904fab93b2b6e0"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

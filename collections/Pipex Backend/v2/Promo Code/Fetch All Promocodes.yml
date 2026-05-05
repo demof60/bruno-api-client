@@ -1,0 +1,55 @@
+info:
+  name: Fetch All Promocodes
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/promo-codes/"
+  params:
+    - name: searchTerm
+      value: "    BOOM OBOOM BOOMBOOMBOOMFFER    "
+      type: query
+      disabled: true
+    - name: last30Days
+      value: "true"
+      type: query
+      disabled: true
+    - name: last15Days
+      value: "true"
+      type: query
+      disabled: true
+    - name: last7Days
+      value: "true"
+      type: query
+      disabled: true
+    - name: status
+      value: active
+      type: query
+      disabled: true
+    - name: status
+      value: pause
+      type: query
+      disabled: true
+    - name: status
+      value: expired
+      type: query
+      disabled: true
+    - name: offset
+      value: "0"
+      type: query
+      disabled: true
+    - name: limit
+      value: "100"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

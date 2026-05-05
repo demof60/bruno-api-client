@@ -1,0 +1,15 @@
+info:
+  name: Remove email from queue
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/email/remove/67ad88cf27f612ba1527b5f5"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

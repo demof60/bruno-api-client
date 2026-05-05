@@ -1,0 +1,30 @@
+info:
+  name: Convert RFQ from Message
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/services/google-workspace/thread/message/convertRfq/1995611b86719e92"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"product\": {\r
+
+      \        \"name\": \"Strip\",\r
+
+      \        \"type\": \"folderModel\",\r
+
+      \        \"_id\": \"678116bd8e42bbbd1d3127b5\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

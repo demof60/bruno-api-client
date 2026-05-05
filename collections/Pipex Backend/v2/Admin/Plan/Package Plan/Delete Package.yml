@@ -1,0 +1,15 @@
+info:
+  name: Delete Package
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{url}}/api/v2/admin/plan/package/delete/6780f8efbfd00d5aa75a9f93"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

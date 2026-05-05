@@ -1,0 +1,15 @@
+info:
+  name: Get Q&A by id
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{url}}/api/v2/admin/qa/getspecific/682c550284f7ecd5b4d00df1"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

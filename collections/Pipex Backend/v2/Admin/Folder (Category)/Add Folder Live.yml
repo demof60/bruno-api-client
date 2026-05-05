@@ -1,0 +1,30 @@
+info:
+  name: Add Folder Live
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/folder/live/68fb29bd8c0327b9e6bf4712?type=liveTree"
+  params:
+    - name: type
+      value: liveTree
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"folderId\": null,\r
+
+      \    \"type\": \"68fb29518c0327b9e6bf46fd\" \r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4ZjA4NmZlMGMzMmNkZjI4ZWI1ZGU0YSIsInJvbGUiOiJzdXBlcmFkbWluIiwidXNlcm5hbWUiOiJrcmlzaC1qYWluIiwiaWF0IjoxNzYxMjkwNjQ3LCJleHAiOjE3NjE0NjM0NDd9.HqDLRqwHPGHkX6P2KoQAztXT6dJXHyPtFHVJYuuiDfw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

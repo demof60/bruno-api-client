@@ -1,0 +1,24 @@
+info:
+  name: Bulk Live
+  type: http
+  seq: 21
+
+http:
+  method: POST
+  url: "{{url}}/api/v2/admin/product/live/bulk"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"productIds\": \"all\",\r
+
+      \    \"clientId\": \"67a1e611ca7032ff738063d9\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
