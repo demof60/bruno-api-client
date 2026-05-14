@@ -5,12 +5,17 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/payment/subscription/:{{subscriptionId}}"
+  url: "{{url}}/api/v2/admin/payment/subscription/:subscriptionId"
   params:
-    - name: "{{subscriptionId}}"
-      value: 69e8a45716f68f4bfb519fdf
+    - name: subscriptionId
+      value: 6a030a29689cbfcc63288549
       type: path
   auth: inherit
+
+runtime:
+  variables:
+    - name: subscriptionId
+      value: 6a02f8052158f44e1dc1b7f5
 
 settings:
   encodeUrl: true

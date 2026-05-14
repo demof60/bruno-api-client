@@ -1,0 +1,18 @@
+info:
+  name: Checkout Advance Pay
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/payment/advance-checkout"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
