@@ -5,11 +5,12 @@ info:
 
 http:
   method: GET
-  url: "{{clientUrl}}/api/v1/payment/transaction/history?export=true"
+  url: "{{clientUrl}}/api/v1/payment/transaction/history"
   params:
     - name: export
       value: "true"
       type: query
+      disabled: true
   auth: inherit
 
 settings:
