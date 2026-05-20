@@ -7,3 +7,5 @@ variables:
     value: https://backend.f20.co.in/web
   - name: url
     value: https://backend.f20.co.in
+  - name: webUrl
+    value: https://backend.f20.co.in/web

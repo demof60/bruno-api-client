@@ -9,3 +9,5 @@ variables:
     value: https://core.pipex.ai/script
   - name: userUrl
     value: https://core.pipex.ai/buyer
+  - name: webUrl
+    value: https://core.pipex.ai/web
