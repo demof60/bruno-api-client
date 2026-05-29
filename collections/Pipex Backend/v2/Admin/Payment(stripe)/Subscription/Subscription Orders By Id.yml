@@ -8,7 +8,7 @@ http:
   url: "{{url}}/api/v2/admin/payment/subscription/:subscriptionId"
   params:
     - name: subscriptionId
-      value: 6a13fcf2f4b6353f18b4d11e
+      value: 6a194365f3d552282cb62855
       type: path
   auth: inherit
 

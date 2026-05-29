@@ -5,11 +5,12 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/payment/subscription?search=dadesefy@fxzig.com&status=active&limit=100&offset=0"
+  url: "{{url}}/api/v2/admin/payment/subscription?status=active&limit=100&offset=0&reqForCancel=false"
   params:
     - name: search
       value: dadesefy@fxzig.com
       type: query
+      disabled: true
     - name: status
       value: active
       type: query
@@ -20,13 +21,8 @@ http:
       value: "0"
       type: query
     - name: reqForCancel
-      value: "true"
+      value: "false"
       type: query
-      disabled: true
-    - name: search
-      value: Shaikh
-      type: query
-      disabled: true
   auth: inherit
 
 settings:
