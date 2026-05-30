@@ -8,33 +8,19 @@ http:
   url: "{{clientUrl}}/api/v1/payment/checkout"
   body:
     type: json
-    data: "{\r
-
-      \    \"packagePlanId\": \"69e0c5d51ee43b7ef56bd59c\",\r
-
-      \    \"paymentPlanId\": \"668e1ff99c820c8ae19dd123\",\r
-
-      \    \"startPlan\": \"04-16-2026\",\r
-
-      \    \"endPlan\": \"05-15-2026\",\r
-
-      \    \"tenure\": 30,\r
-
-      \    \"currency\": \"inr\"\r
-
-      }\r
-
-      // {\r
-
-      //     \"packagePlanId\": \"69e758ded0aab83b93454f67\",\r
-
-      //     \"paymentPlanId\": \"668e1ff99c820c8ae19dd123\",\r
-
-      //     \"startPlan\": \"04-29-2026\",\r
-
-      //     \"currency\": \"inr\"\r
-
-      // }"
+    data: |-
+      {
+      //       "packagePlanId": "6a0714fd5a681e2194a0b863", // weekly gold
+      //   "packagePlanId":"69fc264b3370f9b32d47ea40", // monthly sandbox gold
+      //   "packagePlanId":"6a0af609ca3163d38738d527", // weekly sandbox gold
+          "packagePlanId":"6a0afb0dca3163d38738d528", // tricenary sandbox gold
+      //     "packagePlanId": "69f99612f4adfd4d69ad0693", // yearly gold
+      //   "packagePlanId": "6a0ae0b2ca3163d38738d526", // Tricenary gold
+      //   "paymentPlanId":"668e1ff99c820c8ae19dd123" // monthly
+      //       "paymentPlanId": "6a0714c55a681e2194a0b862" // weekly
+      //     "paymentPlanId": "663c5f590263685ba00dfd75" // yearly
+        "paymentPlanId": "6a0adfceca3163d38738d525" // Tricenary
+      }
   auth: inherit
 
 settings:

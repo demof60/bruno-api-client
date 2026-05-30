@@ -5,7 +5,11 @@ info:
 
 http:
   method: GET
-  url: "{{clientUrl}}/api/v1/payment/invoice/69e61ee085104a04189a400b"
+  url: "{{clientUrl}}/api/v1/payment/invoice/:invoiceId"
+  params:
+    - name: invoiceId
+      value: 6a152b9bfcad7f5677da1253
+      type: path
   auth: inherit
 
 settings:

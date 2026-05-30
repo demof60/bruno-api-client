@@ -4,6 +4,8 @@ variables:
   - name: clientUrl
     value: https://backend.f20.co.in/client
   - name: userUrl
-    value: https://backend.f20.co.in/web
+    value: https://backend.f20.co.in/buyer
   - name: url
     value: https://backend.f20.co.in
+  - name: webUrl
+    value: https://backend.f20.co.in/web

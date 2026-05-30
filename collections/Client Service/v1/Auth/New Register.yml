@@ -12,59 +12,25 @@ http:
       type: query
   body:
     type: json
-    data: "{\r
-
-      \  \"username\": \"dsdcrynajev  oerter\",\r
-
-      \  \"email\": \"rynajevo@fxzig.com\",\r
-
-      \  \"pinCode\": \"400060\",\r
-
-      \  \"city\": \"Mumbai\",\r
-
-      \  \"country\": \"India\",\r
-
-      \  \"number\": 4358155343,\r
-
-      \  \"companyName\":\"hehe comp\",\r
-
-      \  \"password\": \"Pipex@F60\",\r
-
-      //   \"fullname\": \"game\"\r
-
-      \  \"firstName\": \"nation 1st \",\r
-
-      \  \"lastName\": \"nation last\"\r
-
-      //   \"email\": \"gybeceba@denipl.net\",\r
-
-      //   \"password\": \"Pipex@F60\"\r
-
-      \r
-
-      }\r
-
-      // {\r
-
-      //     // \"username\": \"Yeager\",\r
-
-      //     \"companyName\": \"Fr23231 Skin4rer gee2881331\",\r
-
-      //     // \"number\": \"337323\",\r
-
-      //     \"email\": \"e88@draughtier.com\",\r
-
-      //     // \"address\": \"\",\r
-
-      //     // \"pinCode\": \"\",\r
-
-      //     // \"city\": \"\",\r
-
-      //     // \"countryCode\": \"+91\",\r
-
-      //     \"password\": \"Pipex@F70\"\r
-
-      // }"
+    data: |-
+      {
+        "username": "{{$randomUserName}}",
+        "email": "{{$randomEmail}}",
+        "pinCode": "400060",
+        "city": "Mumbai",
+        "country": "India",
+        "number": "{{$randomPhoneNumber}}",
+        "companyName": "{{$randomCompanyName}}",
+        "password": "Pipex@F70",
+        "firstName": "{{$randomFirstName}}",
+        "lastName": "{{$randomLastName}}",
+        "address": "{{$randomStreetAddress}}",
+        "region": {
+          "isoCode": "IN",
+          "name": "India",
+          "dialCode": "+91"
+        }
+      }
   auth: inherit
 
 settings:
