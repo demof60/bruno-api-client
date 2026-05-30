@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{webUrl}}/api/v1/products/seller/6a197e178655968780541fa0/products?limit=3&offset=0"
+  url: "{{webUrl}}/api/v1/products/seller/{{clienId}}/products?limit=10&offset=0"
   params:
     - name: limit
-      value: "3"
+      value: "10"
       type: query
     - name: offset
       value: "0"
@@ -25,7 +25,9 @@ http:
 runtime:
   variables:
     - name: webUrl
-      value: https://backend.f10.co.in/web
+      value: http://localhost:5050
+    - name: clienId
+      value: 6a197e178655968780541fa0
 
 settings:
   encodeUrl: true
