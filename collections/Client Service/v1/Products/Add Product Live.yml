@@ -5,7 +5,11 @@ info:
 
 http:
   method: POST
-  url: "{{clientUrl}}/api/v1/product/live/68c3f986fd93dc7456b5f6b1"
+  url: "{{clientUrl}}/api/v1/product/live/:ProductId"
+  params:
+    - name: ProductId
+      value: 6a1fd8c60f280d1d33de5da8
+      type: path
   body:
     type: multipart-form
   auth:

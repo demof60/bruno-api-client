@@ -12,7 +12,7 @@ http:
       type: query
       disabled: true
     - name: quotationId
-      value: 69de126b956c5959e64c21e1
+      value: 6a216d54c729a79c7ac6f00e
       type: path
   auth: inherit
 

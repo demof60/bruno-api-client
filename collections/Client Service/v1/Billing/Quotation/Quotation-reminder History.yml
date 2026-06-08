@@ -7,6 +7,9 @@ http:
   method: GET
   url: "{{clientUrl}}/api/v1/quotation/history/:quotationID"
   params:
+    - name: quotationID
+      value: 6a2166aaec01e8a401a8b930
+      type: path
     - name: remLimit
       value: "5"
       type: query
@@ -28,9 +31,6 @@ http:
       type: query
       description: reminders history
       disabled: true
-    - name: quotationID
-      value: 69ec4dd0f0db18f37b4054f1
-      type: path
   auth: inherit
 
 settings:

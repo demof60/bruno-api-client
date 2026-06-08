@@ -5,15 +5,16 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/payment/subscription?status=active&limit=100&offset=0&reqForCancel=false"
+  url: "{{url}}/api/v2/admin/payment/subscription?limit=100&offset=0&reqForCancel=false"
   params:
     - name: search
       value: dadesefy@fxzig.com
       type: query
       disabled: true
     - name: status
-      value: active
+      value: expired
       type: query
+      disabled: true
     - name: limit
       value: "100"
       type: query

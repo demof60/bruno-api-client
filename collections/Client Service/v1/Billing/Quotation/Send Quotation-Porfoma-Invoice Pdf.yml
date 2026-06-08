@@ -8,7 +8,7 @@ http:
   url: "{{clientUrl}}/api/v1/quotation/pdf/send/:quotationId"
   params:
     - name: quotationId
-      value: 69e707743147d9143fa0e0d8
+      value: 6a215068e04448f1dcfb5733
       type: path
   body:
     type: multipart-form
@@ -16,7 +16,7 @@ http:
       - name: attachment
         type: file
         value:
-          - /C:/Users/admin/Desktop/Vin/Item3.xlsx
+          - C:\Users\admin\Downloads\Invoice-0001.pdf
       - name: email
         type: text
         value: vinay.poojary@f70.co.in

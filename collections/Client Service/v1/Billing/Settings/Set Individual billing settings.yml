@@ -14,185 +14,99 @@ http:
       value: "true"
       type: query
     - name: quotationId
-      value: 69ec9cb0e3de3ebf07be8b60
+      value: 6a216d54c729a79c7ac6f00e
       type: path
   body:
     type: json
-    data: "{\r
-
-      \    // \"accountConfigType\":false,\r
-
-      \    // \"options\": {\r
-
-      \    //     \"accountSetting\": {\r
-
-      \    //         \"stopSendingOnReply\": true,\r
-
-      \    //         \"sendEmailAsTextOnly\": false,\r
-
-      \    //         \"sendFirstEmailAsTextOnly\": true,\r
-
-      \    //         \"dailyLimit\": 555,\r
-
-      \    //         \"accountsToUse\": [\r
-
-      \    //             \"priti@pentagoat.com\"\r
-
-      \    //         ]\r
-
-      \    //     },\r
-
-      \    //     \"ccBcc\": {\r
-
-      \    //         \"ccRecipients\": \"priti@pentagoat.com\",\r
-
-      \    //         \"bccRecipients\": \"priti@pentagoat.com\"\r
-
-      \    //     }\r
-
-      \    // }\r
-
-      \    // \"schedule\": [\r
-
-      \    //     {\r
-
-      \    //         \"scheduleName\": \"Morning Outreachsahehe pooja\",\r
-
-      \    //         \"isActive\": true,\r
-
-      \    //         \"startDate\": \"2025-11-01T00:00:00.000Z\",\r
-
-      \    //         \"endDate\": \"2026-12-31T23:59:59.000Z\",\r
-
-      \    //         \"timeFrom\": \"01:00\",\r
-
-      \    //         \"timeTo\": \"23:30\",\r
-
-      \    //         \"timeZone\": \"Asia/Kolkata\",\r
-
-      \    //         \"weekDays\": [\r
-
-      \    //             \"monday\",\r
-
-      \    //             \"tuesday\",\r
-
-      \    //             \"wednesday\",\r
-
-      \    //             \"thursday\",\r
-
-      \    //             \"friday\",\r
-
-      \    //             \"saturday\"\r
-
-      \    //         ]\r
-
-      \    //     }\r
-
-      \    // ]\r
-
-      \    // \"sequence\": [\r
-
-      \    //     {\r
-
-      \    //         \"stepOrder\": 1,\r
-
-      \    //         \"stepName\": \"first proforma1\",\r
-
-      \    //         \"nextMsgInDays\":0.0001,\r
-
-      \    //         \"emails\": {\r
-
-      \    //             \"subject\": \"Welcome to the Family!\",\r
-
-      \    //             \"body\": \"We’re thrilled {{personName}} to have you. Let’s take a quick tour of what you can do here.\",\r
-
-      \    //             \"isActive\": true,\r
-
-      \    //             \"placeholders\": [\r
-
-      \    //                 {\r
-
-      \    //                     \"key\": \"personName\",\r
-
-      \    //                     \"description\": \"hehe\",\r
-
-      \    //                     \"sampleValue\": \"vindefault\"\r
-
-      \    //                 }\r
-
-      \    //             ]\r
-
-      \    //         }\r
-
-      \    //     },\r
-
-      \    //     {\r
-
-      \    //         \"stepOrder\": 2,\r
-
-      \    //         \"stepName\": \"second\",\r
-
-      \    //         \"nextMsgInDays\": 0.0001,\r
-
-      \    //         \"emails\": {\r
-
-      \    //             // \"subject\": \"Welcome to dashboard\",\r
-
-      \    //             \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
-
-      \    //             \"isActive\": true\r
-
-      \    //         }\r
-
-      \    //     },\r
-
-      \    //     {\r
-
-      \    //         \"stepOrder\": 4,\r
-
-      \    //         \"stepName\": \"forth\",\r
-
-      \    //         \"emails\": {\r
-
-      \    //             // \"subject\": \"Welcome to dashboard\",\r
-
-      \    //             \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
-
-      \    //             \"isActive\": true\r
-
-      \    //         }\r
-
-      \    //     },\r
-
-      \    //     {\r
-
-      \    //         \"stepOrder\": 3,\r
-
-      \    //         \"stepName\": \"third\",\r
-
-      \    //         \"nextMsgInDays\": 0.0001,\r
-
-      \    //         \"emails\": {\r
-
-      \    //             // \"subject\": \"Welcome to dashboard\",\r
-
-      \    //             \"body\": \"Here’s how to get started using your dashboard efficiently.\",\r
-
-      \    //             \"isActive\": true\r
-
-      \    //         }\r
-
-      \    //     }\r
-
-      \    // ]\r
-
-      //    , \r
-
-      \   \"launch\": true\r
-
-      // \"relaunch\":true\r
-
-      }"
+    data: |-
+      {
+          // "accountConfigType":false,
+          // "options": {
+          //     "accountSetting": {
+          //         "stopSendingOnReply": true,
+          //         "sendEmailAsTextOnly": false,
+          //         "sendFirstEmailAsTextOnly": true,
+          //         "dailyLimit": 555,
+          //         "accountsToUse": [
+          //             "priti@pentagoat.com"
+          //         ]
+          //     },
+          //     "ccBcc": {
+          //         "ccRecipients": "priti@pentagoat.com",
+          //         "bccRecipients": "priti@pentagoat.com"
+          //     }
+          // }
+          // "schedule": [
+          //     {
+          //         "scheduleName": "Morning Outreachsahehe pooja",
+          //         "isActive": true,
+          //         "startDate": "2025-11-01T00:00:00.000Z",
+          //         "endDate": "2026-12-31T23:59:59.000Z",
+          //         "timeFrom": "01:00",
+          //         "timeTo": "23:30",
+          //         "timeZone": "Asia/Kolkata",
+          //         "weekDays": [
+          //             "monday",
+          //             "tuesday",
+          //             "wednesday",
+          //             "thursday",
+          //             "friday",
+          //             "saturday"
+          //         ]
+          //     }
+          // ]
+          // "sequence": [
+          //     {
+          //         "stepOrder": 1,
+          //         "stepName": "first proforma1",
+          //         "nextMsgInDays":0.0001,
+          //         "emails": {
+          //             "subject": "Welcome to the Family!",
+          //             "body": "We’re thrilled {{personName}} to have you. Let’s take a quick tour of what you can do here.",
+          //             "isActive": true,
+          //             "placeholders": [
+          //                 {
+          //                     "key": "personName",
+          //                     "description": "hehe",
+          //                     "sampleValue": "vindefault"
+          //                 }
+          //             ]
+          //         }
+          //     },
+          //     {
+          //         "stepOrder": 2,
+          //         "stepName": "second",
+          //         "nextMsgInDays": 0.0001,
+          //         "emails": {
+          //             // "subject": "Welcome to dashboard",
+          //             "body": "Here’s how to get started using your dashboard efficiently.",
+          //             "isActive": true
+          //         }
+          //     },
+          //     {
+          //         "stepOrder": 4,
+          //         "stepName": "forth",
+          //         "emails": {
+          //             // "subject": "Welcome to dashboard",
+          //             "body": "Here’s how to get started using your dashboard efficiently.",
+          //             "isActive": true
+          //         }
+          //     },
+          //     {
+          //         "stepOrder": 3,
+          //         "stepName": "third",
+          //         "nextMsgInDays": 0.0001,
+          //         "emails": {
+          //             // "subject": "Welcome to dashboard",
+          //             "body": "Here’s how to get started using your dashboard efficiently.",
+          //             "isActive": true
+          //         }
+          //     }
+          // ]
+      //    , 
+         "launch": false
+      // "relaunch":true
+      }
   auth: inherit
 
 settings:

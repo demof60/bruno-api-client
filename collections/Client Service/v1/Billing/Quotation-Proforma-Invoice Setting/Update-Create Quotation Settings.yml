@@ -16,13 +16,12 @@ http:
       - name: signature
         type: file
         value:
-          - /C:/Users/admin/Downloads/001 (1).png
+          - C:\Users\admin\Pictures\signature.png
         disabled: true
       - name: logo
         type: file
         value:
-          - /C:/Users/admin/Pictures/poke/004.png
-        disabled: true
+          - C:\Users\admin\Pictures\—Pngtree—media company logo design vector_6866366.png
       - name: signature
         type: text
         value: |-
@@ -52,29 +51,11 @@ http:
                           "data": "https://pipingproject.s3.ap-south-1.amazonaws.com/piplineBillingDevelopment/004_1772019889192.png",
                           "_id": "699ee0b96c3f4d6ee00fab09"
                       }}]
+        disabled: true
       - name: taxSlabs
         type: text
         value: |
           [{"name":"ll","value":0,"default":false,"_id":"6996b6612e525ef004731139"},{"name":"geeg","value":21}]
-        description: |2-
-          
-                              "_id": "690aff2be34349003f4d9d3f",
-                              "name": "GST",
-                              "value": 0,
-                              "default": true
-                          },
-                          {
-                              "_id": "6914781be9244cefa1798af3",
-                              "name": "GST-18",
-                              "value": 18,
-                              "default": false
-                          },
-                          {
-                              "_id": "6914781be9244cefa1798af4",
-                              "name": "GST",
-                              "value": 19,
-                              "default": true
-                          }
         disabled: true
       - name: companyName
         type: text

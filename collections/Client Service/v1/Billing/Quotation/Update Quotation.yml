@@ -8,7 +8,7 @@ http:
   url: "{{clientUrl}}/api/v1/quotation/:quotationId"
   params:
     - name: quotationId
-      value: 69ea0b67b5e5f6bea5298243
+      value: 6a2127ab7226e82275c28408
       type: path
   body:
     type: json

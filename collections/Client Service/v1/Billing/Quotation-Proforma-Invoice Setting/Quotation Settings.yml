@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{clientUrl}}/api/v1/quotation/settings?type=invoice"
+  url: "{{clientUrl}}/api/v1/quotation/settings?type=quotation"
   params:
     - name: projection
       value: quotation.signature,quotation.logo
@@ -20,7 +20,7 @@ http:
       type: query
       disabled: true
     - name: type
-      value: invoice
+      value: quotation
       type: query
   auth: inherit
 

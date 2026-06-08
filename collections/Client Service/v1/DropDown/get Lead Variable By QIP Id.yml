@@ -5,16 +5,16 @@ info:
 
 http:
   method: GET
-  url: "{{clientUrl}}/api/v1/dropdown/lead/:leadId/variable?type=quotation&qipId=69b3fe6216f5a23f06d12234"
+  url: "{{clientUrl}}/api/v1/dropdown/lead/:leadId/variable?type=quotation&qipId=6a193f5d865596878053ef20"
   params:
     - name: type
       value: quotation
       type: query
     - name: qipId
-      value: 69b3fe6216f5a23f06d12234
+      value: 6a193f5d865596878053ef20
       type: query
     - name: leadId
-      value: 69b3fe6216f5a23f06d12234
+      value: 6a193f5d865596878053ef20
       type: path
   body:
     type: multipart-form

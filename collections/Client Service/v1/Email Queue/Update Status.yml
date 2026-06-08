@@ -8,17 +8,13 @@ http:
   url: "{{clientUrl}}/api/v1/email-queue"
   body:
     type: json
-    data: "{\r
-
-      \    \"status\": \"paused\", // paused , resume\r
-
-      \    \"ids\": [\r
-
-      \        \"69afb7794729e62d3964e5d0\"\r
-
-      \    ]\r
-
-      }"
+    data: |-
+      {
+          "status": "resume", // paused , resume
+          "ids": [
+              "6a22b2704a4e6f36d572ea67"
+          ]
+      }
   auth: inherit
 
 settings:

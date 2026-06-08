@@ -11,7 +11,7 @@ http:
       value: quotation
       type: query
     - name: quotationId
-      value: 69ec9f104d9292ee1dd6cca8
+      value: 6a1e7a8c01e00f6dca4c40b4
       type: path
   body:
     type: multipart-form
@@ -19,14 +19,14 @@ http:
       - name: attachment
         type: file
         value:
-          - /C:/Users/admin/Desktop/Vin/test_10.xlsx
+          - C:\Users\admin\Downloads\Invoice-JSX7Y4QN-0001.pdf
       - name: email
         type: text
         value: arfan.pathan@f70.co.in
         disabled: true
       - name: accountsToUse
         type: text
-        value: priti@pentagoat.com
+        value: vinay.poojary@f70.co.in
       - name: launch
         type: text
         value: "true"

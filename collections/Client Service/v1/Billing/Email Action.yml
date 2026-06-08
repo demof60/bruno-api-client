@@ -5,21 +5,20 @@ info:
 
 http:
   method: POST
-  url: "{{clientUrl}}/api/v1/email-queue/email-action?token=eyJhY3Rpb24iOiJuZWdvdGlhdGlvbiIsIl9pZCI6IjY5ZWM5YzRlODYxMzM4MTUxYzkyODEwMiIsImVtYWlsSWQiOiI2OTY3NTJmMC0xNTZlLTQ4ODEtOTRhNy1hYmE1OTY0MWM1NGUiLCJ0eXBlIjoicWlwIiwiY2xpZW50SWQiOiI2OGY4YzJhYjdiMGFjZTVmY2QxMjliNzciLCJiaWxsaW5nTm8iOiJRMzIzMCIsImJpbGxpbmdUeXBlIjoiUXVvdGF0aW9uIiwiY29tcGFueU5hbWUiOiJKYXlLaWNvbXBhbnkiLCJjdXN0b21lck5hbWUiOiJWaW5EYVRlc3RlciJ9.f431389824a790e71b9792bd00b3177c8e883a41f0ebe48c817ee9a4b4a1792a&type=negotiation"
+  url: "{{clientUrl}}/api/v1/email-queue/email-action?token=eyJhY3Rpb24iOiJhY2NlcHRlZCIsIl9pZCI6IjZhMjExYTRhNzIyNmU4MjI3NWMyNTY0NSIsImVtYWlsSWQiOiJjMDBhYjEwZS1iZjEwLTRmYTQtODk2MS1jYTI5YzRhYTQwYmUiLCJ0eXBlIjoicWlwIiwiY2xpZW50SWQiOiI2YTFlYjVlODMyODYxNDdjN2U2MjdmYTkiLCJiaWxsaW5nTm8iOiJRLTQiLCJiaWxsaW5nVHlwZSI6IlF1b3RhdGlvbiIsImNvbXBhbnlOYW1lIjoia2hhY2hyYW4gcHZ0IGx0ZCIsImN1c3RvbWVyTmFtZSI6InZpbiJ9.a8d549386a8866c7f14799c5e69e4213f14040e459511b621629855831c4950a&type=accepted"
   params:
     - name: token
-      value: eyJhY3Rpb24iOiJuZWdvdGlhdGlvbiIsIl9pZCI6IjY5ZWM5YzRlODYxMzM4MTUxYzkyODEwMiIsImVtYWlsSWQiOiI2OTY3NTJmMC0xNTZlLTQ4ODEtOTRhNy1hYmE1OTY0MWM1NGUiLCJ0eXBlIjoicWlwIiwiY2xpZW50SWQiOiI2OGY4YzJhYjdiMGFjZTVmY2QxMjliNzciLCJiaWxsaW5nTm8iOiJRMzIzMCIsImJpbGxpbmdUeXBlIjoiUXVvdGF0aW9uIiwiY29tcGFueU5hbWUiOiJKYXlLaWNvbXBhbnkiLCJjdXN0b21lck5hbWUiOiJWaW5EYVRlc3RlciJ9.f431389824a790e71b9792bd00b3177c8e883a41f0ebe48c817ee9a4b4a1792a
+      value: eyJhY3Rpb24iOiJhY2NlcHRlZCIsIl9pZCI6IjZhMjExYTRhNzIyNmU4MjI3NWMyNTY0NSIsImVtYWlsSWQiOiJjMDBhYjEwZS1iZjEwLTRmYTQtODk2MS1jYTI5YzRhYTQwYmUiLCJ0eXBlIjoicWlwIiwiY2xpZW50SWQiOiI2YTFlYjVlODMyODYxNDdjN2U2MjdmYTkiLCJiaWxsaW5nTm8iOiJRLTQiLCJiaWxsaW5nVHlwZSI6IlF1b3RhdGlvbiIsImNvbXBhbnlOYW1lIjoia2hhY2hyYW4gcHZ0IGx0ZCIsImN1c3RvbWVyTmFtZSI6InZpbiJ9.a8d549386a8866c7f14799c5e69e4213f14040e459511b621629855831c4950a
       type: query
     - name: type
-      value: negotiation
+      value: accepted
       type: query
   body:
     type: json
-    data: "{\r
-
-      \    \"description\":\"Price is too high\"\r
-
-      }"
+    data: |
+      {
+          "description":"Price is too high"
+      }
   auth: inherit
 
 settings:
