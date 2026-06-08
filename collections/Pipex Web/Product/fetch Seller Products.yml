@@ -1,0 +1,36 @@
+info:
+  name: fetch Seller Products
+  type: http
+  seq: 16
+
+http:
+  method: GET
+  url: "{{webUrl}}/api/v1/products/seller/{{clienId}}/products?limit=10&offset=0"
+  params:
+    - name: limit
+      value: "10"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+    - name: fetchAll
+      value: "true"
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+runtime:
+  variables:
+    - name: webUrl
+      value: http://localhost:5050
+    - name: clienId
+      value: 6a197e178655968780541fa0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

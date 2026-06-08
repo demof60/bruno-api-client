@@ -5,19 +5,26 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/client/profile/dropdown?offset=0&search=test&limit=25&isSearchByCategory=true"
+  url: "{{url}}/api/v2/admin/client/profile/dropdown?offset=20&limit=10&isSearchByCategory=false&isSuggested=false&rfqId=6a1e735cfa9dbf543fa73306"
   params:
     - name: offset
-      value: "0"
+      value: "20"
       type: query
     - name: search
-      value: test
+      value: Traders Ffff
       type: query
+      disabled: true
     - name: limit
-      value: "25"
+      value: "10"
       type: query
     - name: isSearchByCategory
-      value: "true"
+      value: "false"
+      type: query
+    - name: isSuggested
+      value: "false"
+      type: query
+    - name: rfqId
+      value: 6a1e735cfa9dbf543fa73306
       type: query
   body:
     type: multipart-form
