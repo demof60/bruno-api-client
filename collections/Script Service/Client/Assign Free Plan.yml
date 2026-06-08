@@ -10,7 +10,8 @@ http:
     type: json
     data: |-
       {
-        "clientIdOrName":["vinay d company"]
+        "clientIdOrName":["6a1444defcad7f5677da019c","321"],
+        "cancelCurrentSubscriptionImmediately":false
       }
   auth:
     type: bearer
