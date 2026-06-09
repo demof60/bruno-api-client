@@ -5,26 +5,25 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/client/profile/dropdown?offset=20&limit=10&isSearchByCategory=false&isSuggested=false&rfqId=6a1e735cfa9dbf543fa73306"
+  url: "{{url}}/api/v2/admin/client/profile/dropdown?offset=0&search=gaines good co&limit=10&isSearchByCategory=true&isSuggested=false&rfqId=6a2117cb8a19ded0a52d2faf"
   params:
     - name: offset
-      value: "20"
+      value: "0"
       type: query
     - name: search
-      value: Traders Ffff
+      value: gaines good co
       type: query
-      disabled: true
     - name: limit
       value: "10"
       type: query
     - name: isSearchByCategory
-      value: "false"
+      value: "true"
       type: query
     - name: isSuggested
       value: "false"
       type: query
     - name: rfqId
-      value: 6a1e735cfa9dbf543fa73306
+      value: 6a2117cb8a19ded0a52d2faf
       type: query
   body:
     type: multipart-form

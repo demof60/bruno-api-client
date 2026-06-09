@@ -10,4 +10,4 @@ variables:
   - name: url
     value: https://backend.f10.co.in
   - name: scriptUrl
-    value: https://backend.f10.co.in/script
+    value: https://backend.f20.co.in/script
