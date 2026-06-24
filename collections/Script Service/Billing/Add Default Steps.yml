@@ -12,7 +12,14 @@ http:
       {
         "clientIds" : ["6a1448d7fcad7f5677da0724"]
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{scriptToken}}"
+
+runtime:
+  variables:
+    - name: scriptToken
+      value: "@AFxIrep*CWE&sva!Hug)bKTf(cz6PJQmt7dDkyUB%"
 
 settings:
   encodeUrl: true
