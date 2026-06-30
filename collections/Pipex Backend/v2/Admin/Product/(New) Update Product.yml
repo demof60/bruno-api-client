@@ -5,19 +5,21 @@ info:
 
 http:
   method: PUT
-  url: "{{url}}/api/v2/admin/product/update-product/69ce4e811509c0b570b9b4ba"
+  url: "{{url}}/api/v2/admin/product/update-product/6a16c012ae4b18d5217fc8eb"
   body:
     type: multipart-form
     data:
       - name: productTitle
         type: text
-        value: ugaoo bsss
+        value: "Brush kr liya "
       - name: productDescription
         type: text
         value: DespiteDespite the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever knownDespite the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever known the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever knownDespite the relentless ticking of the ancient clock hanging above the fireplace in the dimly lit study, casting elongated shadows that danced across the walls like ghosts of forgotten time, Eleanor remained fixated on the tattered, leather-bound journal in her lap, her fingers trembling as she turned each fragile page, uncovering cryptic symbols and faded ink sketches of places she had only seen in dreams, while outside, the wind howled through the trees with a fury that shook the very foundation of the house, echoing the turmoil in her mind as she pieced together the secrets her great-grandfather had hidden in riddles and codes, secrets that, if deciphered correctly, promised to reveal the location of the long-lost Arcanum—a mythical artifact said to grant the bearer the wisdom of ages and the power to bend reality itself, though Eleanor knew that others were searching too, dangerous individuals who would stop at nothing to possess such power, and so, with a deep breath, steeling her resolve against the fear clawing at her chest, she rose to her feet, tucked the journal safely beneath her coat, and stepped out into the storm, determined to finish what her ancestor had started, even if it meant risking everything she had ever known
+        disabled: true
       - name: productDescriptionHeading
         type: text
         value: Sunt nulla placeat veniam culpa modi tempor qui quidem vero et aliquip saepe aliqua Excepturi ipsa
+        disabled: true
       - name: deleteImages
         type: text
         value: '["cc0e2e3f-ff95-4830-8d3f-130c91853b81","c4cff9d3-385b-41fd-9ddb-6c266d3f7a1b"]'
@@ -43,6 +45,7 @@ http:
                 "answer": "bdddd"
               }
             ]
+        disabled: true
       - name: searchKeywords
         type: text
         value: |2-
@@ -181,7 +184,7 @@ http:
         disabled: true
       - name: url
         type: text
-        value: ugaoo bss
+        value: Brush kr liya toh kya
       - name: productDetailsProductDescription
         type: text
         value: mast section title 2

@@ -8,17 +8,14 @@ http:
   url: "{{url}}/api/v2/admin/product/clone"
   body:
     type: json
-    data: "{\r
-
-      \  \"productId\": \"68f8c4797b0ace5fcd129f96\",\r
-
-      \  \"newClientId\": null,\r
-
-      \  \"newProductTitle\": null,\r
-
-      \  \"newCategoryId\": null\r
-
-      }"
+    data: |-
+      {
+        "productId": "6a28033a2d4725b0de23ca7b",
+        "newClientId": null,
+        "newProductTitle": "hello kaise ho ",
+        
+        "newCategoryId": null
+      }
   auth:
     type: bearer
     token: "{{token}}"

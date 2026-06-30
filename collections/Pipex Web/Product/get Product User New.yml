@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{webUrl}}/api/v1/products/new/sssssssssssss-1112.html"
+  url: "{{webUrl}}/api/v1/products/new/inconel-x-750-plate-manufacturer-india-astm-b637-asme-sb637-plates-1007.html"
   params:
     - name: deviceType
       value: desktop
@@ -17,7 +17,7 @@ http:
       disabled: true
   body:
     type: json
-    data: ""
+    data: "  "
   auth: inherit
 
 settings:

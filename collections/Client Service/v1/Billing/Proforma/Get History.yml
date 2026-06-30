@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{clientUrl}}/api/v1/proforma/get/history/690d9eaabd5af612707b9c6a?type=proforma"
+  url: "{{clientUrl}}/api/v1/proforma/get/history/6a390396982393e958f61e22?type=proforma"
   params:
     - name: type
       value: proforma

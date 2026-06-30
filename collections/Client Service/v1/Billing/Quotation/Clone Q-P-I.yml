@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{clientUrl}}/api/v1/quotation/billing/"
+  url: "{{clientUrl}}/api/v1/quotation/clone/6a313b6bba9f3b0717fc231d"
   auth: inherit
 
 settings:

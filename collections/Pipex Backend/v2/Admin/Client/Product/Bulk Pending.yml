@@ -8,13 +8,11 @@ http:
   url: "{{url}}/api/v2/admin/client/product/pending/bulk"
   body:
     type: json
-    data: "{\r
-
-      \    \"productIds\": \"all\",\r
-
-      \    \"clientId\": \"671f7d37aaa77919ed297a42\"\r
-
-      }"
+    data: |-
+      {
+          "productIds": "all",
+          "clientId": "6a3381a7efe693e4a7818c50"
+      }
   auth: inherit
 
 settings:

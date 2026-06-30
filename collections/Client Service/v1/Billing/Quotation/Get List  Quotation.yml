@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{clientUrl}}/api/v1/quotation/getAll/?type=all&excelExport=true"
+  url: "{{clientUrl}}/api/v1/quotation/getAll/?type=all"
   params:
     - name: isDeleted
       value: "false"
@@ -49,6 +49,7 @@ http:
     - name: excelExport
       value: "true"
       type: query
+      disabled: true
   body:
     type: json
     data: "{\r

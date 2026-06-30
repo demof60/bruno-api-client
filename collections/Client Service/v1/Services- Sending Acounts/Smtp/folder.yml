@@ -1,7 +1,7 @@
 info:
-  name: Google Work Space
+  name: Smtp
   type: folder
-  seq: 1
+  seq: 3
 
 request:
   auth: inherit

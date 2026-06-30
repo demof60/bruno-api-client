@@ -5,17 +5,17 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/payment/subscription?status=active&limit=100&offset=0&reqForCancel=true"
+  url: "{{url}}/api/v2/admin/payment/subscription?status=all&limit=1000&offset=0"
   params:
     - name: search
       value: ""
       type: query
       disabled: true
     - name: status
-      value: active
+      value: all
       type: query
     - name: limit
-      value: "100"
+      value: "1000"
       type: query
     - name: offset
       value: "0"
@@ -23,8 +23,9 @@ http:
     - name: reqForCancel
       value: "true"
       type: query
+      disabled: true
     - name: search
-      value: Shaikh
+      value: lovosysa@forexzig.com
       type: query
       disabled: true
   auth: inherit

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/payment/subscription/invoices?excelExport=true"
+  url: "{{url}}/api/v2/admin/payment/subscription/invoices?limit=1000&search=OG1LLUJA-0001"
   headers:
     - name: excelExport
       value: "true"
@@ -13,6 +13,17 @@ http:
     - name: excelExport
       value: "true"
       type: query
+      disabled: true
+    - name: limit
+      value: "1000"
+      type: query
+    - name: search
+      value: OG1LLUJA-0001
+      type: query
+    - name: status
+      value: paid
+      type: query
+      disabled: true
   auth: inherit
 
 settings:

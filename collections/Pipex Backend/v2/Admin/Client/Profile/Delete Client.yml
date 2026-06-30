@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: "{{url}}/api/v2/admin/client/profile/delete/681defbfc71d5686d70212be"
+  url: "{{url}}/api/v2/admin/client/profile/delete/6a22d5c725fd4ccfe3c31a7a"
   auth: inherit
 
 settings:

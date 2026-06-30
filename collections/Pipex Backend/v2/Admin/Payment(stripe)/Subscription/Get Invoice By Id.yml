@@ -8,7 +8,7 @@ http:
   url: "{{url}}/api/v2/admin/payment/subscription/invoices/:usersubscriptionbillingsId"
   params:
     - name: usersubscriptionbillingsId
-      value: 69e8a45716f68f4bfb519fe4
+      value: 6a0ee52f042b741e9c88d818
       type: path
   body:
     type: json

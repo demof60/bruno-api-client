@@ -9,35 +9,23 @@ http:
   body:
     type: json
     data: |-
-      {
-          // "email": "picaryta@fxzig.com",
-          // "password": "Pipex@F60"
-          // "email": "zaleliji@forexzig.com",
-          // "password": "Pipex@F60"
-          // "email":"ht1ner94s1@jkotypc.com",
-          // "password": "Pipex@f60"
-          // "email": "puqazo@forexzig.com",
-          // "password": "Pipex@F60"
-          // "email": "kalasssss@lnovic.com",
-          // "password": "Pipex@f60"
-          // "email": "dyluzo@forexzig.com",
-          // "password": "Pipex@F60"
-          // "email": "krish.jain@f70.co.in",
-          // "password": "Pipex@f60"
-          // "email": "sayinad171@alexida.com",
-          // "password": "Parag@7155"
-          // "email": "spam@lnovic.com",
-          // "password": "Pipex@F60"
-          // "email": "hupysyke@forexzig.com",
-          // "password": "Pipex@F60"
-          //  "email": "wamodady@denipl.com",
-          // "password": "Pipex@F60"
-      //     "email":"mopig74375@pmdeal.com",
-      //     "password":"Pipex@f60"
-      //     "email": "gypipecu@denipl.net",
+      {    
+        //production
+      //      "email": "shaqeeb@pentagoat.com",
+      //      "password": "Pipex@F60"
+        
+      //      "email": "tobopa@denipl.com",
+      //      "password": "Pipex@F60"
+         // f10
+             "email": "fogacole@denipl.net",
+           "password": "Pipex@F60"
+      //f20
+      //     "email": "kahub@mailinator.com",
       //     "password": "Pipex@F60"
-          "email": "nasyc@mailinator.com",
-          "password": "Pipex@F70"
+        
+      //     "email": "demo@pentagoat.com",
+      //      "password": "Pipex@F60"
+        
         
 
       // "email": "pysajohu@denipl.net",

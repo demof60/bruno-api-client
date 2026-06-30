@@ -8,43 +8,28 @@ http:
   url: "{{url}}/api/v1/userLogin"
   body:
     type: json
-    data: "{\r
+    data: |-
+      {
+          // dev 
+          // "email": "bon@gmail.com",
+          // "password":"SK12345@sk"
+          
+          // "email": "shaqeeb@pentagoat.com",
+          //  "password":"Rehana@123"
+          // "password":"#snnD3Xe^ktS"
 
-      \    // dev \r
+          // // stage
+          // "email": "shubhambhosale@pentagoat.com",
+          // "password":"ShubhamB16@"
+          // // admin
+          "email": "shaqeeb@pentagoat.com",
+          "password": "Pipex@F60"
+      //       "email": "shaqeeb12@pentagoat.com",
+      //     "password": "Pipex@F60"
 
-      \    // \"email\": \"bon@gmail.com\",\r
-
-      \    // \"password\":\"SK12345@sk\"\r
-
-      \    \r
-
-      \    // \"email\": \"shaqeeb@pentagoat.com\",\r
-
-      \    //  \"password\":\"Rehana@123\"\r
-
-      \    // \"password\":\"#snnD3Xe^ktS\"\r
-
-      \r
-
-      \    // // stage\r
-
-      \    // \"email\": \"shubhambhosale@pentagoat.com\",\r
-
-      \    // \"password\":\"ShubhamB16@\"\r
-
-      \    // // admin\r
-
-      \    \"email\": \"sanskar@pentagoat.com\",\r
-
-      \    \"password\": \"Sanskar@123\"\r
-
-      \r
-
-      \    // \"email\": \"superadminstage@pipex.com\",\r
-
-      \    // \"password\":\"Pipex@f60\"\r
-
-      }"
+          // "email": "superadminstage@pipex.com",
+          // "password":"Pipex@f60"
+      }
   auth:
     type: bearer
     token: "{{token}}"

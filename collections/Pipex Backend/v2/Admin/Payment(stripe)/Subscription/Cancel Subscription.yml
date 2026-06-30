@@ -8,6 +8,11 @@ http:
   url: "{{url}}/api/v2/admin/payment/subscription/{{subscriptionId}}/cancel"
   auth: inherit
 
+runtime:
+  variables:
+    - name: subscriptionId
+      value: 6a118c38101784c459f5bd7f
+
 settings:
   encodeUrl: true
   timeout: 0
