@@ -5,8 +5,11 @@ info:
 
 http:
   method: GET
-  url: "{{clientUrl}}/api/v1/proforma/history/690d9e44bd5af612707b9c48?historyType=history"
+  url: "{{clientUrl}}/api/v1/proforma/history/6a3921de982393e958f640e3?historyType=history"
   params:
+    - name: historyType
+      value: history
+      type: query
     - name: remLimit
       value: "5"
       type: query
@@ -23,10 +26,6 @@ http:
       value: "10"
       type: query
       disabled: true
-    - name: historyType
-      value: history
-      type: query
-      description: reminder history
     - name: type
       value: proforma
       type: query

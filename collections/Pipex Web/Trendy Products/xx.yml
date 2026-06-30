@@ -5,16 +5,18 @@ info:
 
 http:
   method: GET
-  url: "{{webUrl}}/api/v1/trendyProducts/get"
+  url: "{{webUrl}}/api/v1/trendyProducts/get?offset=12&limit=12"
   params:
     - name: offset
-      value: "0"
+      value: "12"
       type: query
-      disabled: true
     - name: search
       value: ""
       type: query
       disabled: true
+    - name: limit
+      value: "12"
+      type: query
   body:
     type: multipart-form
   auth: inherit

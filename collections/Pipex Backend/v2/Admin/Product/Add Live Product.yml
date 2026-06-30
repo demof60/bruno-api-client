@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{url}}/api/v2/admin/product/live/69c27348e613690fdda6b0d4"
+  url: "{{url}}/api/v2/admin/product/live/685bc81eab6268a91da2e35c"
   auth: inherit
 
 settings:

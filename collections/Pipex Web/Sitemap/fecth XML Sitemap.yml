@@ -5,12 +5,8 @@ info:
 
 http:
   method: GET
-  url: "{{webUrl}}/api/v1/sitemap/xml/blogs-1.xml"
+  url: "{{webUrl}}/api/v1/sitemap/xml/products-1.xml"
   params:
-    - name: offset
-      value: "0"
-      type: query
-      disabled: true
     - name: search
       value: ""
       type: query

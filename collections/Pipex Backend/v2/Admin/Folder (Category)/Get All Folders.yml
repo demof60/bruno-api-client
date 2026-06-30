@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/folder?limit=16&offset=0&searchQuery=&status=active&type=all"
+  url: "{{url}}/api/v2/admin/folder?limit=10&offset=0&status=all&type=all"
   params:
     - name: limit
-      value: "16"
+      value: "10"
       type: query
     - name: offset
       value: "0"
@@ -16,14 +16,13 @@ http:
     - name: searchQuery
       value: ""
       type: query
+      disabled: true
     - name: status
-      value: active
+      value: all
       type: query
-      description: "[all, pending, active, ban]"
     - name: type
       value: all
       type: query
-      description: "[main, all]"
   auth: inherit
 
 settings:

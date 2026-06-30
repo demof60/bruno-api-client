@@ -5,8 +5,11 @@ info:
 
 http:
   method: GET
-  url: "{{webUrl}}/api/v1/sitemap/"
+  url: "{{webUrl}}/api/v1/sitemap?type=categories"
   params:
+    - name: type
+      value: categories
+      type: query
     - name: limit
       value: "10"
       type: query

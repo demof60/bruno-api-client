@@ -8,7 +8,7 @@ http:
   url: "{{clientUrl}}/api/v1/product/update/:productId"
   params:
     - name: productId
-      value: 69956eee347833509fbf6029
+      value: 6a16c012ae4b18d5217fc8eb
       type: path
   body:
     type: multipart-form

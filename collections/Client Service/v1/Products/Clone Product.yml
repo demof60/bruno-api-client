@@ -8,17 +8,13 @@ http:
   url: "{{clientUrl}}/api/v1/product/clone"
   body:
     type: json
-    data: "{\r
+    data: |-
+      {
 
-      \r
-
-      \     \"productId\": \"68d628504c0f884272873e35\"\r
-
-      \    // \"newProductTitle\":\"mast clone product h\",\r
-
-      \    // \"newCategoryId\":\"672855068ff573adb3544f88\"\r
-
-      }"
+           "productId": "6a2c0685b1e066075d0ea9db"
+          // "newProductTitle":"mast clone product h",
+          // "newCategoryId":"672855068ff573adb3544f88"
+      }
   auth:
     type: bearer
     token: "{{token}}"

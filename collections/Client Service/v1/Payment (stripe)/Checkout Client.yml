@@ -12,12 +12,12 @@ http:
       {
       //       "packagePlanId": "6a0714fd5a681e2194a0b863", // weekly gold
       //   "packagePlanId":"6a0af609ca3163d38738d527", // weekly sandbox gold
-          "packagePlanId":"6a0afb0dca3163d38738d528", // tricenary sandbox gold
-      //     "packagePlanId": "69f99612f4adfd4d69ad0693", // yearly gold
+      //     "packagePlanId":"69f99af7f4adfd4d69ad0695", // tricenary sandbox gold
+        "packagePlanId": "69f99af7f4adfd4d69ad0695", // yearly gold
       //   "packagePlanId": "6a0ae0b2ca3163d38738d526", // Tricenary gold
       //       "paymentPlanId": "6a0714c55a681e2194a0b862" // weekly
       //     "paymentPlanId": "663c5f590263685ba00dfd75" // yearly
-        "paymentPlanId": "6a0adfceca3163d38738d525" // Tricenary
+        "paymentPlanId": "668e1ff99c820c8ae19dd123" // Tricenary
       }
   auth: inherit
 

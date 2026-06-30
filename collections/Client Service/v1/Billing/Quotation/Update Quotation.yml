@@ -8,95 +8,56 @@ http:
   url: "{{clientUrl}}/api/v1/quotation/:quotationId"
   params:
     - name: quotationId
-      value: 69ea0b67b5e5f6bea5298243
+      value: 6a29670cbc98885d51bb341b
       type: path
   body:
     type: json
-    data: "{\r
-
-      //     \"memoToSelf\": \"\",\r
-
-      //     \"quotationDate\": \"2026-04-22\",\r
-
-      //     \"validUntil\": \"2026-04-29\",\r
-
-      //     \"expiryDays\": \"7\",\r
-
-      //     \"currency\": \"INR\",\r
-
-      //     \"footerNote\": {\r
-
-      //         \"terms\": \"\",\r
-
-      //         \"notes\": \"\"\r
-
-      //     },\r
-
-      //     \"customer\": {\r
-
-      //         \"leadId\": \"69e893f5a408c2f96c1b689e\",\r
-
-      //         \"paymentTerm\": \"\"\r
-
-      //     },\r
-
-      \    \"signature\": false\r
-
-      //     \"deliveryTime\": \"\",\r
-
-      //     \"notes\": \"\",\r
-
-      //     \"shippingCharges\": {\r
-
-      //         \"type\": \"currency\",\r
-
-      //         \"value\": 0\r
-
-      //     },\r
-
-      //     \"otherCharges\": {\r
-
-      //         \"type\": \"currency\",\r
-
-      //         \"value\": 0\r
-
-      //     },\r
-
-      //     \"discount\": {\r
-
-      //         \"type\": \"currency\",\r
-
-      //         \"value\": 0\r
-
-      //     },\r
-
-      //     \"items\": [\r
-
-      //         {\r
-
-      //             \"name\": \"fdgdfg\",\r
-
-      //             \"description\": \"\",\r
-
-      //             \"hsn\": \"\",\r
-
-      //             \"quantity\": 1,\r
-
-      //             \"quantityType\": \"kg\",\r
-
-      //             \"unitPrice\": 0,\r
-
-      //             \"taxes\": \"69c257d748afcfab50e959fb\",\r
-
-      //             \"total\": 0\r
-
-      //         }\r
-
-      //     ],\r
-
-      //     \"quotationNo\": \"Q3164\"\r
-
-      }"
+    data: |-
+      {
+          "deliveryTime" : "1012 days" 
+        
+      //     "memoToSelf": "",
+      //     "quotationDate": "2026-04-22",
+      //     "validUntil": "2026-04-29",
+      //     "expiryDays": "7",
+      //     "currency": "INR",
+      //     "footerNote": {
+      //         "terms": "",
+      //         "notes": ""
+      //     },
+      //     "customer": {
+      //         "leadId": "69e893f5a408c2f96c1b689e",
+      //         "paymentTerm": ""
+      //     },
+      //     "signature": false
+           
+      //     "notes": "",
+      //     "shippingCharges": {
+      //         "type": "currency",
+      //         "value": 0
+      //     },
+      //     "otherCharges": {
+      //         "type": "currency",
+      //         "value": 0
+      //     },
+      //     "discount": {
+      //         "type": "currency",
+      //         "value": 0
+      //     },
+      //     "items": [
+      //         {
+      //             "name": "fdgdfg",
+      //             "description": "",
+      //             "hsn": "",
+      //             "quantity": 1,
+      //             "quantityType": "kg",
+      //             "unitPrice": 0,
+      //             "taxes": "69c257d748afcfab50e959fb",
+      //             "total": 0
+      //         }
+      //     ],
+      //     "quotationNo": "Q3164"
+      }
   auth:
     type: bearer
     token: "{{token}}"
