@@ -17,8 +17,8 @@ http:
       //      "email": "tobopa@denipl.com",
       //      "password": "Pipex@F60"
          // f10
-             "email": "fogacole@denipl.net",
-           "password": "Pipex@F60"
+      //        "email": "fogacole@denipl.net",
+      //      "password": "Pipex@F60"
       //f20
       //     "email": "kahub@mailinator.com",
       //     "password": "Pipex@F60"
@@ -30,8 +30,8 @@ http:
 
       // "email": "pysajohu@denipl.net",
       //  "password": "Pipex@F60"
-          // "email": "pooja.vishakarma@f70.co.in",
-          // "password": "pooja"
+          "email": "fogacole@denipl.net",
+          "password": "Pipex@F60"
       }
   auth:
     type: bearer

@@ -1,0 +1,21 @@
+info:
+  name: Smtp warm up
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{clientUrl}}/api/v1/services/google-workspace/smtp/warmup-email"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "shaqeeb@pentagoat.com"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
