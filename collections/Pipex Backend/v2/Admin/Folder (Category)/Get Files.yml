@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/folder/files/688475734dfb8470ec63f5e2?limit=10&offset=0&status=all"
+  url: "{{url}}/api/v2/admin/folder/files/6a2bb9c537010afca7cd33d3?limit=10&offset=0&status=all"
   params:
     - name: limit
       value: "10"
@@ -13,13 +13,13 @@ http:
     - name: offset
       value: "0"
       type: query
+    - name: status
+      value: all
+      type: query
     - name: searchQuery
       value: ""
       type: query
       disabled: true
-    - name: status
-      value: all
-      type: query
   auth: inherit
 
 settings:

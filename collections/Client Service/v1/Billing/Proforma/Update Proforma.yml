@@ -8,93 +8,56 @@ http:
   url: "{{clientUrl}}/api/v1/proforma/:proformaId"
   params:
     - name: proformaId
-      value: 69ae75d41f4ff72dc0a0da94
+      value: 6a390396982393e958f61e27
       type: path
   body:
     type: json
-    data: "{\r
+    data: |-
+      // {
+      // //     "proformaNo":"P0003",
+      //     "quotationDate":"2025-10-01",
+      //       "validUntil":"2025-10-03",
+      //     "currency": "",
+      // //     "customer": {
+      // //         "leadId": "69ae8f63f082d54c3dc713e3",
+      // //         "paymentTerm": ""
+      // //     },
+      //     "footerNote": {
+      //         "terms": "",
+      //         "notes": ""
+      //     },
+      //      "deliveryTime": "",
+      //     "memoToSelf": "",
+      //     "shippingCharges": {},
+      //     "otherCharges": {},
+      //     "discount": {},
+      //     "items": [
+      //         {
+      //             "name": "hiiii",
+      //             "description": "",
+      //             "hsn": "",
+      //             "quantity": 1,
+      //             "quantityType": "",
+      //             "unitPrice": 0,
+      //             "taxes": "",
+      //             "total": 0,
+      //             "_id": ""
+      //         },
+      //         {
+      //             "name": "Widget B",
+      //             "description": "",
+      //             "quantity": 1,
+      //             "quantityType": "",
+      //             "unitPrice": 0,
+      //             "taxes": "",
+      //             "total": 0
+      //         }
+      //     ],
+      //          "bankDetails": false
+      // }
 
-      \    \"proformaNo\":\"P0003\",\r
 
-      \    \"quotationDate\":\"2025-10-01\",\r
-
-      \      \"validUntil\":\"2025-10-03\",\r
-
-      \    \"currency\": \"\",\r
-
-      \    \"customer\": {\r
-
-      \        \"leadId\": \"69ae8f63f082d54c3dc713e3\",\r
-
-      \        \"paymentTerm\": \"\"\r
-
-      \    },\r
-
-      \    \"footerNote\": {\r
-
-      \        \"terms\": \"\",\r
-
-      \        \"notes\": \"\"\r
-
-      \    },\r
-
-      \     \"deliveryTime\": \"\",\r
-
-      \    \"memoToSelf\": \"\",\r
-
-      \    \"shippingCharges\": {},\r
-
-      \    \"otherCharges\": {},\r
-
-      \    \"discount\": {},\r
-
-      \    \"items\": [\r
-
-      \        {\r
-
-      \            \"name\": \"hiiii\",\r
-
-      \            \"description\": \"\",\r
-
-      \            \"hsn\": \"\",\r
-
-      \            \"quantity\": 1,\r
-
-      \            \"quantityType\": \"\",\r
-
-      \            \"unitPrice\": 0,\r
-
-      \            \"taxes\": \"\",\r
-
-      \            \"total\": 0,\r
-
-      \            \"_id\": \"\"\r
-
-      \        },\r
-
-      \        {\r
-
-      \            \"name\": \"Widget B\",\r
-
-      \            \"description\": \"\",\r
-
-      \            \"quantity\": 1,\r
-
-      \            \"quantityType\": \"\",\r
-
-      \            \"unitPrice\": 0,\r
-
-      \            \"taxes\": \"\",\r
-
-      \            \"total\": 0\r
-
-      \        }\r
-
-      \    ],\r
-
-      \         \"bankDetails\": false\r
-
-      }"
+      {"memoToSelf":"","quotationDate":"2025-10-22","validUntil":"2025-12-08","expiryDays":"7","currency":"","footerNote":{"terms":"","notes":""},"customer":{"leadId":"6a38ccbe4362121cf344cba7","paymentTerm":"1 day s"},"signature":false,"deliveryTime":"10 days","notes":"","shippingCharges":{"type":"currency","value":0},"otherCharges":{"type":"currency","value":0},"discount":{"type":"currency","value":0},"bankDetails":false,"items":[{"name":"hiiii","description":"","hsn":"","quantity":1,"quantityType":"kg","unitPrice":0,"taxes":"6a22dd304db64ea66b6b6165","total":0},{"name":"Widget B","description":"","hsn":"","quantity":1,"quantityType":"kg","unitPrice":0,"taxes":"6a22dd304db64ea66b6b6165","total":0}],"proformaNo":"P-3"}
   auth:
     type: bearer
     token: "{{token}}"

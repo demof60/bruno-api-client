@@ -8,7 +8,7 @@ http:
   url: "{{clientUrl}}/api/v1/quotation/history/restore/:historyId"
   params:
     - name: historyId
-      value: 69dc88183a812ee7deb569f1
+      value: 6a33a09136f1d64976757967
       type: path
   auth: inherit
 

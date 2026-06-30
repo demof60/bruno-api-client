@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{webUrl}}/api/v1/blog/updated-square-bar-weight-chart-2026-for-industrial-applications.html"
+  url: "{{webUrl}}/api/v1/blog/test-blog-2.html"
   auth: inherit
 
 settings:

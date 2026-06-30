@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{url}}/api/v2/admin/client/profile/get/6884687991aa6e60240a813c"
+  url: "{{url}}/api/v2/admin/client/profile/get/6a3381a7efe693e4a7818c50"
   auth: inherit
 
 settings:

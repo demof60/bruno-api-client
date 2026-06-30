@@ -5,7 +5,7 @@ info:
 
 http:
   method: PUT
-  url: "{{url}}/api/v1/productUpdate/669a595e1b9c7c87cfc17167"
+  url: "{{url}}/api/v1/productUpdate/6a16c012ae4b18d5217fc8eb"
   body:
     type: multipart-form
     data:
@@ -46,6 +46,7 @@ http:
         type: file
         value:
           - /C:/Users/admin/Downloads/Rectangle 13.png
+        disabled: true
       - name: isActive
         type: text
         value: "true"
